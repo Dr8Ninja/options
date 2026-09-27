@@ -33,7 +33,7 @@
     "server-only": "0.0.1"
   },
   "devDependencies": {
-    "typescript": "5.9.3",
+    "typescript": "7.0.2",
     "eslint": "10.11.0",
     "prettier": "3.9.9",
     "vitest": "5.0.1",
