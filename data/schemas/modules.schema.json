@@ -1,0 +1,230 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "checkpoint_questions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "common_mistakes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "competency_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "domain_id": {
+            "type": "string"
+          },
+          "estimate_basis": {
+            "type": "string"
+          },
+          "exercise_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "lesson_authoring_owner": {
+            "type": "string"
+          },
+          "level": {
+            "type": "string"
+          },
+          "mastery_criteria": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "objectives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "original_provenance": {
+            "type": "object",
+            "properties": {
+              "json_pointer": {
+                "type": "string"
+              },
+              "master_line": {
+                "type": "integer"
+              },
+              "origin": {
+                "type": "string"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
+          "phase_id": {
+            "type": "string"
+          },
+          "practical_assignment": {
+            "type": "string"
+          },
+          "prerequisites": {
+            "type": "object",
+            "properties": {
+              "hard": {
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {},
+                    {
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              "optional": {
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {},
+                    {
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              "recommended": {
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {},
+                    {
+                      "type": "string"
+                    }
+                  ]
+                }
+              }
+            },
+            "required": [
+              "hard",
+              "optional",
+              "recommended"
+            ],
+            "additionalProperties": false
+          },
+          "program_id": {
+            "type": "string"
+          },
+          "quiz_id": {
+            "type": "string"
+          },
+          "readiness": {
+            "type": "string",
+            "enum": [
+              "learning_design"
+            ]
+          },
+          "reading_assignments": {
+            "type": "string"
+          },
+          "remediation": {
+            "type": "string"
+          },
+          "required_math": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "required_programming": {
+            "type": "string"
+          },
+          "slug": {
+            "type": "string"
+          },
+          "study_hours": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "title": {
+            "type": "string"
+          },
+          "topic_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "why_it_matters": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "checkpoint_questions",
+          "common_mistakes",
+          "competency_ids",
+          "domain_id",
+          "estimate_basis",
+          "exercise_ids",
+          "id",
+          "lesson_authoring_owner",
+          "level",
+          "mastery_criteria",
+          "objectives",
+          "original_provenance",
+          "phase_id",
+          "practical_assignment",
+          "prerequisites",
+          "program_id",
+          "quiz_id",
+          "readiness",
+          "reading_assignments",
+          "remediation",
+          "required_math",
+          "required_programming",
+          "slug",
+          "study_hours",
+          "tags",
+          "title",
+          "topic_ids",
+          "why_it_matters"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 modules interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

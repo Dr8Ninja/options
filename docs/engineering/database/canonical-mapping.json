@@ -1,0 +1,1781 @@
+{
+  "design_version": 1,
+  "as_of": "2026-09-23",
+  "canonical_version": "1.0.0-design",
+  "schema_installed": false,
+  "mapping_scope": "Exhaustive top-level fields and records; nested transformation contracts below; operational data relational, original byte archive is separate.",
+  "envelope_fields": {
+    "version": "source_artifact.source_version and import_batch.schema_version; preserve original envelope in source_artifact",
+    "as_of": "import_batch.source_as_of, distinct from imported_at/verification dates",
+    "records": "one ordered record per collection profile; source_artifact preserves source record order"
+  },
+  "manifest_fields": {
+    "version": "import_batch.schema_version and source_artifact.source_version",
+    "as_of": "import_batch.source_as_of",
+    "purpose": "source_artifact original manifest; descriptive source purpose not workflow permission",
+    "source_hashes": "source_artifact rows path/hash/bytes with exact full manifest archived, no invented source dates",
+    "counts": "immutable import_batch.report expected/actual count comparison; archive original manifest",
+    "publication_ready_lessons": "import_batch.report observed value 0 and checked catalog_revision readiness; never publish from count alone"
+  },
+  "manifest_sha256": "85f2696eca3a7a22495587a9fc66fd2ef2ee6ae7f3efb16efe15ce52909468d9",
+  "nested_contracts": {
+    "prerequisites.{hard,recommended,optional}": "three separate ordered FK tables; empty array creates zero edges; missing vs empty recoverable from artifact",
+    "diagnostic.{prompt,bridge,pass}": "competency_revision diagnostic fields, bridge real MODULE FK",
+    "hard_edge_justifications[].{requires,supplied_skill,consumed_by}": "merge exactly by existing hard edge key; reject unknown/repeated requires; preserve both explanations",
+    "items[].{kind,question,exercise_id,weight}": "blueprint_item; text XOR exercise FK; preserve ordinal and source kind; sum weights100",
+    "branches[].{module_id,rule}": "catalog_link path_branch target and annotation; ordinal preserved",
+    "rubric.{criterion_code}": "rubric_criterion code and weight; array order is source property traversal but codes/values determine semantic round-trip",
+    "unknowns.{field_name}": "resource_unknown field/reason; no null reason silently removed",
+    "original_provenance.{json_pointer,master_line,origin}": "separate original/master/design anchors; design origin uses locator_label on hashed canonical/research artifact, never a fabricated original line",
+    "provenance.{source,json_pointer,master_source,master_line,line,selector}": "mapping_anchor for each source; selector retained verbatim as provenance_anchor.locator_label; same source location does not overwrite master counterpart",
+    "original_record and original": "immutable original JSON subtree retained through source_record/source_artifact exception; nested content is not interpreted as application FK graph",
+    "source_hashes[].{path,sha256,bytes,lines,whitespace_words,source_declared_research_date}": "source_artifact path/hash/byte fields; supplementary extraction statistics/raw claimed date in immutable manifest archive, not verification columns",
+    "video_timestamps": "all null in supplied snapshot; accept no invented ranges; future supported ranges require schema-reviewed resource_segment migration/contract"
+  },
+  "defaults_and_new_entities": [
+    "Missing title uses the exact external ID as a neutral editorial label, never an invented lesson title; source property absence retained in original artifact.",
+    "No source readiness field -> scope_outline or explicitly learning_design/project_specification by kind; no generated reviewed lessons.",
+    "R1-FND course, R1-G1..G6 executable quizzes, four-item entry diagnostic and R1-CASE-01 dossier are P02/P17 additions with source provenance, not P01 replacements.",
+    "All source artifacts including Markdown guides are registered/hash-archived; prose outside canonical collections has explicit disposition in CANONICAL_MAPPING.md.",
+    "No optional missing value is replaced by invented metadata; explicit importer defaults are recorded in immutable report and reviewed."
+  ],
+  "collections": [
+    {
+      "file": "data/v1/programs.json",
+      "kind": "PROGRAM",
+      "records": 1,
+      "sha256": "959864d392eb6c62e948c558c814d816e91ce79a1a5d776dfd88e721623760dd",
+      "ordered_ids_sha256": "7f5d8bf4310c291a2a795e8427addfe1fd23e0ba2f6279dc925434c9a6fad677",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "phase_ids": {
+          "destination": "catalog_link(program_phase), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "qualification": {
+          "destination": "revision_section(qualification)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/phases.json",
+      "kind": "PHASE",
+      "records": 5,
+      "sha256": "f075cd005bb3ec4ecbf48a64198507799f92c88f0dac022697712b60a0f1a02f",
+      "ordered_ids_sha256": "88a75f38f235254330052fe746577fe31c9d66534b058595341bae396fbbfa92",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "module_ids": {
+          "destination": "catalog_link(phase_module), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/domains.json",
+      "kind": "DOMAIN",
+      "records": 15,
+      "sha256": "92116edd06f668f3274572187725df847d1a88e9baeb49f94b6d5325f918a6cc",
+      "ordered_ids_sha256": "131de7f84b4ea9a4c95185706dd2ceecd27920780b17ac7c4f00098094692eb9",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/modules.json",
+      "kind": "MODULE",
+      "records": 70,
+      "sha256": "d05044306b6ccf341bc0fee15be431195c6f69a91f18450b1bf1f91517d360e0",
+      "ordered_ids_sha256": "e903f0fb0b8af65fb1f4e644dcfde521d8f9c947c4a079dc39c3935842c789e3",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "checkpoint_questions": {
+          "destination": "revision_section(checkpoint), ordinal",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "common_mistakes": {
+          "destination": "revision_section(common_mistake), ordinal",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "competency_ids": {
+          "destination": "catalog_link(outcome), first is primary",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "domain_id": {
+          "destination": "catalog_link(module_domain)",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "estimate_basis": {
+          "destination": "catalog_revision.estimate_basis",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "exercise_ids": {
+          "destination": "catalog_link(assessment) EXERCISE targets",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "lesson_authoring_owner": {
+          "destination": "revision_section(authoring_owner)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "level": {
+          "destination": "catalog_revision.difficulty",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "mastery_criteria": {
+          "destination": "revision_section(mastery_criterion), ordinal",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "objectives": {
+          "destination": "revision_section(objective), ordinal",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "original_provenance": {
+          "destination": "revision_provenance -> provenance_anchor -> source_artifact; original JSON pointer, master line or design origin label",
+          "tables": [
+            "provenance_anchor",
+            "revision_provenance",
+            "source_artifact"
+          ]
+        },
+        "phase_id": {
+          "destination": "catalog_link(phase_module) inverse validation; source home preserved in source_artifact",
+          "tables": [
+            "catalog_link",
+            "source_artifact"
+          ]
+        },
+        "practical_assignment": {
+          "destination": "revision_section(practical_assignment)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "prerequisites": {
+          "destination": "hard_prerequisite / recommended_preparation / optional_enrichment; three distinct arrays, preserve ordinal and align primary competency graph",
+          "tables": [
+            "hard_prerequisite",
+            "optional_enrichment",
+            "recommended_preparation"
+          ]
+        },
+        "program_id": {
+          "destination": "catalog_link(program_phase) inverse validation against selected phase; no duplicate module home column",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "quiz_id": {
+          "destination": "catalog_link(assessment) BLUEPRINT target",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "readiness": {
+          "destination": "catalog_revision.readiness",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "reading_assignments": {
+          "destination": "revision_section(reading_summary); prose is not exact resource assignment",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "remediation": {
+          "destination": "revision_section(remediation)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "required_math": {
+          "destination": "revision_section(required_math), preserve codes, archived MATH_ROADMAP provenance",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "required_programming": {
+          "destination": "revision_section(required_programming)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "slug": {
+          "destination": "catalog_route.path_key within kind namespace; preserve old reserved path on rename",
+          "tables": [
+            "catalog_route"
+          ]
+        },
+        "study_hours": {
+          "destination": "catalog_revision.hours_min / hours_max",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "tags": {
+          "destination": "tag + revision_tag; first occurrence dedupe; source order in source_artifact for lossless export",
+          "tables": [
+            "revision_tag",
+            "source_artifact",
+            "tag"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "topic_ids": {
+          "destination": "catalog_link(module_topic), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "why_it_matters": {
+          "destination": "revision_section(why_it_matters)",
+          "tables": [
+            "revision_section"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/competencies.json",
+      "kind": "COMPETENCY",
+      "records": 70,
+      "sha256": "ebf557bd5c12e94a1b0b481a23a5ee37b549e6936b0230124b71beb2fb4c9281",
+      "ordered_ids_sha256": "35e03338628ba9747ca5c7c0d1724d5e72eab4ff1755c7ffc051bb07bbd3a22c",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "assessment_ids": {
+          "destination": "catalog_link(assessment), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "dependency_reason": {
+          "destination": "revision_section(dependency_reason)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "diagnostic": {
+          "destination": "competency_revision.diagnostic_prompt / diagnostic_bridge_id / diagnostic_pass",
+          "tables": [
+            "competency_revision"
+          ]
+        },
+        "hard_edge_justifications": {
+          "destination": "hard_prerequisite.requires_object_id / supplied_skill / consumed_skill; merge by requires ID, never append duplicate edge",
+          "tables": [
+            "hard_prerequisite"
+          ]
+        },
+        "hard_prerequisites": {
+          "destination": "hard_prerequisite, ordered requires_object_id",
+          "tables": [
+            "hard_prerequisite"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "module_id": {
+          "destination": "competency_revision.module_object_id; reciprocal catalog_link(outcome) check",
+          "tables": [
+            "catalog_link",
+            "competency_revision"
+          ]
+        },
+        "optional_enrichment": {
+          "destination": "optional_enrichment, ordered target_object_id",
+          "tables": [
+            "optional_enrichment"
+          ]
+        },
+        "outcome": {
+          "destination": "competency_revision.outcome",
+          "tables": [
+            "competency_revision"
+          ]
+        },
+        "recommended_preparation": {
+          "destination": "recommended_preparation, ordered requires_object_id",
+          "tables": [
+            "recommended_preparation"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/topics.json",
+      "kind": "TOPIC",
+      "records": 1025,
+      "sha256": "a6fe328a9fc403c69d352c3624130a01a335aa9b3413b1253331c87c3ed88525",
+      "ordered_ids_sha256": "7ef049f3ca2bb3751d622565484f5f5836aac60cc80191e48aaf4a347a661875",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "classification_code_original": {
+          "destination": "revision_section(original_classification)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "difficulty": {
+          "destination": "catalog_revision.difficulty",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "evidence_class_original": {
+          "destination": "revision_section(original_evidence_class)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "module_id": {
+          "destination": "catalog_link(module_topic) inverse validation; source home retained in source_artifact",
+          "tables": [
+            "catalog_link",
+            "source_artifact"
+          ]
+        },
+        "original_provenance": {
+          "destination": "revision_provenance -> provenance_anchor -> source_artifact; original JSON pointer, master line or design origin label",
+          "tables": [
+            "provenance_anchor",
+            "revision_provenance",
+            "source_artifact"
+          ]
+        },
+        "priority": {
+          "destination": "catalog_revision.priority",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "readiness": {
+          "destination": "catalog_revision.readiness",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "reviewed_lesson": {
+          "destination": "catalog_revision.lesson_markdown; all null in current snapshot, never generated from outline",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "scope_outline": {
+          "destination": "catalog_revision.scope_outline",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "subtopic_ids": {
+          "destination": "catalog_link(topic_subtopic), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "tags": {
+          "destination": "tag + revision_tag; first occurrence dedupe; source order in source_artifact for lossless export",
+          "tables": [
+            "revision_tag",
+            "source_artifact",
+            "tag"
+          ]
+        },
+        "teaching_brief": {
+          "destination": "catalog_revision.teaching_brief; null remains null",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "teaching_brief_unknown_reason": {
+          "destination": "catalog_revision.unknown_brief_reason",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/subtopics.json",
+      "kind": "SUBTOPIC",
+      "records": 1025,
+      "sha256": "099a0caab803b71ab130b2fcef028d947dcda762b9b05bc15b3d2c5715ddaafd",
+      "ordered_ids_sha256": "36b9de022a749f99277b7fca8b4a48da19406635b8b89b2379929130999a5933",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "competency_ids": {
+          "destination": "catalog_link(outcome), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "granularity_note": {
+          "destination": "revision_section(granularity_note)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "readiness": {
+          "destination": "catalog_revision.readiness",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "scope": {
+          "destination": "catalog_revision.scope_outline",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "topic_id": {
+          "destination": "catalog_link(topic_subtopic) inverse validation",
+          "tables": [
+            "catalog_link"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/resources.json",
+      "kind": "RESOURCE",
+      "records": 96,
+      "sha256": "1f823dfd8f81d8eca37ec4e4e0b0580388213429551c9cf131f7d2fc81cd240e",
+      "ordered_ids_sha256": "4076d51db4bad4e674f4ccee69fad7a9cc3688f016798d43800a085e20aba34a",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "access_limitations": {
+          "destination": "resource_revision.access_limitations",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "alternative_limit": {
+          "destination": "resource_revision.alternative_limit",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "author_organization": {
+          "destination": "resource_revision.author_organization",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "canonical_url": {
+          "destination": "external_locator.original_url / normalized_url; resource_revision.canonical_locator_id and resource_locator(canonical)",
+          "tables": [
+            "external_locator",
+            "resource_locator",
+            "resource_revision"
+          ]
+        },
+        "cost": {
+          "destination": "resource_revision.cost",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "difficulty": {
+          "destination": "catalog_revision.difficulty",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "doi": {
+          "destination": "resource_revision.doi and resource_identifier(DOI) when known",
+          "tables": [
+            "resource_identifier",
+            "resource_revision"
+          ]
+        },
+        "edition": {
+          "destination": "resource_revision.edition",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "entitlement_status": {
+          "destination": "resource_revision.entitlement_status",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "free_alternative_ids": {
+          "destination": "catalog_link(free_alternative), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "geography": {
+          "destination": "resource_revision.geography",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "last_verification_date": {
+          "destination": "verification_event.checked_on; checked_at is record/import time, not invented verification instant",
+          "tables": [
+            "verification_event"
+          ]
+        },
+        "original_provenance": {
+          "destination": "revision_provenance -> provenance_anchor -> source_artifact; original JSON pointer, master line or design origin label",
+          "tables": [
+            "provenance_anchor",
+            "revision_provenance",
+            "source_artifact"
+          ]
+        },
+        "prerequisites": {
+          "destination": "resource_revision.prerequisites_text; prose, not inferred graph",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "priority": {
+          "destination": "catalog_revision.priority",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "publication_date": {
+          "destination": "resource_revision.publication_date_raw / publication_precision",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "publication_status": {
+          "destination": "resource_revision.publication_status",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "rationale": {
+          "destination": "resource_revision.rationale",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "recommended_audience": {
+          "destination": "resource_revision.recommended_audience",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "replacement_ids": {
+          "destination": "catalog_link(replaces), preserve source direction",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "resource_type": {
+          "destination": "resource_revision.resource_type",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "rights": {
+          "destination": "resource_revision.rights",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "role": {
+          "destination": "resource_revision.role",
+          "tables": [
+            "resource_revision",
+            "role"
+          ]
+        },
+        "status": {
+          "destination": "catalog_revision.source_status; does not imply approved publication",
+          "tables": [
+            "catalog_revision",
+            "publication"
+          ]
+        },
+        "study_hours": {
+          "destination": "catalog_revision.hours_min / hours_max",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "supersedes_ids": {
+          "destination": "catalog_link(supersedes_resource), preserve source direction",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "time_basis": {
+          "destination": "catalog_revision.estimate_basis",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "topics_competencies": {
+          "destination": "catalog_link(candidate_competency), not citations",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "unknowns": {
+          "destination": "resource_unknown(field,reason); exact null reasons",
+          "tables": [
+            "resource_unknown"
+          ]
+        },
+        "updated_date": {
+          "destination": "resource_revision.updated_date_raw / updated_precision",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "verification_scope": {
+          "destination": "verification_event.scope, method selected_sections or bibliography by reviewed source status; no new factual certification",
+          "tables": [
+            "verification_event"
+          ]
+        },
+        "video_timestamp_reason": {
+          "destination": "resource_revision.video_timestamp_reason",
+          "tables": [
+            "resource_revision"
+          ]
+        },
+        "video_timestamps": {
+          "destination": "resource_segment when real ranges; currently null means no rows with resource_unknown(video_timestamps) reason",
+          "tables": [
+            "resource_segment",
+            "resource_unknown"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/associations.json",
+      "kind": "ASSIGNMENT",
+      "records": 152,
+      "sha256": "adf5c19c916685467ea42cfffe4621d94f029f78f27e9935eb927834b7046858",
+      "ordered_ids_sha256": "477d2ddfb209c48d79738fc33b1b36b9d0bc1d573221afda094822e1035678b7",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "competency_id": {
+          "destination": "assignment_revision.competency_object_id",
+          "tables": [
+            "assignment_revision"
+          ]
+        },
+        "evidence_claim_ids": {
+          "destination": "assignment_claim -> evidence_claim; claims loaded from research/registers/claims.json, bounded original statement/scope",
+          "tables": [
+            "assignment_claim",
+            "evidence_claim"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "purpose": {
+          "destination": "assignment_revision.purpose",
+          "tables": [
+            "assignment_revision"
+          ]
+        },
+        "reading_scope": {
+          "destination": "assignment_revision.reading_scope",
+          "tables": [
+            "assignment_revision"
+          ]
+        },
+        "resource_id": {
+          "destination": "assignment_revision.resource_object_id",
+          "tables": [
+            "assignment_revision"
+          ]
+        },
+        "status": {
+          "destination": "assignment_revision.verification_state plus catalog_revision.source_status",
+          "tables": [
+            "assignment_revision",
+            "catalog_revision"
+          ]
+        },
+        "topic_ids": {
+          "destination": "catalog_link(assignment_topic); empty means competency-level, not inherited topic list",
+          "tables": [
+            "catalog_link"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/exercises.json",
+      "kind": "EXERCISE",
+      "records": 210,
+      "sha256": "54f54e70f0b2c589700178da62b7f9f693b3e47b0b654120d3a4280abef70add",
+      "ordered_ids_sha256": "192556ea7bde6e969a30be97dcfb9e1534a56e7aa0ddd03e71158e8731b7732a",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "competency_ids": {
+          "destination": "catalog_link(outcome)",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "critical_errors": {
+          "destination": "revision_section(critical_error)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "data": {
+          "destination": "exercise_revision.data_plan",
+          "tables": [
+            "exercise_revision"
+          ]
+        },
+        "deliverable": {
+          "destination": "exercise_revision.deliverable",
+          "tables": [
+            "exercise_revision"
+          ]
+        },
+        "fresh_variant": {
+          "destination": "exercise_revision.fresh_variant",
+          "tables": [
+            "exercise_revision"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "module_id": {
+          "destination": "exercise_revision.module_object_id",
+          "tables": [
+            "exercise_revision"
+          ]
+        },
+        "noncoding_route": {
+          "destination": "exercise_revision.noncoding_route",
+          "tables": [
+            "exercise_revision"
+          ]
+        },
+        "pass_score": {
+          "destination": "exercise_revision.pass_score",
+          "tables": [
+            "exercise_revision"
+          ]
+        },
+        "prompt": {
+          "destination": "exercise_revision.prompt",
+          "tables": [
+            "exercise_revision"
+          ]
+        },
+        "reference_behavior": {
+          "destination": "exercise_revision.reference_behavior, protected",
+          "tables": [
+            "exercise_revision"
+          ]
+        },
+        "rubric": {
+          "destination": "rubric_criterion(code,ordinal,weight), no automatic criterion rewrite",
+          "tables": [
+            "rubric_criterion"
+          ]
+        },
+        "status": {
+          "destination": "catalog_revision.source_status; does not imply approved publication",
+          "tables": [
+            "catalog_revision",
+            "publication"
+          ]
+        },
+        "tolerance": {
+          "destination": "exercise_revision.tolerance_text",
+          "tables": [
+            "exercise_revision"
+          ]
+        },
+        "type": {
+          "destination": "exercise_revision.exercise_type",
+          "tables": [
+            "exercise_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/quiz_blueprints.json",
+      "kind": "BLUEPRINT",
+      "records": 70,
+      "sha256": "c9c60cdf49051c7f9003f615e4c214b4ecc3d9f77c9e9607c3003b03543e8ea2",
+      "ordered_ids_sha256": "88600dcd57a2e2ae4de9e01d4d81c2257e8198a8827cb90fd080e90786194825",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "competency_ids": {
+          "destination": "catalog_link(outcome)",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "critical_error_policy": {
+          "destination": "blueprint_revision.critical_error_policy",
+          "tables": [
+            "blueprint_revision"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "items": {
+          "destination": "blueprint_item(ordinal,item_kind,question_text XOR exercise_object_id,weight); retain shape; no executable questions generated",
+          "tables": [
+            "blueprint_item"
+          ]
+        },
+        "module_id": {
+          "destination": "blueprint_revision.module_object_id",
+          "tables": [
+            "blueprint_revision"
+          ]
+        },
+        "pass_score": {
+          "destination": "blueprint_revision.pass_score",
+          "tables": [
+            "blueprint_revision"
+          ]
+        },
+        "retries": {
+          "destination": "blueprint_revision.retries",
+          "tables": [
+            "blueprint_revision"
+          ]
+        },
+        "status": {
+          "destination": "catalog_revision.source_status; does not imply approved publication",
+          "tables": [
+            "catalog_revision",
+            "publication"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/projects.json",
+      "kind": "PROJECT",
+      "records": 12,
+      "sha256": "d90329d4862d5a99828fa571243f837cb422311026b1a55d224ceafec5d046c9",
+      "ordered_ids_sha256": "bcd90dbc09096b8a72d67f601206a2f1736ed25cde69d127069a733bdb39e6ac",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "critical_failure": {
+          "destination": "revision_section(critical_failure)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "data_plan": {
+          "destination": "revision_section(data_plan)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "deliverables": {
+          "destination": "revision_section(deliverables)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "estimate_basis": {
+          "destination": "catalog_revision.estimate_basis",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "failure_cases": {
+          "destination": "revision_section(failure_case), ordinal",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "learning_objective": {
+          "destination": "revision_section(objective)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "limitations": {
+          "destination": "revision_section(limitations)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "noncoding_route": {
+          "destination": "revision_section(noncoding_route)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "pass_score": {
+          "destination": "project_revision.pass_score",
+          "tables": [
+            "project_revision"
+          ]
+        },
+        "prerequisites": {
+          "destination": "hard_prerequisite PROJECT -> MODULE/PROJECT, ordinal",
+          "tables": [
+            "hard_prerequisite"
+          ]
+        },
+        "real_money_required": {
+          "destination": "project_revision.real_money_required CHECK false",
+          "tables": [
+            "project_revision"
+          ]
+        },
+        "reference_behavior": {
+          "destination": "revision_section(reference), protected",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "rubric": {
+          "destination": "rubric_criterion(code,ordinal,weight)",
+          "tables": [
+            "rubric_criterion"
+          ]
+        },
+        "status": {
+          "destination": "catalog_revision.source_status; does not imply approved publication",
+          "tables": [
+            "catalog_revision",
+            "publication"
+          ]
+        },
+        "steps": {
+          "destination": "revision_section(step), ordinal",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "study_hours": {
+          "destination": "catalog_revision.hours_min / hours_max",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/capstones.json",
+      "kind": "CAPSTONE",
+      "records": 7,
+      "sha256": "753123311e59708aeede9e2426bd2e0066a8b2f08ed062dc114b331ed658f6c2",
+      "ordered_ids_sha256": "84131e1075c609a70825dabdd66eb3e26976edbe962e96b8aedf764e70136b17",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "assessment_policy": {
+          "destination": "catalog_link(capstone_policy)",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "line": {
+          "destination": "provenance_anchor.line_start, exact original line, not guessed end",
+          "tables": [
+            "provenance_anchor"
+          ]
+        },
+        "original_brief": {
+          "destination": "revision_section(original_brief)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "project_ids": {
+          "destination": "catalog_link(capability_project), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "source": {
+          "destination": "source_artifact.repository_path through provenance_anchor / revision_provenance",
+          "tables": [
+            "provenance_anchor",
+            "revision_provenance",
+            "source_artifact"
+          ]
+        },
+        "status": {
+          "destination": "catalog_revision.source_status; does not imply approved publication",
+          "tables": [
+            "catalog_revision",
+            "publication"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/learning_paths.json",
+      "kind": "PATH",
+      "records": 7,
+      "sha256": "2e4cdba6ce78f7b786821e5b29769d57e6b29a84ed8880b05d620913aaf684d8",
+      "ordered_ids_sha256": "04b380f9137785879bccb7a8c134b291378d2d75f315431cc096497a087f3ae3",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "assessment_gates": {
+          "destination": "catalog_link(path_gate) BLUEPRINT map-only",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "audience": {
+          "destination": "revision_section(audience)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "branches": {
+          "destination": "catalog_link(path_branch), module_id target and rule annotation",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "diagnostic_ids": {
+          "destination": "catalog_link(path_diagnostic) COMPETENCY, not question bank",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "entry_criteria": {
+          "destination": "revision_section(entry)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "estimate_basis": {
+          "destination": "catalog_revision.estimate_basis",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "exit_competencies": {
+          "destination": "revision_section(exit_statement), ordinal",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "exit_competency_ids": {
+          "destination": "catalog_link(path_exit), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "milestone_gates": {
+          "destination": "revision_section(milestone), ordinal",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "module_sequence": {
+          "destination": "catalog_link(path_module), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "study_hours": {
+          "destination": "catalog_revision.hours_min / hours_max",
+          "tables": [
+            "catalog_revision"
+          ]
+        },
+        "target_modules": {
+          "destination": "catalog_link(path_target), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/specializations.json",
+      "kind": "SPECIALIZATION",
+      "records": 7,
+      "sha256": "99902d4decad4c16226771d1c48894c7e00bd3be859c0c83c5cacb553bae9698",
+      "ordered_ids_sha256": "dcda94e6005103a8ea0376b6ba814d000b71a584c6d015176ea27cbb33f2ed38",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "depth": {
+          "destination": "revision_section(depth)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "line": {
+          "destination": "provenance_anchor.line_start, exact original line, not guessed end",
+          "tables": [
+            "provenance_anchor"
+          ]
+        },
+        "original_module_scope": {
+          "destination": "revision_section(original_module_scope); exact range prose, no guessed relationships",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "source": {
+          "destination": "source_artifact.repository_path through provenance_anchor / revision_provenance",
+          "tables": [
+            "provenance_anchor",
+            "revision_provenance",
+            "source_artifact"
+          ]
+        },
+        "status": {
+          "destination": "catalog_revision.source_status; does not imply approved publication",
+          "tables": [
+            "catalog_revision",
+            "publication"
+          ]
+        },
+        "title": {
+          "destination": "catalog_revision.title",
+          "tables": [
+            "catalog_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/decision_cards.json",
+      "kind": "DECISION",
+      "records": 23,
+      "sha256": "cbab44107c0de64efce95988416ed7ebee78411bfe75a867b3a88bf679ac7bf0",
+      "ordered_ids_sha256": "ab9fabdf4deb540e201148972a87ce57476fcf55a69d2eabe9516fbf6a84b92f",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "line": {
+          "destination": "provenance_anchor.line_start, exact original line, not guessed end",
+          "tables": [
+            "provenance_anchor"
+          ]
+        },
+        "question": {
+          "destination": "decision_revision.question_text",
+          "tables": [
+            "decision_revision"
+          ]
+        },
+        "required_in_capstones": {
+          "destination": "catalog_link(decision_capstone), ordinal",
+          "tables": [
+            "catalog_link"
+          ]
+        },
+        "source": {
+          "destination": "source_artifact.repository_path through provenance_anchor / revision_provenance",
+          "tables": [
+            "provenance_anchor",
+            "revision_provenance",
+            "source_artifact"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/assessment_policies.json",
+      "kind": "POLICY",
+      "records": 1,
+      "sha256": "cb235ff48ff78d487138c4f29add3bb448b769431007e60f3d5a09776bf92f11",
+      "ordered_ids_sha256": "5f8338a59a14b7350899e22a10c39f2bf444fd1286522d12f603c50e4687e388",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "calibration": {
+          "destination": "revision_section(calibration)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "critical_errors": {
+          "destination": "revision_section(critical_error)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "evidence": {
+          "destination": "revision_section(evidence)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "retry": {
+          "destination": "revision_section(retry)",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "states": {
+          "destination": "revision_section(state_label); learning labels not SQL state enum",
+          "tables": [
+            "revision_section"
+          ]
+        },
+        "threshold": {
+          "destination": "policy_revision.pass_score",
+          "tables": [
+            "policy_revision"
+          ]
+        },
+        "version": {
+          "destination": "policy_revision.policy_version",
+          "tables": [
+            "policy_revision"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/market_rules.json",
+      "kind": "RULE",
+      "records": 27,
+      "sha256": "501f1db5c296f540d74c7fc449315facf882e91037919b57b4d94d447f24a134",
+      "ordered_ids_sha256": "2031e16f8d6c66f37b2834a25ba2d2a6b4ba20c09d79841a7b972ddaddceebdd",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "circular_identifier": {
+          "destination": "official_notice.identifier; issuing body scope from explicit authority, unknown reason otherwise",
+          "tables": [
+            "official_notice"
+          ]
+        },
+        "current_operational_publication_eligible": {
+          "destination": "rule_revision.imported_current_eligible CHECK false; no rule_certification created",
+          "tables": [
+            "rule_certification",
+            "rule_revision"
+          ]
+        },
+        "effective_from": {
+          "destination": "rule_revision.effective_from",
+          "tables": [
+            "rule_revision"
+          ]
+        },
+        "effective_to": {
+          "destination": "rule_revision.effective_to; source bound convention preserved in source_artifact, normalized exclusive only with verified interpretation",
+          "tables": [
+            "rule_revision",
+            "source_artifact"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "instrument": {
+          "destination": "rule_subject.instrument; instrument_key scoped reviewed normalization",
+          "tables": [
+            "rule_subject"
+          ]
+        },
+        "jurisdiction": {
+          "destination": "rule_subject.jurisdiction",
+          "tables": [
+            "rule_subject"
+          ]
+        },
+        "publication_date": {
+          "destination": "official_notice.publication_date; unknown reason retained",
+          "tables": [
+            "official_notice"
+          ]
+        },
+        "publication_eligible": {
+          "destination": "rule_revision.historical_eligible; never current operational certification",
+          "tables": [
+            "rule_revision"
+          ]
+        },
+        "publication_eligible_scope": {
+          "destination": "rule_revision.historical_eligible_scope",
+          "tables": [
+            "rule_revision"
+          ]
+        },
+        "review_interval_days": {
+          "destination": "rule_revision.review_interval_days",
+          "tables": [
+            "rule_revision"
+          ]
+        },
+        "review_owner": {
+          "destination": "rule_revision.review_owner_label",
+          "tables": [
+            "rule_revision"
+          ]
+        },
+        "review_status": {
+          "destination": "rule_revision.review_status",
+          "tables": [
+            "rule_revision"
+          ]
+        },
+        "rule_type": {
+          "destination": "rule_subject.rule_type",
+          "tables": [
+            "rule_subject"
+          ]
+        },
+        "scope": {
+          "destination": "rule_revision.scope and rule_subject.product_scope",
+          "tables": [
+            "rule_revision",
+            "rule_subject"
+          ]
+        },
+        "source_url": {
+          "destination": "external_locator -> official_notice.locator_id",
+          "tables": [
+            "external_locator",
+            "official_notice"
+          ]
+        },
+        "superseded_by": {
+          "destination": "notice_supersession current -> newer, external notice identities",
+          "tables": [
+            "notice_supersession"
+          ]
+        },
+        "supersedes": {
+          "destination": "notice_supersession older -> current, external notice identities; unresolved references are explicit notice records",
+          "tables": [
+            "notice_supersession"
+          ]
+        },
+        "uncertainty": {
+          "destination": "rule_revision.uncertainty",
+          "tables": [
+            "rule_revision"
+          ]
+        },
+        "unit": {
+          "destination": "rule_revision.unit",
+          "tables": [
+            "rule_revision"
+          ]
+        },
+        "unknown_date_reason": {
+          "destination": "rule_revision.unknown_date_reason and official_notice.unknown_date_reason",
+          "tables": [
+            "official_notice",
+            "rule_revision"
+          ]
+        },
+        "value": {
+          "destination": "rule_revision.value_text; numeric projection only with stated units",
+          "tables": [
+            "rule_revision"
+          ]
+        },
+        "verification_date": {
+          "destination": "verification_event.checked_on; not a new verification",
+          "tables": [
+            "verification_event"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/source_items.json",
+      "kind": null,
+      "records": 1174,
+      "sha256": "ca910eff63cd6085a48ddb2edc6f2699f92d928b828e49d59e5b575fcea51467",
+      "ordered_ids_sha256": "be67f91945c542ff9ddc768a535eab4ede34d8d110124b6107f48f199859d7e9",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "disposition": {
+          "destination": "source_record.disposition",
+          "tables": [
+            "source_record"
+          ]
+        },
+        "id": {
+          "destination": "source_record.external_id",
+          "tables": [
+            "source_record"
+          ]
+        },
+        "kind": {
+          "destination": "source_record.source_kind",
+          "tables": [
+            "source_record"
+          ]
+        },
+        "original_record": {
+          "destination": "source_record.original_payload immutable JSON archive; exact original bytes also source_artifact",
+          "tables": [
+            "source_artifact",
+            "source_record"
+          ]
+        },
+        "pointer": {
+          "destination": "source_record.pointer",
+          "tables": [
+            "source_record"
+          ]
+        },
+        "source": {
+          "destination": "source_artifact.repository_path; source_record.artifact_id",
+          "tables": [
+            "source_artifact",
+            "source_record"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/source_mappings.json",
+      "kind": null,
+      "records": 6402,
+      "sha256": "02b5e2ef23b29a855982e9960b6cdeb0dc2ed7ac97d3cf2fab38bd726772ba62",
+      "ordered_ids_sha256": "daf10ca5b68a6711b3937a9776339eddfb768b46d7636044de63a4164dc0eed7",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "canonical_ids": {
+          "destination": "mapping_target.target_object_id, ordinal; real catalog_object IDs including ARCHIVE",
+          "tables": [
+            "catalog_object",
+            "mapping_target"
+          ]
+        },
+        "disposition": {
+          "destination": "source_mapping.disposition",
+          "tables": [
+            "source_mapping"
+          ]
+        },
+        "id": {
+          "destination": "source_mapping.external_id",
+          "tables": [
+            "source_mapping"
+          ]
+        },
+        "kind": {
+          "destination": "source_mapping.source_kind",
+          "tables": [
+            "source_mapping"
+          ]
+        },
+        "note": {
+          "destination": "source_mapping.note",
+          "tables": [
+            "source_mapping"
+          ]
+        },
+        "original_id": {
+          "destination": "source_mapping.original_id external namespace, never fake canonical FK",
+          "tables": [
+            "source_mapping"
+          ]
+        },
+        "provenance": {
+          "destination": "mapping_anchor -> provenance_anchor -> source_artifact; all original/master locators retained",
+          "tables": [
+            "mapping_anchor",
+            "provenance_anchor",
+            "source_artifact"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/archival_structures.json",
+      "kind": "ARCHIVE",
+      "records": 28,
+      "sha256": "c4f0e8bf6eee49ee4fcbbfd206d921fbd30ff0657cf55bcd116c72517fd37d9b",
+      "ordered_ids_sha256": "294ba5c665acd0c9fc036c79fce2009b2634e6b3c5c8ba91bcb31c9cef79f2b8",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "disposition": {
+          "destination": "archive_revision.disposition",
+          "tables": [
+            "archive_revision"
+          ]
+        },
+        "id": {
+          "destination": "catalog_object.external_id, preserved verbatim; internal bigint separate",
+          "tables": [
+            "catalog_object"
+          ]
+        },
+        "kind": {
+          "destination": "archive_revision.archive_kind",
+          "tables": [
+            "archive_revision"
+          ]
+        },
+        "line": {
+          "destination": "provenance_anchor.line_start, exact original line, not guessed end",
+          "tables": [
+            "provenance_anchor"
+          ]
+        },
+        "markdown": {
+          "destination": "archive_revision.markdown exact text; restricted by default",
+          "tables": [
+            "archive_revision"
+          ]
+        },
+        "original": {
+          "destination": "archive_revision.original_pointer -> source_artifact canonical original subtree, immutable",
+          "tables": [
+            "archive_revision",
+            "source_artifact"
+          ]
+        },
+        "source": {
+          "destination": "source_artifact.repository_path through provenance_anchor / revision_provenance",
+          "tables": [
+            "provenance_anchor",
+            "revision_provenance",
+            "source_artifact"
+          ]
+        }
+      }
+    },
+    {
+      "file": "data/v1/authoring_queue.json",
+      "kind": null,
+      "records": 1025,
+      "sha256": "3e72dda9de5460f6eea1108bbf953b9c8b3fdb83925427e5a88b1ec6f2d868b3",
+      "ordered_ids_sha256": "6e0d5fabde44c639ddf721adf7eea781ec3c561c0d9257d01f526afbc760e9cd",
+      "record_disposition": "Every record preserved using this profile; originals and envelope also retained in source_artifact. No filtering or publication implied.",
+      "fields": {
+        "author_review_hours": {
+          "destination": "authoring_task.hours_min / hours_max",
+          "tables": [
+            "authoring_task"
+          ]
+        },
+        "estimate_basis": {
+          "destination": "authoring_task.estimate_basis",
+          "tables": [
+            "authoring_task"
+          ]
+        },
+        "id": {
+          "destination": "authoring_task.external_id",
+          "tables": [
+            "authoring_task"
+          ]
+        },
+        "owner_stage": {
+          "destination": "authoring_task.owner_stage",
+          "tables": [
+            "authoring_task"
+          ]
+        },
+        "remaining_work": {
+          "destination": "authoring_step(ordinal,description)",
+          "tables": [
+            "authoring_step"
+          ]
+        },
+        "status": {
+          "destination": "authoring_task.status",
+          "tables": [
+            "authoring_task"
+          ]
+        },
+        "topic_id": {
+          "destination": "authoring_task.topic_object_id",
+          "tables": [
+            "authoring_task"
+          ]
+        }
+      }
+    }
+  ]
+}

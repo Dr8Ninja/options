@@ -1,0 +1,2316 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "QZ-M01",
+      "module_id": "M01",
+      "competency_ids": [
+        "C-M01"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is notional different from cash required and worst loss?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M01-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Adding sequential returns; treating premium as notional.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M02",
+      "module_id": "M02",
+      "competency_ids": [
+        "C-M02"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "How can an ETN fail when its reference index does not?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M02-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Ignoring issuer credit and daily reset compounding.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M03",
+      "module_id": "M03",
+      "competency_ids": [
+        "C-M03"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Who owes what after assignment, and who guarantees whose performance?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M03-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Confusing exercise style with settlement medium.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M04",
+      "module_id": "M04",
+      "competency_ids": [
+        "C-M04"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Can a stop guarantee an exit price during a gap?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M04-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Treating displayed mid or queue position as a guaranteed fill.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M05",
+      "module_id": "M05",
+      "competency_ids": [
+        "C-M05"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is broker margin neither a stop nor a maximum loss?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M05-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Ignoring exercise charges or using present tax rates in old samples.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M06",
+      "module_id": "M06",
+      "competency_ids": [
+        "C-M06"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can a profitable firm run out of cash?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M06-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Substituting valuation conviction for an option timing thesis.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M07",
+      "module_id": "M07",
+      "competency_ids": [
+        "C-M07"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why must an inflation backtest use the first published vintage?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M07-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Using revised data or knowing releases before timestamps.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M08",
+      "module_id": "M08",
+      "competency_ids": [
+        "C-M08"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Can a historically negative hedge correlation be assumed in a crisis?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M08-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Treating sample correlation as stable causation.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M09",
+      "module_id": "M09",
+      "competency_ids": [
+        "C-M09"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is an earnings gap different from smooth daily variance?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M09-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Subtracting volatility rather than variance; ignoring after-hours announcements.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M10",
+      "module_id": "M10",
+      "competency_ids": [
+        "C-M10"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Does an 80% win rate imply positive expectancy?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M10-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Gambler's fallacy; confusing mutually exclusive and independent events.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M11",
+      "module_id": "M11",
+      "competency_ids": [
+        "C-M11"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why does selecting the best of many trials invalidate an ordinary single-test p-value?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M11-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Multiple testing, selection bias and outcome-conditioned hypotheses.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M12",
+      "module_id": "M12",
+      "competency_ids": [
+        "C-M12"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can random cross-validation leak adjacent financial observations?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M12-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Forecasting returns and volatility as interchangeable; ignoring regime breaks.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M13",
+      "module_id": "M13",
+      "competency_ids": [
+        "C-M13"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "When does a Taylor approximation fail despite correct derivatives?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M13-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Mismatched units, step-size cancellation and unconstrained optimization.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M14",
+      "module_id": "M14",
+      "competency_ids": [
+        "C-M14"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is a pricing measure not a forecast of actual returns?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M14-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Treating every process as continuous or every market as complete.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M15",
+      "module_id": "M15",
+      "competency_ids": [
+        "C-M15"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "What information would show that a visual setup adds net value?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M15-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Subjective hindsight drawings and post hoc selection.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M16",
+      "module_id": "M16",
+      "competency_ids": [
+        "C-M16"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Can the same candle imply the same option outcome at different IV?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M16-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Narrative certainty from candle names.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M17",
+      "module_id": "M17",
+      "competency_ids": [
+        "C-M17"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "How would two blinded annotators disagree on this pattern?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M17-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Selecting clean historical examples and omitting failed patterns.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M18",
+      "module_id": "M18",
+      "competency_ids": [
+        "C-M18"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Does a crossover indicate a profitable forward distribution?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M18-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Optimizing many windows on the evaluation sample.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M19",
+      "module_id": "M19",
+      "competency_ids": [
+        "C-M19"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can overbought persist during a strong trend?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M19-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Treating a threshold as a universal reversal law.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M20",
+      "module_id": "M20",
+      "competency_ids": [
+        "C-M20"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why does open interest not reveal the dealer's signed position?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M20-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Adding trade volume into open interest; labeling all calls bullish.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M21",
+      "module_id": "M21",
+      "competency_ids": [
+        "C-M21"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "What can a short put require even after collecting its premium?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M21-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Confusing payoff with profit; assuming all multipliers are 100.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M22",
+      "module_id": "M22",
+      "competency_ids": [
+        "C-M22"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can a spread temporarily create a large stock or cash obligation?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M22-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Assuming the long leg is automatically exercised to rescue a short leg.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M23",
+      "module_id": "M23",
+      "competency_ids": [
+        "C-M23"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Does high open interest guarantee a tight executable quote now?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M23-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Mismatching underlying timestamp, expiry, multiplier or adjusted deliverable.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M24",
+      "module_id": "M24",
+      "competency_ids": [
+        "C-M24"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "What downside remains in a covered call?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M24-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Calling covered calls income without downside exposure.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M25",
+      "module_id": "M25",
+      "competency_ids": [
+        "C-M25"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "When can an operational cash need exceed the terminal spread loss?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M25-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Applying terminal bounds to intraday funding obligations.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M26",
+      "module_id": "M26",
+      "competency_ids": [
+        "C-M26"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can a high win-rate condor have negative expectancy?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M26-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Equating terminal range width with edge or safety.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M27",
+      "module_id": "M27",
+      "competency_ids": [
+        "C-M27"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is a calendar's final P&L not fixed by today's payoff diagram?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M27-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Claiming a model-free calendar maximum profit or ignoring ratio tail exposure.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M28",
+      "module_id": "M28",
+      "competency_ids": [
+        "C-M28"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can a quoted box yield fail to be a free arbitrage?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M28-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Ignoring American exercise, stock borrow, collateral and settlement mismatch.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M29",
+      "module_id": "M29",
+      "competency_ids": [
+        "C-M29"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "What assumption fails if a parity trade needs unavailable short stock?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M29-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Using European parity as equality for American contracts.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M30",
+      "module_id": "M30",
+      "competency_ids": [
+        "C-M30"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why does N(d 2) still fail to give a real-world profit probability?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M30-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Using calendar days inconsistently or inferring future drift from risk-neutral pricing.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M31",
+      "module_id": "M31",
+      "competency_ids": [
+        "C-M31"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why does a tighter root tolerance not repair a biased discretization?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M31-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Negative tree probabilities; unstable grids; no confidence interval.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M32",
+      "module_id": "M32",
+      "competency_ids": [
+        "C-M32"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why must vega units state decimal volatility or one volatility point?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M32-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Mixing per-share, per-contract and cash Greeks.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M33",
+      "module_id": "M33",
+      "competency_ids": [
+        "C-M33"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "How does a sticky-strike vanna estimate differ from sticky-delta scenario P&L?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M33-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Treating vanna/charm dealer estimates as observed positions.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M34",
+      "module_id": "M34",
+      "competency_ids": [
+        "C-M34"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "When can long gamma lose money despite active rebalancing?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M34-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Reporting scalping proceeds without option mark loss or funding.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M35",
+      "module_id": "M35",
+      "competency_ids": [
+        "C-M35"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "How do overnight gaps alter a close-to-close versus intraday estimator?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M35-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Mixing log/simple returns, annualization bases or adjusted/raw prices.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M36",
+      "module_id": "M36",
+      "competency_ids": [
+        "C-M36"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why does a positive average variance spread not ensure a profitable retail trade?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M36-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Ignoring crash compensation, costs and overlapping observations.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M37",
+      "module_id": "M37",
+      "competency_ids": [
+        "C-M37"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Is positive total variance sufficient for an arbitrage-free smile?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M37-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Unconstrained interpolation; mixing American quotes with European formulas.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M38",
+      "module_id": "M38",
+      "competency_ids": [
+        "C-M38"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why does small remaining premium not mean small risk near expiry?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M38-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Extrapolating ordinary-day fills or claiming universal dealer-gamma causality.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M39",
+      "module_id": "M39",
+      "competency_ids": [
+        "C-M39"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why cannot spot VIX be bought and held directly?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M39-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Averaging volatilities; treating VIX ETPs as spot; ignoring acceleration terms.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M40",
+      "module_id": "M40",
+      "competency_ids": [
+        "C-M40"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why does fitting vanillas not identify barrier risk uniquely?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M40-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Choosing complexity by in-sample fit; invalid Heston/SABR parameter regions.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M41",
+      "module_id": "M41",
+      "competency_ids": [
+        "C-M41"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why does index variance differ from average constituent variance?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M41-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Ignoring constituent weights, jumps, rebalancing and index/stock settlement differences.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M42",
+      "module_id": "M42",
+      "competency_ids": [
+        "C-M42"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can a correct long-term futures thesis still exhaust cash?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M42-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Confusing futures daily settlement with prepaid premium or perpetual spot exposure.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M43",
+      "module_id": "M43",
+      "competency_ids": [
+        "C-M43"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is equity BSM with zero yield wrong for an FX option?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M43-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Ignoring foreign rates, commodity storage or negative-rate model limits.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M44",
+      "module_id": "M44",
+      "competency_ids": [
+        "C-M44"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can equal terminal prices produce different Asian or barrier payouts?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M44-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Applying vanilla Greeks to barriers/autocallables without jump/monitoring risk.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M45",
+      "module_id": "M45",
+      "competency_ids": [
+        "C-M45"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "When should a noisy positive Kelly estimate still be rejected?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M45-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Sizing from margin; full Kelly with uncertain tails.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M46",
+      "module_id": "M46",
+      "competency_ids": [
+        "C-M46"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "What losses can a 99% VaR number conceal?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M46-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Treating VaR as worst loss; excluding stressed correlations.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M47",
+      "module_id": "M47",
+      "competency_ids": [
+        "C-M47"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can hedges reduce delta but increase cash needs?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M47-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Assuming portfolio-margin offsets persist or NSE SPAN equals CME SPAN2.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M48",
+      "module_id": "M48",
+      "competency_ids": [
+        "C-M48"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can many small short-vol positions create one concentrated bet?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M48-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Diversifying labels rather than exposures; ignoring cross-gamma.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M49",
+      "module_id": "M49",
+      "competency_ids": [
+        "C-M49"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "What should happen when internal and broker positions disagree?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M49-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Blind resubmission after timeout; missing idempotency or stale risk snapshots.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M50",
+      "module_id": "M50",
+      "competency_ids": [
+        "C-M50"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why does a passive fill correlate with an unfavorable next price?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M50-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Assuming price-time across all venues or observing hidden liquidity directly.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M51",
+      "module_id": "M51",
+      "competency_ids": [
+        "C-M51"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is dealer gamma from open interest unidentified without position assumptions?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M51-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Assigning every customer trade to one dealer sign.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M52",
+      "module_id": "M52",
+      "competency_ids": [
+        "C-M52"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can the lowest commission route have the worst net result?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M52-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Midpoint fills, independent perfect multi-leg fills and zero impact.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M53",
+      "module_id": "M53",
+      "competency_ids": [
+        "C-M53"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Does rolling reset the economic loss of a position?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M53-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Chasing recovery, confusing credits with profit.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M54",
+      "module_id": "M54",
+      "competency_ids": [
+        "C-M54"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why cannot today's survivor universe be used as yesterday's opportunity set?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M54-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Stale marks, revised contracts, timezone errors and licensed-data redistribution.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M55",
+      "module_id": "M55",
+      "competency_ids": [
+        "C-M55"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "What result would cause abandonment of this strategy?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M55-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Testing until significant; failure to report all trials.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M56",
+      "module_id": "M56",
+      "competency_ids": [
+        "C-M56"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can correct payoff arithmetic still create a fraudulent-looking backtest?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M56-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Look-ahead fills, missing assignment and unlimited capital.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M57",
+      "module_id": "M57",
+      "competency_ids": [
+        "C-M57"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why can a pipeline still leak with an inappropriate time split?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M57-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Believing more features or random cross-validation proves tradable predictability.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M58",
+      "module_id": "M58",
+      "competency_ids": [
+        "C-M58"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why are a reproducible environment and a random seed separate controls?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M58-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Hard-coded secrets, mutable notebooks, silent API schema changes.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M59",
+      "module_id": "M59",
+      "competency_ids": [
+        "C-M59"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "What is the rule when data quality or execution state becomes unknown?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M59-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Vague discretionary overrides disguised as rules.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M60",
+      "module_id": "M60",
+      "competency_ids": [
+        "C-M60"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Can a losing trade be a good decision under a sound distribution?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M60-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Revenge trading, FOMO, anchoring, loss aversion and outcome bias.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M61",
+      "module_id": "M61",
+      "competency_ids": [
+        "C-M61"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is Sharpe unstable for short histories with rare losses?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M61-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Deleting losers or mixing process ratings with P&L.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M62",
+      "module_id": "M62",
+      "competency_ids": [
+        "C-M62"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why do SPX-style cash settlement and single-stock delivery need separate worksheets?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M62-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Assuming every index settles the same time or broker deadline equals exchange deadline.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M63",
+      "module_id": "M63",
+      "competency_ids": [
+        "C-M63"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Which document wins when a generic clearing overview contradicts a specific operative circular?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M63-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Blanket cash-settlement claim for stocks; outdated weekday/lot tables.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M64",
+      "module_id": "M64",
+      "competency_ids": [
+        "C-M64"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Which legal entity, currency and calendar determine this obligation?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M64-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Ignoring cross-currency collateral, local holidays and counterparty terms.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M65",
+      "module_id": "M65",
+      "competency_ids": [
+        "C-M65"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is a plausible mechanism insufficient evidence of a profitable edge?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M65-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Appeals to reputation, marketing, snippets or false precision.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M66",
+      "module_id": "M66",
+      "competency_ids": [
+        "C-M66"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "What evidence would distinguish liquidity feedback from the initial shock?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M66-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Single-cause stories and hindsight certainty.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-M67",
+      "module_id": "M67",
+      "competency_ids": [
+        "C-M67"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Would another person reproduce the same decision using the record available then?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-M67-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Equating real-money profits with competence or omitting incident review.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-B01",
+      "module_id": "B01",
+      "competency_ids": [
+        "C-B01"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Can a small premium create a large delivery obligation?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-B01-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Margin is maximum loss.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-B02",
+      "module_id": "B02",
+      "competency_ids": [
+        "C-B02"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Why is a percentage-point shock different from a percentage shock?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-B02-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Mixing decimal volatility and percent points.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    },
+    {
+      "id": "QZ-B03",
+      "module_id": "B03",
+      "competency_ids": [
+        "C-B03"
+      ],
+      "items": [
+        {
+          "kind": "explain",
+          "question": "Can another learner reproduce the environment and output?",
+          "weight": 25
+        },
+        {
+          "kind": "calculate",
+          "exercise_id": "EX-B03-N",
+          "weight": 35
+        },
+        {
+          "kind": "failure_case",
+          "question": "Diagnose and repair: Unpinned dependencies and hidden notebook state.",
+          "weight": 25
+        },
+        {
+          "kind": "transfer",
+          "question": "Change an assumption in the practical assignment; explain the decision consequence.",
+          "weight": 15
+        }
+      ],
+      "pass_score": 85,
+      "critical_error_policy": "Any unresolved critical error blocks mastery regardless of total.",
+      "retries": "Fresh variant after documented remediation; retain attempts and rubric version.",
+      "status": "blueprint; not a calibrated item bank"
+    }
+  ]
+}

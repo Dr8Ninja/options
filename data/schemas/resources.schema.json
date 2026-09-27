@@ -1,0 +1,266 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "access_limitations": {
+            "type": "string"
+          },
+          "alternative_limit": {
+            "type": "string"
+          },
+          "author_organization": {
+            "type": "string"
+          },
+          "canonical_url": {
+            "type": "string"
+          },
+          "cost": {
+            "type": "string",
+            "enum": [
+              "free",
+              "paid",
+              "mixed",
+              "unknown"
+            ]
+          },
+          "difficulty": {
+            "type": "string"
+          },
+          "doi": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "edition": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "entitlement_status": {
+            "type": "string"
+          },
+          "free_alternative_ids": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {},
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "geography": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "last_verification_date": {
+            "type": "string"
+          },
+          "original_provenance": {
+            "type": "object",
+            "properties": {
+              "json_pointer": {
+                "type": "string"
+              },
+              "master_line": {
+                "type": "integer"
+              },
+              "origin": {
+                "type": "string"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
+          "prerequisites": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "Essential",
+              "Recommended",
+              "Advanced",
+              "Optional",
+              "Reference"
+            ]
+          },
+          "publication_date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "publication_status": {
+            "type": "string"
+          },
+          "rationale": {
+            "type": "string"
+          },
+          "recommended_audience": {
+            "type": "string"
+          },
+          "replacement_ids": {
+            "type": "array",
+            "items": {}
+          },
+          "resource_type": {
+            "type": "string"
+          },
+          "rights": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "foundational",
+              "optional"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "access_or_inherited_metadata_only",
+              "limited_review",
+              "selected_sections_reviewed"
+            ]
+          },
+          "study_hours": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "supersedes_ids": {
+            "type": "array",
+            "items": {}
+          },
+          "time_basis": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "topics_competencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unknowns": {
+            "type": "object",
+            "properties": {
+              "doi": {
+                "type": "string"
+              },
+              "edition": {
+                "type": "string"
+              },
+              "publication_date": {
+                "type": "string"
+              },
+              "updated_date": {
+                "type": "string"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
+          "updated_date": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "verification_scope": {
+            "type": "string"
+          },
+          "video_timestamp_reason": {
+            "type": "string"
+          },
+          "video_timestamps": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "access_limitations",
+          "alternative_limit",
+          "author_organization",
+          "canonical_url",
+          "cost",
+          "difficulty",
+          "doi",
+          "edition",
+          "entitlement_status",
+          "free_alternative_ids",
+          "geography",
+          "id",
+          "last_verification_date",
+          "original_provenance",
+          "prerequisites",
+          "priority",
+          "publication_date",
+          "publication_status",
+          "rationale",
+          "recommended_audience",
+          "replacement_ids",
+          "resource_type",
+          "rights",
+          "role",
+          "status",
+          "study_hours",
+          "supersedes_ids",
+          "time_basis",
+          "title",
+          "topics_competencies",
+          "unknowns",
+          "updated_date",
+          "verification_scope",
+          "video_timestamp_reason",
+          "video_timestamps"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 resources interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

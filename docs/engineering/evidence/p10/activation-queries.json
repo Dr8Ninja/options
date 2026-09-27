@@ -1,0 +1,49 @@
+[ {
+  "query" : "insert into active_publication(singleton,publication_id,generation) values ($2,$1,$3)",
+  "calls" : 1,
+  "total_exec_time" : 514.54
+}, {
+  "query" : "SELECT validate_publication(NEW.publication_id)",
+  "calls" : 1,
+  "total_exec_time" : 352.191666
+}, {
+  "query" : "SELECT validate_publication_basics(pid)",
+  "calls" : 1,
+  "total_exec_time" : 303.819292
+}, {
+  "query" : "EXISTS(\n  WITH required AS (\n   SELECT l.owner_revision_id,l.target_object_id target FROM catalog_link l\n   UNION ALL SELECT owner_revision_id,requires_object_id FROM hard_prerequisite\n   UNION ALL SELECT owner_revision_id,requires_object_id FROM recommended_preparation\n   UNION ALL SELECT owner_revision_id,target_object_id FROM optional_enrichment\n  ) SELECT 1 FROM required x JOIN publication_entry owner ON owner.revision_id=x.owner_revision_id AND owner.publication_id=pid\n    WHERE NOT EXISTS(SELECT 1 FROM publication_entry t WHERE t.publication_id=pid AND t.object_id=x.target)\n )",
+  "calls" : 1,
+  "total_exec_time" : 237.444583
+}, {
+  "query" : "SELECT public.validate_dependency_graph($1)",
+  "calls" : 1,
+  "total_exec_time" : 200.293333
+}, {
+  "query" : "EXISTS(\n  WITH RECURSIVE selected AS (\n   SELECT object_id,revision_id FROM publication_entry WHERE publication_id=manifest\n   UNION ALL SELECT object_id,revision_id FROM draft_head WHERE manifest IS NULL\n  ), contracted AS (\n   SELECT s.object_id,coalesce(c.module_object_id,s.object_id) node FROM selected s\n   LEFT JOIN competency_revision c ON c.revision_id=s.revision_id\n  ), edges AS (\n   SELECT 'hard' graph,coalesce(a.node,s.object_id) src,coalesce(b.node,h.requires_object_id) dst\n    FROM selected s JOIN hard_prerequisite h ON h.owner_revision_id=s.revision_id\n    LEFT JOIN contracted a ON a.object_id=s.object_id LEFT JOIN contracted b ON b.object_id=h.requires_object_id\n   UNION ALL SELECT 'recommended',coalesce(a.node,s.object_id),coalesce(b.node,h.requires_object_id)\n    FROM selected s JOIN recommended_preparation h ON h.owner_revision_id=s.revision_id\n    LEFT JOIN contracted a ON a.object_id=s.object_id LEFT JOIN contracted b ON b.object_id=h.requires_object_id\n   UNION ALL SELECT 'successor',id,successor_id FROM catalog_object WHERE successor_id IS NOT NULL\n   UNION ALL SELECT 'replacement',s.object_id,l.target_object_id FROM selected s JOIN catalog_link l ON l.owner_revision_id=s.revision_id WHERE l.relation IN ('replaces','supersedes_resource','source_successor')\n   UNION ALL SELECT 'notice',older_notice_id,newer_notice_id FROM notice_supersession\n   UNION ALL SELECT 'rule',older_rule_id,newer_rule_id FROM rule_supersession\n  ), walk(graph,src,dst) AS (\n   SELECT graph,src,dst FROM edges UNION SELECT w.graph,w.src,e.dst FROM walk w JOIN edges e ON e.graph=w.graph AND e.src=w.dst\n  ) SELECT 1 FROM walk WHERE src=dst\n )",
+  "calls" : 2,
+  "total_exec_time" : 193.00395799999998
+}, {
+  "query" : "SELECT rebuild_public_catalog(NEW.publication_id)",
+  "calls" : 1,
+  "total_exec_time" : 161.824834
+}, {
+  "query" : "INSERT INTO public_catalog_filter\n SELECT pid,c.object_id,f.name,f.value FROM public_catalog_entry c\n CROSS JOIN LATERAL (VALUES ($2,c.kind),($3,c.difficulty),($4,c.priority),($5,c.resource_type),($6,c.cost),($7,c.author_organization),($8,c.geography),($9,c.verification_status),($10,c.readiness),($11,c.visibility)) f(name,value)\n WHERE c.publication_id=pid AND f.value IS NOT NULL\n UNION SELECT pid,c.object_id,$12,unnest(c.tags) FROM public_catalog_entry c WHERE c.publication_id=pid",
+  "calls" : 1,
+  "total_exec_time" : 61.988
+}, {
+  "query" : "EXISTS(SELECT 1 FROM catalog_link l JOIN publication_entry e ON e.revision_id=l.owner_revision_id WHERE e.publication_id=pid AND l.relation IN ('program_phase','topic_subtopic') GROUP BY l.relation,l.target_object_id HAVING count(*)>1)\n OR EXISTS(SELECT 1 FROM publication_entry p JOIN catalog_link phases ON phases.owner_revision_id=p.revision_id AND phases.relation='program_phase'\n  JOIN publication_entry ph ON ph.publication_id=pid AND ph.object_id=phases.target_object_id\n  JOIN catalog_link modules ON modules.owner_revision_id=ph.revision_id AND modules.relation='phase_module'\n  WHERE p.publication_id=pid GROUP BY p.object_id,modules.target_object_id HAVING count(*)>1)\n OR EXISTS(SELECT 1 FROM catalog_link l JOIN publication_entry e ON e.revision_id=l.owner_revision_id WHERE e.publication_id=pid AND l.relation='module_topic'\n  GROUP BY l.target_object_id HAVING count(*)>1 AND count(l.annotation)<count(*)-1)",
+  "calls" : 1,
+  "total_exec_time" : 50.661709
+}, {
+  "query" : "EXISTS(SELECT 1 FROM publication_required_reference x JOIN publication_entry e ON e.revision_id=x.owner_revision_id AND e.publication_id=pid\n  WHERE NOT EXISTS(SELECT 1 FROM publication_entry target WHERE target.publication_id=pid AND\n   ((x.target_object_id IS NOT NULL AND target.object_id=x.target_object_id) OR (x.exact_revision_id IS NOT NULL AND target.revision_id=x.exact_revision_id))))",
+  "calls" : 1,
+  "total_exec_time" : 48.054
+}, {
+  "query" : "INSERT INTO public_catalog_filter\n WITH c AS MATERIALIZED (SELECT publication_id,object_id,revision_id,external_id,kind FROM public_catalog_entry WHERE publication_id=$1),\n l AS MATERIALIZED (SELECT a.object_id owner,a.revision_id,l.relation,b.object_id target,b.external_id target_id,a.external_id owner_id FROM c a JOIN catalog_link l ON l.owner_revision_id=a.revision_id JOIN c b ON b.object_id=l.target_object_id),\n module_topic AS (SELECT owner module,target topic FROM l WHERE relation=$2),\n phase_module AS (SELECT owner phase,target module FROM l WHERE relation=$3),\n hierarchy AS (\n SELECT target object_id,$4 name,owner value FROM l WHERE relation=$5\n UNION SELECT pm.module,$6,pm.phase FROM phase_module pm\n UNION SELECT mt.topic,$7,mt.module FROM module_topic mt\n UNION SELECT mt.topic,$8,pm.phase FROM module_topic mt JOIN phase_module pm USING(module)\n UNION SELECT pm.module,$9,p.owner FROM phase_module pm JOIN l p ON p.target=pm.phase AND p.relation=$10\n UNION SELECT target,$11,owner FROM l WHERE relation IN ($12 /*, ... */)\n UNION SELECT mt.topic,$13,p.owner FROM l p JOIN module_topic mt ON mt.module=p.target WHERE p.relation=$14\n UNION SELECT project.object_id,$15,p.object_id FROM c p JOIN course_project cp ON cp.path_revision_id=p.revision_id JOIN c project ON project.revision_id=cp.project_revision_id WHERE cp.required\n ),\n assignments AS (SELECT a.resource_object_id resource,l.target topic FROM c a0 JOIN assignment_revision a ON a.revision_id=a0.revision_id JOIN l ON l.owner=a0.object_id AND l.relation=$16),\n memberships AS (\n SELECT * FROM hierarchy\n UNION SELECT owner,$17,target FROM l WHERE relation=$18\n UNION SELECT target,$19,owner FROM l WHERE relation=$20\n UNION SELECT object_id,lower(kind),object_id FROM c WHERE kind IN ($21 /*, ... */)\n UNION SELECT resource,$22,topic FROM assignments\n UNION SELECT a.resource,h.name,h.value FROM assignments a JOIN hierarchy h ON h.object_id=a.topic WHERE h.name IN ($23 /*, ... */)\n )\n SELECT DISTINCT $24,m.object_id,m.name,target.external_id FROM memberships m JOIN c target ON target.object_id=m.value\n ON CONFLICT DO NOTHING",
+  "calls" : 1,
+  "total_exec_time" : 41.983459
+}, {
+  "query" : "INSERT INTO public_search_document(publication_id,object_id,kind,title,title_key,author_text,summary,search_vector,difficulty,priority,readiness,hours_min)\n SELECT publication_id,object_id,kind,title,title_key,coalesce(author_organization,$1),summary,\n setweight(to_tsvector($2,title),$3) || setweight(to_tsvector($4,coalesce(author_organization,$5)),$6) ||\n setweight(to_tsvector($7,array_to_string(tags,$8)),$9) || setweight(to_tsvector($10,summary),$11),\n difficulty,priority,readiness,hours_min FROM public_catalog_entry\n WHERE publication_id=$12 AND kind IN ($13 /*, ... */)",
+  "calls" : 1,
+  "total_exec_time" : 38.402249
+} ]

@@ -1,0 +1,134 @@
+{
+  "date": "2026-09-23",
+  "scope": "Local P06 design prototype only",
+  "browser": "153.0.8010.54",
+  "viewports": [
+    320,
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "layoutChecks": 350,
+  "axeChecks": 36,
+  "stateChecks": 32,
+  "interactions": [
+    {
+      "name": "mobile-menu-expands",
+      "passed": true
+    },
+    {
+      "name": "navigation-focuses-title",
+      "passed": false
+    },
+    {
+      "name": "numeric-error-focus",
+      "passed": true
+    },
+    {
+      "name": "practice-feedback",
+      "passed": true
+    },
+    {
+      "name": "bookmark-across-navigation",
+      "passed": true
+    },
+    {
+      "name": "note-confirmation",
+      "passed": true
+    },
+    {
+      "name": "dialog-focus",
+      "passed": true
+    },
+    {
+      "name": "dialog-focus-trapped",
+      "passed": true
+    },
+    {
+      "name": "dialog-returns-focus",
+      "passed": true
+    },
+    {
+      "name": "auth-error-label-focus",
+      "passed": true
+    },
+    {
+      "name": "filters-shareable",
+      "passed": true
+    },
+    {
+      "name": "resource-free-only",
+      "passed": false
+    },
+    {
+      "name": "exact-id-result",
+      "passed": true
+    },
+    {
+      "name": "zero-reviewed-lessons-empty",
+      "passed": false
+    },
+    {
+      "name": "mobile-chart-data-table-open",
+      "passed": true
+    },
+    {
+      "name": "submit-confirmation",
+      "passed": true
+    },
+    {
+      "name": "feedback-after-submit",
+      "passed": true
+    },
+    {
+      "name": "reduced-motion-preference",
+      "passed": true
+    },
+    {
+      "name": "text-spacing-no-horizontal-overflow",
+      "passed": false
+    },
+    {
+      "name": "text-200-percent-no-overflow",
+      "passed": false
+    }
+  ],
+  "screenshots": [
+    "lesson-M01.01-390-light.png",
+    "resources-390-light.png",
+    "auth-register-390-light.png",
+    "home-1440-light.png",
+    "curriculum-1440-light.png",
+    "resources-1440-light.png",
+    "dossier-1440-light.png",
+    "publish-1440-light.png",
+    "lesson-M01.01-1440-dark.png",
+    "dashboard-1440-dark.png"
+  ],
+  "runtimeErrors": [],
+  "failures": [
+    {
+      "interaction": "navigation-focuses-title"
+    },
+    {
+      "interaction": "resource-free-only"
+    },
+    {
+      "interaction": "zero-reviewed-lessons-empty"
+    },
+    {
+      "interaction": "text-spacing-no-horizontal-overflow"
+    },
+    {
+      "interaction": "text-200-percent-no-overflow"
+    }
+  ],
+  "passed": false,
+  "productionTestsRun": false,
+  "screenReaderTestsRun": false
+}

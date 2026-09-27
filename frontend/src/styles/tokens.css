@@ -1,0 +1,72 @@
+/* Generated from design/tokens.json. */
+:root, [data-theme="light"] {
+  --background: #f7f6f0;
+  --surface: #fffef9;
+  --ink: #202d2b;
+  --muted: #52615d;
+  --line: #c8cfca;
+  --control: #74867c;
+  --accent: #146458;
+  --onAccent: #ffffff;
+  --soft: #e4eee7;
+  --warning: #87501a;
+  --warningSurface: #fbefd8;
+  --danger: #a73833;
+  --dangerSurface: #fae9e5;
+  --focus: #005fba;
+}
+[data-theme="dark"] {
+  --background: #141d1c;
+  --surface: #1c2826;
+  --ink: #eef3ec;
+  --muted: #a6b6ad;
+  --line: #43524c;
+  --control: #7c9389;
+  --accent: #a4d2bd;
+  --onAccent: #13231c;
+  --soft: #263d32;
+  --warning: #e9c28b;
+  --warningSurface: #372d20;
+  --danger: #ffb5ac;
+  --dangerSurface: #3f2826;
+  --focus: #8ec5ff;
+}
+:root {
+  --font-interface: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-editorial: Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --text-caption: 0.8125rem;
+  --text-small: 0.875rem;
+  --text-body: 1rem;
+  --text-reading: 1.1875rem;
+  --text-lead: 1.125rem;
+  --text-h3: 1.25rem;
+  --text-h2: 2rem;
+  --text-h1Min: 2.25rem;
+  --text-h1Max: 3.5rem;
+  --text-heroMax: 4.75rem;
+  --leading-heading: 1.12;
+  --leading-interface: 1.55;
+  --leading-reading: 1.75;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-48: 48px;
+  --space-64: 64px;
+  --space-96: 96px;
+  --maxWidthPx: 1248px;
+  --readingCh: 66ch;
+  --railPx: 232px;
+  --tocPx: 176px;
+  --gutterMobilePx: 20px;
+  --gutterDesktopPx: 40px;
+  --radius-control: 6px;
+  --radius-panel: 10px;
+  --radius-pill: 999px;
+  --target: 44px;
+  --focus-width: 3px;
+  --focus-offset: 3px;
+}

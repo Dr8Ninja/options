@@ -1,0 +1,13 @@
+{
+  "stage": "P10",
+  "date": "2026-09-27",
+  "amendments": [
+    {
+      "path": "docs/engineering/SECURITY.md",
+      "previous_sha256": "f3261455d71f90d0cf34bc2b8abd28e543997cda92998dde133cd40e961fcb3c",
+      "sha256": "e1b3eb42bc4ea2bd1b58a5111909ad52bdb379fd813bd54d6218798869b78861",
+      "reason": "Align P03 quiz wording with the accepted P05 public-description/protected-attempt distinction and document the implemented P10 public DTO, snapshot, rule-notice and no-store boundary. No private, preview or answer-key permission is broadened.",
+      "decision": "docs/project/DECISIONS.md#d042--public-dtos-read-approved-postgresql-snapshots"
+    }
+  ]
+}

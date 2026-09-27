@@ -1,0 +1,88 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "module_id": {
+            "type": "string"
+          },
+          "competency_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "exercise_id": {
+                  "type": "string"
+                },
+                "kind": {
+                  "type": "string"
+                },
+                "question": {
+                  "type": "string"
+                },
+                "weight": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "kind",
+                "weight"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "pass_score": {
+            "type": "integer"
+          },
+          "critical_error_policy": {
+            "type": "string"
+          },
+          "retries": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "module_id",
+          "competency_ids",
+          "items",
+          "pass_score",
+          "critical_error_policy",
+          "retries",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 quiz_blueprints interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

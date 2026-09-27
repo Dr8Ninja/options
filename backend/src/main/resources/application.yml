@@ -1,0 +1,83 @@
+spring:
+  application:
+    name: options-learning
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    hikari:
+      connection-timeout: 3000
+      validation-timeout: 1000
+      maximum-pool-size: 10
+      data-source-properties:
+        socketTimeout: 3
+        connectTimeout: 3
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    url: ${MIGRATION_DB_URL:${spring.datasource.url}}
+    user: ${MIGRATION_DB_USER:${spring.datasource.username}}
+    password: ${MIGRATION_DB_PASSWORD:${spring.datasource.password}}
+    enabled: ${MIGRATIONS_ENABLED:true}
+    clean-disabled: true
+    validate-on-migrate: true
+    baseline-on-migrate: false
+  session:
+    timeout: 15m
+    jdbc:
+      initialize-schema: never
+server:
+  address: 127.0.0.1
+  port: 8080
+  forward-headers-strategy: none
+  shutdown: graceful
+  servlet:
+    session:
+      cookie:
+        name: __Host-OTRSESSION
+        path: /
+        secure: true
+        http-only: true
+        same-site: lax
+  error:
+    include-message: never
+    include-stacktrace: never
+management:
+  server:
+    port: 8081
+    address: 127.0.0.1
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+      show-components: never
+      probes:
+        enabled: true
+      group:
+        liveness:
+          include: livenessState
+        readiness:
+          include: readinessState,db
+springdoc:
+  api-docs:
+    enabled: false
+app:
+  public-origin: ${PUBLIC_ORIGIN}
+  environment: ${APP_ENVIRONMENT}
+logging:
+  structured:
+    format:
+      console: ecs
+  level:
+    org.options.platform: INFO
+    org.springframework.web: WARN
+    org.hibernate: WARN
+    org.hibernate.orm.jdbc.error: OFF
+    org.hibernate.SQL: OFF
+    org.hibernate.orm.jdbc.bind: OFF
+    com.zaxxer.hikari: WARN

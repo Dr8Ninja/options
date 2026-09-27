@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-21",
+  "scope": "Initial Phase 2 research observations. These records are not a finalized resource library or a full literature review. Original source IDs and metadata are not overwritten.",
+  "records": [
+    {
+      "id": "Q001", "original_resource_ids": ["R01"], "content_ids": ["M21", "M22", "M62"],
+      "title": "OCC — Characteristics and Risks of Standardized Options",
+      "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+      "review_scope": "official_landing_page_content",
+      "observation": "The page identifies the June 2024 ODD and explains its replacement of older editions and the T+1-related update.",
+      "limitation": "Landing-page verification does not establish a full PDF review, contract-specific procedures or broker deadlines.",
+      "next_step": "Map the current PDF sections to contract/assignment competencies and check linked notices."
+    },
+    {
+      "id": "Q002", "original_resource_ids": ["R45"], "content_ids": ["M46", "M49", "M67"],
+      "title": "Federal Reserve — SR 26-2: Revised Guidance on Model Risk Management",
+      "url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm",
+      "review_scope": "official_letter_content",
+      "observation": "The April 17, 2026 letter explicitly supersedes SR 11-7 and SR 21-8. The inherited resource identity and supersession note are supported.",
+      "limitation": "This is bank supervisory guidance; do not present its scope as a retail-trader legal obligation. The attached detailed guidance still needs review.",
+      "next_step": "Select model-development, validation and governance readings from the attachment with exact scope."
+    },
+    {
+      "id": "Q003", "original_resource_ids": ["R56"], "content_ids": ["M63", "M66"],
+      "title": "SEBI — Trading Behaviour of Individual Traders in the Equity Derivatives Segment (FY25–FY26)",
+      "url": "https://www.sebi.gov.in/reports-and-statistics/research/aug-2026/study-trading-behaviour-of-individual-traders-in-the-equity-derivatives-segment-fy25-fy26-_103836.html",
+      "review_scope": "landing_page_verified_full_text_retrieval_failed",
+      "observation": "The official landing page identifies the report and date August 20, 2026. Its PDF viewer exposed a linked attachment, but direct PDF retrieval returned an internal error.",
+      "attachment_url": "https://www.sebi.gov.in/sebi_data/attachdocs/aug-2026/1787233601328.pdf",
+      "limitation": "No report statistics, population definitions or conclusions have been verified from the PDF.",
+      "next_step": "Retrieve the report through an accessible official route, read methodology and reconcile it with earlier SEBI studies."
+    },
+    {
+      "id": "Q004", "original_resource_ids": ["R57"], "content_ids": ["M54", "M63"],
+      "title": "NSE — Equity Derivatives Contract Information",
+      "url": "https://www.nseindia.com/static/products-services/equity-derivatives-contract-information",
+      "review_scope": "official_directory_and_relevant_links",
+      "observation": "The official directory links contract specifications, quantity freezes, permitted lot sizes and an introduction/exclusion tracker.",
+      "limitation": "The linked daily files were not downloaded or reconciled in this pass. No current lot-size table is certified.",
+      "next_step": "Design a dated instrument worksheet and verify exact contract versions against notices and daily files."
+    },
+    {
+      "id": "Q005", "original_resource_ids": ["R58"], "content_ids": ["M05", "M56", "M63"],
+      "title": "NSE — Securities Transaction Tax",
+      "url": "https://www.nseindia.com/static/products-services/equity-derivatives-securities-transaction-tax",
+      "review_scope": "official_tax_table_and_basis_excerpt",
+      "observation": "The page distinguishes rates before and from April 1, 2026, and separates option-sale premium from exercise intrinsic value as tax bases.",
+      "limitation": "This observation is not a personalized tax determination or a complete statutory review. Rates have not been placed in application code.",
+      "next_step": "Create source-backed, effective-dated fee/tax examples and reconcile primary legislation for the intended year."
+    },
+    {
+      "id": "Q006", "original_resource_ids": ["R61"], "content_ids": ["M47", "M62"],
+      "title": "FINRA — Rule 4210",
+      "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4210",
+      "review_scope": "rule_access_and_portfolio_margin_excerpt",
+      "observation": "Paragraph (g) distinguishes portfolio margin from strategy-based margin and includes eligibility, monitoring and risk-analysis provisions.",
+      "limitation": "Only relevant portfolio-margin portions were examined. Other paragraphs, amendment histories and broker overlays have not been fully reviewed.",
+      "next_step": "Map selected requirements by account/product and verify operative amendment dates before authoring rules lessons."
+    },
+    {
+      "id": "Q007", "original_resource_ids": ["R33"], "content_ids": ["M31", "M58"],
+      "title": "QuantLib — Official Documentation",
+      "url": "https://www.quantlib.org/docs.shtml",
+      "review_scope": "official_documentation_directory",
+      "observation": "The directory distinguishes the official reference manual from community Python documentation, author guides, notebooks and screencasts.",
+      "limitation": "Linked videos have not been watched and example results have not been executed or independently validated.",
+      "next_step": "Select exact calendar, vanilla-pricing and risk examples; identify library version and independent reference values."
+    },
+    {
+      "id": "Q008", "original_resource_ids": [], "content_ids": ["M21", "M22"],
+      "title": "OIC — Exercising Options",
+      "url": "https://www.optionseducation.org/optionsoverview/exercising-options",
+      "review_scope": "primary_education_content",
+      "observation": "A focused teaching candidate for holder instructions, clearing/member assignment, early exercise and expiry uncertainty.",
+      "limitation": "US-style examples must not be generalized to every jurisdiction or exercise style.",
+      "next_step": "Build original contrasting assignment cases and map the reading to exact competencies."
+    },
+    {
+      "id": "Q009", "original_resource_ids": [], "content_ids": ["M24", "M25", "M26", "M27"],
+      "title": "OIC — Options Strategies Quick Guide (2025)",
+      "url": "https://www.optionseducation.org/getmedia/68305977-b772-41c8-bf1d-3d405725b3cf/options-strategies-quick-guide-2025.pdf",
+      "review_scope": "primary_search_excerpt_only",
+      "observation": "A concise structure-reference candidate was located, including terminology for ratio and synthetic positions.",
+      "limitation": "The full PDF and its diagrams have not been reviewed. Structure descriptions cannot establish an expected trading edge.",
+      "next_step": "Review each relevant strategy against signed-leg algebra and operational cases."
+    },
+    {
+      "id": "Q010", "original_resource_ids": [], "content_ids": ["M13"],
+      "title": "MIT OCW — 18.01SC Single Variable Calculus, Fall 2010",
+      "url": "https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/",
+      "review_scope": "official_course_description_and_resource_types",
+      "observation": "The independent-learner course offers lectures, worked examples, problem sets and exam solutions, making it a candidate for the missing calculus bridge.",
+      "limitation": "Specific lectures, exercises and study-time assignments have not been selected; linking does not grant blanket redistribution rights.",
+      "next_step": "Map differentiation, integration and approximation skills to pricing/Greek entry competencies."
+    },
+    {
+      "id": "Q011", "original_resource_ids": [], "content_ids": ["M13", "M48"],
+      "title": "MIT OCW — 18.06 Linear Algebra, Spring 2010",
+      "url": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/",
+      "review_scope": "official_course_description_and_resource_types",
+      "observation": "Gilbert Strang's course includes matrix systems, eigenvalues and positive definite matrices, with lectures, assignments and exams.",
+      "limitation": "The entire course is not automatically a prerequisite for beginner options study.",
+      "next_step": "Select only required entry material, with deeper PCA/covariance preparation for quantitative paths."
+    },
+    {
+      "id": "Q012", "original_resource_ids": [], "content_ids": ["M58"],
+      "title": "NumPy — Absolute Basics for Beginners",
+      "url": "https://numpy.org/doc/stable/user/absolute_beginners.html",
+      "review_scope": "official_tutorial_sections",
+      "observation": "Array shape, types, indexing and views provide a concrete foundation for payoff grids and vectorized numerical work.",
+      "limitation": "A generic array tutorial does not teach financial units, time alignment or pricing semantics.",
+      "next_step": "Author a payoff-array exercise and a copies/views error case using a pinned teaching environment."
+    },
+    {
+      "id": "Q013", "original_resource_ids": [], "content_ids": ["M13", "M30", "M58"],
+      "title": "SciPy — Optimization and Root Finding",
+      "url": "https://docs.scipy.org/doc/scipy/reference/optimize.html",
+      "review_scope": "official_root_solver_reference_excerpt",
+      "observation": "The root_scalar reference exposes bracketed and derivative-based methods suitable for comparing numerical inversion behavior.",
+      "limitation": "Solver availability does not ensure a valid IV solution; option price bounds, model and conditioning must be checked separately.",
+      "next_step": "Assign Brent/bisection/Newton comparisons including zero-vega and invalid-price cases."
+    },
+    {
+      "id": "Q014", "original_resource_ids": [], "content_ids": ["M12", "M35", "M58"],
+      "title": "statsmodels — Time Series Analysis",
+      "url": "https://www.statsmodels.org/stable/tsa.html",
+      "review_scope": "official_time_series_reference_excerpt",
+      "observation": "The documentation covers autoregression, ARIMA and state-space estimation and forecasting.",
+      "limitation": "This is an implementation reference; it does not establish predictive performance or proper financial validation by itself.",
+      "next_step": "Create rolling-origin benchmark exercises and pair them with residual diagnostics."
+    },
+    {
+      "id": "Q015", "original_resource_ids": [], "content_ids": ["M55", "M56", "M57"],
+      "title": "scikit-learn — Common Pitfalls and Recommended Practices",
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "review_scope": "official_data_leakage_section",
+      "observation": "The preprocessing example demonstrates leakage when transforms learn from test data and shows the role of pipelines.",
+      "limitation": "Its generic example is not a sufficient time-series validation design for overlapping financial labels.",
+      "next_step": "Pair preprocessing controls with time-aware splits, overlap handling and an untouched holdout."
+    },
+    {
+      "id": "Q016", "original_resource_ids": [], "content_ids": ["M12", "M35"],
+      "title": "arch — Univariate Volatility Modeling",
+      "url": "https://bashtage.github.io/arch/univariate/univariate_volatility_modeling.html",
+      "review_scope": "maintainer_documentation_examples_and_contents",
+      "observation": "The examples include GARCH, GJR-GARCH, TARCH and Student-t errors, providing a more specific implementation anchor than a general statistics text.",
+      "limitation": "In-sample likelihood examples do not prove out-of-sample volatility forecasting superiority.",
+      "next_step": "Compare matched-horizon forecasts against simple baselines with a predeclared loss function."
+    },
+    {
+      "id": "Q017", "original_resource_ids": [], "content_ids": ["M31.06"],
+      "title": "Longstaff and Schwartz — Valuing American Options by Simulation: A Simple Least-Squares Approach",
+      "url": "https://academic.oup.com/rfs/article-abstract/14/1/113/1587472?login=false",
+      "review_scope": "primary_publisher_bibliographic_record_and_abstract",
+      "observation": "The journal record identifies volume 14, issue 1 (2001), pages 113–147, and continuation-value regression. The webpage also shows a later online posting date.",
+      "limitation": "Full text was not reviewed; do not substitute the webpage posting date for the original publication year.",
+      "next_step": "Obtain an authorized full-text route and design independent training/evaluation and tree-benchmark exercises."
+    },
+    {
+      "id": "Q018", "original_resource_ids": ["R12"], "content_ids": ["M41.10", "M41.17"],
+      "title": "Demeterfi, Derman, Kamal and Zou — Volatility Swaps research note",
+      "url": "https://emanuelderman.com/wp-content/uploads/1999/02/gs-volatility_swaps.pdf",
+      "review_scope": "author_hosted_pdf_search_excerpt",
+      "observation": "A direct paper route was located; its summary explicitly discusses unavailable strikes, jumps and volatility-of-volatility effects.",
+      "limitation": "The complete derivations and implementation conventions remain to be reviewed.",
+      "next_step": "Map replication assumptions to a finite-strike, jump-sensitive original lab."
+    },
+    {
+      "id": "Q019", "original_resource_ids": ["R37"], "content_ids": ["M39.01"],
+      "title": "Cboe — Selected Broad-Based Index, Equity and ETF Volatility Indices Methodology",
+      "url": "https://cdn.cboe.com/api/global/us_indices/governance/Volatility_Index_Methodology_Selected_Broad_Based_Index_Equity_and_ETF_Volatility_Indices.pdf",
+      "review_scope": "official_methodology_search_excerpt",
+      "observation": "A direct methodology PDF was located beyond the supplied governance-directory anchor.",
+      "limitation": "The complete methodology, revision history and exact applicable VIX sections have not been validated.",
+      "next_step": "Read the full methodology and reproduce a documented calculation before publishing a VIX lab."
+    },
+    {
+      "id": "Q020", "original_resource_ids": [], "content_ids": ["M39", "M46", "M66.15"],
+      "title": "BIS — The equity market turbulence of 5 February: the role of exchange-traded volatility products",
+      "url": "https://www.bis.org/publications/equity-market-turbulence-5-february-role-exchange-traded-volatility-products",
+      "review_scope": "institutional_case_analysis_content",
+      "observation": "The March 2018 analysis discusses leveraged/inverse volatility ETP rebalancing, feedback and spillovers. The page notes a graph correction.",
+      "limitation": "A historical explanatory analysis is not a complete causal identification of every trade or a future trading signal.",
+      "next_step": "Build a standalone 2018 case timeline and compare source claims with product terms and observable cash/risk mechanics."
+    },
+    {
+      "id": "Q021", "original_resource_ids": [], "content_ids": ["M30", "M37", "M40"],
+      "title": "Burkovska et al. — Calibration to American Options: Numerical Investigation of the de-Americanization",
+      "url": "https://arxiv.org/abs/1611.06181",
+      "review_scope": "original_preprint_metadata_and_abstract",
+      "observation": "The authors investigate de-Americanization calibration error and report that simplifying assumptions can produce large errors in some cases.",
+      "limitation": "Only metadata and abstract were reviewed; no independent reproduction or endorsement of a calibration method is claimed.",
+      "next_step": "Read the numerical setup and assess an explicit exercise-style calibration competency within the existing surface/model modules."
+    },
+    {
+      "id": "Q022", "original_resource_ids": [], "content_ids": ["M48.17", "M56"],
+      "title": "Cboe — BuyWrite Indices Methodology",
+      "url": "https://cdn.cboe.com/api/global/us_indices/governance/BXM_Methodology.pdf",
+      "review_scope": "official_search_discovery_only",
+      "observation": "A direct benchmark-methodology candidate was located for benchmark reconstruction.",
+      "limitation": "No methodology, cost assumption, total-return convention or historical result has been verified in this pass.",
+      "next_step": "Review methodology and return conventions; assess replication and implementation-shortfall exercises without adopting promotional performance claims."
+    },
+    {
+      "id": "Q023", "original_resource_ids": [], "content_ids": ["M54", "M58"],
+      "title": "yfinance — Maintainer Repository",
+      "url": "https://github.com/ranaroussi/yfinance",
+      "review_scope": "maintainer_readme_data_usage_notice",
+      "observation": "The README separates the tool from Yahoo's data rights, directs users to Yahoo's terms and describes the API as intended for personal use.",
+      "limitation": "The software license does not establish permission to host or redistribute market data. No provider terms or historical-chain completeness audit is complete.",
+      "next_step": "Keep candidate use limited to separately reviewed learning workflows; evaluate licensed or synthetic public exercise data."
+    },
+    {
+      "id": "Q024", "original_resource_ids": ["R57"], "content_ids": ["M21", "M63"],
+      "title": "NSE — Equity Derivatives Contract Specifications",
+      "url": "https://www.nseindia.com/static/products-services/equity-derivatives-contract-specifications",
+      "review_scope": "official_expiry_section_excerpt",
+      "observation": "The page includes product-specific expiry language, holiday adjustments and a link to NSE/FAOP/68747.",
+      "limitation": "Current daily listings and the entire circular transition chain have not been reconciled. This is not a frozen contract master.",
+      "next_step": "Check the linked circular and effective-date transitions, then map current versus historical contract examples."
+    },
+    {
+      "id": "Q025", "original_resource_ids": [], "content_ids": ["M58", "M63.17"],
+      "title": "SEBI — Safer participation of retail investors in Algorithmic trading",
+      "url": "https://www.sebi.gov.in/legal/circulars/feb-2025/safer-participation-of-retail-investors-in-algorithmic-trading_91614.html",
+      "review_scope": "official_circular_metadata_search_result",
+      "observation": "The February 4, 2025 circular is identified as SEBI/HO/MIRSD/MIRSD-PoD/P/CIR/2025/0000013.",
+      "limitation": "The original notice alone does not establish current implementation dates or all exchange/broker operational conditions.",
+      "next_step": "Review the original text together with later notices and exchange implementation standards."
+    },
+    {
+      "id": "Q026", "original_resource_ids": [], "content_ids": ["M58", "M63.17", "M63.18"],
+      "title": "SEBI — Extension of timeline for retail algorithmic trading implementation",
+      "url": "https://www.sebi.gov.in/legal/circulars/sep-2025/extension-of-timeline-for-implementation-of-sebi-circular-dated-february-04-2025-on-safer-participation-of-retail-investors-in-algorithmic-trading-_96979.html",
+      "attachment_url": "https://www.sebi.gov.in/sebi_data/attachdocs/sep-2025/1759232056254.pdf",
+      "review_scope": "official_metadata_and_attachment_search_excerpt",
+      "observation": "The September 30, 2025 notice contains phased milestones and an April 1, 2026 implementation provision in the retrieved excerpt.",
+      "limitation": "Subsequent changes and detailed exchange operational standards still require review.",
+      "next_step": "Build a supersession/implementation chain instead of treating the first circular's date as final."
+    },
+    {
+      "id": "Q027", "original_resource_ids": [], "content_ids": ["M22", "M63.07"],
+      "title": "NSE Clearing — Settlement Mechanism",
+      "url": "https://www.nseclearing.in/clearing-settlement/equity-derivatives/settlement-mechanism",
+      "review_scope": "official_overview_relevant_content_conflict_flagged",
+      "observation": "The retrieved overview, labeled updated September 27, 2023, includes broad cash-exercise-settlement wording under index and individual-securities options. This requires reconciliation with specific physical-delivery circulars.",
+      "limitation": "Do not use this overview alone to assert current stock-derivative settlement. An official host and a recent access date do not resolve conflicting scope.",
+      "next_step": "Review current consolidated clearing circulars, product terms and SEBI's operative physical-settlement requirements."
+    },
+    {
+      "id": "Q028", "original_resource_ids": [], "content_ids": ["M22", "M63.07"],
+      "title": "SEBI — Physical settlement of stock derivatives, December 31, 2018",
+      "url": "https://www.sebi.gov.in/sebi_data/attachdocs/dec-2018/1546255335099.pdf",
+      "review_scope": "primary_circular_search_excerpt",
+      "observation": "The retrieved circular text mandates physical settlement for stock derivatives and gives a phased transition during 2019.",
+      "limitation": "This historical circular alone is not a complete current operational manual or amendment review.",
+      "next_step": "Follow the February 8, 2019 circular and current clearing rules to resolve Q027's overview conflict."
+    },
+    {
+      "id": "Q029", "original_resource_ids": [], "content_ids": ["M22", "M63.07"],
+      "title": "SEBI — Physical settlement of stock derivatives, February 8, 2019",
+      "url": "https://www.sebi.gov.in/legal/circulars/feb-2019/physical-settlement-of-stock-derivatives_42021.html",
+      "review_scope": "official_circular_metadata_search_result",
+      "observation": "The official record identifies circular SEBI/HO/MRD/DOP1/CIR/P/2019/28 as a follow-up source.",
+      "limitation": "Attachment content was not reviewed in this pass.",
+      "next_step": "Read the operative provisions and trace later consolidated rules."
+    }
+  ]
+}

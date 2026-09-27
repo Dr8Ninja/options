@@ -1,0 +1,106 @@
+name: Foundation CI
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: foundation-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  baseline:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    env:
+      NEXT_TELEMETRY_DISABLED: "1"
+      CONTENT_IMPORT_PYTHON: python
+      APP_ENVIRONMENT: TEST
+      PUBLIC_ORIGIN: https://localhost:8443
+      API_INTERNAL_ORIGIN: http://127.0.0.1:8080
+    steps:
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955
+        with:
+          persist-credentials: false
+      - uses: actions/setup-java@c5195efecf7bdfc987ee8bae7a71cb8b11521c00
+        with:
+          distribution: temurin
+          java-version: '25.0.4+7'
+          cache: maven
+          cache-dependency-path: backend/pom.xml
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.14'
+      - name: Upstream contracts and immutable inputs
+        run: |
+          pip install -r scripts/requirements-api-contract.txt
+          pip install --require-hashes -r scripts/requirements-content-import.txt
+          ruff format --check scripts/content_import scripts/import-content.py scripts/test-content-import.py scripts/provision-local-import.py scripts/generate-public-dtos.py scripts/seed-public-api-test.py scripts/check-public-api.py scripts/check-implemented-api.py
+          ruff check --select E4,E7,E9,F scripts/content_import scripts/import-content.py scripts/test-content-import.py scripts/provision-local-import.py scripts/generate-public-dtos.py scripts/seed-public-api-test.py scripts/check-public-api.py scripts/check-implemented-api.py
+          python -m compileall -q scripts/content_import scripts/import-content.py scripts/test-content-import.py
+          python scripts/verify-preservation.py
+          python scripts/check-migration-history.py
+          python scripts/validate_frontend_design.py
+      - name: Install locked frontend and verify dependency policy
+        run: |
+          npm --prefix frontend ci
+          python scripts/check-dependency-policy.py
+      - name: Format, lint, types, generated contracts and component tests
+        run: npm --prefix frontend run check
+      - name: Docker prerequisites (required, no H2/skip fallback)
+        run: |
+          docker version
+          docker compose version
+      - name: Backend compilation, boundaries, PostgreSQL migration and security tests
+        run: |
+          ./backend/mvnw -f backend/pom.xml -B verify
+          python scripts/check-implemented-api.py
+          python scripts/check-public-api.py
+      - name: Frontend production build
+        run: npm --prefix frontend run build
+      - name: Secret and dependency checks
+        run: |
+          python scripts/install-security-tools.py
+          .local/tools/gitleaks/gitleaks dir --redact --config .gitleaks.toml .
+          npm --prefix frontend audit --audit-level=high
+          .local/tools/trivy/trivy sbom --severity HIGH,CRITICAL --exit-code 1 backend/target/classes/META-INF/sbom/application.cdx.json
+          mkdir -p .local/operator-scan
+          python -m pip freeze > .local/operator-scan/requirements.txt
+          .local/tools/trivy/trivy fs --scanners vuln --severity HIGH,CRITICAL --exit-code 1 .local/operator-scan
+      - name: Start isolated local HTTPS stack
+        run: |
+          python scripts/dev-env.py
+          docker compose -f infrastructure/compose.yml up -d --wait postgres mailpit
+          python scripts/provision-local-db.py
+          docker compose -f infrastructure/compose.yml -f infrastructure/compose.full.yml up -d --build
+          python scripts/export-local-ca.py
+          python scripts/wait-ready.py
+      - name: Browser shell and real API smoke
+        run: |
+          cd frontend
+          npx playwright install --with-deps chromium
+          npm run test:e2e
+      - name: Real WebAuthn compatibility on test classpath
+        run: python scripts/test-webauthn.py
+      - name: Stop isolated stack
+        if: always()
+        run: docker compose -f infrastructure/compose.yml -f infrastructure/compose.full.yml down
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: foundation-test-evidence
+          retention-days: 7
+          path: |
+            backend/target/surefire-reports/
+            backend/target/failsafe-reports/
+            backend/target/classes/META-INF/sbom/
+            backend/target/p08-evidence/
+            backend/target/p09-evidence/
+            backend/target/p10-evidence/
+            frontend/playwright-report/
+            frontend/test-results/

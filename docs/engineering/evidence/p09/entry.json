@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-26",
+  "previous_gate": "P08",
+  "canonical_version": "1.0.0-design",
+  "inputs": {
+    "data/v1/manifest.json": "85f2696eca3a7a22495587a9fc66fd2ef2ee6ae7f3efb16efe15ce52909468d9",
+    "docs/engineering/adr/005-editorial-authority.md": "bfbe3b010bb20135bef47cd1558a9b5c6df55afafc589ce2430e69a977058141",
+    "docs/engineering/database/canonical-mapping.json": "02488708af568a2e98c5541def4a82c0944e0ec26c8d6872a9ed0fd6336a0712",
+    "docs/engineering/evidence/p08/migrations-sha256.json": "44631d2aae227d97e6cdaa277c1b39d34f7175bbade6f8ae1c602ab68b65ab8f"
+  }
+}

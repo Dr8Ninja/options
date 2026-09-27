@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-26",
+  "stage": "P09",
+  "gate": "PASS",
+  "canonical_records": 11452,
+  "canonical_collections": 22,
+  "migrations": "V0016\u2013V0020; V0001\u2013V0015 unchanged",
+  "claims": {
+    "canonical_source_files_changed": false,
+    "data_readme_appended": true,
+    "production_deployed": false,
+    "hosted_ci_executed": false,
+    "publications_created_by_importer": false
+  },
+  "backend_tests": 35,
+  "import_scenarios": 14,
+  "frontend_tests": 12,
+  "live_browser_tests": 4,
+  "local_postgresql_migration": 20,
+  "local_import": "APPLIED then REPLAY; exact restricted export",
+  "secret_scan": "PASS",
+  "java_python_high_critical_findings": 0,
+  "contracts_preservation_migration_policy": "PASS",
+  "next_prompt": "P10 only when requested",
+  "completed_date": "2026-09-27"
+}

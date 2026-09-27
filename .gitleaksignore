@@ -1,0 +1,18 @@
+# Reviewed P07 false positives: documented UUID examples, file SHA-256 hashes,
+# and preserved ISBN metadata. No live credential exemptions.
+design/evidence/browser-validation.json:generic-api-key:5
+docs/engineering/api/REQUEST_EXAMPLES.md:generic-api-key:92
+docs/engineering/api/REQUEST_EXAMPLES.md:generic-api-key:118
+docs/engineering/api/REQUEST_EXAMPLES.md:generic-api-key:144
+docs/engineering/evidence/p07/preserved-sha256.json:generic-api-key:55
+docs/engineering/evidence/p07/preserved-sha256.json:generic-api-key:57
+docs/engineering/evidence/p07/preserved-sha256.json:generic-api-key:58
+data/v1/resources.json:generic-api-key:4076
+design/prototype/content.js:generic-api-key:1
+# Reviewed P09 false positive: SHA-256 of immutable V0020 migration (owner_keys filename).
+docs/engineering/evidence/p09/migrations-sha256.json:generic-api-key:6
+# Reviewed P10 false positives: recorded pre-change SHA-256 hashes of API.md,
+# OpenAPI and V0020; these are file fingerprints, not credentials.
+docs/engineering/evidence/p10/entry.json:generic-api-key:5
+docs/engineering/evidence/p10/entry.json:generic-api-key:6
+docs/engineering/evidence/p10/entry.json:generic-api-key:8

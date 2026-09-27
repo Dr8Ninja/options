@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-09-23",
+  "entry_gate": "P03 PASS, including P02",
+  "scope": "Core P03 decisions remain unchanged; generated validation link counts are not immutable artifacts.",
+  "files": [
+    {
+      "path": "docs/engineering/ARCHITECTURE.md",
+      "sha256": "cb7139f0bdfe4b463e17dc84887d977680712327cee17e76c31b616dfa58f22b"
+    },
+    {
+      "path": "docs/engineering/SECURITY.md",
+      "sha256": "f3261455d71f90d0cf34bc2b8abd28e543997cda92998dde133cd40e961fcb3c"
+    },
+    {
+      "path": "docs/engineering/adr/001-supported-platform.md",
+      "sha256": "2faf3047e4b5b0fdfa4d0436b71d431b109f93ba0c4990609447729f3f57e633"
+    },
+    {
+      "path": "docs/engineering/adr/002-frontend-rendering.md",
+      "sha256": "88c3ea402d3b6e0951360cf5834c021c4bf21bfc3f9f71cb8cb3874979288246"
+    },
+    {
+      "path": "docs/engineering/adr/003-relational-data.md",
+      "sha256": "358765b2a5b34bc4fd19e15da48a479ef230a50130e6fd3a60c2ef5c1c0ab38f"
+    },
+    {
+      "path": "docs/engineering/adr/004-browser-identity.md",
+      "sha256": "81bc7e55be12dadae06a80c73071407887ad6dbdffc31f940988d5b8f31b96de"
+    },
+    {
+      "path": "docs/engineering/adr/005-editorial-authority.md",
+      "sha256": "bfbe3b010bb20135bef47cd1558a9b5c6df55afafc589ce2430e69a977058141"
+    },
+    {
+      "path": "docs/engineering/adr/006-hosting-topology.md",
+      "sha256": "2deca04f0d07f796e658d7475badeddbdf2679ca63b810f537e726136f319f8d"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-25",
+  "inputs": {
+    "backend/src/main/resources/db/migration/V0001__spring_jdbc_sessions.sql": "01019c9d27c75645bc4282f127cc36a1c025f4f041b8fd2de8dced96a0b8bccc",
+    "docs/engineering/database/SCHEMA.md": "eeca7f1896878692427389256db874770d7ad4c9878ab9ed1026893f8fe915a9",
+    "docs/engineering/api/PERSISTENCE_CLARIFICATIONS.md": "14d7e4acdaf2aaf5103ddd0fc2efd427d1a0232b6ac669ce4a32b61c3c2061db"
+  },
+  "prior_schema": "P07 Flyway V0001, JDBC sessions only; upgrade required",
+  "canonical_preservation": "P07 preserved-sha256.json; 85 files verified"
+}

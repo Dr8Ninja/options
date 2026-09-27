@@ -1,0 +1,17 @@
+{
+  "backend/src/main/resources/db/migration/V0001__spring_jdbc_sessions.sql": "01019c9d27c75645bc4282f127cc36a1c025f4f041b8fd2de8dced96a0b8bccc",
+  "backend/src/main/resources/db/migration/V0002__domain_tables.sql": "da25de81b80c959ea8f0c690bc286e8b27acc3f0c9f74f7e66b1bc8df86f50cf",
+  "backend/src/main/resources/db/migration/V0003__references_and_checks.sql": "f80000648d0f0347d1b3918917573a78ce1d0eb1449c1346f59a61c54ea6736b",
+  "backend/src/main/resources/db/migration/V0004__aggregate_invariants.sql": "632ca28d724a71bfe51bc236e74f36c76704c6262e19f920058950aa1f5064fc",
+  "backend/src/main/resources/db/migration/V0005__owned_state_invariants.sql": "c9ba5567c208c776309e6562ae07786e50be6ef963e10c148d1c1d21085a9e74",
+  "backend/src/main/resources/db/migration/V0006__immutability_and_indexes.sql": "9604931d8716353d5627e47c3dbad18336d4c958ce6436062dc16942dde103fe",
+  "backend/src/main/resources/db/migration/V0007__operational_integrity.sql": "96133175de061d72e3f7c9a82055bb249773c0e7e7e5c3b71d809a36f8bf5422",
+  "backend/src/main/resources/db/migration/V0008__database_privileges.sql": "5c8ecd62289ef50d460881c4d30d5f4d664ae399e5ebfc04bec80bee4baa425f",
+  "backend/src/main/resources/db/migration/V0009__persistence_guard_refinements.sql": "88df00909ace8c1058835569dc09482f5fda64be50628c5fca8c30cb53d5011f",
+  "backend/src/main/resources/db/migration/V0010__erasure_and_counter_guards.sql": "381f5b5b49a1ce15b9ce385f4f6a05ee9709af01b4f5f58df36915070142c746",
+  "backend/src/main/resources/db/migration/V0011__optimistic_versions.sql": "ab529bbff79226cad592a299716b68758ba136ba237bf25935973d4ca7a72373",
+  "backend/src/main/resources/db/migration/V0012__sealed_hashes_and_retention.sql": "c440dc321f8813ea213f6f69670517b5343fa5d2229ee1d596344cbd405245df",
+  "backend/src/main/resources/db/migration/V0013__final_persistence_consistency.sql": "1c2ffdd4c06c58759d3e9a5bbc5f2e1858191048273c1fd467b5dbd9d0ca1e6f",
+  "backend/src/main/resources/db/migration/V0014__typed_audit_and_privacy_context.sql": "5f60d12a2b3530049975b06a7881d506e1a5f815c3eb7356c2adcc251ce3cd8b",
+  "backend/src/main/resources/db/migration/V0015__isolate_typed_trigger_branches.sql": "ff0bf00d59534d2e29e5f4198aabbfed094ebe4f605e7ff113b0f67eb5deeaa2"
+}

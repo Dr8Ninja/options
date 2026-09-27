@@ -1,0 +1,79 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "competency_id": {
+            "type": "string"
+          },
+          "evidence_claim_ids": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {},
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "reading_scope": {
+            "type": "string"
+          },
+          "resource_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "topic_ids": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {},
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "competency_id",
+          "evidence_claim_ids",
+          "id",
+          "purpose",
+          "reading_scope",
+          "resource_id",
+          "status",
+          "topic_ids"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 associations interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

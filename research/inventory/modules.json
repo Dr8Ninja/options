@@ -1,0 +1,1833 @@
+[
+  {
+    "id": "M01",
+    "domain": "D01 · Financial and market foundations",
+    "title": "Financial arithmetic and economic purpose",
+    "category": "Foundations",
+    "prerequisites": [],
+    "sources": [
+      "R01",
+      "R05",
+      "R16"
+    ],
+    "advanced_extension": "M10–M14: mathematical foundations; M48: portfolio decisions",
+    "stage": 0,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Build a cash-flow and return ledger with fees, financing and a drawdown/recovery sequence.",
+      "mastery": "Reconcile cash, equity and net return without confusing notional with money at risk."
+    },
+    "provenance": {
+      "json_pointer": "/modules/0",
+      "master_line": 63
+    }
+  },
+  {
+    "id": "M02",
+    "domain": "D01 · Financial and market foundations",
+    "title": "Instruments and underlying-market structure",
+    "category": "Market Mechanics",
+    "prerequisites": [
+      "M01"
+    ],
+    "sources": [
+      "R05",
+      "R16",
+      "R03"
+    ],
+    "advanced_extension": "M42–M44: futures and specialist derivatives",
+    "stage": 1,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Compare a stock, ETF, leveraged ETF, future, option and swap expressing a similar thesis.",
+      "mastery": "Identify ownership, leverage, path dependence, counterparty and settlement differences."
+    },
+    "provenance": {
+      "json_pointer": "/modules/1",
+      "master_line": 116
+    }
+  },
+  {
+    "id": "M03",
+    "domain": "D01 · Financial and market foundations",
+    "title": "Institutions, venues and the trade lifecycle",
+    "category": "Market Mechanics",
+    "prerequisites": [
+      "M01",
+      "M02"
+    ],
+    "sources": [
+      "R01",
+      "R04",
+      "R07",
+      "R08"
+    ],
+    "advanced_extension": "M50–M52: professional microstructure and execution",
+    "stage": 1,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Trace a simulated trade from order to custody and settlement, including a holiday and corporate action.",
+      "mastery": "Identify who owes what to whom and when, including a failed-settlement contingency."
+    },
+    "provenance": {
+      "json_pointer": "/modules/2",
+      "master_line": 172
+    }
+  },
+  {
+    "id": "M04",
+    "domain": "D01 · Financial and market foundations",
+    "title": "Quotes, orders and matching",
+    "category": "Execution",
+    "prerequisites": [
+      "M03"
+    ],
+    "sources": [
+      "R04",
+      "R07",
+      "R08",
+      "R30"
+    ],
+    "advanced_extension": "M50 and M52: queues, impact and transaction-cost analysis",
+    "stage": 1,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Replay market, limit, stop and stop-limit orders through a gapping order book.",
+      "mastery": "Explain fills, non-fills, partial fills and why a stop does not guarantee an exit price."
+    },
+    "provenance": {
+      "json_pointer": "/modules/3",
+      "master_line": 225
+    }
+  },
+  {
+    "id": "M05",
+    "domain": "D01 · Financial and market foundations",
+    "title": "Trading costs, financing and basic margin",
+    "category": "Risk",
+    "prerequisites": [
+      "M01",
+      "M03",
+      "M04"
+    ],
+    "sources": [
+      "R01",
+      "R04",
+      "R09",
+      "R26"
+    ],
+    "advanced_extension": "M47: stressed funding and margin; M52: execution attribution",
+    "stage": 1,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Calculate net expectancy with commissions, spread, financing, borrow and turnover.",
+      "mastery": "Reject a gross-profitable strategy when plausible costs or funding make it uneconomic."
+    },
+    "provenance": {
+      "json_pointer": "/modules/4",
+      "master_line": 281
+    }
+  },
+  {
+    "id": "M06",
+    "domain": "D02 · Fundamentals, macro and events",
+    "title": "Financial statements and equity fundamentals",
+    "category": "Fundamental Analysis",
+    "prerequisites": [
+      "M01",
+      "M02"
+    ],
+    "sources": [
+      "R16",
+      "R17"
+    ],
+    "advanced_extension": "M09 and M38: event distributions and option repricing",
+    "stage": 3,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Read one company filing and produce a one-page earnings-risk brief.",
+      "mastery": "Separate reported facts, adjusted measures, expectations and unsupported narrative."
+    },
+    "provenance": {
+      "json_pointer": "/modules/5",
+      "master_line": 337
+    }
+  },
+  {
+    "id": "M07",
+    "domain": "D02 · Fundamentals, macro and events",
+    "title": "Macroeconomics and policy transmission",
+    "category": "Macro",
+    "prerequisites": [
+      "M01",
+      "M02"
+    ],
+    "sources": [
+      "R16",
+      "R18",
+      "R19"
+    ],
+    "advanced_extension": "M43: rates, currencies and cross-asset optionality",
+    "stage": 3,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Reconstruct an economic release using the first release and later revisions.",
+      "mastery": "Distinguish what was knowable at the decision time from hindsight."
+    },
+    "provenance": {
+      "json_pointer": "/modules/6",
+      "master_line": 390
+    }
+  },
+  {
+    "id": "M08",
+    "domain": "D02 · Fundamentals, macro and events",
+    "title": "Intermarket relationships and correlation regimes",
+    "category": "Macro",
+    "prerequisites": [
+      "M07",
+      "M10"
+    ],
+    "sources": [
+      "R16",
+      "R18",
+      "R20"
+    ],
+    "advanced_extension": "M41 and M48: dispersion and portfolio risk",
+    "stage": 3,
+    "topic_count": 12,
+    "assessment": {
+      "exercise": "Estimate rolling equity/bond/dollar/volatility relationships in calm and stressed samples.",
+      "mastery": "Explain why a single correlation estimate is not a stable hedge guarantee."
+    },
+    "provenance": {
+      "json_pointer": "/modules/7",
+      "master_line": 443
+    }
+  },
+  {
+    "id": "M09",
+    "domain": "D02 · Fundamentals, macro and events",
+    "title": "Event taxonomy and information processing",
+    "category": "Event Trading",
+    "prerequisites": [
+      "M03",
+      "M06",
+      "M07"
+    ],
+    "sources": [
+      "R01",
+      "R17",
+      "R18",
+      "R19"
+    ],
+    "advanced_extension": "M38: implied event variance; M53: event position management",
+    "stage": 3,
+    "topic_count": 12,
+    "assessment": {
+      "exercise": "Build a timestamped calendar and outcome tree for overlapping company and macro events.",
+      "mastery": "Identify gaps, rescheduling, release-time uncertainty and conditional outcomes."
+    },
+    "provenance": {
+      "json_pointer": "/modules/8",
+      "master_line": 490
+    }
+  },
+  {
+    "id": "M10",
+    "domain": "D03 · Mathematics and inference",
+    "title": "Probability and distributions",
+    "category": "Mathematics",
+    "prerequisites": [
+      "M01"
+    ],
+    "sources": [
+      "R21",
+      "R05"
+    ],
+    "advanced_extension": "M14: probability measures and stochastic processes",
+    "stage": 2,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Solve conditional-probability, expectancy, skewed-payoff and probability-of-touch problems.",
+      "mastery": "Distinguish frequency, belief, pricing probability and payoff-weighted expectation."
+    },
+    "provenance": {
+      "json_pointer": "/modules/9",
+      "master_line": 540
+    }
+  },
+  {
+    "id": "M11",
+    "domain": "D03 · Mathematics and inference",
+    "title": "Statistical inference and scientific reasoning",
+    "category": "Quantitative",
+    "prerequisites": [
+      "M10"
+    ],
+    "sources": [
+      "R21",
+      "R22",
+      "R23"
+    ],
+    "advanced_extension": "M55–M57: defensible research and validation",
+    "stage": 2,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Estimate an edge with uncertainty, then repeat after multiple-testing correction.",
+      "mastery": "Explain effect size, sample dependence, power and why a small p-value is insufficient."
+    },
+    "provenance": {
+      "json_pointer": "/modules/10",
+      "master_line": 599
+    }
+  },
+  {
+    "id": "M12",
+    "domain": "D03 · Mathematics and inference",
+    "title": "Time series, forecasting and regimes",
+    "category": "Quantitative",
+    "prerequisites": [
+      "M10",
+      "M11"
+    ],
+    "sources": [
+      "R21",
+      "R22",
+      "R20"
+    ],
+    "advanced_extension": "M35: volatility estimation; M57: statistical learning",
+    "stage": 3,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Compare random-walk, simple volatility and more complex forecasts on rolling holdouts.",
+      "mastery": "Show that any improvement survives correct timing and a simple benchmark."
+    },
+    "provenance": {
+      "json_pointer": "/modules/11",
+      "master_line": 652
+    }
+  },
+  {
+    "id": "M13",
+    "domain": "D03 · Mathematics and inference",
+    "title": "Calculus, linear algebra and numerical foundations",
+    "category": "Mathematics",
+    "prerequisites": [
+      "M10"
+    ],
+    "sources": [
+      "R05",
+      "R24",
+      "R25"
+    ],
+    "advanced_extension": "M14 and M31: stochastic calculus and pricing numerics",
+    "stage": 2,
+    "topic_count": 13,
+    "assessment": {
+      "exercise": "Check analytic derivatives against finite differences and solve an IV-style root problem.",
+      "mastery": "Explain units, tolerance, conditioning and convergence failure."
+    },
+    "provenance": {
+      "json_pointer": "/modules/12",
+      "master_line": 705
+    }
+  },
+  {
+    "id": "M14",
+    "domain": "D03 · Mathematics and inference",
+    "title": "Stochastic processes and mathematical finance",
+    "category": "Mathematics",
+    "prerequisites": [
+      "M10",
+      "M12",
+      "M13"
+    ],
+    "sources": [
+      "R24",
+      "R25",
+      "R05"
+    ],
+    "advanced_extension": "M40 and M44: advanced models and exotic pricing",
+    "stage": 14,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Derive a self-financing diffusion hedge and simulate Brownian/GBM paths.",
+      "mastery": "Use Ito's second-order term correctly and distinguish physical from pricing drift."
+    },
+    "provenance": {
+      "json_pointer": "/modules/13",
+      "master_line": 755
+    }
+  },
+  {
+    "id": "M15",
+    "domain": "D04 · Price behavior and technical methods",
+    "title": "Chart construction, context and price structure",
+    "category": "Price Action",
+    "prerequisites": [
+      "M02",
+      "M04"
+    ],
+    "sources": [
+      "R27",
+      "R28",
+      "R29"
+    ],
+    "advanced_extension": "M55: objective labeling and pattern validation",
+    "stage": 4,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Annotate unseen charts with a frozen rule for swings, regimes and invalidation.",
+      "mastery": "Produce consistent labels without using future bars or inventing participant intent."
+    },
+    "provenance": {
+      "json_pointer": "/modules/14",
+      "master_line": 811
+    }
+  },
+  {
+    "id": "M16",
+    "domain": "D04 · Price behavior and technical methods",
+    "title": "Candlestick formations: a testable vocabulary",
+    "category": "Price Action",
+    "prerequisites": [
+      "M15"
+    ],
+    "sources": [
+      "R27",
+      "R28",
+      "R29"
+    ],
+    "advanced_extension": "M55–M56: pattern definitions, base rates and out-of-sample tests",
+    "stage": 4,
+    "topic_count": 20,
+    "assessment": {
+      "exercise": "Label randomized candle examples before seeing subsequent prices.",
+      "mastery": "State context, alternative outcomes and an objective rule for each studied formation."
+    },
+    "provenance": {
+      "json_pointer": "/modules/15",
+      "master_line": 870
+    }
+  },
+  {
+    "id": "M17",
+    "domain": "D04 · Price behavior and technical methods",
+    "title": "Chart patterns and competing interpretations",
+    "category": "Technical Analysis",
+    "prerequisites": [
+      "M15"
+    ],
+    "sources": [
+      "R27",
+      "R29"
+    ],
+    "advanced_extension": "M55: statistical pattern recognition; M57: automated labeling",
+    "stage": 4,
+    "topic_count": 20,
+    "assessment": {
+      "exercise": "Operationalize one chart pattern and compare outcomes with matched non-pattern controls.",
+      "mastery": "Report failures and base rates; do not select examples only after favorable outcomes."
+    },
+    "provenance": {
+      "json_pointer": "/modules/16",
+      "master_line": 941
+    }
+  },
+  {
+    "id": "M18",
+    "domain": "D04 · Price behavior and technical methods",
+    "title": "Trend indicators",
+    "category": "Technical Analysis",
+    "prerequisites": [
+      "M15",
+      "M10"
+    ],
+    "sources": [
+      "R27",
+      "R29"
+    ],
+    "advanced_extension": "M55–M57: parameter stability and incremental signal value",
+    "stage": 4,
+    "topic_count": 13,
+    "assessment": {
+      "exercise": "Implement several trend indicators and compare lag, turnover and signal correlation.",
+      "mastery": "Identify redundant filters and demonstrate sensitivity to lookback choices."
+    },
+    "provenance": {
+      "json_pointer": "/modules/17",
+      "master_line": 1012
+    }
+  },
+  {
+    "id": "M19",
+    "domain": "D04 · Price behavior and technical methods",
+    "title": "Momentum indicators",
+    "category": "Technical Analysis",
+    "prerequisites": [
+      "M18"
+    ],
+    "sources": [
+      "R27",
+      "R29"
+    ],
+    "advanced_extension": "M55: threshold and redundancy testing",
+    "stage": 4,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Test RSI/MACD or another momentum pair across trending and ranging samples.",
+      "mastery": "Avoid equating thresholds with universal reversal signals."
+    },
+    "provenance": {
+      "json_pointer": "/modules/18",
+      "master_line": 1062
+    }
+  },
+  {
+    "id": "M20",
+    "domain": "D04 · Price behavior and technical methods",
+    "title": "Volatility, breadth, volume and order-flow indicators",
+    "category": "Technical Analysis",
+    "prerequisites": [
+      "M04",
+      "M15",
+      "M10"
+    ],
+    "sources": [
+      "R27",
+      "R29",
+      "R07",
+      "R08"
+    ],
+    "advanced_extension": "M35: estimators; M50: microstructure; M55: validation",
+    "stage": 4,
+    "topic_count": 19,
+    "assessment": {
+      "exercise": "Reconcile VWAP/profile calculations and compare ATR with realized-return volatility.",
+      "mastery": "Explain different units, feed coverage, anchor choices and non-equivalent measures."
+    },
+    "provenance": {
+      "json_pointer": "/modules/19",
+      "master_line": 1115
+    }
+  },
+  {
+    "id": "M21",
+    "domain": "D05 · Option contracts and structures",
+    "title": "Option fundamentals and contract literacy",
+    "category": "Options",
+    "prerequisites": [
+      "M02",
+      "M03",
+      "M05",
+      "M10"
+    ],
+    "sources": [
+      "R01",
+      "R02",
+      "R03",
+      "R04"
+    ],
+    "advanced_extension": "M29–M34: pricing and risk exposures",
+    "stage": 5,
+    "topic_count": 17,
+    "assessment": {
+      "exercise": "Decode unfamiliar live or archived contract specifications and construct basic payoff tables.",
+      "mastery": "Get underlying, multiplier, units, exercise style and settlement correct on every case."
+    },
+    "provenance": {
+      "json_pointer": "/modules/20",
+      "master_line": 1186
+    }
+  },
+  {
+    "id": "M22",
+    "domain": "D05 · Option contracts and structures",
+    "title": "Exercise, assignment and expiration operations",
+    "category": "Options",
+    "prerequisites": [
+      "M21",
+      "M04",
+      "M05"
+    ],
+    "sources": [
+      "R01",
+      "R04",
+      "R26",
+      "R31"
+    ],
+    "advanced_extension": "M30: optimal exercise; M47 and M53: funding and expiry management",
+    "stage": 5,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Work through early assignment, an ex-dividend date, a near-strike expiry and a one-leg exercise.",
+      "mastery": "Produce correct resulting positions, deadlines and cash/share obligations."
+    },
+    "provenance": {
+      "json_pointer": "/modules/21",
+      "master_line": 1248
+    }
+  },
+  {
+    "id": "M23",
+    "domain": "D05 · Option contracts and structures",
+    "title": "Option-chain analysis and inference limits",
+    "category": "Options",
+    "prerequisites": [
+      "M21",
+      "M04",
+      "M10"
+    ],
+    "sources": [
+      "R01",
+      "R02",
+      "R04",
+      "R32"
+    ],
+    "advanced_extension": "M37: surface construction; M51: dealer-position inference",
+    "stage": 5,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Audit a timestamped chain containing stale quotes, large OI and an ambiguous block trade.",
+      "mastery": "Separate observed information from inferred direction, dealer inventory and probability."
+    },
+    "provenance": {
+      "json_pointer": "/modules/22",
+      "master_line": 1304
+    }
+  },
+  {
+    "id": "M24",
+    "domain": "D05 · Option contracts and structures",
+    "title": "Single-leg, stock-linked and directional structures",
+    "category": "Options",
+    "prerequisites": [
+      "M21",
+      "M22",
+      "M29",
+      "M32",
+      "M36",
+      "M45"
+    ],
+    "sources": [
+      "R01",
+      "R02",
+      "R06"
+    ],
+    "advanced_extension": "M34 and M53: pathwise hedging and management",
+    "stage": 9,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Complete the strategy dossier for each single-leg or stock-linked construction.",
+      "mastery": "Rebuild signed legs and exposures from first principles without relying on the name."
+    },
+    "provenance": {
+      "json_pointer": "/modules/23",
+      "master_line": 1363
+    }
+  },
+  {
+    "id": "M25",
+    "domain": "D05 · Option contracts and structures",
+    "title": "Vertical spreads and payoff algebra",
+    "category": "Options",
+    "prerequisites": [
+      "M24"
+    ],
+    "sources": [
+      "R01",
+      "R02",
+      "R06"
+    ],
+    "advanced_extension": "M28: synthetic equivalence; M52: package execution",
+    "stage": 9,
+    "topic_count": 10,
+    "assessment": {
+      "exercise": "Derive all four verticals and reconcile equivalent debit/credit terminal payoffs.",
+      "mastery": "Calculate bounds and explain how expiry operations can create additional exposure."
+    },
+    "provenance": {
+      "json_pointer": "/modules/24",
+      "master_line": 1422
+    }
+  },
+  {
+    "id": "M26",
+    "domain": "D05 · Option contracts and structures",
+    "title": "Straddles, strangles, butterflies and condors",
+    "category": "Options",
+    "prerequisites": [
+      "M25",
+      "M36",
+      "M46"
+    ],
+    "sources": [
+      "R01",
+      "R02",
+      "R06",
+      "R10"
+    ],
+    "advanced_extension": "M41: volatility-relative-value selection and hedging",
+    "stage": 9,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Construct long/short volatility structures and compare spot/IV/time scenarios.",
+      "mastery": "Identify where net Greeks change sign and where high win rates hide severe losses."
+    },
+    "provenance": {
+      "json_pointer": "/modules/25",
+      "master_line": 1463
+    }
+  },
+  {
+    "id": "M27",
+    "domain": "D05 · Option contracts and structures",
+    "title": "Time, ratio and asymmetric structures",
+    "category": "Options",
+    "prerequisites": [
+      "M25",
+      "M26",
+      "M37"
+    ],
+    "sources": [
+      "R02",
+      "R06",
+      "R10"
+    ],
+    "advanced_extension": "M34 and M41: evolving Greeks and surface-relative value",
+    "stage": 9,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Value calendars, diagonals and ratios before and at the front expiry.",
+      "mastery": "Avoid assigning a model-free single-expiry maximum profit to a multi-expiry position."
+    },
+    "provenance": {
+      "json_pointer": "/modules/26",
+      "master_line": 1519
+    }
+  },
+  {
+    "id": "M28",
+    "domain": "D05 · Option contracts and structures",
+    "title": "Synthetics, financing and constrained arbitrage",
+    "category": "Options",
+    "prerequisites": [
+      "M25",
+      "M29",
+      "M05"
+    ],
+    "sources": [
+      "R01",
+      "R05",
+      "R06"
+    ],
+    "advanced_extension": "M41 and M47: relative value and balance-sheet constraints",
+    "stage": 9,
+    "topic_count": 12,
+    "assessment": {
+      "exercise": "Build a conversion, reversal and European box with full dated cash flows.",
+      "mastery": "Separate replication identity from implementable profit after borrow, financing and exercise."
+    },
+    "provenance": {
+      "json_pointer": "/modules/27",
+      "master_line": 1578
+    }
+  },
+  {
+    "id": "M29",
+    "domain": "D06 · Pricing, Greeks and hedging",
+    "title": "No-arbitrage, carry and valuation foundations",
+    "category": "Options Pricing",
+    "prerequisites": [
+      "M05",
+      "M10",
+      "M21"
+    ],
+    "sources": [
+      "R05",
+      "R24",
+      "R25",
+      "R70",
+      "R71"
+    ],
+    "advanced_extension": "M30: pricing models; M28: implementable relative value",
+    "stage": 6,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Derive forward pricing and parity, then test executable quotes against valid bounds.",
+      "mastery": "State every contract/carry assumption and diagnose apparent arbitrage from bad data."
+    },
+    "provenance": {
+      "json_pointer": "/modules/28",
+      "master_line": 1628
+    }
+  },
+  {
+    "id": "M30",
+    "domain": "D06 · Pricing, Greeks and hedging",
+    "title": "Vanilla pricing models and exercise",
+    "category": "Options Pricing",
+    "prerequisites": [
+      "M29",
+      "M13"
+    ],
+    "sources": [
+      "R05",
+      "R24",
+      "R25",
+      "R06",
+      "R70",
+      "R71"
+    ],
+    "advanced_extension": "M31: numerical implementation; M40: smile-consistent models",
+    "stage": 6,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Build a binomial tree, compare with BSM, and price an American exercise case.",
+      "mastery": "Explain convergence, early-exercise economics and when the selected model is unsuitable."
+    },
+    "provenance": {
+      "json_pointer": "/modules/29",
+      "master_line": 1684
+    }
+  },
+  {
+    "id": "M31",
+    "domain": "D06 · Pricing, Greeks and hedging",
+    "title": "Numerical pricing and implementation quality",
+    "category": "Quantitative",
+    "prerequisites": [
+      "M30",
+      "M13",
+      "M14"
+    ],
+    "sources": [
+      "R24",
+      "R25",
+      "R33"
+    ],
+    "advanced_extension": "M40 and M44: calibration and path-dependent claims",
+    "stage": 14,
+    "topic_count": 13,
+    "assessment": {
+      "exercise": "Price a benchmark with two numerical methods and publish convergence/error plots.",
+      "mastery": "Reconcile results within justified tolerances and explain residual error."
+    },
+    "provenance": {
+      "json_pointer": "/modules/30",
+      "master_line": 1737
+    }
+  },
+  {
+    "id": "M32",
+    "domain": "D06 · Pricing, Greeks and hedging",
+    "title": "Primary Greeks and exposure units",
+    "category": "Options Greeks",
+    "prerequisites": [
+      "M30"
+    ],
+    "sources": [
+      "R05",
+      "R06"
+    ],
+    "advanced_extension": "M33–M34: higher-order exposures and P&L attribution",
+    "stage": 6,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Calculate per-contract and portfolio Greeks under spot/time/IV shifts.",
+      "mastery": "Keep units and signs consistent and distinguish delta from actual profit probability."
+    },
+    "provenance": {
+      "json_pointer": "/modules/31",
+      "master_line": 1787
+    }
+  },
+  {
+    "id": "M33",
+    "domain": "D06 · Pricing, Greeks and hedging",
+    "title": "Higher-order Greeks and surface-sensitive risk",
+    "category": "Options Greeks",
+    "prerequisites": [
+      "M32",
+      "M13"
+    ],
+    "sources": [
+      "R05",
+      "R06",
+      "R11"
+    ],
+    "advanced_extension": "M34 and M51: hedging, attribution and dealer-flow hypotheses",
+    "stage": 12,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Verify selected higher-order Greeks numerically under stated time and volatility units.",
+      "mastery": "Explain nonstandard names, cross terms and why local sensitivities fail in large shocks."
+    },
+    "provenance": {
+      "json_pointer": "/modules/32",
+      "master_line": 1840
+    }
+  },
+  {
+    "id": "M34",
+    "domain": "D06 · Pricing, Greeks and hedging",
+    "title": "Dynamic hedging, gamma scalping and P&L explanation",
+    "category": "Options Greeks",
+    "prerequisites": [
+      "M32",
+      "M33",
+      "M35",
+      "M36"
+    ],
+    "sources": [
+      "R05",
+      "R06",
+      "R10",
+      "R12"
+    ],
+    "advanced_extension": "M41: relative-value trading; M48: portfolio hedging",
+    "stage": 12,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Replay delta hedging with two hedge frequencies and a jump scenario.",
+      "mastery": "Reconcile hedge cash flows, option P&L, theta, fees and unexplained residuals."
+    },
+    "provenance": {
+      "json_pointer": "/modules/33",
+      "master_line": 1893
+    }
+  },
+  {
+    "id": "M35",
+    "domain": "D07 · Volatility and volatility trading",
+    "title": "Realized volatility and forecasting",
+    "category": "Volatility",
+    "prerequisites": [
+      "M10",
+      "M12"
+    ],
+    "sources": [
+      "R10",
+      "R20",
+      "R34"
+    ],
+    "advanced_extension": "M38: event variance; M41: trading forecast differences",
+    "stage": 7,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Compare realized-volatility estimators with gaps and high-frequency noise.",
+      "mastery": "Choose an estimator appropriate to the forecast target and report uncertainty."
+    },
+    "provenance": {
+      "json_pointer": "/modules/34",
+      "master_line": 1949
+    }
+  },
+  {
+    "id": "M36",
+    "domain": "D07 · Volatility and volatility trading",
+    "title": "Implied volatility, distributions and risk premiums",
+    "category": "Volatility",
+    "prerequisites": [
+      "M30",
+      "M35"
+    ],
+    "sources": [
+      "R10",
+      "R20",
+      "R34",
+      "R12"
+    ],
+    "advanced_extension": "M37–M41: surfaces, events and relative value",
+    "stage": 7,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Compare trailing realized volatility, forecast variance, IV rank and an implied distribution.",
+      "mastery": "Explain why historical ranking alone cannot establish that an option is cheap."
+    },
+    "provenance": {
+      "json_pointer": "/modules/35",
+      "master_line": 2008
+    }
+  },
+  {
+    "id": "M37",
+    "domain": "D07 · Volatility and volatility trading",
+    "title": "Smiles, skew, term structure and the surface",
+    "category": "Volatility",
+    "prerequisites": [
+      "M29",
+      "M32",
+      "M36"
+    ],
+    "sources": [
+      "R11",
+      "R35",
+      "R05"
+    ],
+    "advanced_extension": "M40: model calibration; M41: surface trades",
+    "stage": 9,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Build a small synchronized surface and check strike/calendar consistency.",
+      "mastery": "Report forward inputs, conventions, bid/ask uncertainty and failed arbitrage checks."
+    },
+    "provenance": {
+      "json_pointer": "/modules/36",
+      "master_line": 2061
+    }
+  },
+  {
+    "id": "M38",
+    "domain": "D07 · Volatility and volatility trading",
+    "title": "Event volatility and short-dated optionality",
+    "category": "Volatility",
+    "prerequisites": [
+      "M09",
+      "M35",
+      "M37"
+    ],
+    "sources": [
+      "R10",
+      "R02",
+      "R32"
+    ],
+    "advanced_extension": "M41 and M53: event trades and stress management",
+    "stage": 12,
+    "topic_count": 12,
+    "assessment": {
+      "exercise": "Estimate an event contribution using expiries around an announcement.",
+      "mastery": "State baseline assumptions and evaluate direction, jump asymmetry and post-event repricing."
+    },
+    "provenance": {
+      "json_pointer": "/modules/37",
+      "master_line": 2117
+    }
+  },
+  {
+    "id": "M39",
+    "domain": "D07 · Volatility and volatility trading",
+    "title": "Volatility indices, derivatives and exchange-traded products",
+    "category": "Volatility",
+    "prerequisites": [
+      "M37",
+      "M42"
+    ],
+    "sources": [
+      "R36",
+      "R37",
+      "R38",
+      "R03"
+    ],
+    "advanced_extension": "M41: volatility curve relative value; M44: specialist products",
+    "stage": 12,
+    "topic_count": 13,
+    "assessment": {
+      "exercise": "Compare VIX, a VIX future, VIX index option and option on a VIX future.",
+      "mastery": "Identify exposure, settlement and why an ETP need not track changes in spot VIX."
+    },
+    "provenance": {
+      "json_pointer": "/modules/38",
+      "master_line": 2164
+    }
+  },
+  {
+    "id": "M40",
+    "domain": "D07 · Volatility and volatility trading",
+    "title": "Advanced volatility models and calibration",
+    "category": "Quantitative",
+    "prerequisites": [
+      "M14",
+      "M31",
+      "M37"
+    ],
+    "sources": [
+      "R11",
+      "R35",
+      "R39",
+      "R40",
+      "R41"
+    ],
+    "advanced_extension": "M44: exotics; M67: independent model validation",
+    "stage": 14,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Calibrate two models and compare fit, parameter stability and hedge behavior.",
+      "mastery": "Explain tradeoffs; do not equate lower calibration error with a superior trading model."
+    },
+    "provenance": {
+      "json_pointer": "/modules/39",
+      "master_line": 2214
+    }
+  },
+  {
+    "id": "M41",
+    "domain": "D07 · Volatility and volatility trading",
+    "title": "Professional volatility and relative-value trading",
+    "category": "Volatility",
+    "prerequisites": [
+      "M28",
+      "M34",
+      "M37",
+      "M38",
+      "M46",
+      "M48"
+    ],
+    "sources": [
+      "R10",
+      "R11",
+      "R12",
+      "R20"
+    ],
+    "advanced_extension": "M40 and M67: specialist models and desk governance",
+    "stage": 13,
+    "topic_count": 17,
+    "assessment": {
+      "exercise": "Produce a volatility-relative-value proposal with hedge policy and stress scenarios.",
+      "mastery": "Identify all residual directional, jump, correlation, funding and model exposures."
+    },
+    "provenance": {
+      "json_pointer": "/modules/40",
+      "master_line": 2267
+    }
+  },
+  {
+    "id": "M42",
+    "domain": "D08 · Futures and cross-asset derivatives",
+    "title": "Futures contracts, curves and options on futures",
+    "category": "Futures",
+    "prerequisites": [
+      "M02",
+      "M03",
+      "M05",
+      "M29"
+    ],
+    "sources": [
+      "R03",
+      "R05",
+      "R42"
+    ],
+    "advanced_extension": "M39 and M43: volatility and asset-class applications",
+    "stage": 12,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Trace a futures roll and an exercised futures option through margin and settlement.",
+      "mastery": "Distinguish spot return, roll, collateral return and physical delivery obligations."
+    },
+    "provenance": {
+      "json_pointer": "/modules/41",
+      "master_line": 2332
+    }
+  },
+  {
+    "id": "M43",
+    "domain": "D08 · Futures and cross-asset derivatives",
+    "title": "Rates, FX, commodities, credit and digital-asset options",
+    "category": "Cross-Asset Derivatives",
+    "prerequisites": [
+      "M30",
+      "M42",
+      "M07"
+    ],
+    "sources": [
+      "R03",
+      "R05",
+      "R24"
+    ],
+    "advanced_extension": "M44 and M67: specialist desks and products",
+    "stage": 15,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Compare equivalent-seeming equity, FX, rates and commodity option quotations.",
+      "mastery": "Convert units and explain discounting, collateral and settlement differences."
+    },
+    "provenance": {
+      "json_pointer": "/modules/42",
+      "master_line": 2391
+    }
+  },
+  {
+    "id": "M44",
+    "domain": "D08 · Futures and cross-asset derivatives",
+    "title": "Exotics, OTC contracts and structured optionality",
+    "category": "Specialist Derivatives",
+    "prerequisites": [
+      "M14",
+      "M31",
+      "M40",
+      "M43"
+    ],
+    "sources": [
+      "R05",
+      "R24",
+      "R25",
+      "R43"
+    ],
+    "advanced_extension": "M67: institutional risk and model governance",
+    "stage": 15,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Decompose an exotic/structured product and read a sample term sheet.",
+      "mastery": "Identify path dependence, exercise, model, counterparty and documentation risks."
+    },
+    "provenance": {
+      "json_pointer": "/modules/43",
+      "master_line": 2447
+    }
+  },
+  {
+    "id": "M45",
+    "domain": "D09 · Risk and portfolio construction",
+    "title": "Trade risk, sizing and survival",
+    "category": "Risk",
+    "prerequisites": [
+      "M05",
+      "M10",
+      "M21"
+    ],
+    "sources": [
+      "R01",
+      "R10",
+      "R44",
+      "R73"
+    ],
+    "advanced_extension": "M46–M48: stress, funding and portfolio aggregation",
+    "stage": 8,
+    "topic_count": 17,
+    "assessment": {
+      "exercise": "Size a skewed-payoff position under several edge and loss assumptions.",
+      "mastery": "Keep loss/cash needs within a declared budget and reject infeasible minimum contract sizes."
+    },
+    "provenance": {
+      "json_pointer": "/modules/44",
+      "master_line": 2506
+    }
+  },
+  {
+    "id": "M46",
+    "domain": "D09 · Risk and portfolio construction",
+    "title": "Scenario analysis, stress and tail risk",
+    "category": "Risk",
+    "prerequisites": [
+      "M45",
+      "M32",
+      "M36",
+      "M11"
+    ],
+    "sources": [
+      "R44",
+      "R09",
+      "R45"
+    ],
+    "advanced_extension": "M48 and M67: portfolio and governance",
+    "stage": 8,
+    "topic_count": 17,
+    "assessment": {
+      "exercise": "Stress an option book with joint spot, skew, volatility, liquidity and margin shocks.",
+      "mastery": "Identify ruin paths and funding failure even when final terminal payoff seems acceptable."
+    },
+    "provenance": {
+      "json_pointer": "/modules/45",
+      "master_line": 2568
+    }
+  },
+  {
+    "id": "M47",
+    "domain": "D09 · Risk and portfolio construction",
+    "title": "Margin, collateral and liquidity management",
+    "category": "Risk",
+    "prerequisites": [
+      "M05",
+      "M22",
+      "M45"
+    ],
+    "sources": [
+      "R09",
+      "R26",
+      "R43",
+      "R46"
+    ],
+    "advanced_extension": "M67: treasury, clearing and counterparty practice",
+    "stage": 8,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Create a dated cash/collateral ladder including assignment and stressed margin.",
+      "mastery": "Show how all obligations could be met without assuming instant transfers or liquid markets."
+    },
+    "provenance": {
+      "json_pointer": "/modules/46",
+      "master_line": 2630
+    }
+  },
+  {
+    "id": "M48",
+    "domain": "D09 · Risk and portfolio construction",
+    "title": "Portfolio construction and option overlays",
+    "category": "Portfolio Management",
+    "prerequisites": [
+      "M08",
+      "M32",
+      "M45",
+      "M46"
+    ],
+    "sources": [
+      "R16",
+      "R44",
+      "R10",
+      "R20",
+      "R72"
+    ],
+    "advanced_extension": "M41: advanced volatility books; M67: mandates and attribution",
+    "stage": 12,
+    "topic_count": 17,
+    "assessment": {
+      "exercise": "Aggregate a portfolio of superficially different option strategies.",
+      "mastery": "Expose shared beta/short-volatility risks and propose measurable concentration limits."
+    },
+    "provenance": {
+      "json_pointer": "/modules/47",
+      "master_line": 2683
+    }
+  },
+  {
+    "id": "M49",
+    "domain": "D09 · Risk and portfolio construction",
+    "title": "Operational, model and information risk",
+    "category": "Risk",
+    "prerequisites": [
+      "M03",
+      "M04",
+      "M45"
+    ],
+    "sources": [
+      "R45",
+      "R47",
+      "R48"
+    ],
+    "advanced_extension": "M58 and M67: production systems and governance",
+    "stage": 8,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Run a tabletop outage, duplicate-order and stale-data incident.",
+      "mastery": "Contain new risk, reconcile positions and restore operation using a documented procedure."
+    },
+    "provenance": {
+      "json_pointer": "/modules/48",
+      "master_line": 2745
+    }
+  },
+  {
+    "id": "M50",
+    "domain": "D10 · Microstructure, execution and management",
+    "title": "Market microstructure and price discovery",
+    "category": "Microstructure",
+    "prerequisites": [
+      "M04",
+      "M10"
+    ],
+    "sources": [
+      "R07",
+      "R08",
+      "R49",
+      "R50"
+    ],
+    "advanced_extension": "M51–M52: options making and execution",
+    "stage": 10,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Analyze a quote/trade replay for spread, depth, queue position and price discovery.",
+      "mastery": "Separate observed facts, model assumptions and plausible alternative explanations."
+    },
+    "provenance": {
+      "json_pointer": "/modules/49",
+      "master_line": 2801
+    }
+  },
+  {
+    "id": "M51",
+    "domain": "D10 · Microstructure, execution and management",
+    "title": "Options market making and dealer-flow analysis",
+    "category": "Microstructure",
+    "prerequisites": [
+      "M34",
+      "M37",
+      "M50"
+    ],
+    "sources": [
+      "R02",
+      "R32",
+      "R49",
+      "R50"
+    ],
+    "advanced_extension": "M40 and M67: quant making and desk risk",
+    "stage": 13,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Build dealer-gamma estimates under opposing inventory-sign assumptions.",
+      "mastery": "Report a sensitivity range and demonstrate why OI alone does not reveal the actual book."
+    },
+    "provenance": {
+      "json_pointer": "/modules/50",
+      "master_line": 2860
+    }
+  },
+  {
+    "id": "M52",
+    "domain": "D10 · Microstructure, execution and management",
+    "title": "Professional order execution and cost analysis",
+    "category": "Execution",
+    "prerequisites": [
+      "M04",
+      "M50",
+      "M21"
+    ],
+    "sources": [
+      "R07",
+      "R08",
+      "R30",
+      "R50"
+    ],
+    "advanced_extension": "M58: production automation; M61: execution attribution",
+    "stage": 10,
+    "topic_count": 14,
+    "assessment": {
+      "exercise": "Compare package execution policies on identical opportunities.",
+      "mastery": "Attribute fill quality, non-fill cost, adverse selection and net implementation shortfall."
+    },
+    "provenance": {
+      "json_pointer": "/modules/51",
+      "master_line": 2916
+    }
+  },
+  {
+    "id": "M53",
+    "domain": "D10 · Microstructure, execution and management",
+    "title": "Position management and decision policies",
+    "category": "Position Management",
+    "prerequisites": [
+      "M22",
+      "M24",
+      "M25",
+      "M32",
+      "M45",
+      "M52"
+    ],
+    "sources": [
+      "R01",
+      "R06",
+      "R10"
+    ],
+    "advanced_extension": "M34 and M48: dynamic hedging and portfolio effects",
+    "stage": 10,
+    "topic_count": 17,
+    "assessment": {
+      "exercise": "Compare hold, close and roll policies using the same starting trade and prices.",
+      "mastery": "Count every cash flow and evaluate the new exposure independently of sunk loss."
+    },
+    "provenance": {
+      "json_pointer": "/modules/52",
+      "master_line": 2969
+    }
+  },
+  {
+    "id": "M54",
+    "domain": "D11 · Research, data and software",
+    "title": "Market data and research engineering",
+    "category": "Quantitative",
+    "prerequisites": [
+      "M03",
+      "M11",
+      "M21"
+    ],
+    "sources": [
+      "R18",
+      "R33",
+      "R51",
+      "R52"
+    ],
+    "advanced_extension": "M56 and M58: backtesting and production",
+    "stage": 11,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Build a small point-in-time options dataset with corporate actions and missing quotes.",
+      "mastery": "Produce an auditable data dictionary, exclusion log and timestamp checks."
+    },
+    "provenance": {
+      "json_pointer": "/modules/53",
+      "master_line": 3034
+    }
+  },
+  {
+    "id": "M55",
+    "domain": "D11 · Research, data and software",
+    "title": "Research design, edge and hypothesis validation",
+    "category": "Quantitative",
+    "prerequisites": [
+      "M11",
+      "M12",
+      "M54"
+    ],
+    "sources": [
+      "R22",
+      "R23",
+      "R29",
+      "R53"
+    ],
+    "advanced_extension": "M56–M57: simulation and learning models",
+    "stage": 11,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Write a preregistered hypothesis and attempt to falsify it.",
+      "mastery": "Document rationale, null, tests, search count, costs and rejection criteria before results."
+    },
+    "provenance": {
+      "json_pointer": "/modules/54",
+      "master_line": 3093
+    }
+  },
+  {
+    "id": "M56",
+    "domain": "D11 · Research, data and software",
+    "title": "Backtesting, validation and simulation",
+    "category": "Quantitative",
+    "prerequisites": [
+      "M55",
+      "M10",
+      "M52"
+    ],
+    "sources": [
+      "R23",
+      "R33",
+      "R53"
+    ],
+    "advanced_extension": "M58: controlled deployment; M61: live versus simulated attribution",
+    "stage": 11,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Run an options backtest including expiry, capital and realistic execution.",
+      "mastery": "Reproduce a hand-calculated sample and preserve a genuinely untouched holdout."
+    },
+    "provenance": {
+      "json_pointer": "/modules/55",
+      "master_line": 3149
+    }
+  },
+  {
+    "id": "M57",
+    "domain": "D11 · Research, data and software",
+    "title": "Systematic signals and statistical learning",
+    "category": "Quantitative",
+    "prerequisites": [
+      "M12",
+      "M55",
+      "M56"
+    ],
+    "sources": [
+      "R22",
+      "R53",
+      "R54"
+    ],
+    "advanced_extension": "M58: production; M41: options relative-value research",
+    "stage": 13,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Compare a simple forecasting rule with a statistical-learning model.",
+      "mastery": "Show incremental out-of-sample benefit or correctly reject the added complexity."
+    },
+    "provenance": {
+      "json_pointer": "/modules/56",
+      "master_line": 3208
+    }
+  },
+  {
+    "id": "M58",
+    "domain": "D11 · Research, data and software",
+    "title": "Python, analytics tools and reliable automation",
+    "category": "Tools and Software",
+    "prerequisites": [
+      "M54",
+      "M56",
+      "M49"
+    ],
+    "sources": [
+      "R33",
+      "R52",
+      "R55"
+    ],
+    "advanced_extension": "M67: desk-scale systems and governance",
+    "stage": 11,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Build a paper-only analytics pipeline from ingestion to positions and risk.",
+      "mastery": "Independently verify numbers and recover from a dropped message or rejected order."
+    },
+    "provenance": {
+      "json_pointer": "/modules/57",
+      "master_line": 3267
+    }
+  },
+  {
+    "id": "M59",
+    "domain": "D12 · Decision practice and professional development",
+    "title": "Trading styles and complete system design",
+    "category": "Trading Systems",
+    "prerequisites": [
+      "M23",
+      "M45",
+      "M53",
+      "M55"
+    ],
+    "sources": [
+      "R10",
+      "R07",
+      "R53"
+    ],
+    "advanced_extension": "M56 and M61: validation and performance review",
+    "stage": 11,
+    "topic_count": 17,
+    "assessment": {
+      "exercise": "Write a complete one-market trading-system specification.",
+      "mastery": "Another person must be able to reproduce every decision and identify when trading is prohibited."
+    },
+    "provenance": {
+      "json_pointer": "/modules/58",
+      "master_line": 3326
+    }
+  },
+  {
+    "id": "M60",
+    "domain": "D12 · Decision practice and professional development",
+    "title": "Psychology, decision hygiene and deliberate practice",
+    "category": "Psychology",
+    "prerequisites": [
+      "M01",
+      "M10",
+      "M45"
+    ],
+    "sources": [
+      "R64",
+      "R65",
+      "R66"
+    ],
+    "advanced_extension": "M61 and M67: process evidence and professional accountability",
+    "stage": 8,
+    "topic_count": 22,
+    "assessment": {
+      "exercise": "Keep a forecast/decision journal and replay a winning and losing streak.",
+      "mastery": "Identify behavior changes, follow pause rules and judge decisions from ex-ante information."
+    },
+    "provenance": {
+      "json_pointer": "/modules/59",
+      "master_line": 3388
+    }
+  },
+  {
+    "id": "M61",
+    "domain": "D12 · Decision practice and professional development",
+    "title": "Journaling, performance measurement and attribution",
+    "category": "Performance Analytics",
+    "prerequisites": [
+      "M11",
+      "M45",
+      "M52",
+      "M53"
+    ],
+    "sources": [
+      "R10",
+      "R07",
+      "R23",
+      "R64"
+    ],
+    "advanced_extension": "M67: independent reporting and continuous improvement",
+    "stage": 11,
+    "topic_count": 19,
+    "assessment": {
+      "exercise": "Analyze a full journal including fees, adjustments, missed trades and withdrawals.",
+      "mastery": "Reconcile totals and separate exposure, execution, process and statistical uncertainty."
+    },
+    "provenance": {
+      "json_pointer": "/modules/60",
+      "master_line": 3465
+    }
+  },
+  {
+    "id": "M62",
+    "domain": "D13 · Rules, operations and market-specific practice",
+    "title": "United States regulatory, tax and operational branch",
+    "category": "Regulation and Tax",
+    "prerequisites": [
+      "M03",
+      "M05",
+      "M22"
+    ],
+    "sources": [
+      "R01",
+      "R04",
+      "R26",
+      "R30",
+      "R61",
+      "R62"
+    ],
+    "advanced_extension": "M67: institutional compliance; verify rules before implementation",
+    "stage": 5,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Complete a dated U.S. instrument/account/rules worksheet.",
+      "mastery": "Locate current official rules and broker cutoffs; explain where instrument-specific tax advice is needed."
+    },
+    "provenance": {
+      "json_pointer": "/modules/61",
+      "master_line": 3536
+    }
+  },
+  {
+    "id": "M63",
+    "domain": "D13 · Rules, operations and market-specific practice",
+    "title": "India regulatory, tax and operational branch",
+    "category": "Regulation and Tax",
+    "prerequisites": [
+      "M03",
+      "M05",
+      "M22"
+    ],
+    "sources": [
+      "R56",
+      "R57",
+      "R58",
+      "R59",
+      "R60"
+    ],
+    "advanced_extension": "M67: institutional practice; refresh the dated contract worksheet",
+    "stage": 5,
+    "topic_count": 19,
+    "assessment": {
+      "exercise": "Complete a dated Indian contract, fee, margin, delivery and tax worksheet.",
+      "mastery": "Verify live listings and effective dates; never fill current lots or tax rates from memory."
+    },
+    "provenance": {
+      "json_pointer": "/modules/62",
+      "master_line": 3595
+    }
+  },
+  {
+    "id": "M64",
+    "domain": "D13 · Rules, operations and market-specific practice",
+    "title": "Other jurisdictions and cross-border trading",
+    "category": "Regulation and Tax",
+    "prerequisites": [
+      "M03",
+      "M22"
+    ],
+    "sources": [
+      "R43",
+      "R46",
+      "R63",
+      "R69"
+    ],
+    "advanced_extension": "M44 and M67: OTC and institutional cross-border practice",
+    "stage": 5,
+    "topic_count": 11,
+    "assessment": {
+      "exercise": "Compare the same intended exposure in two jurisdictions.",
+      "mastery": "Identify access, settlement, collateral, currency, reporting and tax differences."
+    },
+    "provenance": {
+      "json_pointer": "/modules/63",
+      "master_line": 3663
+    }
+  },
+  {
+    "id": "M65",
+    "domain": "D14 · Evidence, failure analysis and professional practice",
+    "title": "Retail myths and evidence standards",
+    "category": "Evidence and Myths",
+    "prerequisites": [
+      "M10",
+      "M21",
+      "M45"
+    ],
+    "sources": [
+      "R01",
+      "R04",
+      "R20",
+      "R29",
+      "R32",
+      "R64"
+    ],
+    "advanced_extension": "M55: falsification; M66: consequences of mistaken beliefs",
+    "stage": 11,
+    "topic_count": 20,
+    "assessment": {
+      "exercise": "Write an evidence verdict for each listed myth with a counterexample or test design.",
+      "mastery": "Distinguish false, overstated, unsupported and context-dependent claims without replacing one myth with another."
+    },
+    "provenance": {
+      "json_pointer": "/modules/64",
+      "master_line": 3710
+    }
+  },
+  {
+    "id": "M66",
+    "domain": "D14 · Evidence, failure analysis and professional practice",
+    "title": "Failure taxonomy and historical case studies",
+    "category": "Failure Analysis",
+    "prerequisites": [
+      "M45",
+      "M46",
+      "M49",
+      "M55",
+      "M60"
+    ],
+    "sources": [
+      "R42",
+      "R47",
+      "R56",
+      "R64",
+      "R67",
+      "R68"
+    ],
+    "advanced_extension": "M67: turning incidents into durable controls",
+    "stage": 16,
+    "topic_count": 16,
+    "assessment": {
+      "exercise": "Reconstruct a documented loss event and map each failure to a control.",
+      "mastery": "Distinguish known facts from hindsight and show which losses the control could realistically prevent."
+    },
+    "provenance": {
+      "json_pointer": "/modules/65",
+      "master_line": 3781
+    }
+  },
+  {
+    "id": "M67",
+    "domain": "D14 · Evidence, failure analysis and professional practice",
+    "title": "Professional desk practice and ongoing development",
+    "category": "Professional Practice",
+    "prerequisites": [
+      "M48",
+      "M49",
+      "M51",
+      "M58",
+      "M61",
+      "M66"
+    ],
+    "sources": [
+      "R45",
+      "R07",
+      "R08",
+      "R43"
+    ],
+    "advanced_extension": "Specialize by mandate; maintain current rules and model inventory",
+    "stage": 16,
+    "topic_count": 15,
+    "assessment": {
+      "exercise": "Present a desk-style proposal, daily risk report and incident response to a skeptical reviewer.",
+      "mastery": "Defend assumptions, admit unknowns, reconcile numbers and comply with a written mandate."
+    },
+    "provenance": {
+      "json_pointer": "/modules/66",
+      "master_line": 3840
+    }
+  }
+]

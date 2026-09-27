@@ -1,0 +1,46 @@
+{
+  "result": "PASS",
+  "date": "2026-09-26",
+  "database": {
+    "tables": 107,
+    "accounts": 0,
+    "migration": 20,
+    "draft_heads": 2851,
+    "catalog_links": 5100,
+    "quiz_attempts": 0,
+    "import_batches": 1,
+    "source_records": 12626,
+    "catalog_objects": 2851,
+    "mapping_targets": 10550,
+    "source_mappings": 6402,
+    "review_decisions": 0,
+    "catalog_revisions": 2851,
+    "importer_superuser": false,
+    "active_publications": 0,
+    "rule_certifications": 0,
+    "runtime_connections": 10,
+    "importer_schema_create": false,
+    "importer_private_note_read": false
+  },
+  "import": {
+    "manifest_sha256": "ab4d7b35537909b66e9864a2cbcb94d805bb5e71223deed7680a44bc12ce9fd9",
+    "records": 11452,
+    "collections": 22,
+    "batch_id": 1,
+    "applied": "APPLIED",
+    "replayed": "REPLAY",
+    "export": "EXPORTED",
+    "all_canonical_fields_equal": true
+  },
+  "health_readiness_https_shell": "PASS",
+  "browser_cases": {
+    "passed": 4,
+    "failed": 0
+  },
+  "jar": {
+    "sha256": "3dc7a3cbc3aba6cbff68f3c7d3784c213e0288fc99a5521d07f36401394c9711",
+    "contains_V0020": true,
+    "test_fixtures_packaged": false
+  },
+  "production_deployment": false
+}

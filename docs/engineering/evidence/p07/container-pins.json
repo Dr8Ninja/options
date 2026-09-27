@@ -1,0 +1,23 @@
+{
+  "postgres": {
+    "tag": "library/postgres:18.6",
+    "digest": "sha256:86c951e05bf56c93d95d397747fb8820ac76cc3bedb78f43abd83eedbe3666ae"
+  },
+  "caddy": {
+    "tag": "library/caddy:2.11.4-alpine",
+    "digest": "sha256:6aeddd44c3078b0f9a35206472a11420648a79c184603ef95957d0a20044cb2b"
+  },
+  "node": {
+    "tag": "library/node:24.21.0-bookworm-slim",
+    "digest": "sha256:0e0ff40c39bc087845bfb27465a0df4ea419520094bc35842ff83dd8cbe6f9b6"
+  },
+  "java": {
+    "tag": "library/eclipse-temurin:25.0.4_7-jre",
+    "digest": "sha256:bb036ed6cfdc57e3da7c22634d15f1b840d2caf76183861c80e81ca4b5104abb",
+    "observed_alias": "library/eclipse-temurin:25-jre"
+  },
+  "mailpit": {
+    "tag": "axllent/mailpit:latest",
+    "digest": "sha256:74d609a42ec279aa63c6b4622a6fa9b5408d1ad5b1d76a1c4be40a265ce0863d"
+  }
+}

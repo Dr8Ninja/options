@@ -1,0 +1,15 @@
+title = "Options platform secret scanning"
+[extend]
+useDefault = true
+[[allowlists]]
+description = "Generated dependencies, private local environment, and build output only"
+paths = [
+  '''(^|/)\.local/''',
+  '''(^|/)\.venv/''',
+  '''(^|/)node_modules/''',
+  '''(^|/)target/''',
+  '''(^|/)\.next/''',
+  '''(^|/)\.env(?:\.local)?$''',
+  '''(^|/)playwright-report/''',
+  '''(^|/)test-results/'''
+]

@@ -1,0 +1,65 @@
+{
+  "as_of": "2026-09-23",
+  "result": "PASS",
+  "scope": "P02/source integrity, document IDs and local file links, explicit design dependency DAG, primary-source retrieval metadata, observed package version inclusion and cost arithmetic. Semantic design review is separate; no application/runtime/security/load tests.",
+  "upstream_product_gate": "PASS",
+  "requirements_allocated": 40,
+  "adrs": 6,
+  "mermaid_diagrams_present": 5,
+  "diagram_rendering_tested": false,
+  "threats": 17,
+  "component_dependency_order": [
+    "OPS",
+    "CAT",
+    "DSC",
+    "IDN",
+    "ASMT",
+    "LRN",
+    "ADM",
+    "FLOW"
+  ],
+  "component_dependencies": {
+    "OPS": [],
+    "CAT": [
+      "OPS"
+    ],
+    "DSC": [
+      "CAT"
+    ],
+    "IDN": [
+      "OPS"
+    ],
+    "ASMT": [
+      "CAT",
+      "IDN",
+      "OPS"
+    ],
+    "LRN": [
+      "CAT",
+      "IDN",
+      "ASMT",
+      "OPS"
+    ],
+    "ADM": [
+      "CAT",
+      "IDN",
+      "ASMT",
+      "LRN",
+      "OPS"
+    ],
+    "FLOW": [
+      "CAT",
+      "IDN",
+      "ASMT",
+      "LRN",
+      "OPS"
+    ]
+  },
+  "local_file_links_checked": 235,
+  "source_retrievals": 45,
+  "reference_infrastructure_usd_month": "145.25",
+  "reference_high_egress_usd_month": "167.75",
+  "alternative_vm_db_storage_usd_month": "65.90",
+  "application_tests_run": false,
+  "deployment_performed": false
+}

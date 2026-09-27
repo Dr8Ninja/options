@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "OPT",
+      "title": "Options: contracts, volatility, research and professional practice",
+      "phase_ids": [
+        "P0",
+        "P1",
+        "P2",
+        "P3",
+        "P4"
+      ],
+      "qualification": "Educational curriculum design; no accreditation or promise of trading profitability."
+    }
+  ]
+}

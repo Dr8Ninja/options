@@ -1,0 +1,127 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "audience": {
+            "type": "string"
+          },
+          "entry_criteria": {
+            "type": "string"
+          },
+          "diagnostic_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "module_sequence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "target_modules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "branches": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "module_id": {
+                  "type": "string"
+                },
+                "rule": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "module_id",
+                "rule"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "exit_competencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "exit_competency_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "study_hours": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "estimate_basis": {
+            "type": "string"
+          },
+          "assessment_gates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "milestone_gates": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "audience",
+          "entry_criteria",
+          "diagnostic_ids",
+          "module_sequence",
+          "target_modules",
+          "branches",
+          "exit_competencies",
+          "exit_competency_ids",
+          "study_hours",
+          "estimate_basis",
+          "assessment_gates",
+          "milestone_gates"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 learning_paths interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

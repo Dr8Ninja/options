@@ -1,0 +1,126 @@
+{
+  "artifactHashes": {
+    "design/prototype/index.html": "3eb0b8cfd8efc496b1867a51d90c3003d64314a2c2fdf09d057c4f20e99cb86b",
+    "design/prototype/styles.css": "384b73dfe762ac67eb06a5af85e7b9d4cbe4bd0f67f4cfbe2472a2bbab39d9a4",
+    "design/prototype/tokens.css": "c96726d12b968f93ec9e4baaa8c9b2e48f11dbcfcc44f7b0502957b8c760ea53",
+    "design/prototype/app.js": "4dfda6915176d6ec5a992ff9ac97c02d127e0fa713b3a258b8cc093ce365bcfa",
+    "design/prototype/content.js": "3eb89381052f8aae7ca500f90379563d4d6853d4c57a644a52e5689b8b7d5916",
+    "scripts/verify_design_browser.cjs": "7f0390611c8c7d381f5fdc7304feb1fd07fc1a8d1706ce8fc9ef5dc2241850b6"
+  },
+  "date": "2026-09-23",
+  "scope": "Local P06 design prototype only",
+  "browser": "153.0.8010.54",
+  "viewports": [
+    320,
+    390,
+    768,
+    1280,
+    1440
+  ],
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "layoutChecks": 380,
+  "axeChecks": 36,
+  "stateChecks": 32,
+  "interactions": [
+    {
+      "name": "mobile-menu-expands",
+      "passed": true
+    },
+    {
+      "name": "navigation-focuses-title",
+      "passed": true
+    },
+    {
+      "name": "numeric-error-focus",
+      "passed": true
+    },
+    {
+      "name": "practice-feedback",
+      "passed": true
+    },
+    {
+      "name": "bookmark-across-navigation",
+      "passed": true
+    },
+    {
+      "name": "note-confirmation",
+      "passed": true
+    },
+    {
+      "name": "dialog-focus",
+      "passed": true
+    },
+    {
+      "name": "dialog-focus-trapped",
+      "passed": true
+    },
+    {
+      "name": "dialog-returns-focus",
+      "passed": true
+    },
+    {
+      "name": "auth-error-label-focus",
+      "passed": true
+    },
+    {
+      "name": "filters-shareable",
+      "passed": true
+    },
+    {
+      "name": "resource-free-only",
+      "passed": true
+    },
+    {
+      "name": "exact-id-result",
+      "passed": true
+    },
+    {
+      "name": "zero-reviewed-lessons-empty",
+      "passed": true
+    },
+    {
+      "name": "mobile-chart-data-table-open",
+      "passed": true
+    },
+    {
+      "name": "submit-confirmation",
+      "passed": true
+    },
+    {
+      "name": "feedback-after-submit",
+      "passed": true
+    },
+    {
+      "name": "reduced-motion-preference",
+      "passed": true
+    },
+    {
+      "name": "text-spacing-no-horizontal-overflow",
+      "passed": true
+    },
+    {
+      "name": "text-200-percent-no-overflow",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "lesson-M01.01-390-light.png",
+    "resources-390-light.png",
+    "auth-register-390-light.png",
+    "home-1440-light.png",
+    "curriculum-1440-light.png",
+    "resources-1440-light.png",
+    "dossier-1440-light.png",
+    "publish-1440-light.png",
+    "lesson-M01.01-1440-dark.png",
+    "dashboard-1440-dark.png"
+  ],
+  "runtimeErrors": [],
+  "failures": [],
+  "passed": true,
+  "productionTestsRun": false,
+  "screenReaderTestsRun": false
+}

@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Options field guide — P06 design prototype</title>
+<link rel="stylesheet" href="tokens.css"><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="review-bar" role="region" aria-label="Prototype review controls">
+<p><strong>P06 · Design review</strong><span> Canonical map · simulated learning states · nothing is saved</span></p>
+<div class="review-controls"><label for="appearance">Appearance</label><select id="appearance"><option value="system">System</option><option value="light" selected>Light</option><option value="dark">Dark</option></select><label for="scenario">State</label><select id="scenario"><option value="ready">Default</option><option value="loading">Loading</option><option value="empty">Empty</option><option value="error">Service error</option><option value="offline">Offline / unsaved</option><option value="expired">Session expired</option><option value="conflict">Edit conflict</option><option value="withdrawn">Withdrawn</option><option value="exhausted">No fresh assessment</option></select><a href="#/review">Review index</a></div>
+</div>
+<header class="masthead"><a class="wordmark" href="#/home" aria-label="Options field guide home"><span class="brand-mark" aria-hidden="true">o.</span><span>Options<span class="brand-sub">A field guide to learning</span></span></a><button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu <span aria-hidden="true">☰</span></button><nav id="primary-nav" aria-label="Primary"><a href="#/home">Home</a><a href="#/learn">Learn</a><a href="#/curriculum">Curriculum</a><a href="#/paths">Paths</a><a href="#/resources">Resources</a><a href="#/projects">Projects</a></nav><div class="account-nav"><a href="#/search" aria-label="Search curriculum">Search <span aria-hidden="true">⌕</span></a><a href="#/dashboard">My learning</a></div></header>
+<div id="announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+<main id="main" tabindex="-1"></main>
+<footer class="footer"><p><strong>Learn the mechanics. Question the assumptions.</strong><br>Education and simulation. No brokerage account or real money required.</p><nav aria-label="Footer"><a href="#/methodology">Method & sources</a><a href="#/account">Account & privacy</a><a href="#/admin">Editorial preview</a></nav><p class="muted">Working title · P06 design artifact<br>Content snapshot: 22 September 2026</p></footer>
+<dialog id="dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+<noscript><section class="noscript"><h1>Design review needs JavaScript</h1><p>This local prototype uses JavaScript to switch between proposed screens. The production reading experience must render its public content on the server. See the design specifications for the no-script reading contract.</p></section></noscript>
+<script src="content.js"></script><script src="app.js"></script>
+</body></html>

@@ -1,0 +1,119 @@
+@import "../styles/tokens.css";
+* {
+  box-sizing: border-box;
+}
+html {
+  color-scheme: light;
+}
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--background);
+  font-family: var(--font-interface);
+  font-size: var(--text-body);
+  line-height: var(--leading-interface);
+  overflow-wrap: anywhere;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+a {
+  color: var(--accent);
+  text-underline-offset: 0.2em;
+}
+button {
+  min-height: var(--target);
+  border: 1px solid var(--control);
+  border-radius: var(--radius-control);
+  padding: var(--space-8) var(--space-16);
+  color: var(--ink);
+  background: var(--surface);
+  cursor: pointer;
+}
+:focus-visible {
+  outline: var(--focus-width) solid var(--focus);
+  outline-offset: var(--focus-offset);
+}
+main,
+.site-header,
+.site-footer {
+  max-width: var(--maxWidthPx);
+  margin-inline: auto;
+  padding-inline: var(--gutterDesktopPx);
+}
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-24);
+  min-height: 112px;
+  border-bottom: 1px solid var(--line);
+}
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--ink);
+}
+.wordmark strong {
+  font-size: 2rem;
+  font-family: var(--font-editorial);
+  font-weight: 400;
+  line-height: 1.2;
+}
+.wordmark span {
+  color: var(--muted);
+  font-size: var(--text-caption);
+}
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding-block: var(--space-24);
+  color: var(--muted);
+  font-size: var(--text-small);
+}
+.site-footer p {
+  margin-block: var(--space-4);
+}
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: var(--space-16);
+  padding: var(--space-12);
+  background: var(--surface);
+  z-index: 10;
+}
+.skip-link:focus {
+  top: var(--space-8);
+}
+@media (max-width: 959px) {
+  main,
+  .site-header,
+  .site-footer {
+    padding-inline: var(--space-24);
+  }
+}
+@media (max-width: 639px) {
+  main,
+  .site-header,
+  .site-footer {
+    padding-inline: var(--gutterMobilePx);
+  }
+  .site-header {
+    gap: var(--space-12);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "purpose": "P01 curriculum interchange and research design; not application persistence schema",
+  "source_hashes": [
+    {
+      "path": "sources/roadmaps/options-learning-roadmap.md",
+      "sha256": "c57fc3b040689e926bd33f0632184a5f4ce53a99cd3e17ea23d0735b1d3162e1",
+      "bytes": 64252,
+      "lines": 444,
+      "whitespace_words": 7160,
+      "source_declared_research_date": "2026-09-17"
+    },
+    {
+      "path": "sources/roadmaps/options-master-knowledge-map.md",
+      "sha256": "a7093115bc78ab3d6e8ef8b94a62d524230d2d4480fb4bb097e577a76a30e560",
+      "bytes": 280774,
+      "lines": 4926,
+      "whitespace_words": 35913,
+      "source_declared_research_date": "2026-09-17"
+    },
+    {
+      "path": "sources/roadmaps/options-curriculum-catalog.json",
+      "sha256": "242dc024740fc2ad5d18a987528b6a60c28f0b3912835e3749594f398d07d976",
+      "bytes": 712027,
+      "lines": 24282,
+      "whitespace_words": 55890,
+      "source_declared_research_date": "2026-09-17"
+    }
+  ],
+  "counts": {
+    "modules": 70,
+    "topics": 1025,
+    "subtopics": 1025,
+    "resources": 96,
+    "competencies": 70,
+    "exercises": 210,
+    "quiz_blueprints": 70,
+    "source_mappings": 6402,
+    "projects": 12,
+    "capstones": 7,
+    "decision_cards": 23,
+    "specializations": 7,
+    "market_rules": 27,
+    "associations": 152,
+    "source_items": 1174,
+    "authoring_queue": 1025
+  },
+  "publication_ready_lessons": 0
+}

@@ -1,0 +1,118 @@
+{
+  "result": "PASS",
+  "date": "2026-09-27T11:48:54.301800+00:00",
+  "database": {
+    "tables": 111,
+    "migration": 21,
+    "catalog_objects": 2851,
+    "draft_heads": 2851,
+    "active_publications": 0,
+    "publications": 0,
+    "accounts": 0,
+    "review_decisions": 0,
+    "search_rows": 0,
+    "rule_certifications": 0
+  },
+  "https_ca_verified": true,
+  "requests": [
+    {
+      "path": "/api/v1/topics",
+      "status": 503,
+      "cacheControl": "no-store",
+      "retryAfter": "30",
+      "body": {
+        "type": "urn:otr:problem:TEMPORARILY_UNAVAILABLE",
+        "title": "Service Unavailable",
+        "status": 503,
+        "code": "TEMPORARILY_UNAVAILABLE",
+        "message": "Public content is temporarily unavailable.",
+        "fieldErrors": [],
+        "timestamp": "2026-09-27T11:48:54.259536669Z",
+        "requestId": "b9b14677-3bbb-46f5-bc96-3b56e86df186"
+      }
+    },
+    {
+      "path": "/api/v1/content-version",
+      "status": 503,
+      "cacheControl": "no-store",
+      "retryAfter": "30",
+      "body": {
+        "type": "urn:otr:problem:TEMPORARILY_UNAVAILABLE",
+        "title": "Service Unavailable",
+        "status": 503,
+        "code": "TEMPORARILY_UNAVAILABLE",
+        "message": "Public content is temporarily unavailable.",
+        "fieldErrors": [],
+        "timestamp": "2026-09-27T11:48:54.268166461Z",
+        "requestId": "88398ff9-4725-49ba-95f8-88dcf1d4c280"
+      }
+    },
+    {
+      "path": "/api/v1/resources/R01",
+      "status": 503,
+      "cacheControl": "no-store",
+      "retryAfter": "30",
+      "body": {
+        "type": "urn:otr:problem:TEMPORARILY_UNAVAILABLE",
+        "title": "Service Unavailable",
+        "status": 503,
+        "code": "TEMPORARILY_UNAVAILABLE",
+        "message": "Public content is temporarily unavailable.",
+        "fieldErrors": [],
+        "timestamp": "2026-09-27T11:48:54.283121502Z",
+        "requestId": "76aec888-d82a-4223-89e6-427233fbc478"
+      }
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "cacheControl": "no-store",
+      "retryAfter": null,
+      "body": {
+        "type": "urn:otr:problem:AUTHENTICATION_REQUIRED",
+        "title": "Unauthorized",
+        "status": 401,
+        "code": "AUTHENTICATION_REQUIRED",
+        "message": "Sign in to continue.",
+        "fieldErrors": [],
+        "timestamp": "2026-09-27T11:48:54.287279461Z",
+        "requestId": "2ec31ca0-cab7-45d9-8e5c-742c70d648c6"
+      }
+    },
+    {
+      "path": "/api/v1/admin/content",
+      "status": 401,
+      "cacheControl": "no-store",
+      "retryAfter": null,
+      "body": {
+        "type": "urn:otr:problem:AUTHENTICATION_REQUIRED",
+        "title": "Unauthorized",
+        "status": 401,
+        "code": "AUTHENTICATION_REQUIRED",
+        "message": "Sign in to continue.",
+        "fieldErrors": [],
+        "timestamp": "2026-09-27T11:48:54.290907294Z",
+        "requestId": "72d5b044-1570-4bb7-9116-882762ab5244"
+      }
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "cacheControl": "no-store",
+      "retryAfter": null,
+      "body": {
+        "status": "UP"
+      }
+    }
+  ],
+  "jar": {
+    "sha256": "44d0e3e9cce605854108c6031f96c5e650da71d42cc420e95ec5f009e18997e3",
+    "contains_V0021": true,
+    "test_fixtures_packaged": false
+  },
+  "production_deployment": false,
+  "browser_cases": {
+    "passed": 4,
+    "failed": 0
+  }
+}

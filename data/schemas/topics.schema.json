@@ -1,0 +1,136 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "classification_code_original": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "difficulty": {
+            "type": "string"
+          },
+          "evidence_class_original": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "module_id": {
+            "type": "string"
+          },
+          "original_provenance": {
+            "type": "object",
+            "properties": {
+              "json_pointer": {
+                "type": "string"
+              },
+              "master_line": {
+                "type": "integer"
+              },
+              "origin": {
+                "type": "string"
+              }
+            },
+            "required": [],
+            "additionalProperties": false
+          },
+          "priority": {
+            "type": "string"
+          },
+          "readiness": {
+            "type": "string",
+            "enum": [
+              "scope_outline",
+              "teaching_brief",
+              "publication_ready"
+            ]
+          },
+          "reviewed_lesson": {
+            "type": "null"
+          },
+          "scope_outline": {
+            "type": "string"
+          },
+          "subtopic_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "teaching_brief": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "teaching_brief_unknown_reason": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "classification_code_original",
+          "difficulty",
+          "evidence_class_original",
+          "id",
+          "module_id",
+          "original_provenance",
+          "priority",
+          "readiness",
+          "reviewed_lesson",
+          "scope_outline",
+          "subtopic_ids",
+          "tags",
+          "teaching_brief",
+          "teaching_brief_unknown_reason",
+          "title"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 topics interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

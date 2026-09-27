@@ -1,0 +1,259 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "DC01",
+      "question": "What regime is the evidence consistent with, and how uncertain is that classification?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 351,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC02",
+      "question": "What is the underlying doing, over the horizon relevant to this trade?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 352,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC03",
+      "question": "What are realized and forecast volatility doing?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 353,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC04",
+      "question": "What does the implied surface price across strikes and expiries?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 354,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC05",
+      "question": "What scheduled or unscheduled event risk matters?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 355,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC06",
+      "question": "Which probabilities are market-implied, which are my forecasts, and why do they differ?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 356,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC07",
+      "question": "What observation would invalidate my thesis?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 357,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC08",
+      "question": "Which instrument expresses the thesis with the least unwanted risk and acceptable costs?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 358,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC09",
+      "question": "Which expiry matches the horizon and event exposure?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 359,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC10",
+      "question": "Which strikes and quantities fit the forecast and loss budget?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 360,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC11",
+      "question": "What Greeks and other exposures am I taking, in correct units?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 361,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC12",
+      "question": "What happens if spot rises, including a gap?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 362,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC13",
+      "question": "What happens if spot falls, including a crash or default?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 363,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC14",
+      "question": "What happens if spot barely moves?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 364,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC15",
+      "question": "What happens if IV rises, including a skew or term-structure change?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 365,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC16",
+      "question": "What happens if IV falls or event uncertainty disappears?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 366,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC17",
+      "question": "What changes after one day, over a weekend, and near expiry?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 367,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC18",
+      "question": "What are the contractual maximum loss, plausible stressed loss and cash obligations?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 368,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC19",
+      "question": "What hidden tail, liquidity, margin, borrow, basis, counterparty or operational risk remains?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 369,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC20",
+      "question": "What is the exit policy, and can it be executed in the adverse scenario?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 370,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC21",
+      "question": "What adjustment is permitted, and why is it better than closing or doing nothing?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 371,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC22",
+      "question": "Is the estimated net expected value worth the uncertainty, capital and tail risk?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 372,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    },
+    {
+      "id": "DC23",
+      "question": "What does the position do to the entire portfolio and its funding needs?",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 373,
+      "required_in_capstones": [
+        "C04",
+        "C06",
+        "C07"
+      ]
+    }
+  ]
+}

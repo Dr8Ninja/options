@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-24",
+  "scope": "P07 local foundations only; no R1 features, authoring or production release",
+  "result": "PASS",
+  "backend_suites": [
+    {
+      "category": "unit",
+      "suite": "org.options.platform.ArchitectureTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "category": "unit",
+      "suite": "org.options.platform.ConfigTest",
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "category": "integration",
+      "suite": "org.options.platform.FoundationIT",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "frontend_tests": 12,
+  "browser_smoke_tests": 4,
+  "webauthn_compatibility_tests": 1,
+  "commands": [
+    {
+      "command": ".venv/bin/python scripts/validate_frontend_design.py",
+      "result": "PASS",
+      "evidence": "P02\u2013P06 contracts, original source/inventory references and design checks"
+    },
+    {
+      "command": "python3 scripts/verify-preservation.py",
+      "result": "PASS",
+      "evidence": "85 source/research/canonical files match P07 entry SHA-256"
+    },
+    {
+      "command": "npm --prefix frontend ci",
+      "result": "PASS",
+      "evidence": "Lockfile install on Node 24.21.0/npm 11.19.0"
+    },
+    {
+      "command": "python3 scripts/check-dependency-policy.py",
+      "result": "PASS",
+      "evidence": "Exact packages, locked registry integrity, Java BOM and digest-pinned images"
+    },
+    {
+      "command": "./backend/mvnw -f backend/pom.xml -B verify",
+      "result": "PASS",
+      "evidence": "2 unit/architecture tests and 7 PostgreSQL integration tests; no skips; executable JAR and CycloneDX"
+    },
+    {
+      "command": "python3 scripts/check-implemented-api.py",
+      "result": "PASS",
+      "evidence": "Generated getCsrf DTO and operation match reviewed OpenAPI; only two implemented routes"
+    },
+    {
+      "command": "npm --prefix frontend run check",
+      "result": "PASS",
+      "evidence": "Format, ESLint, strict TypeScript, generated DTO/token drift and 12 component/integration tests"
+    },
+    {
+      "command": "npm --prefix frontend run build",
+      "result": "PASS",
+      "evidence": "Production Next 16.3.6 build; dynamic shell and not-found routes"
+    },
+    {
+      "command": "docker compose -f infrastructure/compose.yml -f infrastructure/compose.full.yml up -d --build",
+      "result": "PASS",
+      "evidence": "Java and standalone Next container builds, PostgreSQL 18, HTTPS Caddy, local Mailpit"
+    },
+    {
+      "command": "python3 scripts/export-local-ca.py && python3 scripts/wait-ready.py",
+      "result": "PASS",
+      "evidence": "Public CA export; verified TLS health/shell and DB readiness"
+    },
+    {
+      "command": "npm --prefix frontend run test:e2e",
+      "result": "PASS",
+      "evidence": "4 tests across desktop/mobile; both themes; axe, keyboard, no overflow, API/proxy smoke"
+    },
+    {
+      "command": "python3 scripts/test-webauthn.py",
+      "result": "PASS",
+      "evidence": "1 real HTTPS virtual-authenticator protocol test with JDBC challenge/session serialization; test classpath only"
+    },
+    {
+      "command": ".local/tools/gitleaks/gitleaks dir --redact --config .gitleaks.toml .",
+      "result": "PASS",
+      "evidence": "No detected secrets after nine reviewed exact false positives"
+    },
+    {
+      "command": "npm --prefix frontend audit --audit-level=high",
+      "result": "PASS",
+      "evidence": "No reported npm vulnerabilities, all dependency scopes"
+    },
+    {
+      "command": ".local/tools/trivy/trivy sbom --severity HIGH,CRITICAL --exit-code 1 backend/target/classes/META-INF/sbom/application.cdx.json",
+      "result": "PASS",
+      "evidence": "No reported high/critical Java vulnerabilities after Tomcat update"
+    },
+    {
+      "command": "python3 scripts/install-security-tools.py",
+      "result": "PASS",
+      "evidence": "macOS ARM64 scanner archives downloaded and checked against pinned maintainer SHA-256; Linux x64 archive hashes independently verified"
+    },
+    {
+      "command": "docker compose -f infrastructure/compose.yml -f infrastructure/compose.full.yml down; then up -d --build and readiness check",
+      "result": "PASS",
+      "evidence": "Documented shutdown preserves volumes; rebuilt stack restarts with verified HTTPS and PostgreSQL readiness"
+    }
+  ],
+  "hosted_ci_executed": false,
+  "production_deployed": false,
+  "system_ca_trust_installed": false,
+  "postgresql_substitute_used": false
+}

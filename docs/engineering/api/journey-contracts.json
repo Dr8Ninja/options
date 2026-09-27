@@ -1,0 +1,117 @@
+{
+  "J01": [
+    "listPrograms",
+    "getProgram",
+    "getPhase",
+    "getModule",
+    "getTopic",
+    "resolveRoute"
+  ],
+  "J02": [
+    "getTopic",
+    "getExercise",
+    "evaluateTransientPractice",
+    "solutionTransientPractice",
+    "savePractice"
+  ],
+  "J03": [
+    "getPath",
+    "createEnrollment",
+    "startOrResumeAttempt",
+    "getDashboard"
+  ],
+  "J04": [
+    "listResources",
+    "getDiscoveryFacets",
+    "getResource"
+  ],
+  "J05": [
+    "searchCatalog"
+  ],
+  "J06": [
+    "getCsrf",
+    "register",
+    "requestVerification",
+    "confirmVerification"
+  ],
+  "J07": [
+    "login",
+    "getSession",
+    "logout",
+    "logoutAll",
+    "Assertions"
+  ],
+  "J08": [
+    "requestPasswordReset",
+    "confirmPasswordReset",
+    "requestEmailChange",
+    "confirmEmailChange",
+    "cancelEmailChange",
+    "changePassword"
+  ],
+  "J09": [
+    "saveProgress",
+    "getDashboard",
+    "getEnrolledLesson",
+    "previewEnrollmentMigration",
+    "migrateEnrollment"
+  ],
+  "J10": [
+    "saveBookmark",
+    "listBookmarks",
+    "deleteBookmark"
+  ],
+  "J11": [
+    "saveNote",
+    "getNote",
+    "listNotes",
+    "deleteNote"
+  ],
+  "J12": [
+    "startOrResumeAttempt",
+    "saveAttemptAnswers",
+    "submitAttempt",
+    "getAttemptResult",
+    "completeRemediation",
+    "requestFreshAssessment"
+  ],
+  "J13": [
+    "getProject",
+    "startProjectWork",
+    "saveProjectWork",
+    "selfReviewProject",
+    "getProjectResult",
+    "deleteProjectWriting"
+  ],
+  "J14": [
+    "saveDraft",
+    "requestDraftReview",
+    "reviewDraft",
+    "previewRevision",
+    "stagePublication",
+    "activatePublication"
+  ],
+  "J15": [
+    "validateAndStageImport",
+    "getImportReport",
+    "getDraftDiff",
+    "applyImport",
+    "withdrawContent",
+    "rollbackPublication",
+    "certifyRule"
+  ],
+  "J16": [
+    "requestOwnerExport",
+    "getOwnerExportStatus",
+    "downloadOwnerExport",
+    "deleteAccount"
+  ],
+  "J17": [
+    "getTopic",
+    "getCsrf",
+    "login",
+    "submitAttempt",
+    "saveNote",
+    "reviewDraft"
+  ]
+}

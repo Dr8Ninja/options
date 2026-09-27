@@ -1,0 +1,136 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "source_hashes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string"
+          },
+          "bytes": {
+            "type": "integer"
+          },
+          "lines": {
+            "type": "integer"
+          },
+          "whitespace_words": {
+            "type": "integer"
+          },
+          "source_declared_research_date": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "path",
+          "sha256",
+          "bytes",
+          "lines",
+          "whitespace_words",
+          "source_declared_research_date"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "modules": {
+          "type": "integer"
+        },
+        "topics": {
+          "type": "integer"
+        },
+        "subtopics": {
+          "type": "integer"
+        },
+        "resources": {
+          "type": "integer"
+        },
+        "competencies": {
+          "type": "integer"
+        },
+        "exercises": {
+          "type": "integer"
+        },
+        "quiz_blueprints": {
+          "type": "integer"
+        },
+        "source_mappings": {
+          "type": "integer"
+        },
+        "projects": {
+          "type": "integer"
+        },
+        "capstones": {
+          "type": "integer"
+        },
+        "decision_cards": {
+          "type": "integer"
+        },
+        "specializations": {
+          "type": "integer"
+        },
+        "market_rules": {
+          "type": "integer"
+        },
+        "associations": {
+          "type": "integer"
+        },
+        "source_items": {
+          "type": "integer"
+        },
+        "authoring_queue": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "modules",
+        "topics",
+        "subtopics",
+        "resources",
+        "competencies",
+        "exercises",
+        "quiz_blueprints",
+        "source_mappings",
+        "projects",
+        "capstones",
+        "decision_cards",
+        "specializations",
+        "market_rules",
+        "associations",
+        "source_items",
+        "authoring_queue"
+      ],
+      "additionalProperties": false
+    },
+    "publication_ready_lessons": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "purpose",
+    "source_hashes",
+    "counts",
+    "publication_ready_lessons"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 manifest interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

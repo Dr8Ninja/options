@@ -1,0 +1,395 @@
+{
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "RQ01",
+      "priority": "P0",
+      "question": "What evidence, prerequisite and practical test makes foundations and contracts teachable and bounded?",
+      "modules": [
+        "M01",
+        "M02",
+        "M03",
+        "M21",
+        "M22",
+        "M23"
+      ],
+      "claims": [
+        "CL01",
+        "CL14"
+      ],
+      "answer": "Resolved conceptual scope; jurisdiction-specific details gated",
+      "status": "resolved_for_design",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ02",
+      "priority": "P1",
+      "question": "What evidence, prerequisite and practical test makes market infrastructure and execution teachable and bounded?",
+      "modules": [
+        "M03",
+        "M04",
+        "M05",
+        "M47",
+        "M49",
+        "M50",
+        "M51",
+        "M52"
+      ],
+      "claims": [
+        "CL01",
+        "CL11",
+        "CL17",
+        "CL20"
+      ],
+      "answer": "Venue algorithms and current margin parameters remain product-specific readings",
+      "status": "bounded",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ03",
+      "priority": "P0",
+      "question": "What evidence, prerequisite and practical test makes payoffs and structures teachable and bounded?",
+      "modules": [
+        "M24",
+        "M25",
+        "M26",
+        "M27",
+        "M28"
+      ],
+      "claims": [
+        "CL02",
+        "CL04"
+      ],
+      "answer": "Every inherited named structure retained; detailed variant lessons P17",
+      "status": "bounded",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ04",
+      "priority": "P0",
+      "question": "What evidence, prerequisite and practical test makes greeks and p&l teachable and bounded?",
+      "modules": [
+        "M32",
+        "M33",
+        "M34",
+        "M48"
+      ],
+      "claims": [
+        "CL03",
+        "CL11"
+      ],
+      "answer": "Greek convention table authored; higher-order numerical lesson packs P17",
+      "status": "bounded",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ05",
+      "priority": "P1",
+      "question": "What evidence, prerequisite and practical test makes pricing and numerics teachable and bounded?",
+      "modules": [
+        "M13",
+        "M14",
+        "M29",
+        "M30",
+        "M31"
+      ],
+      "claims": [
+        "CL02",
+        "CL03",
+        "CL06"
+      ],
+      "answer": "Conditional theory distinguished from calibration evidence; advanced full lessons P17",
+      "status": "bounded",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ06",
+      "priority": "P1",
+      "question": "What evidence, prerequisite and practical test makes advanced models and surfaces teachable and bounded?",
+      "modules": [
+        "M37",
+        "M40",
+        "M44"
+      ],
+      "claims": [
+        "CL05",
+        "CL06"
+      ],
+      "answer": "SVI conditions reviewed; Heston/SABR original full texts not yet reviewed, implementation claims excluded",
+      "status": "bounded",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ07",
+      "priority": "P1",
+      "question": "What evidence, prerequisite and practical test makes volatility teachable and bounded?",
+      "modules": [
+        "M12",
+        "M35",
+        "M36",
+        "M37",
+        "M38",
+        "M39",
+        "M41"
+      ],
+      "claims": [
+        "CL04",
+        "CL05",
+        "CL08"
+      ],
+      "answer": "Exact current VIX methodology retrieval bounded; FAQ-level distinction and synthetic variance work usable",
+      "status": "bounded",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ08",
+      "priority": "P1",
+      "question": "What evidence, prerequisite and practical test makes hedging and hypotheses teachable and bounded?",
+      "modules": [
+        "M28",
+        "M34",
+        "M41",
+        "M48",
+        "M53",
+        "M55"
+      ],
+      "claims": [
+        "CL04",
+        "CL12"
+      ],
+      "answer": "No strategy profitability adopted; costed hypothesis dossier required",
+      "status": "resolved_for_design",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ09",
+      "priority": "P1",
+      "question": "What evidence, prerequisite and practical test makes quantitative foundations teachable and bounded?",
+      "modules": [
+        "M01",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M57",
+        "B02"
+      ],
+      "claims": [
+        "CL03",
+        "CL12",
+        "CL15"
+      ],
+      "answer": "Competency-linked math levels and entry bridge; advanced prerequisites only at use",
+      "status": "resolved_for_design",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ10",
+      "priority": "P0",
+      "question": "What evidence, prerequisite and practical test makes research validity teachable and bounded?",
+      "modules": [
+        "M54",
+        "M55",
+        "M56",
+        "M57",
+        "M58",
+        "M65"
+      ],
+      "claims": [
+        "CL12",
+        "CL13"
+      ],
+      "answer": "Synthetic route fully rights-safe; real-data rights require use-specific approval",
+      "status": "resolved_for_design",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ11",
+      "priority": "P0",
+      "question": "What evidence, prerequisite and practical test makes risk and capital teachable and bounded?",
+      "modules": [
+        "M45",
+        "M46",
+        "M47",
+        "M48",
+        "M49"
+      ],
+      "claims": [
+        "CL01",
+        "CL11",
+        "CL14"
+      ],
+      "answer": "No universal retail risk percentage; training budgets explicitly hypothetical",
+      "status": "resolved_for_design",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ12",
+      "priority": "P1",
+      "question": "What evidence, prerequisite and practical test makes psychology teachable and bounded?",
+      "modules": [
+        "M60",
+        "M61",
+        "M65"
+      ],
+      "claims": [
+        "CL12",
+        "CL15"
+      ],
+      "answer": "Process journal and calibrated forecast review; no diagnosis or guaranteed behavioral cure",
+      "status": "resolved_for_design",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ13",
+      "priority": "P1",
+      "question": "What evidence, prerequisite and practical test makes professional specializations teachable and bounded?",
+      "modules": [
+        "M33",
+        "M38",
+        "M40",
+        "M41",
+        "M43",
+        "M44",
+        "M50",
+        "M51",
+        "M52",
+        "M67"
+      ],
+      "claims": [
+        "CL05",
+        "CL06",
+        "CL11"
+      ],
+      "answer": "Observed/inferred separation; advanced implementation claims not publication ready",
+      "status": "bounded",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ14",
+      "priority": "P1",
+      "question": "What evidence, prerequisite and practical test makes historical cases teachable and bounded?",
+      "modules": [
+        "M39",
+        "M42",
+        "M66"
+      ],
+      "claims": [
+        "CL07",
+        "CL08",
+        "CL09",
+        "CL10"
+      ],
+      "answer": "Case packs distinguish full source reading from discovery;2008/2020 detail bounded",
+      "status": "bounded",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    },
+    {
+      "id": "RQ15",
+      "priority": "P0",
+      "question": "What evidence, prerequisite and practical test makes india and global teachable and bounded?",
+      "modules": [
+        "M62",
+        "M63",
+        "M64"
+      ],
+      "claims": [
+        "CL14",
+        "CL17",
+        "CL18",
+        "CL20"
+      ],
+      "answer": "Settlement principle resolved; R56 statistics and unverified current BSE/NSE constants quarantined",
+      "status": "bounded",
+      "diminishing_returns": "Further broad links would not change this design decision; next useful work is the named source/lesson verification, not more general discovery.",
+      "reopen_trigger": "New operative rule, contradictory primary evidence, failed exercise, or P17 authoring of the bounded section."
+    }
+  ],
+  "domain_stopping_review": [
+    {
+      "domain_id": "D01",
+      "reason": "Contract distinctions triangulated with ODD/OIC; product procedures need live worksheet.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D02",
+      "reason": "Event/vintage design set; no causal macro trading effect claimed.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D03",
+      "reason": "Math dependency and numerical benchmarks set; advanced derivation review remains P17.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D04",
+      "reason": "Optional placement justified by evidence limitations; exhaustive pattern efficacy search has low expected design value.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D05",
+      "reason": "Signed-leg accounting supports all structure families; variant lessons remain.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D06",
+      "reason": "BSM/parity benchmarks and numerical failure design ready; advanced algorithms require implementation validation.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D07",
+      "reason": "Variance/surface evidence changes adopted; exact VIX method and deeper model texts are targeted blockers.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D08",
+      "reason": "Specialist-only scope prevents generalizing equity conventions; product term sheets required for lessons.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D09",
+      "reason": "Joint loss/funding/operational framework set; margin constants intentionally excluded.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D10",
+      "reason": "Inventory and adverse-selection distinction set; venue-specific rules need exact reading.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D11",
+      "reason": "Leakage/rights controls and synthetic route set; licensed chains unavailable without entitlement.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D12",
+      "reason": "Practice review designed; measured training efficacy not claimed.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D13",
+      "reason": "High-value circular conflicts exposed; current-rule certification awaits masters/operative chains.",
+      "status": "design decision stable; exclusions explicit"
+    },
+    {
+      "domain_id": "D14",
+      "reason": "Case mechanisms bounded; avoid accumulating famous anecdotes.",
+      "status": "design decision stable; exclusions explicit"
+    }
+  ]
+}

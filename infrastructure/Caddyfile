@@ -1,0 +1,40 @@
+{
+  admin off
+  auto_https disable_redirects
+}
+https://localhost:8443 {
+  tls internal
+  request_body {
+    max_size 1MB
+  }
+  header {
+    -Server
+    X-Content-Type-Options nosniff
+    Referrer-Policy strict-origin-when-cross-origin
+  }
+  @internal path /actuator /actuator/* /v3/api-docs /v3/api-docs/* /swagger-ui /swagger-ui/*
+  respond @internal 404
+  @api path /api /api/*
+  handle @api {
+    reverse_proxy {$BACKEND_UPSTREAM:127.0.0.1:8080} {
+      header_up -Forwarded
+      header_up -X-Forwarded-For
+      header_up -X-Forwarded-Host
+      header_up -X-Forwarded-Proto
+      header_up -Authorization
+      header_up -X-Request-ID
+      header_up -X-User-ID
+      header_up -X-User-Roles
+    }
+  }
+  handle {
+    reverse_proxy {$FRONTEND_UPSTREAM:127.0.0.1:3000} {
+      header_up -Forwarded
+      header_up -X-Forwarded-For
+      header_up -X-Forwarded-Host
+      header_up -X-Forwarded-Proto
+      header_up -Authorization
+      header_up -X-Request-ID
+    }
+  }
+}

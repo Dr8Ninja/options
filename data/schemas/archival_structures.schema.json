@@ -1,0 +1,82 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "disposition": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "line": {
+            "type": "integer"
+          },
+          "markdown": {
+            "type": "string"
+          },
+          "original": {
+            "type": "object",
+            "properties": {
+              "stage": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string"
+              },
+              "modules": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "gate": {
+                "type": "string"
+              },
+              "hours": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "stage",
+              "title",
+              "modules",
+              "gate",
+              "hours"
+            ],
+            "additionalProperties": false
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "kind"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 archival_structures interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

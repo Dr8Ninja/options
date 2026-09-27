@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checks": [
+    "dry run is read only",
+    "simultaneous same-manifest imports commit once and replay the same batch",
+    "empty PostgreSQL imports 11452 canonical records without publication",
+    "identical manifest replay changes no rows or relationships",
+    "every canonical record and relationship round-trips through typed projections",
+    "export restores into an independently empty schema with identical content",
+    "malformed references duplicates cycles versions paths and readiness reject atomically",
+    "duplicate JSON keys rejected",
+    "database constraint failure rolls back every proposed mutation",
+    "safe update conflict and unchanged-base proposal preserve current edits",
+    "retirement and content-version recovery preserve learner rows and old revisions",
+    "addition absent-record preservation and new-object recovery retain identity",
+    "submitted attempt answers results exposure and enrollment unchanged across imports and recovery",
+    "import login cannot read learner records"
+  ],
+  "seconds": 159.742,
+  "canonical_records": 11452,
+  "baseline_counts": {
+    "catalog_object": 2851,
+    "catalog_revision": 2851,
+    "catalog_link": 5100,
+    "source_mapping": 6402,
+    "mapping_target": 10550,
+    "source_record": 12626,
+    "import_batch": 1,
+    "draft_head": 2851,
+    "private_note": 0,
+    "learning_progress": 0,
+    "quiz_attempt": 0
+  },
+  "postgres": "18.6 (Debian 18.6-1.pgdg13+2)",
+  "published": 0
+}

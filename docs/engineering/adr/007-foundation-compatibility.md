@@ -1,0 +1,19 @@
+# ADR-007 — P07 executable compatibility amendments
+
+Accepted 23 September 2026; supplements ADR-001 without rewriting its historical evidence.
+
+The first real npm install rejected TypeScript 7.0.2: openapi-typescript 7.13.0 declares `typescript: ^5.x`; typescript-eslint also declares `<6.1.0`. Pin TypeScript **5.9.3**, the latest stable 5.x published by its maintainer, within Next 16's supported range. Retain Next 16.3.6, React 19.3.0 and the selected typed client. Do not use force/legacy-peer-deps or suppress incompatibility. Revisit when the generator and lint parser both support TypeScript 7. This is a tooling compatibility amendment, not an architecture replacement. Sources: [generator metadata](https://registry.npmjs.org/openapi-typescript/7.13.0), [compiler metadata](https://registry.npmjs.org/typescript/5.9.3), [Next requirements](https://nextjs.org/docs/app/getting-started/installation).
+
+V0001 contains only the maintained Spring Session PostgreSQL DDL needed to prove the P07 session foundation. P08 continues DB01 at V0002; none of the domain schema or import is implemented here. The framework's Apache-2.0 schema attribution remains in the migration. Flyway is its sole owner; automatic Session initialization and Hibernate DDL are disabled.
+
+Local PostgreSQL binds loopback port 55432 because an unrelated service owns 5432 on this host. The full container profile is the reference HTTPS setup. A host-development profile uses host Caddy and loopback Java/Next; it does not assume Docker Desktop forwards host loopback ports.
+
+P02/P03/P04 validators retain their document/reference checks after implementation. Their historical no-application-directory checks were removed from reusable checks only after the complete P02–P06 entry chain passed; archived entry evidence preserves that phase boundary. Historical design documents remain unchanged.
+
+Next’s composite lint config brings eslint-plugin-react 7.37.5, whose peer range excludes ESLint 10. ESLint 9.39.5 is marked unsupported by its publisher, so it is rejected. Use supported ESLint 10.11.0 with TypeScript ESLint 8.70.1, React Hooks 7.1.1 and Next’s own 16.3.6 plugin directly. All declare compatible peers. Keep strict-peer-deps enabled; no force/legacy-peer-deps.
+
+The first CycloneDX/Trivy scan flagged three critical advisories in Boot 4.1.1’s managed Tomcat 11.0.24 (CVE-2026-65182, CVE-2026-65905, CVE-2026-68525). [Apache’s security bulletin](https://tomcat.apache.org/security-11.html) additionally publishes fixes in 11.0.26. Override only `tomcat.version` to **11.0.26**, retaining Boot-managed Framework/Security/Session/Jackson/Hibernate. Rebuild and rerun integration and vulnerability checks. Remove this exception when a supported Boot 4.1 patch manages an equal/newer Tomcat. No advisory is suppressed.
+
+The actual password-plus-passkey probe requires Spring’s `@EnableMultiFactorAuthentication(authorities = {})` to activate factor aggregation, with selective explicit factor requirements in the test. The main security foundation enables that framework support but still denies every unimplemented route. The test proves a failed user-verification assertion and replay are rejected across JDBC challenge serialization. Production account/credential repositories and role/factor-recency policies remain the P08/P13 implementation scope; no test identity is shipped.
+
+The macOS JDK archive is Temurin 25.0.4.1+1. The digest-pinned official Linux OCI JRE reports 25.0.4+7; exact 25.0.4.1_1-jre tags returned 404. Pin the tested published Linux image as `25.0.4_7-jre` and the Linux CI JDK as `25.0.4+7`. Both compile/run release 25. Do not describe the platform-specific binary versions as identical; record both in runtime evidence. A supplementary Adoptium Linux API lookup returned 403, so it is not treated as successful source evidence.

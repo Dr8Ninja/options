@@ -1,0 +1,140 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "assessment_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dependency_reason": {
+            "type": "string"
+          },
+          "diagnostic": {
+            "type": "object",
+            "properties": {
+              "prompt": {
+                "type": "string"
+              },
+              "bridge": {
+                "type": "string"
+              },
+              "pass": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "prompt",
+              "bridge",
+              "pass"
+            ],
+            "additionalProperties": false
+          },
+          "hard_edge_justifications": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {},
+                {
+                  "type": "object",
+                  "properties": {
+                    "requires": {
+                      "type": "string"
+                    },
+                    "supplied_skill": {
+                      "type": "string"
+                    },
+                    "consumed_by": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "requires",
+                    "supplied_skill",
+                    "consumed_by"
+                  ],
+                  "additionalProperties": false
+                }
+              ]
+            }
+          },
+          "hard_prerequisites": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {},
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "id": {
+            "type": "string"
+          },
+          "module_id": {
+            "type": "string"
+          },
+          "optional_enrichment": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {},
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          "outcome": {
+            "type": "string"
+          },
+          "recommended_preparation": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {},
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "assessment_ids",
+          "dependency_reason",
+          "diagnostic",
+          "hard_edge_justifications",
+          "hard_prerequisites",
+          "id",
+          "module_id",
+          "optional_enrichment",
+          "outcome",
+          "recommended_preparation"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 competencies interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

@@ -1,0 +1,698 @@
+{
+  "description": "Design fixtures; fictional publication/revision tokens, canonical assertions where specified. No deployed or reviewed lesson claim.",
+  "examples": [
+    {
+      "name": "canonical-topic-map",
+      "schema": "Topic",
+      "value": {
+        "id": "M01.01",
+        "kind": "TOPIC",
+        "revision": "rev-example",
+        "title": "Units and signs",
+        "canonicalPath": "/topics/units-and-signs",
+        "visibility": "MAP",
+        "readiness": "scope_outline",
+        "summary": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+        "difficulty": "Beginner",
+        "priority": "Essential",
+        "tags": [
+          "foundations"
+        ],
+        "hours": {
+          "min": null,
+          "max": null,
+          "basis": "Topic-specific study estimate is not established."
+        },
+        "contentVersion": {
+          "publicationId": "pub-example",
+          "generation": "12",
+          "asOf": "2026-09-23T09:00:00Z",
+          "schemaVersion": "1.0.0"
+        },
+        "scopeOutline": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+        "lessonMarkdown": null,
+        "formatVersion": "markdown-v1",
+        "subtopics": [
+          {
+            "id": "M01.01.S01",
+            "kind": "SUBTOPIC",
+            "title": "Units and signs — scope unit",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 1
+          }
+        ],
+        "exercises": [],
+        "assignments": [],
+        "prerequisites": []
+      },
+      "valid": true,
+      "operationId": "getTopic",
+      "canonicalAssertions": [
+        {
+          "collection": "topics",
+          "id": "M01.01",
+          "wireField": "title",
+          "sourceField": "title"
+        },
+        {
+          "collection": "topics",
+          "id": "M01.01",
+          "wireField": "scopeOutline",
+          "sourceField": "scope_outline"
+        }
+      ]
+    },
+    {
+      "name": "canonical-resource",
+      "schema": "Resource",
+      "value": {
+        "id": "R01",
+        "kind": "RESOURCE",
+        "revision": "rev-example",
+        "title": "OCC — Characteristics and Risks of Standardized Options",
+        "canonicalPath": "/resources/occ-options-disclosure-document",
+        "visibility": "MAP",
+        "readiness": "scope_outline",
+        "summary": "The contract-risk baseline for listed U.S. options: exercise, assignment, settlement and product risks. Read alongside actual product specifications.",
+        "difficulty": "Beginner–Advanced",
+        "priority": "Essential",
+        "tags": [],
+        "hours": {
+          "min": 1,
+          "max": 4,
+          "basis": "Selected assignment estimate including notes/exercise; not whole-book duration. Refine after learner pilots."
+        },
+        "contentVersion": {
+          "publicationId": "pub-example",
+          "generation": "12",
+          "asOf": "2026-09-23T09:00:00Z",
+          "schemaVersion": "1.0.0"
+        },
+        "authorOrganization": "OCC",
+        "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+        "resourceType": "Exchange/clearing documentation",
+        "cost": "free",
+        "accessLimitations": "Official current-document landing page checked; it identifies the June 2024 ODD. Recheck for supplements before use. P01: June2024 ODD contents and selected II/VIII/X excerpts; not all96 PDF pages",
+        "rationale": "The contract-risk baseline for listed U.S. options: exercise, assignment, settlement and product risks. Read alongside actual product specifications.",
+        "geography": "Global concepts; source jurisdiction must be checked for rules",
+        "publicationDate": "2024-06",
+        "datePrecision": "MONTH",
+        "rights": "Link and original commentary only. No third-party full text or market data redistributed; permission not inferred from free access.",
+        "freshness": {
+          "linkCheckedAt": null,
+          "linkStatus": "UNKNOWN",
+          "substantiveVerifiedOn": "2026-09-22",
+          "verificationScope": "June2024 ODD contents and selected II/VIII/X excerpts; not all96 PDF pages",
+          "reviewDueAt": null,
+          "status": "UNKNOWN",
+          "currentOperationalEligible": false
+        },
+        "assignments": [],
+        "alternativeIds": [],
+        "verificationStatus": "selected_sections_reviewed"
+      },
+      "valid": true,
+      "operationId": "getResource",
+      "canonicalAssertions": [
+        {
+          "collection": "resources",
+          "id": "R01",
+          "wireField": "title",
+          "sourceField": "title"
+        },
+        {
+          "collection": "resources",
+          "id": "R01",
+          "wireField": "authorOrganization",
+          "sourceField": "author_organization"
+        },
+        {
+          "collection": "resources",
+          "id": "R01",
+          "wireField": "resourceType",
+          "sourceField": "resource_type"
+        },
+        {
+          "collection": "resources",
+          "id": "R01",
+          "wireField": "cost",
+          "sourceField": "cost"
+        },
+        {
+          "collection": "resources",
+          "id": "R01",
+          "wireField": "publicationDate",
+          "sourceField": "publication_date"
+        }
+      ]
+    },
+    {
+      "name": "canonical-path",
+      "schema": "Path",
+      "value": {
+        "id": "PATH-BEGINNER",
+        "kind": "PATH",
+        "revision": "rev-example",
+        "title": "Absolute Beginner",
+        "canonicalPath": "/paths/absolute-beginner",
+        "visibility": "MAP",
+        "readiness": "learning_design",
+        "summary": "No prior finance; basic reading and arithmetic, B01 includes safety bridge.",
+        "difficulty": null,
+        "priority": null,
+        "tags": [],
+        "hours": {
+          "min": 162,
+          "max": 405,
+          "basis": "Sum unique module selected-study ranges; diagnostic credit reduces repeats; project hours additional. No fixed time-to-profit promise."
+        },
+        "contentVersion": {
+          "publicationId": "pub-example",
+          "generation": "12",
+          "asOf": "2026-09-23T09:00:00Z",
+          "schemaVersion": "1.0.0"
+        },
+        "audience": "Absolute Beginner",
+        "entryCriteria": "No prior finance; basic reading and arithmetic, B01 includes safety bridge.",
+        "modules": [
+          {
+            "id": "M01",
+            "kind": "MODULE",
+            "title": "Financial arithmetic and economic purpose",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 1
+          },
+          {
+            "id": "B01",
+            "kind": "MODULE",
+            "title": "Loss, sizing and assignment intuition",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 2
+          },
+          {
+            "id": "M21",
+            "kind": "MODULE",
+            "title": "Option fundamentals and contract literacy",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 3
+          },
+          {
+            "id": "M03",
+            "kind": "MODULE",
+            "title": "Institutions, venues and the trade lifecycle",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 4
+          },
+          {
+            "id": "M22",
+            "kind": "MODULE",
+            "title": "Exercise, assignment and expiration operations",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 5
+          },
+          {
+            "id": "M04",
+            "kind": "MODULE",
+            "title": "Quotes, orders and matching",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 6
+          },
+          {
+            "id": "M05",
+            "kind": "MODULE",
+            "title": "Trading costs, financing and basic margin",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 7
+          },
+          {
+            "id": "M24",
+            "kind": "MODULE",
+            "title": "Single-leg, stock-linked and directional structures",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 8
+          },
+          {
+            "id": "M10",
+            "kind": "MODULE",
+            "title": "Probability and distributions",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 9
+          },
+          {
+            "id": "M45",
+            "kind": "MODULE",
+            "title": "Trade risk, sizing and survival",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 10
+          },
+          {
+            "id": "M60",
+            "kind": "MODULE",
+            "title": "Psychology, decision hygiene and deliberate practice",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 11
+          }
+        ],
+        "topics": [],
+        "gates": [],
+        "projects": [],
+        "exitCompetencies": [],
+        "enrollmentAvailable": false,
+        "unavailableReason": "Full path instruction and executable assessments remain planned."
+      },
+      "valid": true,
+      "operationId": "getPath",
+      "canonicalAssertions": [
+        {
+          "collection": "learning_paths",
+          "id": "PATH-BEGINNER",
+          "wireField": "title",
+          "sourceField": "title"
+        }
+      ]
+    },
+    {
+      "name": "note-create",
+      "schema": "NoteInput",
+      "value": {
+        "text": "Check whether every amount is per unit or per contract."
+      },
+      "valid": true,
+      "operationId": "saveNote"
+    },
+    {
+      "name": "register",
+      "schema": "RegisterInput",
+      "value": {
+        "email": "learner@example.invalid",
+        "password": "example only long passphrase",
+        "eligibilityAttested": true
+      },
+      "valid": true,
+      "operationId": "register"
+    },
+    {
+      "name": "progress",
+      "schema": "ProgressInput",
+      "value": {
+        "state": "SELF_COMPLETED"
+      },
+      "valid": true,
+      "operationId": "saveProgress"
+    },
+    {
+      "name": "enrollment",
+      "schema": "EnrollmentInput",
+      "value": {
+        "pathId": "R1-FND",
+        "pathRevision": "rev-example"
+      },
+      "valid": true,
+      "operationId": "createEnrollment"
+    },
+    {
+      "name": "submission-shape",
+      "schema": "AnswersInput",
+      "value": {
+        "answers": [
+          {
+            "ordinal": 1,
+            "type": "CHOICE",
+            "choiceKeys": [
+              "b"
+            ]
+          },
+          {
+            "ordinal": 2,
+            "type": "NUMERIC",
+            "value": "12.5",
+            "unit": "currency"
+          }
+        ],
+        "confirmUnanswered": false
+      },
+      "valid": true,
+      "operationId": "submitAttempt",
+      "context": "Synthetic two-item shape only, not a valid ten-item gate submission; runtime completeness test must reject if assigned form has ten items."
+    },
+    {
+      "name": "version-conflict",
+      "schema": "Problem",
+      "value": {
+        "type": "urn:otr:problem:VERSION_MISMATCH",
+        "title": "Version mismatch",
+        "status": 412,
+        "code": "VERSION_MISMATCH",
+        "message": "This note changed. Refresh before saving your edits.",
+        "fieldErrors": [],
+        "timestamp": "2026-09-23T09:00:00Z",
+        "requestId": "123e4567-e89b-42d3-a456-426614174000",
+        "currentVersion": "\"note-example-2\""
+      },
+      "valid": true
+    },
+    {
+      "name": "review",
+      "schema": "ReviewInput",
+      "value": {
+        "revision": "rev-example",
+        "reviewType": "technical",
+        "outcome": "APPROVE",
+        "reviewedHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "findings": "Illustrative review evidence; not an approval of canonical lessons."
+      },
+      "valid": true,
+      "operationId": "reviewDraft"
+    },
+    {
+      "name": "publication",
+      "schema": "PublicationInput",
+      "value": {
+        "expectedPublicationId": "pub-example",
+        "expectedGeneration": "12",
+        "entries": [
+          {
+            "id": "M01.01",
+            "revision": "rev-example",
+            "visibility": "MAP",
+            "indexable": false
+          }
+        ],
+        "reason": "Shape example only; incomplete manifest must fail closure at runtime."
+      },
+      "valid": true,
+      "operationId": "stagePublication"
+    },
+    {
+      "name": "numeric-answer",
+      "schema": "NumericAnswer",
+      "value": {
+        "ordinal": 1,
+        "type": "NUMERIC",
+        "value": "-125.000000000001",
+        "unit": "currency"
+      },
+      "valid": true
+    },
+    {
+      "name": "public-quiz-description",
+      "schema": "Quiz",
+      "value": {
+        "id": "QUIZ-123e4567-e89b-42d3-a456-426614174004",
+        "kind": "QUIZ",
+        "revision": "rev-example",
+        "title": "Synthetic gate metadata",
+        "canonicalPath": "/topics/units-and-signs",
+        "visibility": "MAP",
+        "readiness": "scope_outline",
+        "summary": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+        "difficulty": "Beginner",
+        "priority": "Essential",
+        "tags": [
+          "foundations"
+        ],
+        "hours": {
+          "min": null,
+          "max": null,
+          "basis": "Topic-specific study estimate is not established."
+        },
+        "contentVersion": {
+          "publicationId": "pub-example",
+          "generation": "12",
+          "asOf": "2026-09-23T09:00:00Z",
+          "schemaVersion": "1.0.0"
+        },
+        "purpose": "GATE",
+        "itemCount": 10,
+        "passScore": 85,
+        "criticalChecksRequired": true,
+        "freshForms": 2,
+        "attemptAvailable": false
+      },
+      "valid": true,
+      "operationId": "getQuiz"
+    },
+    {
+      "name": "unknown-owner",
+      "schema": "NoteInput",
+      "value": {
+        "text": "private",
+        "ownerId": "other"
+      },
+      "valid": false
+    },
+    {
+      "name": "register-role-escalation",
+      "schema": "RegisterInput",
+      "value": {
+        "email": "learner@example.invalid",
+        "password": "example only long passphrase",
+        "eligibilityAttested": true,
+        "roles": [
+          "ADMIN"
+        ]
+      },
+      "valid": false
+    },
+    {
+      "name": "oversize-note",
+      "schema": "NoteInput",
+      "value": {
+        "text": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      "valid": false
+    },
+    {
+      "name": "client-mastery",
+      "schema": "ProgressInput",
+      "value": {
+        "state": "MASTERED"
+      },
+      "valid": false
+    },
+    {
+      "name": "public-map-lesson-leak",
+      "schema": "Topic",
+      "value": {
+        "id": "M01.01",
+        "kind": "TOPIC",
+        "revision": "rev-example",
+        "title": "Units and signs",
+        "canonicalPath": "/topics/units-and-signs",
+        "visibility": "MAP",
+        "readiness": "scope_outline",
+        "summary": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+        "difficulty": "Beginner",
+        "priority": "Essential",
+        "tags": [
+          "foundations"
+        ],
+        "hours": {
+          "min": null,
+          "max": null,
+          "basis": "Topic-specific study estimate is not established."
+        },
+        "contentVersion": {
+          "publicationId": "pub-example",
+          "generation": "12",
+          "asOf": "2026-09-23T09:00:00Z",
+          "schemaVersion": "1.0.0"
+        },
+        "scopeOutline": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+        "lessonMarkdown": "Protected lesson body",
+        "formatVersion": "markdown-v1",
+        "subtopics": [
+          {
+            "id": "M01.01.S01",
+            "kind": "SUBTOPIC",
+            "title": "Units and signs — scope unit",
+            "revision": "rev-example",
+            "availability": "MAP",
+            "ordinal": 1
+          }
+        ],
+        "exercises": [],
+        "assignments": [],
+        "prerequisites": []
+      },
+      "valid": false
+    },
+    {
+      "name": "public-quiz-key-leak",
+      "schema": "Quiz",
+      "value": {
+        "id": "QUIZ-123e4567-e89b-42d3-a456-426614174004",
+        "kind": "QUIZ",
+        "revision": "rev-example",
+        "title": "Synthetic gate metadata",
+        "canonicalPath": "/topics/units-and-signs",
+        "visibility": "MAP",
+        "readiness": "scope_outline",
+        "summary": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+        "difficulty": "Beginner",
+        "priority": "Essential",
+        "tags": [
+          "foundations"
+        ],
+        "hours": {
+          "min": null,
+          "max": null,
+          "basis": "Topic-specific study estimate is not established."
+        },
+        "contentVersion": {
+          "publicationId": "pub-example",
+          "generation": "12",
+          "asOf": "2026-09-23T09:00:00Z",
+          "schemaVersion": "1.0.0"
+        },
+        "purpose": "GATE",
+        "itemCount": 10,
+        "passScore": 85,
+        "criticalChecksRequired": true,
+        "freshForms": 2,
+        "attemptAvailable": false,
+        "answerKey": [
+          "b"
+        ]
+      },
+      "valid": false
+    },
+    {
+      "name": "client-score",
+      "schema": "AnswersInput",
+      "value": {
+        "answers": [],
+        "confirmUnanswered": true,
+        "score": 100
+      },
+      "valid": false
+    },
+    {
+      "name": "malformed-number",
+      "schema": "NumericAnswer",
+      "value": {
+        "ordinal": 1,
+        "type": "NUMERIC",
+        "value": "NaN",
+        "unit": null
+      },
+      "valid": false
+    },
+    {
+      "name": "exponential-number",
+      "schema": "NumericAnswer",
+      "value": {
+        "ordinal": 1,
+        "type": "NUMERIC",
+        "value": "1e6",
+        "unit": null
+      },
+      "valid": false
+    },
+    {
+      "name": "unbounded-fraction",
+      "schema": "NumericAnswer",
+      "value": {
+        "ordinal": 1,
+        "type": "NUMERIC",
+        "value": "0.1234567890123",
+        "unit": null
+      },
+      "valid": false
+    },
+    {
+      "name": "bad-error-without-correlation",
+      "schema": "Problem",
+      "value": {
+        "type": "urn:otr:problem:VERSION_MISMATCH",
+        "title": "Version mismatch",
+        "status": 412,
+        "code": "VERSION_MISMATCH",
+        "message": "This note changed. Refresh before saving your edits.",
+        "fieldErrors": [],
+        "timestamp": "2026-09-23T09:00:00Z",
+        "currentVersion": "\"note-example-2\""
+      },
+      "valid": false
+    },
+    {
+      "name": "malformed-uuid",
+      "schema": "Problem",
+      "value": {
+        "type": "urn:otr:problem:VERSION_MISMATCH",
+        "title": "Version mismatch",
+        "status": 412,
+        "code": "VERSION_MISMATCH",
+        "message": "This note changed. Refresh before saving your edits.",
+        "fieldErrors": [],
+        "timestamp": "2026-09-23T09:00:00Z",
+        "requestId": "123",
+        "currentVersion": "\"note-example-2\""
+      },
+      "valid": false
+    },
+    {
+      "name": "privileged-profile-fields",
+      "schema": "ProfileInput",
+      "value": {
+        "displayName": null,
+        "theme": "system",
+        "interestPathId": null,
+        "roles": [
+          "ADMIN"
+        ]
+      },
+      "valid": false
+    },
+    {
+      "name": "unknown-content-visibility",
+      "schema": "PublicationInput",
+      "value": {
+        "expectedPublicationId": null,
+        "expectedGeneration": "0",
+        "entries": [
+          {
+            "id": "M01",
+            "revision": "rev-example",
+            "visibility": "SECRET",
+            "indexable": false
+          }
+        ],
+        "reason": "test"
+      },
+      "valid": false
+    },
+    {
+      "name": "attempt-question-key-leak",
+      "schema": "Question",
+      "value": {
+        "ordinal": 1,
+        "type": "SINGLE",
+        "prompt": "Synthetic prompt",
+        "choices": [
+          {
+            "key": "a",
+            "text": "A",
+            "correct": true
+          }
+        ],
+        "unit": null,
+        "roundingInstructions": null,
+        "critical": false
+      },
+      "valid": false
+    }
+  ]
+}

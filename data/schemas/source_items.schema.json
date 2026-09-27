@@ -1,0 +1,194 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "disposition": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "original_record": {
+            "type": "object",
+            "properties": {
+              "access": {
+                "type": "string"
+              },
+              "advanced_extension": {
+                "type": "string"
+              },
+              "assessment": {
+                "type": "object",
+                "properties": {
+                  "exercise": {
+                    "type": "string"
+                  },
+                  "mastery": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "exercise",
+                  "mastery"
+                ],
+                "additionalProperties": false
+              },
+              "category": {
+                "type": "string"
+              },
+              "difficulty": {
+                "type": "string"
+              },
+              "domain": {
+                "type": "string"
+              },
+              "evidence": {
+                "type": "string"
+              },
+              "gate": {
+                "type": "string"
+              },
+              "hours": {
+                "type": "string"
+              },
+              "id": {
+                "type": "string"
+              },
+              "importance": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string"
+              },
+              "level": {
+                "type": "string"
+              },
+              "module_id": {
+                "type": "string"
+              },
+              "modules": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "prerequisites": {
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {},
+                    {
+                      "type": "string"
+                    }
+                  ]
+                }
+              },
+              "provenance": {
+                "type": "object",
+                "properties": {
+                  "json_pointer": {
+                    "type": "string"
+                  },
+                  "master_line": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "json_pointer",
+                  "master_line"
+                ],
+                "additionalProperties": false
+              },
+              "research_date": {
+                "type": "string"
+              },
+              "scope_note": {
+                "type": "string"
+              },
+              "sources": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "stage": {
+                "type": "integer"
+              },
+              "subtopics": {
+                "type": "string"
+              },
+              "tags": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              },
+              "topic_count": {
+                "type": "integer"
+              },
+              "url": {
+                "type": "string"
+              },
+              "used_in_modules": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "verification_status": {
+                "type": "string"
+              },
+              "version": {
+                "type": "string"
+              },
+              "why": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ],
+            "additionalProperties": false
+          },
+          "pointer": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "disposition",
+          "id",
+          "kind",
+          "original_record",
+          "pointer",
+          "source"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 source_items interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

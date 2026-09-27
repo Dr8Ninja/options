@@ -1,0 +1,48 @@
+{
+  "command": "./backend/mvnw -f backend/pom.xml -B spotless:apply verify",
+  "result": "PASS",
+  "completed_at": "2026-09-26T14:23:20+05:30",
+  "duration": "3 min 04 sec",
+  "suites": [
+    {
+      "name": "org.options.platform.CanonicalImportIT",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "162.566"
+    },
+    {
+      "name": "org.options.platform.FoundationIT",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "7.373"
+    },
+    {
+      "name": "org.options.platform.PersistenceIT",
+      "tests": "25",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "10.315"
+    },
+    {
+      "name": "org.options.platform.ArchitectureTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.482"
+    },
+    {
+      "name": "org.options.platform.ConfigTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.101"
+    }
+  ]
+}

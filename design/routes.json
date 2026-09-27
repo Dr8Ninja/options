@@ -1,0 +1,632 @@
+{
+  "version": "1.0.0",
+  "scope": "P06 prototype routes, not implemented product endpoints",
+  "apiVersion": "1.0.1",
+  "globalJourney": "J17",
+  "states": [
+    "ready",
+    "loading",
+    "empty",
+    "error",
+    "offline",
+    "expired",
+    "conflict",
+    "withdrawn",
+    "exhausted"
+  ],
+  "routes": [
+    {
+      "prototype": "#/home",
+      "product": "/",
+      "journeys": [
+        "J01",
+        "J17"
+      ],
+      "operations": [
+        "listPrograms",
+        "listPaths",
+        "listProjects"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/learn",
+      "product": "/learn/foundations",
+      "journeys": [
+        "J01",
+        "J03",
+        "J17"
+      ],
+      "operations": [
+        "getPath",
+        "createEnrollment"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/curriculum",
+      "product": "/curriculum",
+      "journeys": [
+        "J01",
+        "J17"
+      ],
+      "operations": [
+        "listPrograms",
+        "listPhases",
+        "listModules"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/module/M01",
+      "product": "/modules/:slug",
+      "journeys": [
+        "J01",
+        "J17"
+      ],
+      "operations": [
+        "resolveRoute",
+        "getModule"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/topic/M01.01",
+      "product": "/topics/:slug",
+      "journeys": [
+        "J01",
+        "J17"
+      ],
+      "operations": [
+        "resolveRoute",
+        "getTopic",
+        "getSubtopic"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/lesson/M01.01",
+      "product": "/topics/:slug",
+      "journeys": [
+        "J02",
+        "J09",
+        "J10",
+        "J11",
+        "J17"
+      ],
+      "operations": [
+        "getTopic",
+        "evaluateTransientPractice",
+        "solutionTransientPractice",
+        "saveProgress",
+        "saveBookmark",
+        "saveNote"
+      ],
+      "layout": "reading",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/resources",
+      "product": "/resources",
+      "journeys": [
+        "J04",
+        "J17"
+      ],
+      "operations": [
+        "listResources",
+        "getDiscoveryFacets"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/resource/R01",
+      "product": "/resources/:slug",
+      "journeys": [
+        "J04",
+        "J17"
+      ],
+      "operations": [
+        "getResource"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/paths",
+      "product": "/paths",
+      "journeys": [
+        "J03",
+        "J17"
+      ],
+      "operations": [
+        "listPaths"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/path/PATH-BEGINNER",
+      "product": "/paths/:slug",
+      "journeys": [
+        "J03",
+        "J17"
+      ],
+      "operations": [
+        "getPath"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/projects",
+      "product": "/projects",
+      "journeys": [
+        "J13",
+        "J17"
+      ],
+      "operations": [
+        "listProjects",
+        "listCapstones"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/project/PR01",
+      "product": "/projects/:slug",
+      "journeys": [
+        "J13",
+        "J17"
+      ],
+      "operations": [
+        "getProject"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/capstone/C01",
+      "product": "/capstones/:slug",
+      "journeys": [
+        "J13",
+        "J17"
+      ],
+      "operations": [
+        "getCapstone"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/search?q=M21.01",
+      "product": "/search",
+      "journeys": [
+        "J05",
+        "J17"
+      ],
+      "operations": [
+        "searchCatalog",
+        "getDiscoveryFacets"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/auth/register",
+      "product": "/account/register",
+      "journeys": [
+        "J06",
+        "J17"
+      ],
+      "operations": [
+        "getCsrf",
+        "register"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/auth/verify",
+      "product": "/account/verify",
+      "journeys": [
+        "J06",
+        "J17"
+      ],
+      "operations": [
+        "requestVerification",
+        "confirmVerification"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/auth/login",
+      "product": "/account/sign-in",
+      "journeys": [
+        "J07",
+        "J17"
+      ],
+      "operations": [
+        "getSession",
+        "login"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/auth/forgot",
+      "product": "/account/recover",
+      "journeys": [
+        "J08",
+        "J17"
+      ],
+      "operations": [
+        "requestPasswordReset"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/auth/reset",
+      "product": "/account/reset",
+      "journeys": [
+        "J08",
+        "J17"
+      ],
+      "operations": [
+        "confirmPasswordReset"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/auth/mfa",
+      "product": "/account/security-key",
+      "journeys": [
+        "J07",
+        "J14",
+        "J17"
+      ],
+      "operations": [
+        "Assertionoptions",
+        "Assertions",
+        "registerCredential"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/auth/reauth",
+      "product": "/account/reauthenticate",
+      "journeys": [
+        "J07",
+        "J16",
+        "J17"
+      ],
+      "operations": [
+        "reauthenticate"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/dashboard",
+      "product": "/me",
+      "journeys": [
+        "J09",
+        "J17"
+      ],
+      "operations": [
+        "getDashboard",
+        "getEnrollment",
+        "getEnrolledLesson",
+        "previewEnrollmentMigration",
+        "migrateEnrollment"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/bookmarks",
+      "product": "/me/bookmarks",
+      "journeys": [
+        "J10",
+        "J17"
+      ],
+      "operations": [
+        "listBookmarks",
+        "saveBookmark",
+        "deleteBookmark"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/notes",
+      "product": "/me/notes",
+      "journeys": [
+        "J11",
+        "J17"
+      ],
+      "operations": [
+        "listNotes",
+        "getNote",
+        "saveNote",
+        "deleteNote"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/account",
+      "product": "/me/account",
+      "journeys": [
+        "J07",
+        "J08",
+        "J16",
+        "J17"
+      ],
+      "operations": [
+        "getProfile",
+        "replaceProfile",
+        "changePassword",
+        "requestEmailChange",
+        "cancelEmailChange",
+        "confirmEmailChange",
+        "listCredentials",
+        "revokeCredential",
+        "requestOwnerExport",
+        "getOwnerExportStatus",
+        "downloadOwnerExport",
+        "deleteAccount",
+        "logout",
+        "logoutAll"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/quiz",
+      "product": "/me/attempts/:id",
+      "journeys": [
+        "J12",
+        "J17"
+      ],
+      "operations": [
+        "getQuiz",
+        "startOrResumeAttempt",
+        "getAttempt",
+        "saveAttemptAnswers",
+        "submitAttempt",
+        "abandonAttempt"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/feedback",
+      "product": "/me/attempts/:id/result",
+      "journeys": [
+        "J12",
+        "J17"
+      ],
+      "operations": [
+        "getAttemptResult",
+        "completeRemediation",
+        "requestFreshAssessment"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/dossier",
+      "product": "/me/dossier/:id",
+      "journeys": [
+        "J13",
+        "J17"
+      ],
+      "operations": [
+        "startProjectWork",
+        "getProjectWork",
+        "saveProjectWork",
+        "selfReviewProject",
+        "getProjectResult",
+        "deleteProjectWriting"
+      ],
+      "layout": "form",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/admin",
+      "product": "/editor",
+      "journeys": [
+        "J14",
+        "J17"
+      ],
+      "operations": [
+        "listDrafts",
+        "listEditorialAudit"
+      ],
+      "layout": "editorial",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/editor",
+      "product": "/editor/content/:id",
+      "journeys": [
+        "J14",
+        "J17"
+      ],
+      "operations": [
+        "getDraft",
+        "saveDraft",
+        "getDraftDiff",
+        "requestDraftReview",
+        "previewRevision"
+      ],
+      "layout": "editorial",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/publish",
+      "product": "/editor/publications",
+      "journeys": [
+        "J14",
+        "J17"
+      ],
+      "operations": [
+        "reviewDraft",
+        "stagePublication",
+        "getPublication",
+        "activatePublication"
+      ],
+      "layout": "editorial",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/maintenance",
+      "product": "/editor/maintenance",
+      "journeys": [
+        "J15",
+        "J16",
+        "J17"
+      ],
+      "operations": [
+        "listMaintenance",
+        "validateAndStageImport",
+        "getImportRun",
+        "getImportReport",
+        "revalidateImport",
+        "applyImport",
+        "requestEditorialExport",
+        "getEditorialExport",
+        "downloadEditorialExport",
+        "withdrawContent",
+        "rollbackPublication",
+        "certifyRule",
+        "getAccountRoles",
+        "grantRole",
+        "revokeRole",
+        "getAccountStatus",
+        "setAccountStatus"
+      ],
+      "layout": "editorial",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/report/R01",
+      "product": "/me/issues/new",
+      "journeys": [
+        "J04",
+        "J15",
+        "J17"
+      ],
+      "operations": [
+        "createIssue",
+        "listOwnIssues"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/methodology",
+      "product": "/methodology",
+      "journeys": [
+        "J01",
+        "J04",
+        "J17"
+      ],
+      "operations": [
+        "getContentVersion"
+      ],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    },
+    {
+      "prototype": "#/review",
+      "product": null,
+      "journeys": [
+        "J17"
+      ],
+      "operations": [],
+      "layout": "catalog",
+      "stateSpec": "specs/INTERACTIONS.md",
+      "accessibilitySpec": "specs/ACCESSIBILITY_ACCEPTANCE.md",
+      "coverage": "Navigable representative layout and selected simulated interactions; complete production behavior specified in FRONTEND and state contract."
+    }
+  ]
+}

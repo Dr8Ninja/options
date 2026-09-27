@@ -1,0 +1,7 @@
+{
+  "as_of": "2026-09-22",
+  "result": "PASS",
+  "compared_files": 136,
+  "changed_files": [],
+  "scope": "Two complete rebuilds from identical inventory/editorial inputs; byte-level equality of data/schemas, curriculum docs and research registers."
+}

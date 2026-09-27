@@ -1,0 +1,885 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "PATH-BEGINNER",
+      "title": "Absolute Beginner",
+      "audience": "Absolute Beginner",
+      "entry_criteria": "No prior finance; basic reading and arithmetic, B01 includes safety bridge.",
+      "diagnostic_ids": [
+        "C-M01",
+        "C-B01"
+      ],
+      "module_sequence": [
+        "M01",
+        "B01",
+        "M21",
+        "M03",
+        "M22",
+        "M04",
+        "M05",
+        "M24",
+        "M10",
+        "M45",
+        "M60"
+      ],
+      "target_modules": [
+        "M01",
+        "B01",
+        "M21",
+        "M03",
+        "M22",
+        "M04",
+        "M05",
+        "M24",
+        "M10",
+        "M45",
+        "M60"
+      ],
+      "branches": [
+        {
+          "module_id": "M25",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M62",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M63",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        }
+      ],
+      "exit_competencies": [
+        "Explain contract obligations, compute net payoff and size a synthetic position."
+      ],
+      "exit_competency_ids": [
+        "C-M01",
+        "C-B01",
+        "C-M21",
+        "C-M03",
+        "C-M22",
+        "C-M04",
+        "C-M05",
+        "C-M24",
+        "C-M10",
+        "C-M45",
+        "C-M60"
+      ],
+      "study_hours": [
+        162,
+        405
+      ],
+      "estimate_basis": "Sum unique module selected-study ranges; diagnostic credit reduces repeats; project hours additional. No fixed time-to-profit promise.",
+      "assessment_gates": [
+        "QZ-M01",
+        "QZ-B01",
+        "QZ-M21",
+        "QZ-M03",
+        "QZ-M22",
+        "QZ-M04",
+        "QZ-M05",
+        "QZ-M24",
+        "QZ-M10",
+        "QZ-M45",
+        "QZ-M60"
+      ],
+      "milestone_gates": [
+        "No critical contract/cash/assignment error before structures.",
+        "No coding-dependent project before B03; no backtest before M54/M55.",
+        "Final rubric85% and reproducible transfer task; real money never required."
+      ]
+    },
+    {
+      "id": "PATH-RETAIL",
+      "title": "Retail Options Trader",
+      "audience": "Retail Options Trader",
+      "entry_criteria": "Beginner exit or equivalent diagnostic.",
+      "diagnostic_ids": [
+        "C-M25",
+        "C-M32"
+      ],
+      "module_sequence": [
+        "M01",
+        "B01",
+        "M21",
+        "M03",
+        "M22",
+        "M24",
+        "M25",
+        "B02",
+        "M29",
+        "M10",
+        "M30",
+        "M32",
+        "M04",
+        "M05",
+        "M34",
+        "M11",
+        "M35",
+        "M36",
+        "M38",
+        "M45",
+        "M47",
+        "M49",
+        "M50",
+        "M52",
+        "M53",
+        "M60",
+        "M61",
+        "M65"
+      ],
+      "target_modules": [
+        "M25",
+        "M32",
+        "M34",
+        "M35",
+        "M36",
+        "M38",
+        "M45",
+        "M47",
+        "M49",
+        "M52",
+        "M53",
+        "M61",
+        "M65"
+      ],
+      "branches": [
+        {
+          "module_id": "M15",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M27",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M62",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M63",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        }
+      ],
+      "exit_competencies": [
+        "Write a falsifiable costed strategy dossier and manage a simulated lifecycle."
+      ],
+      "exit_competency_ids": [
+        "C-M25",
+        "C-M32",
+        "C-M34",
+        "C-M35",
+        "C-M36",
+        "C-M38",
+        "C-M45",
+        "C-M47",
+        "C-M49",
+        "C-M52",
+        "C-M53",
+        "C-M61",
+        "C-M65"
+      ],
+      "study_hours": [
+        413,
+        1028
+      ],
+      "estimate_basis": "Sum unique module selected-study ranges; diagnostic credit reduces repeats; project hours additional. No fixed time-to-profit promise.",
+      "assessment_gates": [
+        "QZ-M01",
+        "QZ-B01",
+        "QZ-M21",
+        "QZ-M03",
+        "QZ-M22",
+        "QZ-M24",
+        "QZ-M25",
+        "QZ-B02",
+        "QZ-M29",
+        "QZ-M10",
+        "QZ-M30",
+        "QZ-M32",
+        "QZ-M04",
+        "QZ-M05",
+        "QZ-M34",
+        "QZ-M11",
+        "QZ-M35",
+        "QZ-M36",
+        "QZ-M38",
+        "QZ-M45",
+        "QZ-M47",
+        "QZ-M49",
+        "QZ-M50",
+        "QZ-M52",
+        "QZ-M53",
+        "QZ-M60",
+        "QZ-M61",
+        "QZ-M65"
+      ],
+      "milestone_gates": [
+        "No critical contract/cash/assignment error before structures.",
+        "No coding-dependent project before B03; no backtest before M54/M55.",
+        "Final rubric85% and reproducible transfer task; real money never required."
+      ]
+    },
+    {
+      "id": "PATH-QUANT",
+      "title": "Quantitative Options Trader",
+      "audience": "Quantitative Options Trader",
+      "entry_criteria": "Algebra and probability diagnostic; bridge calculus and Python as needed.",
+      "diagnostic_ids": [
+        "C-B03",
+        "C-M58"
+      ],
+      "module_sequence": [
+        "M01",
+        "B03",
+        "M58",
+        "B02",
+        "M13",
+        "M10",
+        "M14",
+        "B01",
+        "M21",
+        "M03",
+        "M22",
+        "M24",
+        "M29",
+        "M30",
+        "M31",
+        "M32",
+        "M33",
+        "M11",
+        "M35",
+        "M36",
+        "M37",
+        "M40",
+        "M04",
+        "M23",
+        "M54",
+        "M55",
+        "M05",
+        "M34",
+        "M47",
+        "M56",
+        "M45",
+        "M46"
+      ],
+      "target_modules": [
+        "B03",
+        "M58",
+        "M13",
+        "M14",
+        "M31",
+        "M33",
+        "M37",
+        "M40",
+        "M54",
+        "M55",
+        "M56",
+        "M46"
+      ],
+      "branches": [
+        {
+          "module_id": "M43",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M44",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M57",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        }
+      ],
+      "exit_competencies": [
+        "Validate pricing/calibration and an out-of-sample research experiment."
+      ],
+      "exit_competency_ids": [
+        "C-B03",
+        "C-M58",
+        "C-M13",
+        "C-M14",
+        "C-M31",
+        "C-M33",
+        "C-M37",
+        "C-M40",
+        "C-M54",
+        "C-M55",
+        "C-M56",
+        "C-M46"
+      ],
+      "study_hours": [
+        494,
+        1182
+      ],
+      "estimate_basis": "Sum unique module selected-study ranges; diagnostic credit reduces repeats; project hours additional. No fixed time-to-profit promise.",
+      "assessment_gates": [
+        "QZ-M01",
+        "QZ-B03",
+        "QZ-M58",
+        "QZ-B02",
+        "QZ-M13",
+        "QZ-M10",
+        "QZ-M14",
+        "QZ-B01",
+        "QZ-M21",
+        "QZ-M03",
+        "QZ-M22",
+        "QZ-M24",
+        "QZ-M29",
+        "QZ-M30",
+        "QZ-M31",
+        "QZ-M32",
+        "QZ-M33",
+        "QZ-M11",
+        "QZ-M35",
+        "QZ-M36",
+        "QZ-M37",
+        "QZ-M40",
+        "QZ-M04",
+        "QZ-M23",
+        "QZ-M54",
+        "QZ-M55",
+        "QZ-M05",
+        "QZ-M34",
+        "QZ-M47",
+        "QZ-M56",
+        "QZ-M45",
+        "QZ-M46"
+      ],
+      "milestone_gates": [
+        "No critical contract/cash/assignment error before structures.",
+        "No coding-dependent project before B03; no backtest before M54/M55.",
+        "Final rubric85% and reproducible transfer task; real money never required."
+      ]
+    },
+    {
+      "id": "PATH-VOL",
+      "title": "Volatility Trader",
+      "audience": "Volatility Trader",
+      "entry_criteria": "Contract, Greek and inference diagnostics.",
+      "diagnostic_ids": [
+        "C-M34",
+        "C-M35"
+      ],
+      "module_sequence": [
+        "M01",
+        "B01",
+        "M21",
+        "M03",
+        "M22",
+        "M24",
+        "B02",
+        "M29",
+        "M10",
+        "M30",
+        "M32",
+        "M04",
+        "M05",
+        "M34",
+        "M11",
+        "M35",
+        "M36",
+        "M13",
+        "B03",
+        "M31",
+        "M37",
+        "M38",
+        "M39",
+        "M08",
+        "M41",
+        "M47",
+        "M50",
+        "M52",
+        "M23",
+        "M54",
+        "M55",
+        "M58",
+        "M56"
+      ],
+      "target_modules": [
+        "M34",
+        "M35",
+        "M36",
+        "M37",
+        "M38",
+        "M39",
+        "M41",
+        "M47",
+        "M52",
+        "M55",
+        "M56"
+      ],
+      "branches": [
+        {
+          "module_id": "M40",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M44",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M51",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        }
+      ],
+      "exit_competencies": [
+        "Separate variance premium, forecast, hedge error and execution costs."
+      ],
+      "exit_competency_ids": [
+        "C-M34",
+        "C-M35",
+        "C-M36",
+        "C-M37",
+        "C-M38",
+        "C-M39",
+        "C-M41",
+        "C-M47",
+        "C-M52",
+        "C-M55",
+        "C-M56"
+      ],
+      "study_hours": [
+        502,
+        1206
+      ],
+      "estimate_basis": "Sum unique module selected-study ranges; diagnostic credit reduces repeats; project hours additional. No fixed time-to-profit promise.",
+      "assessment_gates": [
+        "QZ-M01",
+        "QZ-B01",
+        "QZ-M21",
+        "QZ-M03",
+        "QZ-M22",
+        "QZ-M24",
+        "QZ-B02",
+        "QZ-M29",
+        "QZ-M10",
+        "QZ-M30",
+        "QZ-M32",
+        "QZ-M04",
+        "QZ-M05",
+        "QZ-M34",
+        "QZ-M11",
+        "QZ-M35",
+        "QZ-M36",
+        "QZ-M13",
+        "QZ-B03",
+        "QZ-M31",
+        "QZ-M37",
+        "QZ-M38",
+        "QZ-M39",
+        "QZ-M08",
+        "QZ-M41",
+        "QZ-M47",
+        "QZ-M50",
+        "QZ-M52",
+        "QZ-M23",
+        "QZ-M54",
+        "QZ-M55",
+        "QZ-M58",
+        "QZ-M56"
+      ],
+      "milestone_gates": [
+        "No critical contract/cash/assignment error before structures.",
+        "No coding-dependent project before B03; no backtest before M54/M55.",
+        "Final rubric85% and reproducible transfer task; real money never required."
+      ]
+    },
+    {
+      "id": "PATH-MM",
+      "title": "Market-Making",
+      "audience": "Market-Making",
+      "entry_criteria": "Pricing, probability and executable-code diagnostics.",
+      "diagnostic_ids": [
+        "C-M50",
+        "C-M51"
+      ],
+      "module_sequence": [
+        "M01",
+        "B01",
+        "M21",
+        "M04",
+        "M10",
+        "M50",
+        "M03",
+        "M22",
+        "M24",
+        "B02",
+        "M29",
+        "M30",
+        "M32",
+        "M05",
+        "M34",
+        "M47",
+        "M51",
+        "M13",
+        "M33",
+        "M11",
+        "M35",
+        "M36",
+        "B03",
+        "M31",
+        "M37",
+        "M49",
+        "M52",
+        "M23",
+        "M54",
+        "M55",
+        "M58",
+        "M56",
+        "M45",
+        "M46",
+        "M48",
+        "M60",
+        "M61",
+        "M67"
+      ],
+      "target_modules": [
+        "M50",
+        "M51",
+        "M33",
+        "M37",
+        "M47",
+        "M49",
+        "M52",
+        "M54",
+        "M56",
+        "M67"
+      ],
+      "branches": [
+        {
+          "module_id": "M40",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M43",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M44",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        }
+      ],
+      "exit_competencies": [
+        "Run a simulated inventory/quoting desk with adverse-selection and recovery controls."
+      ],
+      "exit_competency_ids": [
+        "C-M50",
+        "C-M51",
+        "C-M33",
+        "C-M37",
+        "C-M47",
+        "C-M49",
+        "C-M52",
+        "C-M54",
+        "C-M56",
+        "C-M67"
+      ],
+      "study_hours": [
+        600,
+        1440
+      ],
+      "estimate_basis": "Sum unique module selected-study ranges; diagnostic credit reduces repeats; project hours additional. No fixed time-to-profit promise.",
+      "assessment_gates": [
+        "QZ-M01",
+        "QZ-B01",
+        "QZ-M21",
+        "QZ-M04",
+        "QZ-M10",
+        "QZ-M50",
+        "QZ-M03",
+        "QZ-M22",
+        "QZ-M24",
+        "QZ-B02",
+        "QZ-M29",
+        "QZ-M30",
+        "QZ-M32",
+        "QZ-M05",
+        "QZ-M34",
+        "QZ-M47",
+        "QZ-M51",
+        "QZ-M13",
+        "QZ-M33",
+        "QZ-M11",
+        "QZ-M35",
+        "QZ-M36",
+        "QZ-B03",
+        "QZ-M31",
+        "QZ-M37",
+        "QZ-M49",
+        "QZ-M52",
+        "QZ-M23",
+        "QZ-M54",
+        "QZ-M55",
+        "QZ-M58",
+        "QZ-M56",
+        "QZ-M45",
+        "QZ-M46",
+        "QZ-M48",
+        "QZ-M60",
+        "QZ-M61",
+        "QZ-M67"
+      ],
+      "milestone_gates": [
+        "No critical contract/cash/assignment error before structures.",
+        "No coding-dependent project before B03; no backtest before M54/M55.",
+        "Final rubric85% and reproducible transfer task; real money never required."
+      ]
+    },
+    {
+      "id": "PATH-INDIA",
+      "title": "Indian Options Trader",
+      "audience": "Indian Options Trader",
+      "entry_criteria": "Beginner exit or bridge; no current contract facts assumed.",
+      "diagnostic_ids": [
+        "C-M25",
+        "C-M45"
+      ],
+      "module_sequence": [
+        "M01",
+        "B01",
+        "M21",
+        "M03",
+        "M22",
+        "M24",
+        "M25",
+        "M10",
+        "M45",
+        "M04",
+        "M05",
+        "M47",
+        "M49",
+        "M63",
+        "B02",
+        "M29",
+        "M30",
+        "M32",
+        "M34",
+        "M50",
+        "M52",
+        "M53",
+        "M11",
+        "M60",
+        "M61",
+        "M65"
+      ],
+      "target_modules": [
+        "M25",
+        "M45",
+        "M47",
+        "M49",
+        "M63",
+        "M32",
+        "M34",
+        "M52",
+        "M53",
+        "M61",
+        "M65"
+      ],
+      "branches": [
+        {
+          "module_id": "M38",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M39",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M64",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        }
+      ],
+      "exit_competencies": [
+        "Reconcile dated index/stock obligations and costs using circular and contract evidence."
+      ],
+      "exit_competency_ids": [
+        "C-M25",
+        "C-M45",
+        "C-M47",
+        "C-M49",
+        "C-M63",
+        "C-M32",
+        "C-M34",
+        "C-M52",
+        "C-M53",
+        "C-M61",
+        "C-M65"
+      ],
+      "study_hours": [
+        378,
+        950
+      ],
+      "estimate_basis": "Sum unique module selected-study ranges; diagnostic credit reduces repeats; project hours additional. No fixed time-to-profit promise.",
+      "assessment_gates": [
+        "QZ-M01",
+        "QZ-B01",
+        "QZ-M21",
+        "QZ-M03",
+        "QZ-M22",
+        "QZ-M24",
+        "QZ-M25",
+        "QZ-M10",
+        "QZ-M45",
+        "QZ-M04",
+        "QZ-M05",
+        "QZ-M47",
+        "QZ-M49",
+        "QZ-M63",
+        "QZ-B02",
+        "QZ-M29",
+        "QZ-M30",
+        "QZ-M32",
+        "QZ-M34",
+        "QZ-M50",
+        "QZ-M52",
+        "QZ-M53",
+        "QZ-M11",
+        "QZ-M60",
+        "QZ-M61",
+        "QZ-M65"
+      ],
+      "milestone_gates": [
+        "No critical contract/cash/assignment error before structures.",
+        "No coding-dependent project before B03; no backtest before M54/M55.",
+        "Final rubric85% and reproducible transfer task; real money never required."
+      ]
+    },
+    {
+      "id": "PATH-SYSTEMATIC",
+      "title": "Systematic Options Trader",
+      "audience": "Systematic Options Trader",
+      "entry_criteria": "Probability, contract and Python diagnostics.",
+      "diagnostic_ids": [
+        "C-B03",
+        "C-M58"
+      ],
+      "module_sequence": [
+        "M01",
+        "B03",
+        "M58",
+        "B01",
+        "M21",
+        "M04",
+        "M03",
+        "M22",
+        "M23",
+        "M54",
+        "M10",
+        "M11",
+        "M55",
+        "M24",
+        "B02",
+        "M29",
+        "M30",
+        "M32",
+        "M05",
+        "M34",
+        "M47",
+        "M56",
+        "M45",
+        "M46",
+        "M48",
+        "M49",
+        "M25",
+        "M50",
+        "M52",
+        "M53",
+        "M59",
+        "M60",
+        "M61",
+        "M67"
+      ],
+      "target_modules": [
+        "B03",
+        "M58",
+        "M54",
+        "M55",
+        "M56",
+        "M48",
+        "M49",
+        "M59",
+        "M61",
+        "M67"
+      ],
+      "branches": [
+        {
+          "module_id": "M12",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M57",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        },
+        {
+          "module_id": "M41",
+          "rule": "Complete its hard competency prerequisites before entry; optional depth."
+        }
+      ],
+      "exit_competencies": [
+        "Reproduce a research-to-simulation pipeline with capital and operational constraints."
+      ],
+      "exit_competency_ids": [
+        "C-B03",
+        "C-M58",
+        "C-M54",
+        "C-M55",
+        "C-M56",
+        "C-M48",
+        "C-M49",
+        "C-M59",
+        "C-M61",
+        "C-M67"
+      ],
+      "study_hours": [
+        500,
+        1240
+      ],
+      "estimate_basis": "Sum unique module selected-study ranges; diagnostic credit reduces repeats; project hours additional. No fixed time-to-profit promise.",
+      "assessment_gates": [
+        "QZ-M01",
+        "QZ-B03",
+        "QZ-M58",
+        "QZ-B01",
+        "QZ-M21",
+        "QZ-M04",
+        "QZ-M03",
+        "QZ-M22",
+        "QZ-M23",
+        "QZ-M54",
+        "QZ-M10",
+        "QZ-M11",
+        "QZ-M55",
+        "QZ-M24",
+        "QZ-B02",
+        "QZ-M29",
+        "QZ-M30",
+        "QZ-M32",
+        "QZ-M05",
+        "QZ-M34",
+        "QZ-M47",
+        "QZ-M56",
+        "QZ-M45",
+        "QZ-M46",
+        "QZ-M48",
+        "QZ-M49",
+        "QZ-M25",
+        "QZ-M50",
+        "QZ-M52",
+        "QZ-M53",
+        "QZ-M59",
+        "QZ-M60",
+        "QZ-M61",
+        "QZ-M67"
+      ],
+      "milestone_gates": [
+        "No critical contract/cash/assignment error before structures.",
+        "No coding-dependent project before B03; no backtest before M54/M55.",
+        "Final rubric85% and reproducible transfer task; real money never required."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "recorded_on": "2026-09-21",
+  "hash_algorithm": "SHA-256",
+  "files": [
+    {
+      "path": "sources/roadmaps/options-learning-roadmap.md",
+      "original_location": "options-learning-roadmap.md",
+      "provenance": "User-supplied roadmap",
+      "bytes": 64252,
+      "sha256": "c57fc3b040689e926bd33f0632184a5f4ce53a99cd3e17ea23d0735b1d3162e1"
+    },
+    {
+      "path": "sources/roadmaps/options-master-knowledge-map.md",
+      "original_location": "options-master-knowledge-map.md",
+      "provenance": "User-supplied roadmap",
+      "bytes": 280774,
+      "sha256": "a7093115bc78ab3d6e8ef8b94a62d524230d2d4480fb4bb097e577a76a30e560"
+    },
+    {
+      "path": "sources/roadmaps/options-curriculum-catalog.json",
+      "original_location": "options-curriculum-catalog.json",
+      "provenance": "User-supplied roadmap",
+      "bytes": 712027,
+      "sha256": "242dc024740fc2ad5d18a987528b6a60c28f0b3912835e3749594f398d07d976"
+    },
+    {
+      "path": "sources/prompts/01-deep-research-original.md",
+      "original_location": "/Users/nitin/.codex/attachments/cd8ef0d7-acab-4115-9206-bba2a8cb3af2/pasted-text.txt",
+      "provenance": "User-supplied prompt attachment",
+      "bytes": 11518,
+      "sha256": "ea05f0db08fa9736b1eadf86f5bb641a70e8fdbe4dfb7df33aac2efdf9059a60"
+    },
+    {
+      "path": "sources/prompts/02-production-build-original.md",
+      "original_location": "/Users/nitin/.codex/attachments/c6d1f4e8-b8b6-4eb1-92c9-1ee67ef86b93/pasted-text.txt",
+      "provenance": "User-supplied prompt attachment",
+      "bytes": 14881,
+      "sha256": "2852d3cd7b7d3f23557b021311ce9a81b669e56926c1032da86d21fa4eaa48eb"
+    }
+  ]
+}

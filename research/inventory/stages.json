@@ -1,0 +1,205 @@
+[
+  {
+    "stage": 0,
+    "title": "Financial orientation",
+    "modules": [
+      "M01"
+    ],
+    "gate": "Reconcile money, returns, leverage and objectives. Introduce the safety briefing and journal immediately.",
+    "hours": "15–25"
+  },
+  {
+    "stage": 1,
+    "title": "How markets and accounts work",
+    "modules": [
+      "M02",
+      "M03",
+      "M04",
+      "M05"
+    ],
+    "gate": "Trace a trade, choose orders and calculate realistic costs/cash needs.",
+    "hours": "25–50"
+  },
+  {
+    "stage": 2,
+    "title": "Probability, statistics and core mathematics",
+    "modules": [
+      "M10",
+      "M11",
+      "M13"
+    ],
+    "gate": "Solve uncertain-payoff problems; learn algebra/calculus entry skills. Defer specialist numerical/PDE extensions.",
+    "hours": "60–120"
+  },
+  {
+    "stage": 3,
+    "title": "Underlying, macro, events and time series",
+    "modules": [
+      "M06",
+      "M07",
+      "M08",
+      "M09",
+      "M12"
+    ],
+    "gate": "Separate information, expectation and hindsight; build elementary forecasts.",
+    "hours": "40–80"
+  },
+  {
+    "stage": 4,
+    "title": "Price behavior and technical-analysis literacy",
+    "modules": [
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20"
+    ],
+    "gate": "Label unseen data and test one chosen method; keep most named patterns/indicators as reference material.",
+    "hours": "25–60"
+  },
+  {
+    "stage": 5,
+    "title": "Options and local-market operations",
+    "modules": [
+      "M21",
+      "M22",
+      "M23",
+      "M62",
+      "M63",
+      "M64"
+    ],
+    "gate": "Decode contracts and pass exercise/settlement cases. Complete the selected jurisdiction branch; survey others.",
+    "hours": "40–80"
+  },
+  {
+    "stage": 6,
+    "title": "Pricing and primary Greeks",
+    "modules": [
+      "M29",
+      "M30",
+      "M32"
+    ],
+    "gate": "Derive replication/parity/binomial logic and calculate risk in correct units. Defer full stochastic derivations.",
+    "hours": "60–120"
+  },
+  {
+    "stage": 7,
+    "title": "Realized and implied volatility",
+    "modules": [
+      "M35",
+      "M36"
+    ],
+    "gate": "Match forecasts to priced risks; distinguish IV ranking, expectation and risk premium.",
+    "hours": "40–80"
+  },
+  {
+    "stage": 8,
+    "title": "Risk, funding, operational control and behavior",
+    "modules": [
+      "M45",
+      "M46",
+      "M47",
+      "M49",
+      "M60"
+    ],
+    "gate": "Pass sizing, stress, cash-obligation and error-containment gates before implementing strategies.",
+    "hours": "60–120"
+  },
+  {
+    "stage": 9,
+    "title": "Strategy construction and surface literacy",
+    "modules": [
+      "M24",
+      "M25",
+      "M26",
+      "M28",
+      "M37",
+      "M27"
+    ],
+    "gate": "Complete signed-leg dossiers; learn surface/term structure before multi-expiry valuation.",
+    "hours": "70–140"
+  },
+  {
+    "stage": 10,
+    "title": "Execution and position management",
+    "modules": [
+      "M50",
+      "M52",
+      "M53"
+    ],
+    "gate": "Reconcile fills and evaluate hold/close/adjust/roll policies with all cash flows.",
+    "hours": "50–100"
+  },
+  {
+    "stage": 11,
+    "title": "Research, software, systems and performance",
+    "modules": [
+      "M54",
+      "M55",
+      "M56",
+      "M58",
+      "M59",
+      "M61",
+      "M65"
+    ],
+    "gate": "Build a reproducible study, honest backtest, written system and complete journal analysis. Python basics can be introduced earlier.",
+    "hours": "100–220"
+  },
+  {
+    "stage": 12,
+    "title": "Dynamic hedging, futures and portfolio risk",
+    "modules": [
+      "M33",
+      "M34",
+      "M38",
+      "M42",
+      "M39",
+      "M48"
+    ],
+    "gate": "Explain hedged P&L, distinguish futures/VIX products and stress a portfolio.",
+    "hours": "80–160"
+  },
+  {
+    "stage": 13,
+    "title": "Advanced trading and empirical specialization",
+    "modules": [
+      "M41",
+      "M51",
+      "M57"
+    ],
+    "gate": "Defend relative-value, dealer-flow and systematic-model hypotheses under realistic costs and alternative explanations.",
+    "hours": "100–220"
+  },
+  {
+    "stage": 14,
+    "title": "Professional quantitative models",
+    "modules": [
+      "M14",
+      "M31",
+      "M40"
+    ],
+    "gate": "Complete stochastic-calculus derivations, numerical validation and surface/model calibration for a quant track.",
+    "hours": "150–350"
+  },
+  {
+    "stage": 15,
+    "title": "Cross-asset, exotic and OTC specialist branches",
+    "modules": [
+      "M43",
+      "M44"
+    ],
+    "gate": "Master the conventions and model/legal risks relevant to the selected product mandate.",
+    "hours": "100–250"
+  },
+  {
+    "stage": 16,
+    "title": "Failure analysis and professional integration",
+    "modules": [
+      "M66",
+      "M67"
+    ],
+    "gate": "Pass integrated capstones, incident drills and a skeptical review of a desk-style mandate.",
+    "hours": "60–150"
+  }
+]

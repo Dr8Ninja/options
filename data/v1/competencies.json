@@ -1,0 +1,2349 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "C-M01",
+      "module_id": "M01",
+      "outcome": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+      "hard_prerequisites": [],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M01-N",
+        "EX-M01-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is notional different from cash required and worst loss?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": []
+    },
+    {
+      "id": "C-M02",
+      "module_id": "M02",
+      "outcome": "Choose the instrument whose ownership, liabilities and cash flows match the objective.",
+      "hard_prerequisites": [
+        "C-M01"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M02-N",
+        "EX-M02-P"
+      ],
+      "diagnostic": {
+        "prompt": "How can an ETN fail when its reference index does not?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M01",
+          "supplied_skill": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+          "consumed_by": "Choose the instrument whose ownership, liabilities and cash flows match the objective."
+        }
+      ]
+    },
+    {
+      "id": "C-M03",
+      "module_id": "M03",
+      "outcome": "Trace a trade from broker through clearing to final cash or delivery.",
+      "hard_prerequisites": [
+        "C-M21"
+      ],
+      "recommended_preparation": [
+        "C-M01",
+        "C-M02"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M03-N",
+        "EX-M03-P"
+      ],
+      "diagnostic": {
+        "prompt": "Who owes what after assignment, and who guarantees whose performance?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M21",
+          "supplied_skill": "Read call and put rights, premium units, expiry and maximum contractual exposure.",
+          "consumed_by": "Trace a trade from broker through clearing to final cash or delivery."
+        }
+      ]
+    },
+    {
+      "id": "C-M04",
+      "module_id": "M04",
+      "outcome": "Read a quote and select an order with explicit price, fill and cancellation risks.",
+      "hard_prerequisites": [
+        "C-M21"
+      ],
+      "recommended_preparation": [
+        "C-M03"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M04-N",
+        "EX-M04-P"
+      ],
+      "diagnostic": {
+        "prompt": "Can a stop guarantee an exit price during a gap?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M21",
+          "supplied_skill": "Read call and put rights, premium units, expiry and maximum contractual exposure.",
+          "consumed_by": "Read a quote and select an order with explicit price, fill and cancellation risks."
+        }
+      ]
+    },
+    {
+      "id": "C-M05",
+      "module_id": "M05",
+      "outcome": "Calculate executable net economics including funding, spread, fees and tax basis.",
+      "hard_prerequisites": [
+        "C-M04"
+      ],
+      "recommended_preparation": [
+        "C-M01",
+        "C-M03"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M05-N",
+        "EX-M05-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is broker margin neither a stop nor a maximum loss?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M04",
+          "supplied_skill": "Read a quote and select an order with explicit price, fill and cancellation risks.",
+          "consumed_by": "Calculate executable net economics including funding, spread, fees and tax basis."
+        }
+      ]
+    },
+    {
+      "id": "C-M06",
+      "module_id": "M06",
+      "outcome": "Translate balance-sheet and cash-flow surprises into explicit underlying scenarios.",
+      "hard_prerequisites": [
+        "C-M02"
+      ],
+      "recommended_preparation": [
+        "C-M01"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M06-N",
+        "EX-M06-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can a profitable firm run out of cash?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M02",
+          "supplied_skill": "Choose the instrument whose ownership, liabilities and cash flows match the objective.",
+          "consumed_by": "Translate balance-sheet and cash-flow surprises into explicit underlying scenarios."
+        }
+      ]
+    },
+    {
+      "id": "C-M07",
+      "module_id": "M07",
+      "outcome": "Separate economic news, release surprise and rate expectations in event hypotheses.",
+      "hard_prerequisites": [
+        "C-M01"
+      ],
+      "recommended_preparation": [
+        "C-M02"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M07-N",
+        "EX-M07-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why must an inflation backtest use the first published vintage?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M01",
+          "supplied_skill": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+          "consumed_by": "Separate economic news, release surprise and rate expectations in event hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "C-M08",
+      "module_id": "M08",
+      "outcome": "Quantify changing factor and correlation exposures across assets.",
+      "hard_prerequisites": [
+        "C-M10"
+      ],
+      "recommended_preparation": [
+        "C-M07"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M08-N",
+        "EX-M08-P"
+      ],
+      "diagnostic": {
+        "prompt": "Can a historically negative hedge correlation be assumed in a crisis?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Quantify changing factor and correlation exposures across assets."
+        }
+      ]
+    },
+    {
+      "id": "C-M09",
+      "module_id": "M09",
+      "outcome": "Construct a timestamped event calendar and precommit scenarios.",
+      "hard_prerequisites": [
+        "C-M21",
+        "C-M10"
+      ],
+      "recommended_preparation": [
+        "C-M03",
+        "C-M06",
+        "C-M07"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M09-N",
+        "EX-M09-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is an earnings gap different from smooth daily variance?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M21",
+          "supplied_skill": "Read call and put rights, premium units, expiry and maximum contractual exposure.",
+          "consumed_by": "Construct a timestamped event calendar and precommit scenarios."
+        },
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Construct a timestamped event calendar and precommit scenarios."
+        }
+      ]
+    },
+    {
+      "id": "C-M10",
+      "module_id": "M10",
+      "outcome": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+      "hard_prerequisites": [
+        "C-M01"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M10-N",
+        "EX-M10-P"
+      ],
+      "diagnostic": {
+        "prompt": "Does an 80% win rate imply positive expectancy?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M01",
+          "supplied_skill": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+          "consumed_by": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities."
+        }
+      ]
+    },
+    {
+      "id": "C-M11",
+      "module_id": "M11",
+      "outcome": "Report uncertainty and make statistical decisions without claiming certainty.",
+      "hard_prerequisites": [
+        "C-M10"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M11-N",
+        "EX-M11-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why does selecting the best of many trials invalidate an ordinary single-test p-value?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Report uncertainty and make statistical decisions without claiming certainty."
+        }
+      ]
+    },
+    {
+      "id": "C-M12",
+      "module_id": "M12",
+      "outcome": "Design forecasts respecting dependence, nonstationarity and evaluation time.",
+      "hard_prerequisites": [
+        "C-M11"
+      ],
+      "recommended_preparation": [
+        "C-M10"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M12-N",
+        "EX-M12-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can random cross-validation leak adjacent financial observations?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M11",
+          "supplied_skill": "Report uncertainty and make statistical decisions without claiming certainty.",
+          "consumed_by": "Design forecasts respecting dependence, nonstationarity and evaluation time."
+        }
+      ]
+    },
+    {
+      "id": "C-M13",
+      "module_id": "M13",
+      "outcome": "Differentiate, approximate, optimize and diagnose unstable numerical answers.",
+      "hard_prerequisites": [
+        "C-B02"
+      ],
+      "recommended_preparation": [
+        "C-M10"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M13-N",
+        "EX-M13-P"
+      ],
+      "diagnostic": {
+        "prompt": "When does a Taylor approximation fail despite correct derivatives?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-B02",
+          "supplied_skill": "Translate formulas, logs and local slopes into option units.",
+          "consumed_by": "Differentiate, approximate, optimize and diagnose unstable numerical answers."
+        }
+      ]
+    },
+    {
+      "id": "C-M14",
+      "module_id": "M14",
+      "outcome": "Explain Brownian scaling, Itô correction and the risk-neutral measure under stated assumptions.",
+      "hard_prerequisites": [
+        "C-M13",
+        "C-M10"
+      ],
+      "recommended_preparation": [
+        "C-M12"
+      ],
+      "optional_enrichment": [
+        "C-M40"
+      ],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M14-N",
+        "EX-M14-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is a pricing measure not a forecast of actual returns?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M13",
+          "supplied_skill": "Differentiate, approximate, optimize and diagnose unstable numerical answers.",
+          "consumed_by": "Explain Brownian scaling, Itô correction and the risk-neutral measure under stated assumptions."
+        },
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Explain Brownian scaling, Itô correction and the risk-neutral measure under stated assumptions."
+        }
+      ]
+    },
+    {
+      "id": "C-M15",
+      "module_id": "M15",
+      "outcome": "Use reproducible chart definitions as optional descriptive features to be tested.",
+      "hard_prerequisites": [
+        "C-M04",
+        "C-M11"
+      ],
+      "recommended_preparation": [
+        "C-M02"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M15-N",
+        "EX-M15-P"
+      ],
+      "diagnostic": {
+        "prompt": "What information would show that a visual setup adds net value?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M04",
+          "supplied_skill": "Read a quote and select an order with explicit price, fill and cancellation risks.",
+          "consumed_by": "Use reproducible chart definitions as optional descriptive features to be tested."
+        },
+        {
+          "requires": "C-M11",
+          "supplied_skill": "Report uncertainty and make statistical decisions without claiming certainty.",
+          "consumed_by": "Use reproducible chart definitions as optional descriptive features to be tested."
+        }
+      ]
+    },
+    {
+      "id": "C-M16",
+      "module_id": "M16",
+      "outcome": "Encode candle features with unambiguous timestamps and test incremental utility.",
+      "hard_prerequisites": [
+        "C-M15"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M16-N",
+        "EX-M16-P"
+      ],
+      "diagnostic": {
+        "prompt": "Can the same candle imply the same option outcome at different IV?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M15",
+          "supplied_skill": "Use reproducible chart definitions as optional descriptive features to be tested.",
+          "consumed_by": "Encode candle features with unambiguous timestamps and test incremental utility."
+        }
+      ]
+    },
+    {
+      "id": "C-M17",
+      "module_id": "M17",
+      "outcome": "Define patterns algorithmically and test them against simple baselines.",
+      "hard_prerequisites": [
+        "C-M15"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M17-N",
+        "EX-M17-P"
+      ],
+      "diagnostic": {
+        "prompt": "How would two blinded annotators disagree on this pattern?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M15",
+          "supplied_skill": "Use reproducible chart definitions as optional descriptive features to be tested.",
+          "consumed_by": "Define patterns algorithmically and test them against simple baselines."
+        }
+      ]
+    },
+    {
+      "id": "C-M18",
+      "module_id": "M18",
+      "outcome": "Measure trend with a fixed rule and quantify lag and whipsaw costs.",
+      "hard_prerequisites": [
+        "C-M15"
+      ],
+      "recommended_preparation": [
+        "C-M10"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M18-N",
+        "EX-M18-P"
+      ],
+      "diagnostic": {
+        "prompt": "Does a crossover indicate a profitable forward distribution?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M15",
+          "supplied_skill": "Use reproducible chart definitions as optional descriptive features to be tested.",
+          "consumed_by": "Measure trend with a fixed rule and quantify lag and whipsaw costs."
+        }
+      ]
+    },
+    {
+      "id": "C-M19",
+      "module_id": "M19",
+      "outcome": "Compute bounded momentum indicators and evaluate their conditional relevance.",
+      "hard_prerequisites": [
+        "C-M15"
+      ],
+      "recommended_preparation": [
+        "C-M18"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M19-N",
+        "EX-M19-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can overbought persist during a strong trend?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M15",
+          "supplied_skill": "Use reproducible chart definitions as optional descriptive features to be tested.",
+          "consumed_by": "Compute bounded momentum indicators and evaluate their conditional relevance."
+        }
+      ]
+    },
+    {
+      "id": "C-M20",
+      "module_id": "M20",
+      "outcome": "Separate traded volume, implied volatility, open interest and inferred flows.",
+      "hard_prerequisites": [
+        "C-M04",
+        "C-M10"
+      ],
+      "recommended_preparation": [
+        "C-M15"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M20-N",
+        "EX-M20-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why does open interest not reveal the dealer's signed position?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M04",
+          "supplied_skill": "Read a quote and select an order with explicit price, fill and cancellation risks.",
+          "consumed_by": "Separate traded volume, implied volatility, open interest and inferred flows."
+        },
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Separate traded volume, implied volatility, open interest and inferred flows."
+        }
+      ]
+    },
+    {
+      "id": "C-M21",
+      "module_id": "M21",
+      "outcome": "Read call and put rights, premium units, expiry and maximum contractual exposure.",
+      "hard_prerequisites": [
+        "C-B01"
+      ],
+      "recommended_preparation": [
+        "C-M02"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M21-N",
+        "EX-M21-P"
+      ],
+      "diagnostic": {
+        "prompt": "What can a short put require even after collecting its premium?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-B01",
+          "supplied_skill": "Read obligations before imagining returns.",
+          "consumed_by": "Read call and put rights, premium units, expiry and maximum contractual exposure."
+        }
+      ]
+    },
+    {
+      "id": "C-M22",
+      "module_id": "M22",
+      "outcome": "Reconstruct exercise, assignment, dividend and expiration cash paths.",
+      "hard_prerequisites": [
+        "C-M03"
+      ],
+      "recommended_preparation": [
+        "C-M21",
+        "C-M04",
+        "C-M05"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M22-N",
+        "EX-M22-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can a spread temporarily create a large stock or cash obligation?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M03",
+          "supplied_skill": "Trace a trade from broker through clearing to final cash or delivery.",
+          "consumed_by": "Reconstruct exercise, assignment, dividend and expiration cash paths."
+        }
+      ]
+    },
+    {
+      "id": "C-M23",
+      "module_id": "M23",
+      "outcome": "Reject stale or non-executable chain observations and select comparable contracts.",
+      "hard_prerequisites": [
+        "C-M04",
+        "C-M22"
+      ],
+      "recommended_preparation": [
+        "C-M21",
+        "C-M10"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M23-N",
+        "EX-M23-P"
+      ],
+      "diagnostic": {
+        "prompt": "Does high open interest guarantee a tight executable quote now?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M04",
+          "supplied_skill": "Read a quote and select an order with explicit price, fill and cancellation risks.",
+          "consumed_by": "Reject stale or non-executable chain observations and select comparable contracts."
+        },
+        {
+          "requires": "C-M22",
+          "supplied_skill": "Reconstruct exercise, assignment, dividend and expiration cash paths.",
+          "consumed_by": "Reject stale or non-executable chain observations and select comparable contracts."
+        }
+      ]
+    },
+    {
+      "id": "C-M24",
+      "module_id": "M24",
+      "outcome": "Calculate long/short single-leg, covered-call, protective-put and collar cash flows.",
+      "hard_prerequisites": [
+        "C-M22"
+      ],
+      "recommended_preparation": [
+        "C-M21"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M24-N",
+        "EX-M24-P"
+      ],
+      "diagnostic": {
+        "prompt": "What downside remains in a covered call?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M22",
+          "supplied_skill": "Reconstruct exercise, assignment, dividend and expiration cash paths.",
+          "consumed_by": "Calculate long/short single-leg, covered-call, protective-put and collar cash flows."
+        }
+      ]
+    },
+    {
+      "id": "C-M25",
+      "module_id": "M25",
+      "outcome": "Bound same-expiry vertical payoffs and model each assignment path.",
+      "hard_prerequisites": [
+        "C-M24"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M25-N",
+        "EX-M25-P"
+      ],
+      "diagnostic": {
+        "prompt": "When can an operational cash need exceed the terminal spread loss?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M24",
+          "supplied_skill": "Calculate long/short single-leg, covered-call, protective-put and collar cash flows.",
+          "consumed_by": "Bound same-expiry vertical payoffs and model each assignment path."
+        }
+      ]
+    },
+    {
+      "id": "C-M26",
+      "module_id": "M26",
+      "outcome": "Compare volatility and convexity exposures of straddles, strangles and butterflies/condors.",
+      "hard_prerequisites": [
+        "C-M25",
+        "C-M10"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M26-N",
+        "EX-M26-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can a high win-rate condor have negative expectancy?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M25",
+          "supplied_skill": "Bound same-expiry vertical payoffs and model each assignment path.",
+          "consumed_by": "Compare volatility and convexity exposures of straddles, strangles and butterflies/condors."
+        },
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Compare volatility and convexity exposures of straddles, strangles and butterflies/condors."
+        }
+      ]
+    },
+    {
+      "id": "C-M27",
+      "module_id": "M27",
+      "outcome": "Analyze calendars, diagonals, ratios and backspreads on a multi-date path.",
+      "hard_prerequisites": [
+        "C-M25",
+        "C-M32"
+      ],
+      "recommended_preparation": [
+        "C-M26"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M27-N",
+        "EX-M27-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is a calendar's final P&L not fixed by today's payoff diagram?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M25",
+          "supplied_skill": "Bound same-expiry vertical payoffs and model each assignment path.",
+          "consumed_by": "Analyze calendars, diagonals, ratios and backspreads on a multi-date path."
+        },
+        {
+          "requires": "C-M32",
+          "supplied_skill": "Translate primary Greeks into cash exposures and verify signs and finite differences.",
+          "consumed_by": "Analyze calendars, diagonals, ratios and backspreads on a multi-date path."
+        }
+      ]
+    },
+    {
+      "id": "C-M28",
+      "module_id": "M28",
+      "outcome": "Use parity to analyze synthetics, boxes and conversion/reversal after funding and borrow.",
+      "hard_prerequisites": [
+        "C-M29",
+        "C-M22"
+      ],
+      "recommended_preparation": [
+        "C-M25",
+        "C-M05"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M28-N",
+        "EX-M28-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can a quoted box yield fail to be a free arbitrage?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M29",
+          "supplied_skill": "Derive bounds and replication with explicit carry and exercise assumptions.",
+          "consumed_by": "Use parity to analyze synthetics, boxes and conversion/reversal after funding and borrow."
+        },
+        {
+          "requires": "C-M22",
+          "supplied_skill": "Reconstruct exercise, assignment, dividend and expiration cash paths.",
+          "consumed_by": "Use parity to analyze synthetics, boxes and conversion/reversal after funding and borrow."
+        }
+      ]
+    },
+    {
+      "id": "C-M29",
+      "module_id": "M29",
+      "outcome": "Derive bounds and replication with explicit carry and exercise assumptions.",
+      "hard_prerequisites": [
+        "C-M24",
+        "C-B02"
+      ],
+      "recommended_preparation": [
+        "C-M05",
+        "C-M10",
+        "C-M21"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M29-N",
+        "EX-M29-P"
+      ],
+      "diagnostic": {
+        "prompt": "What assumption fails if a parity trade needs unavailable short stock?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M24",
+          "supplied_skill": "Calculate long/short single-leg, covered-call, protective-put and collar cash flows.",
+          "consumed_by": "Derive bounds and replication with explicit carry and exercise assumptions."
+        },
+        {
+          "requires": "C-B02",
+          "supplied_skill": "Translate formulas, logs and local slopes into option units.",
+          "consumed_by": "Derive bounds and replication with explicit carry and exercise assumptions."
+        }
+      ]
+    },
+    {
+      "id": "C-M30",
+      "module_id": "M30",
+      "outcome": "Implement and interpret BSM and binomial pricing, separating model price from edge.",
+      "hard_prerequisites": [
+        "C-M29",
+        "C-M10"
+      ],
+      "recommended_preparation": [
+        "C-M13"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M30-N",
+        "EX-M30-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why does N(d 2) still fail to give a real-world profit probability?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M29",
+          "supplied_skill": "Derive bounds and replication with explicit carry and exercise assumptions.",
+          "consumed_by": "Implement and interpret BSM and binomial pricing, separating model price from edge."
+        },
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Implement and interpret BSM and binomial pricing, separating model price from edge."
+        }
+      ]
+    },
+    {
+      "id": "C-M31",
+      "module_id": "M31",
+      "outcome": "Compare Monte Carlo, trees and finite differences with convergence and error budgets.",
+      "hard_prerequisites": [
+        "C-M30",
+        "C-M13",
+        "C-B03"
+      ],
+      "recommended_preparation": [
+        "C-M14"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M31-N",
+        "EX-M31-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why does a tighter root tolerance not repair a biased discretization?",
+        "bridge": "B03",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M30",
+          "supplied_skill": "Implement and interpret BSM and binomial pricing, separating model price from edge.",
+          "consumed_by": "Compare Monte Carlo, trees and finite differences with convergence and error budgets."
+        },
+        {
+          "requires": "C-M13",
+          "supplied_skill": "Differentiate, approximate, optimize and diagnose unstable numerical answers.",
+          "consumed_by": "Compare Monte Carlo, trees and finite differences with convergence and error budgets."
+        },
+        {
+          "requires": "C-B03",
+          "supplied_skill": "Write and rerun a small signed-cash-flow function before numerical projects.",
+          "consumed_by": "Compare Monte Carlo, trees and finite differences with convergence and error budgets."
+        }
+      ]
+    },
+    {
+      "id": "C-M32",
+      "module_id": "M32",
+      "outcome": "Translate primary Greeks into cash exposures and verify signs and finite differences.",
+      "hard_prerequisites": [
+        "C-M30"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M32-N",
+        "EX-M32-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why must vega units state decimal volatility or one volatility point?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M30",
+          "supplied_skill": "Implement and interpret BSM and binomial pricing, separating model price from edge.",
+          "consumed_by": "Translate primary Greeks into cash exposures and verify signs and finite differences."
+        }
+      ]
+    },
+    {
+      "id": "C-M33",
+      "module_id": "M33",
+      "outcome": "Define higher derivatives and surface conventions before aggregating them.",
+      "hard_prerequisites": [
+        "C-M32",
+        "C-M13"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M33-N",
+        "EX-M33-P"
+      ],
+      "diagnostic": {
+        "prompt": "How does a sticky-strike vanna estimate differ from sticky-delta scenario P&L?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M32",
+          "supplied_skill": "Translate primary Greeks into cash exposures and verify signs and finite differences.",
+          "consumed_by": "Define higher derivatives and surface conventions before aggregating them."
+        },
+        {
+          "requires": "C-M13",
+          "supplied_skill": "Differentiate, approximate, optimize and diagnose unstable numerical answers.",
+          "consumed_by": "Define higher derivatives and surface conventions before aggregating them."
+        }
+      ]
+    },
+    {
+      "id": "C-M34",
+      "module_id": "M34",
+      "outcome": "Attribute hedged P&L including carry, discrete error, slippage and residuals.",
+      "hard_prerequisites": [
+        "C-M32",
+        "C-M05"
+      ],
+      "recommended_preparation": [
+        "C-M33"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M34-N",
+        "EX-M34-P"
+      ],
+      "diagnostic": {
+        "prompt": "When can long gamma lose money despite active rebalancing?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M32",
+          "supplied_skill": "Translate primary Greeks into cash exposures and verify signs and finite differences.",
+          "consumed_by": "Attribute hedged P&L including carry, discrete error, slippage and residuals."
+        },
+        {
+          "requires": "C-M05",
+          "supplied_skill": "Calculate executable net economics including funding, spread, fees and tax basis.",
+          "consumed_by": "Attribute hedged P&L including carry, discrete error, slippage and residuals."
+        }
+      ]
+    },
+    {
+      "id": "C-M35",
+      "module_id": "M35",
+      "outcome": "Estimate realized volatility with explicit sampling, annualization and uncertainty.",
+      "hard_prerequisites": [
+        "C-M11"
+      ],
+      "recommended_preparation": [
+        "C-M10",
+        "C-M12"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M35-N",
+        "EX-M35-P"
+      ],
+      "diagnostic": {
+        "prompt": "How do overnight gaps alter a close-to-close versus intraday estimator?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M11",
+          "supplied_skill": "Report uncertainty and make statistical decisions without claiming certainty.",
+          "consumed_by": "Estimate realized volatility with explicit sampling, annualization and uncertainty."
+        }
+      ]
+    },
+    {
+      "id": "C-M36",
+      "module_id": "M36",
+      "outcome": "Match implied and realized variance horizons and interpret risk premium cautiously.",
+      "hard_prerequisites": [
+        "C-M35",
+        "C-M30"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M36-N",
+        "EX-M36-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why does a positive average variance spread not ensure a profitable retail trade?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M35",
+          "supplied_skill": "Estimate realized volatility with explicit sampling, annualization and uncertainty.",
+          "consumed_by": "Match implied and realized variance horizons and interpret risk premium cautiously."
+        },
+        {
+          "requires": "C-M30",
+          "supplied_skill": "Implement and interpret BSM and binomial pricing, separating model price from edge.",
+          "consumed_by": "Match implied and realized variance horizons and interpret risk premium cautiously."
+        }
+      ]
+    },
+    {
+      "id": "C-M37",
+      "module_id": "M37",
+      "outcome": "Build a surface in forward moneyness and total variance with arbitrage diagnostics.",
+      "hard_prerequisites": [
+        "C-M36",
+        "C-M31"
+      ],
+      "recommended_preparation": [
+        "C-M29",
+        "C-M32"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M37-N",
+        "EX-M37-P"
+      ],
+      "diagnostic": {
+        "prompt": "Is positive total variance sufficient for an arbitrage-free smile?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M36",
+          "supplied_skill": "Match implied and realized variance horizons and interpret risk premium cautiously.",
+          "consumed_by": "Build a surface in forward moneyness and total variance with arbitrage diagnostics."
+        },
+        {
+          "requires": "C-M31",
+          "supplied_skill": "Compare Monte Carlo, trees and finite differences with convergence and error budgets.",
+          "consumed_by": "Build a surface in forward moneyness and total variance with arbitrage diagnostics."
+        }
+      ]
+    },
+    {
+      "id": "C-M38",
+      "module_id": "M38",
+      "outcome": "Separate event variance, expiry convexity and execution risk in earnings/0DTE hypotheses.",
+      "hard_prerequisites": [
+        "C-M36",
+        "C-M22"
+      ],
+      "recommended_preparation": [
+        "C-M09",
+        "C-M35",
+        "C-M37"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M38-N",
+        "EX-M38-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why does small remaining premium not mean small risk near expiry?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M36",
+          "supplied_skill": "Match implied and realized variance horizons and interpret risk premium cautiously.",
+          "consumed_by": "Separate event variance, expiry convexity and execution risk in earnings/0DTE hypotheses."
+        },
+        {
+          "requires": "C-M22",
+          "supplied_skill": "Reconstruct exercise, assignment, dividend and expiration cash paths.",
+          "consumed_by": "Separate event variance, expiry convexity and execution risk in earnings/0DTE hypotheses."
+        }
+      ]
+    },
+    {
+      "id": "C-M39",
+      "module_id": "M39",
+      "outcome": "Distinguish VIX spot methodology, settlement, futures basis and rolling-product returns.",
+      "hard_prerequisites": [
+        "C-M36"
+      ],
+      "recommended_preparation": [
+        "C-M37"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M39-N",
+        "EX-M39-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why cannot spot VIX be bought and held directly?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M36",
+          "supplied_skill": "Match implied and realized variance horizons and interpret risk premium cautiously.",
+          "consumed_by": "Distinguish VIX spot methodology, settlement, futures basis and rolling-product returns."
+        }
+      ]
+    },
+    {
+      "id": "C-M40",
+      "module_id": "M40",
+      "outcome": "Compare local/stochastic/jump models by calibration fit, identifiability and hedge error.",
+      "hard_prerequisites": [
+        "C-M37",
+        "C-M14"
+      ],
+      "recommended_preparation": [
+        "C-M31"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M40-N",
+        "EX-M40-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why does fitting vanillas not identify barrier risk uniquely?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M37",
+          "supplied_skill": "Build a surface in forward moneyness and total variance with arbitrage diagnostics.",
+          "consumed_by": "Compare local/stochastic/jump models by calibration fit, identifiability and hedge error."
+        },
+        {
+          "requires": "C-M14",
+          "supplied_skill": "Explain Brownian scaling, Itô correction and the risk-neutral measure under stated assumptions.",
+          "consumed_by": "Compare local/stochastic/jump models by calibration fit, identifiability and hedge error."
+        }
+      ]
+    },
+    {
+      "id": "C-M41",
+      "module_id": "M41",
+      "outcome": "Measure relative-value, skew, term and dispersion exposure with realistic hedge/correlation risks.",
+      "hard_prerequisites": [
+        "C-M37",
+        "C-M34",
+        "C-M08"
+      ],
+      "recommended_preparation": [
+        "C-M28",
+        "C-M38"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M41-N",
+        "EX-M41-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why does index variance differ from average constituent variance?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M37",
+          "supplied_skill": "Build a surface in forward moneyness and total variance with arbitrage diagnostics.",
+          "consumed_by": "Measure relative-value, skew, term and dispersion exposure with realistic hedge/correlation risks."
+        },
+        {
+          "requires": "C-M34",
+          "supplied_skill": "Attribute hedged P&L including carry, discrete error, slippage and residuals.",
+          "consumed_by": "Measure relative-value, skew, term and dispersion exposure with realistic hedge/correlation risks."
+        },
+        {
+          "requires": "C-M08",
+          "supplied_skill": "Quantify changing factor and correlation exposures across assets.",
+          "consumed_by": "Measure relative-value, skew, term and dispersion exposure with realistic hedge/correlation risks."
+        }
+      ]
+    },
+    {
+      "id": "C-M42",
+      "module_id": "M42",
+      "outcome": "Track futures variation margin, basis, roll and delivery specifications.",
+      "hard_prerequisites": [
+        "C-M05"
+      ],
+      "recommended_preparation": [
+        "C-M02",
+        "C-M03",
+        "C-M29"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M42-N",
+        "EX-M42-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can a correct long-term futures thesis still exhaust cash?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M05",
+          "supplied_skill": "Calculate executable net economics including funding, spread, fees and tax basis.",
+          "consumed_by": "Track futures variation margin, basis, roll and delivery specifications."
+        }
+      ]
+    },
+    {
+      "id": "C-M43",
+      "module_id": "M43",
+      "outcome": "Handle rates, FX and commodities with product-specific numeraires and conventions.",
+      "hard_prerequisites": [
+        "C-M42",
+        "C-M30"
+      ],
+      "recommended_preparation": [
+        "C-M07"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M43-N",
+        "EX-M43-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is equity BSM with zero yield wrong for an FX option?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M42",
+          "supplied_skill": "Track futures variation margin, basis, roll and delivery specifications.",
+          "consumed_by": "Handle rates, FX and commodities with product-specific numeraires and conventions."
+        },
+        {
+          "requires": "C-M30",
+          "supplied_skill": "Implement and interpret BSM and binomial pricing, separating model price from edge.",
+          "consumed_by": "Handle rates, FX and commodities with product-specific numeraires and conventions."
+        }
+      ]
+    },
+    {
+      "id": "C-M44",
+      "module_id": "M44",
+      "outcome": "Explain path dependence, discontinuities and embedded funding in exotics/structured products.",
+      "hard_prerequisites": [
+        "C-M31",
+        "C-M14"
+      ],
+      "recommended_preparation": [
+        "C-M40",
+        "C-M43"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M44-N",
+        "EX-M44-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can equal terminal prices produce different Asian or barrier payouts?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M31",
+          "supplied_skill": "Compare Monte Carlo, trees and finite differences with convergence and error budgets.",
+          "consumed_by": "Explain path dependence, discontinuities and embedded funding in exotics/structured products."
+        },
+        {
+          "requires": "C-M14",
+          "supplied_skill": "Explain Brownian scaling, Itô correction and the risk-neutral measure under stated assumptions.",
+          "consumed_by": "Explain path dependence, discontinuities and embedded funding in exotics/structured products."
+        }
+      ]
+    },
+    {
+      "id": "C-M45",
+      "module_id": "M45",
+      "outcome": "Size against stress loss, drawdown and funding uncertainty rather than confidence.",
+      "hard_prerequisites": [
+        "C-M10",
+        "C-B01"
+      ],
+      "recommended_preparation": [
+        "C-M05",
+        "C-M21"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M45-N",
+        "EX-M45-P"
+      ],
+      "diagnostic": {
+        "prompt": "When should a noisy positive Kelly estimate still be rejected?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Size against stress loss, drawdown and funding uncertainty rather than confidence."
+        },
+        {
+          "requires": "C-B01",
+          "supplied_skill": "Read obligations before imagining returns.",
+          "consumed_by": "Size against stress loss, drawdown and funding uncertainty rather than confidence."
+        }
+      ]
+    },
+    {
+      "id": "C-M46",
+      "module_id": "M46",
+      "outcome": "Use VaR, ES and scenario loss with stated horizon and liquidity assumptions.",
+      "hard_prerequisites": [
+        "C-M45",
+        "C-M11"
+      ],
+      "recommended_preparation": [
+        "C-M32",
+        "C-M36"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M46-N",
+        "EX-M46-P"
+      ],
+      "diagnostic": {
+        "prompt": "What losses can a 99% VaR number conceal?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M45",
+          "supplied_skill": "Size against stress loss, drawdown and funding uncertainty rather than confidence.",
+          "consumed_by": "Use VaR, ES and scenario loss with stated horizon and liquidity assumptions."
+        },
+        {
+          "requires": "C-M11",
+          "supplied_skill": "Report uncertainty and make statistical decisions without claiming certainty.",
+          "consumed_by": "Use VaR, ES and scenario loss with stated horizon and liquidity assumptions."
+        }
+      ]
+    },
+    {
+      "id": "C-M47",
+      "module_id": "M47",
+      "outcome": "Stress collateral, funding and margin alongside economic risk.",
+      "hard_prerequisites": [
+        "C-M05",
+        "C-M22"
+      ],
+      "recommended_preparation": [
+        "C-M45"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M47-N",
+        "EX-M47-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can hedges reduce delta but increase cash needs?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M05",
+          "supplied_skill": "Calculate executable net economics including funding, spread, fees and tax basis.",
+          "consumed_by": "Stress collateral, funding and margin alongside economic risk."
+        },
+        {
+          "requires": "C-M22",
+          "supplied_skill": "Reconstruct exercise, assignment, dividend and expiration cash paths.",
+          "consumed_by": "Stress collateral, funding and margin alongside economic risk."
+        }
+      ]
+    },
+    {
+      "id": "C-M48",
+      "module_id": "M48",
+      "outcome": "Aggregate factor, Greek and liquidity risks and compare hedge alternatives.",
+      "hard_prerequisites": [
+        "C-M46",
+        "C-M32"
+      ],
+      "recommended_preparation": [
+        "C-M08",
+        "C-M45"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M48-N",
+        "EX-M48-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can many small short-vol positions create one concentrated bet?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M46",
+          "supplied_skill": "Use VaR, ES and scenario loss with stated horizon and liquidity assumptions.",
+          "consumed_by": "Aggregate factor, Greek and liquidity risks and compare hedge alternatives."
+        },
+        {
+          "requires": "C-M32",
+          "supplied_skill": "Translate primary Greeks into cash exposures and verify signs and finite differences.",
+          "consumed_by": "Aggregate factor, Greek and liquidity risks and compare hedge alternatives."
+        }
+      ]
+    },
+    {
+      "id": "C-M49",
+      "module_id": "M49",
+      "outcome": "Reconcile records and design containment, recovery and independent model challenge.",
+      "hard_prerequisites": [
+        "C-M05",
+        "C-M22"
+      ],
+      "recommended_preparation": [
+        "C-M03",
+        "C-M04",
+        "C-M45"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M49-N",
+        "EX-M49-P"
+      ],
+      "diagnostic": {
+        "prompt": "What should happen when internal and broker positions disagree?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M05",
+          "supplied_skill": "Calculate executable net economics including funding, spread, fees and tax basis.",
+          "consumed_by": "Reconcile records and design containment, recovery and independent model challenge."
+        },
+        {
+          "requires": "C-M22",
+          "supplied_skill": "Reconstruct exercise, assignment, dividend and expiration cash paths.",
+          "consumed_by": "Reconcile records and design containment, recovery and independent model challenge."
+        }
+      ]
+    },
+    {
+      "id": "C-M50",
+      "module_id": "M50",
+      "outcome": "Explain adverse selection, queue priority and price discovery using event sequences.",
+      "hard_prerequisites": [
+        "C-M04",
+        "C-M10"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M50-N",
+        "EX-M50-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why does a passive fill correlate with an unfavorable next price?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M04",
+          "supplied_skill": "Read a quote and select an order with explicit price, fill and cancellation risks.",
+          "consumed_by": "Explain adverse selection, queue priority and price discovery using event sequences."
+        },
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Explain adverse selection, queue priority and price discovery using event sequences."
+        }
+      ]
+    },
+    {
+      "id": "C-M51",
+      "module_id": "M51",
+      "outcome": "Balance spread revenue, hedging costs, inventory and toxic flow in quoting models.",
+      "hard_prerequisites": [
+        "C-M50",
+        "C-M34",
+        "C-M47"
+      ],
+      "recommended_preparation": [
+        "C-M37"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M51-N",
+        "EX-M51-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is dealer gamma from open interest unidentified without position assumptions?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M50",
+          "supplied_skill": "Explain adverse selection, queue priority and price discovery using event sequences.",
+          "consumed_by": "Balance spread revenue, hedging costs, inventory and toxic flow in quoting models."
+        },
+        {
+          "requires": "C-M34",
+          "supplied_skill": "Attribute hedged P&L including carry, discrete error, slippage and residuals.",
+          "consumed_by": "Balance spread revenue, hedging costs, inventory and toxic flow in quoting models."
+        },
+        {
+          "requires": "C-M47",
+          "supplied_skill": "Stress collateral, funding and margin alongside economic risk.",
+          "consumed_by": "Balance spread revenue, hedging costs, inventory and toxic flow in quoting models."
+        }
+      ]
+    },
+    {
+      "id": "C-M52",
+      "module_id": "M52",
+      "outcome": "Benchmark execution against arrival price and model fill probabilities and legging risk.",
+      "hard_prerequisites": [
+        "C-M50",
+        "C-M05"
+      ],
+      "recommended_preparation": [
+        "C-M04",
+        "C-M21"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M52-N",
+        "EX-M52-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can the lowest commission route have the worst net result?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M50",
+          "supplied_skill": "Explain adverse selection, queue priority and price discovery using event sequences.",
+          "consumed_by": "Benchmark execution against arrival price and model fill probabilities and legging risk."
+        },
+        {
+          "requires": "C-M05",
+          "supplied_skill": "Calculate executable net economics including funding, spread, fees and tax basis.",
+          "consumed_by": "Benchmark execution against arrival price and model fill probabilities and legging risk."
+        }
+      ]
+    },
+    {
+      "id": "C-M53",
+      "module_id": "M53",
+      "outcome": "Precommit trade adjustment and exit rules based on thesis, risk and costs.",
+      "hard_prerequisites": [
+        "C-M25",
+        "C-M45",
+        "C-M52"
+      ],
+      "recommended_preparation": [
+        "C-M22",
+        "C-M24",
+        "C-M32"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M53-N",
+        "EX-M53-P"
+      ],
+      "diagnostic": {
+        "prompt": "Does rolling reset the economic loss of a position?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M25",
+          "supplied_skill": "Bound same-expiry vertical payoffs and model each assignment path.",
+          "consumed_by": "Precommit trade adjustment and exit rules based on thesis, risk and costs."
+        },
+        {
+          "requires": "C-M45",
+          "supplied_skill": "Size against stress loss, drawdown and funding uncertainty rather than confidence.",
+          "consumed_by": "Precommit trade adjustment and exit rules based on thesis, risk and costs."
+        },
+        {
+          "requires": "C-M52",
+          "supplied_skill": "Benchmark execution against arrival price and model fill probabilities and legging risk.",
+          "consumed_by": "Precommit trade adjustment and exit rules based on thesis, risk and costs."
+        }
+      ]
+    },
+    {
+      "id": "C-M54",
+      "module_id": "M54",
+      "outcome": "Build point-in-time data with traceable identifiers, timestamps, adjustments and rights.",
+      "hard_prerequisites": [
+        "C-B03",
+        "C-M23"
+      ],
+      "recommended_preparation": [
+        "C-M03",
+        "C-M11",
+        "C-M21"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M54-N",
+        "EX-M54-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why cannot today's survivor universe be used as yesterday's opportunity set?",
+        "bridge": "B03",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-B03",
+          "supplied_skill": "Write and rerun a small signed-cash-flow function before numerical projects.",
+          "consumed_by": "Build point-in-time data with traceable identifiers, timestamps, adjustments and rights."
+        },
+        {
+          "requires": "C-M23",
+          "supplied_skill": "Reject stale or non-executable chain observations and select comparable contracts.",
+          "consumed_by": "Build point-in-time data with traceable identifiers, timestamps, adjustments and rights."
+        }
+      ]
+    },
+    {
+      "id": "C-M55",
+      "module_id": "M55",
+      "outcome": "Write falsifiable hypotheses and isolate selection from final evaluation.",
+      "hard_prerequisites": [
+        "C-M11",
+        "C-M54"
+      ],
+      "recommended_preparation": [
+        "C-M12"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M55-N",
+        "EX-M55-P"
+      ],
+      "diagnostic": {
+        "prompt": "What result would cause abandonment of this strategy?",
+        "bridge": "B03",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M11",
+          "supplied_skill": "Report uncertainty and make statistical decisions without claiming certainty.",
+          "consumed_by": "Write falsifiable hypotheses and isolate selection from final evaluation."
+        },
+        {
+          "requires": "C-M54",
+          "supplied_skill": "Build point-in-time data with traceable identifiers, timestamps, adjustments and rights.",
+          "consumed_by": "Write falsifiable hypotheses and isolate selection from final evaluation."
+        }
+      ]
+    },
+    {
+      "id": "C-M56",
+      "module_id": "M56",
+      "outcome": "Simulate the complete option lifecycle with fills, exercise, capital and chronological validation.",
+      "hard_prerequisites": [
+        "C-M55",
+        "C-M34",
+        "C-M47",
+        "C-M58"
+      ],
+      "recommended_preparation": [
+        "C-M10",
+        "C-M52"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M56-N",
+        "EX-M56-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can correct payoff arithmetic still create a fraudulent-looking backtest?",
+        "bridge": "B03",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M55",
+          "supplied_skill": "Write falsifiable hypotheses and isolate selection from final evaluation.",
+          "consumed_by": "Simulate the complete option lifecycle with fills, exercise, capital and chronological validation."
+        },
+        {
+          "requires": "C-M34",
+          "supplied_skill": "Attribute hedged P&L including carry, discrete error, slippage and residuals.",
+          "consumed_by": "Simulate the complete option lifecycle with fills, exercise, capital and chronological validation."
+        },
+        {
+          "requires": "C-M47",
+          "supplied_skill": "Stress collateral, funding and margin alongside economic risk.",
+          "consumed_by": "Simulate the complete option lifecycle with fills, exercise, capital and chronological validation."
+        },
+        {
+          "requires": "C-M58",
+          "supplied_skill": "Create reproducible numerical experiments and safe educational API ingestion.",
+          "consumed_by": "Simulate the complete option lifecycle with fills, exercise, capital and chronological validation."
+        }
+      ]
+    },
+    {
+      "id": "C-M57",
+      "module_id": "M57",
+      "outcome": "Use ML only after a simple baseline, temporal validation and leakage controls.",
+      "hard_prerequisites": [
+        "C-M56",
+        "C-M13"
+      ],
+      "recommended_preparation": [
+        "C-M12",
+        "C-M55"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M57-N",
+        "EX-M57-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why can a pipeline still leak with an inappropriate time split?",
+        "bridge": "B03",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M56",
+          "supplied_skill": "Simulate the complete option lifecycle with fills, exercise, capital and chronological validation.",
+          "consumed_by": "Use ML only after a simple baseline, temporal validation and leakage controls."
+        },
+        {
+          "requires": "C-M13",
+          "supplied_skill": "Differentiate, approximate, optimize and diagnose unstable numerical answers.",
+          "consumed_by": "Use ML only after a simple baseline, temporal validation and leakage controls."
+        }
+      ]
+    },
+    {
+      "id": "C-M58",
+      "module_id": "M58",
+      "outcome": "Create reproducible numerical experiments and safe educational API ingestion.",
+      "hard_prerequisites": [
+        "C-B03"
+      ],
+      "recommended_preparation": [
+        "C-M54",
+        "C-M49"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M58-N",
+        "EX-M58-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why are a reproducible environment and a random seed separate controls?",
+        "bridge": "B03",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-B03",
+          "supplied_skill": "Write and rerun a small signed-cash-flow function before numerical projects.",
+          "consumed_by": "Create reproducible numerical experiments and safe educational API ingestion."
+        }
+      ]
+    },
+    {
+      "id": "C-M59",
+      "module_id": "M59",
+      "outcome": "Turn a thesis into explicit states, risk limits and decision records.",
+      "hard_prerequisites": [
+        "C-M53",
+        "C-M55"
+      ],
+      "recommended_preparation": [
+        "C-M23",
+        "C-M45"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M59-N",
+        "EX-M59-P"
+      ],
+      "diagnostic": {
+        "prompt": "What is the rule when data quality or execution state becomes unknown?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M53",
+          "supplied_skill": "Precommit trade adjustment and exit rules based on thesis, risk and costs.",
+          "consumed_by": "Turn a thesis into explicit states, risk limits and decision records."
+        },
+        {
+          "requires": "C-M55",
+          "supplied_skill": "Write falsifiable hypotheses and isolate selection from final evaluation.",
+          "consumed_by": "Turn a thesis into explicit states, risk limits and decision records."
+        }
+      ]
+    },
+    {
+      "id": "C-M60",
+      "module_id": "M60",
+      "outcome": "Recognize behavioral errors and evaluate decision quality separately from returns.",
+      "hard_prerequisites": [
+        "C-B01",
+        "C-M10"
+      ],
+      "recommended_preparation": [
+        "C-M01",
+        "C-M45"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M60-N",
+        "EX-M60-P"
+      ],
+      "diagnostic": {
+        "prompt": "Can a losing trade be a good decision under a sound distribution?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-B01",
+          "supplied_skill": "Read obligations before imagining returns.",
+          "consumed_by": "Recognize behavioral errors and evaluate decision quality separately from returns."
+        },
+        {
+          "requires": "C-M10",
+          "supplied_skill": "Compute conditional expected payoff and distinguish pricing from forecasting probabilities.",
+          "consumed_by": "Recognize behavioral errors and evaluate decision quality separately from returns."
+        }
+      ]
+    },
+    {
+      "id": "C-M61",
+      "module_id": "M61",
+      "outcome": "Maintain a journal connecting forecast, exposure, execution and attribution.",
+      "hard_prerequisites": [
+        "C-M11",
+        "C-M60"
+      ],
+      "recommended_preparation": [
+        "C-M45",
+        "C-M52",
+        "C-M53"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M61-N",
+        "EX-M61-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is Sharpe unstable for short histories with rare losses?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M11",
+          "supplied_skill": "Report uncertainty and make statistical decisions without claiming certainty.",
+          "consumed_by": "Maintain a journal connecting forecast, exposure, execution and attribution."
+        },
+        {
+          "requires": "C-M60",
+          "supplied_skill": "Recognize behavioral errors and evaluate decision quality separately from returns.",
+          "consumed_by": "Maintain a journal connecting forecast, exposure, execution and attribution."
+        }
+      ]
+    },
+    {
+      "id": "C-M62",
+      "module_id": "M62",
+      "outcome": "Locate US product rules, assignment procedures and account restrictions without generalizing.",
+      "hard_prerequisites": [
+        "C-M22",
+        "C-M47"
+      ],
+      "recommended_preparation": [
+        "C-M03",
+        "C-M05"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M62-N",
+        "EX-M62-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why do SPX-style cash settlement and single-stock delivery need separate worksheets?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M22",
+          "supplied_skill": "Reconstruct exercise, assignment, dividend and expiration cash paths.",
+          "consumed_by": "Locate US product rules, assignment procedures and account restrictions without generalizing."
+        },
+        {
+          "requires": "C-M47",
+          "supplied_skill": "Stress collateral, funding and margin alongside economic risk.",
+          "consumed_by": "Locate US product rules, assignment procedures and account restrictions without generalizing."
+        }
+      ]
+    },
+    {
+      "id": "C-M63",
+      "module_id": "M63",
+      "outcome": "Resolve India contract, clearing, tax and expiry facts through effective-dated circular chains.",
+      "hard_prerequisites": [
+        "C-M22",
+        "C-M47"
+      ],
+      "recommended_preparation": [
+        "C-M03",
+        "C-M05"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M63-N",
+        "EX-M63-P"
+      ],
+      "diagnostic": {
+        "prompt": "Which document wins when a generic clearing overview contradicts a specific operative circular?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M22",
+          "supplied_skill": "Reconstruct exercise, assignment, dividend and expiration cash paths.",
+          "consumed_by": "Resolve India contract, clearing, tax and expiry facts through effective-dated circular chains."
+        },
+        {
+          "requires": "C-M47",
+          "supplied_skill": "Stress collateral, funding and margin alongside economic risk.",
+          "consumed_by": "Resolve India contract, clearing, tax and expiry facts through effective-dated circular chains."
+        }
+      ]
+    },
+    {
+      "id": "C-M64",
+      "module_id": "M64",
+      "outcome": "Compare jurisdiction and product conventions rather than exporting US assumptions.",
+      "hard_prerequisites": [
+        "C-M42",
+        "C-M47"
+      ],
+      "recommended_preparation": [
+        "C-M03",
+        "C-M22"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M64-N",
+        "EX-M64-P"
+      ],
+      "diagnostic": {
+        "prompt": "Which legal entity, currency and calendar determine this obligation?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M42",
+          "supplied_skill": "Track futures variation margin, basis, roll and delivery specifications.",
+          "consumed_by": "Compare jurisdiction and product conventions rather than exporting US assumptions."
+        },
+        {
+          "requires": "C-M47",
+          "supplied_skill": "Stress collateral, funding and margin alongside economic risk.",
+          "consumed_by": "Compare jurisdiction and product conventions rather than exporting US assumptions."
+        }
+      ]
+    },
+    {
+      "id": "C-M65",
+      "module_id": "M65",
+      "outcome": "Classify conditional theory, empirical evidence, heuristics and unsupported narratives.",
+      "hard_prerequisites": [
+        "C-M11",
+        "C-M21"
+      ],
+      "recommended_preparation": [
+        "C-M10",
+        "C-M45"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M65-N",
+        "EX-M65-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is a plausible mechanism insufficient evidence of a profitable edge?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M11",
+          "supplied_skill": "Report uncertainty and make statistical decisions without claiming certainty.",
+          "consumed_by": "Classify conditional theory, empirical evidence, heuristics and unsupported narratives."
+        },
+        {
+          "requires": "C-M21",
+          "supplied_skill": "Read call and put rights, premium units, expiry and maximum contractual exposure.",
+          "consumed_by": "Classify conditional theory, empirical evidence, heuristics and unsupported narratives."
+        }
+      ]
+    },
+    {
+      "id": "C-M66",
+      "module_id": "M66",
+      "outcome": "Reconstruct failure cases from dated evidence with competing explanations.",
+      "hard_prerequisites": [
+        "C-M46",
+        "C-M49"
+      ],
+      "recommended_preparation": [
+        "C-M45",
+        "C-M55",
+        "C-M60"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M66-N",
+        "EX-M66-P"
+      ],
+      "diagnostic": {
+        "prompt": "What evidence would distinguish liquidity feedback from the initial shock?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M46",
+          "supplied_skill": "Use VaR, ES and scenario loss with stated horizon and liquidity assumptions.",
+          "consumed_by": "Reconstruct failure cases from dated evidence with competing explanations."
+        },
+        {
+          "requires": "C-M49",
+          "supplied_skill": "Reconcile records and design containment, recovery and independent model challenge.",
+          "consumed_by": "Reconstruct failure cases from dated evidence with competing explanations."
+        }
+      ]
+    },
+    {
+      "id": "C-M67",
+      "module_id": "M67",
+      "outcome": "Integrate research, risk, execution and operations in an independently reviewable simulated desk.",
+      "hard_prerequisites": [
+        "C-M56",
+        "C-M48",
+        "C-M49",
+        "C-M52",
+        "C-M61"
+      ],
+      "recommended_preparation": [
+        "C-M51",
+        "C-M58",
+        "C-M66"
+      ],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-M67-N",
+        "EX-M67-P"
+      ],
+      "diagnostic": {
+        "prompt": "Would another person reproduce the same decision using the record available then?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M56",
+          "supplied_skill": "Simulate the complete option lifecycle with fills, exercise, capital and chronological validation.",
+          "consumed_by": "Integrate research, risk, execution and operations in an independently reviewable simulated desk."
+        },
+        {
+          "requires": "C-M48",
+          "supplied_skill": "Aggregate factor, Greek and liquidity risks and compare hedge alternatives.",
+          "consumed_by": "Integrate research, risk, execution and operations in an independently reviewable simulated desk."
+        },
+        {
+          "requires": "C-M49",
+          "supplied_skill": "Reconcile records and design containment, recovery and independent model challenge.",
+          "consumed_by": "Integrate research, risk, execution and operations in an independently reviewable simulated desk."
+        },
+        {
+          "requires": "C-M52",
+          "supplied_skill": "Benchmark execution against arrival price and model fill probabilities and legging risk.",
+          "consumed_by": "Integrate research, risk, execution and operations in an independently reviewable simulated desk."
+        },
+        {
+          "requires": "C-M61",
+          "supplied_skill": "Maintain a journal connecting forecast, exposure, execution and attribution.",
+          "consumed_by": "Integrate research, risk, execution and operations in an independently reviewable simulated desk."
+        }
+      ]
+    },
+    {
+      "id": "C-B01",
+      "module_id": "B01",
+      "outcome": "Read obligations before imagining returns.",
+      "hard_prerequisites": [
+        "C-M01"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-B01-N",
+        "EX-B01-P"
+      ],
+      "diagnostic": {
+        "prompt": "Can a small premium create a large delivery obligation?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M01",
+          "supplied_skill": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+          "consumed_by": "Read obligations before imagining returns."
+        }
+      ]
+    },
+    {
+      "id": "C-B02",
+      "module_id": "B02",
+      "outcome": "Translate formulas, logs and local slopes into option units.",
+      "hard_prerequisites": [
+        "C-M01"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-B02-N",
+        "EX-B02-P"
+      ],
+      "diagnostic": {
+        "prompt": "Why is a percentage-point shock different from a percentage shock?",
+        "bridge": "B02",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M01",
+          "supplied_skill": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+          "consumed_by": "Translate formulas, logs and local slopes into option units."
+        }
+      ]
+    },
+    {
+      "id": "C-B03",
+      "module_id": "B03",
+      "outcome": "Write and rerun a small signed-cash-flow function before numerical projects.",
+      "hard_prerequisites": [
+        "C-M01"
+      ],
+      "recommended_preparation": [],
+      "optional_enrichment": [],
+      "dependency_reason": "The predecessor supplies the named numerical, contract, data or risk skill consumed in this module; diagnostic evidence may satisfy it without repeating a whole module.",
+      "assessment_ids": [
+        "EX-B03-N",
+        "EX-B03-P"
+      ],
+      "diagnostic": {
+        "prompt": "Can another learner reproduce the environment and output?",
+        "bridge": "B01",
+        "pass": "Explain assumptions and units; solve a fresh entry task without a critical cash, assignment or loss-bound error. Diagnostic placement is provisional, checked by the module assessment."
+      },
+      "hard_edge_justifications": [
+        {
+          "requires": "C-M01",
+          "supplied_skill": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+          "consumed_by": "Write and rerun a small signed-cash-flow function before numerical projects."
+        }
+      ]
+    }
+  ]
+}

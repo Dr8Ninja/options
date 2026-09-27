@@ -1,0 +1,371 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "SUP-high_impact_path",
+      "kind": "high_impact_path",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 160,
+      "markdown": "### The high-impact path through the encyclopedia\n\nPrioritize these twelve capabilities. They are not a shortened list of everything worth knowing; they are the capabilities on which the rest depends.\n\n1. **Read the actual contract:** what is bought or sold, in what units, on which dates, and with which exercise and settlement obligations. M03–M05, M21–M22.\n2. **Think in distributions and net expectancy:** outcomes, payoff magnitudes, costs, uncertainty and the difference between pricing and forecasting probabilities. M10–M11, M45, M55.\n3. **Control size and survive adverse paths:** notional, stress loss, concentration, liquidity and margin cash calls. M45–M49.\n4. **Use Greeks with correct units:** identify the risks carried by a trade and how they change. M32–M34.\n5. **Compare implied pricing with a relevant forecast:** match horizons, distinguish variance from volatility, and account for risk premiums and events. M35–M38.\n6. **Understand the surface:** a single IV number cannot describe different strikes, expiries or event exposure. M37.\n7. **Evaluate executable economics:** spread, package fills, financing, borrow, tax and adjustment costs. M05, M23, M52.\n8. **Distinguish expiration payoff from the path to expiration:** assignment, gaps, collateral, interim losses and multi-expiry positions. M22, M27, M46–M47.\n9. **Validate an edge honestly:** point-in-time data, realistic accounting, untouched holdouts, selection bias and uncertainty. M54–M56.\n10. **Manage the portfolio rather than isolated trade names:** common factors, correlated short convexity and liquidity needs. M48.\n11. **Make decisions reproducible:** record the thesis, invalidation, alternatives, rules and actual fills; review process and outcomes separately. M53, M59–M61.\n12. **Maintain operational competence:** reconciliation, current rules, error containment and recovery. M49, M58, M62–M67.\n\nAfter foundations, a reasonable initial allocation of deliberate-practice time is 25% pricing/Greeks/volatility, 20% risk/portfolio, 20% data/validation, 15% contract/execution/operations, 10% underlying/macro/event context, 5% explicit behavioral review and 5% chart/indicator study. This is a curriculum-design suggestion, not an empirically optimal formula. Behavioral and risk controls are also practiced inside every other category. A discretionary price-action specialization can justify more chart work only when its incremental value is being tested."
+    },
+    {
+      "id": "SUP-specialization_branches",
+      "kind": "specialization_branches",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 179,
+      "markdown": "### Specialization branches\n\n| Track | Main modules | What depth is necessary |\n|---|---|---|\n| Discretionary directional options | M06–M09, M15–M25, M38, M45–M46, M52–M53, M55–M56, M60–M61 | Objective setups, probability, instrument selection, costs, events, risk and honest review |\n| Systematic option strategies | M10–M13, M21–M38, M45–M49, M54–M59, M61 | Data engineering, lifecycle simulation, validation, portfolio allocation and monitoring |\n| Volatility relative value | M28–M41, M45–M48, M50–M56 | Forecasts, surface dynamics, discrete hedging, P&L explanation, correlation and funding |\n| Options market making | M29–M40, M45–M52, M54–M58, M67 | Quote formation, inventory, adverse selection, queues, low-latency reliability and risk controls |\n| Portfolio hedging and overlays | M06–M10, M21–M38, M45–M48, M52–M53, M61 | Mandate, downside protection, basis, carry cost, benchmark and portfolio contribution |\n| Quantitative derivatives/modeling | M13–M14, M29–M44, M46–M49, M54–M58, M67 | Derivations, numerical stability, calibration, independent validation and model limitations |\n| Rates/FX/commodity/OTC specialist | M07–M08, M14, M29–M31, M40–M44, M47, M62–M64, M67 | Product-specific conventions, curves, correlation, collateral, counterparty and documentation |"
+    },
+    {
+      "id": "SUP-assessment_standards",
+      "kind": "assessment_standards",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 236,
+      "markdown": "### Common mastery standard\n\nFor each module, demonstrate four things: explain the concept in plain language; calculate or reconstruct an unfamiliar example; identify assumptions and failure modes; and connect the result to an options decision. A useful default written-quiz threshold is 85%, with **no unresolved errors in contract units, cash obligations, assignment, leverage or loss bounds**. This is a proposed educational rubric, not an evidence-based certification standard. Correct errors and pass a fresh case before advancing. An easy quiz or a profitable simulated trade does not substitute for the mastery gate.\n\n### Required dossier for every named strategy\n\nEvery strategy entry in M24–M28 receives its own dossier, including variants. Do not reuse a generic “neutral strategy” summary.\n\n| Dossier area | Required work |\n|---|---|\n| Exact construction | Signed legs, quantities, underlying, strikes, expiries, style, multiplier, debit/credit and dated cash flows |\n| Economic thesis | Direction, volatility level, skew, term structure, event distribution, carry or relative value; why this instrument is appropriate |\n| Payoff and profit | Derive terminal payoff; include premium, fees and financing; identify breakevens, maximum profit/loss or conditions preventing a simple bound |\n| Probability and value | Identify the probability measure and horizon; calculate outcome-weighted expectancy with estimation uncertainty; compare alternatives |\n| Dynamic risk | Delta/gamma/theta/vega/rho, material higher-order Greeks, changes with spot/time/IV, jump and correlation exposures |\n| Environment | Helpful and harmful regimes, liquidity, events, volatility assumptions and failure modes |\n| Selection | Strike/expiry choice, skew and event placement, executable prices and capital needs |\n| Management | Entry, invalidation, sizing, stop/target, adjustment, roll and exit policies; incremental value after every change |\n| Operations | Exercise, assignment, dividends, pinning, settlement, legging, collateral, taxes and broker rules |\n| Validation | Historical or simulated evidence, out-of-sample results, cost sensitivity, stress cases and common beginner errors |\n\nMulti-expiry trades require valuations at multiple dates and under several remaining-volatility assumptions. A front-expiry payoff graphic is not a universal profit boundary. A theoretical same-expiry loss bound also does not eliminate post-exercise stock exposure, execution costs or legging risk. [OCC contract-risk documentation](https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document) and [FINRA options guidance](https://www.finra.org/investors/investing/investment-products/options) anchor that operational distinction.\n\n### Required specification for every indicator and pattern\n\nFor each indicator in M18–M20, document formula and initialization; inputs and units; rationale; interpretation; useful and poor regimes; lag; failure modes; redundant indicators; combination logic; parameter sensitivity; data requirements; and research evidence after costs. Test incremental information rather than counting confirmations from correlated transformations of the same price series.\n\nFor each formation in M16–M17, document objective identification; proposed market psychology as a hypothesis; confirmation; invalidation; targets; volume/context; false signals; suitable regimes; sample frequency; statistical uncertainty; and net trading evidence. The [Lo–Mamaysky–Wang study](https://www.nber.org/papers/w7613) is a methodological example, not validation of every named formation."
+    },
+    {
+      "id": "SUP-capstones",
+      "kind": "capstones",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 337,
+      "markdown": "### Integrated capstones\n\n1. **Contract and operations examination:** compare an equity option, cash-settled index option, futures option and selected local-market contract. Process a split, special dividend, early assignment and holiday-adjusted expiry. Produce positions and dated cash flows.\n2. **Pricing and risk notebook:** derive parity and binomial valuation; implement BSM and an American model; extract IV; calculate primary/higher Greeks; compare analytic and numerical results; flag invalid inputs.\n3. **Volatility research report:** estimate realized variance, forecast it, construct a clean surface, isolate an event where feasible and distinguish pricing probabilities from physical forecasts. Report uncertainty.\n4. **Strategy laboratory:** analyze one directional, one short-volatility, one long-volatility, one time-spread and one synthetic structure using the full dossier. Compare with simpler alternatives.\n5. **Portfolio stress and funding report:** aggregate Greeks and factors, perform full revaluation, shock liquidity and margin, construct a cash ladder and identify a path to failure.\n6. **Research falsification project:** predefine a testable edge, build point-in-time data, model fills and lifecycle cash flows, preserve a holdout, disclose every tried variant, and explain why the idea should be adopted or rejected.\n7. **Simulated trading desk:** run a written mandate with daily reconciliation, risk reporting, journal review, operational incident drills and a final independent-style challenge. A losing but correctly evaluated strategy may be a successful research project if the appropriate decision is to reject it."
+    },
+    {
+      "id": "SUP-decision_card",
+      "kind": "decision_card",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 347,
+      "markdown": "### The trader's decision card\n\nThe curriculum progressively trains these questions. The capstones require coherent, mutually consistent answers rather than isolated definitions.\n\n1. What regime is the evidence consistent with, and how uncertain is that classification?\n2. What is the underlying doing, over the horizon relevant to this trade?\n3. What are realized and forecast volatility doing?\n4. What does the implied surface price across strikes and expiries?\n5. What scheduled or unscheduled event risk matters?\n6. Which probabilities are market-implied, which are my forecasts, and why do they differ?\n7. What observation would invalidate my thesis?\n8. Which instrument expresses the thesis with the least unwanted risk and acceptable costs?\n9. Which expiry matches the horizon and event exposure?\n10. Which strikes and quantities fit the forecast and loss budget?\n11. What Greeks and other exposures am I taking, in correct units?\n12. What happens if spot rises, including a gap?\n13. What happens if spot falls, including a crash or default?\n14. What happens if spot barely moves?\n15. What happens if IV rises, including a skew or term-structure change?\n16. What happens if IV falls or event uncertainty disappears?\n17. What changes after one day, over a weekend, and near expiry?\n18. What are the contractual maximum loss, plausible stressed loss and cash obligations?\n19. What hidden tail, liquidity, margin, borrow, basis, counterparty or operational risk remains?\n20. What is the exit policy, and can it be executed in the adverse scenario?\n21. What adjustment is permitted, and why is it better than closing or doing nothing?\n22. Is the estimated net expected value worth the uncertainty, capital and tail risk?\n23. What does the position do to the entire portfolio and its funding needs?"
+    },
+    {
+      "id": "SUP-lesson_delivery",
+      "kind": "lesson_delivery",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 375,
+      "markdown": "### Lesson delivery after roadmap approval\n\nTeach one module at a time using the requested eleven steps: **Concept → Intuition → Mathematics → Example → Options relevance → Real trading application → Failure modes → Professional perspective → Exercises → Quiz → Mastery check.** Derivations and realistic numerical examples belong in those lessons. Where a module is large, divide it into lessons while retaining its prerequisite and assessment structure. Do not advance until the relevant mastery check is demonstrated."
+    },
+    {
+      "id": "SUP-existing_gap_audits",
+      "kind": "existing_gap_audits",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 380,
+      "markdown": "## Part G — Knowledge Gaps Audit\n\nTwo self-audits were performed with different questions. They are critical reviews of this map, not independent external certification. The final map incorporates their changes.\n\n### Audit 1 — Review by professional role\n\n| Reviewer lens | Commonly omitted knowledge | Included location |\n|---|---|---|\n| Options market maker | Coherent surface quotes, inventory, adverse selection, queues, hedge costs, complex orders, stale inputs and operational limits | M31–M34, M37, M49–M52, M58 |\n| Volatility trader | Physical versus pricing variance, gamma-weighted realized P&L, event extraction, forward variance, smile dynamics, volga and correlation | M34–M41 |\n| Quantitative researcher | Point-in-time chains, dead contracts, corporate actions, quote synchronization, all failed trials, dependency-aware validation and lifecycle accounting | M11–M12, M54–M58 |\n| Discretionary trader | Context, objectively labeled structures, tradeable invalidation, avoiding hindsight and measuring incremental indicator information | M15–M20, M53, M55, M59–M61 |\n| Risk manager | Full revaluation, correlated tail scenarios, reverse stress, liquidity, collateral, margin procyclicality, model and operational risk | M45–M49 |\n| Portfolio manager | Hidden equity beta and short convexity, factor/currency exposure, nonlinear allocation, benchmark choice, total-capital returns and mandate | M08, M43, M48, M61, M67 |\n| Execution trader | Package versus leg execution, queue/auction mechanics, partial fills, non-fill cost, adverse selection and implementation shortfall | M04, M50–M52 |\n| Trader learning from losses | Probability versus expectancy, finite capital, margin versus loss, rolling accounting, behavioral escalation and reasons to stop a strategy | M45–M47, M53, M60, M65–M66 |\n| Operations/clearing specialist | Adjusted deliverables, settlement calendars, assignment allocation, cash ladders, borrow recall, outages and reconciliation | M03, M22, M42, M47, M49, M62–M64 |\n| Cross-asset/OTC specialist | Normal-volatility pricing, FX conventions, delivery optionality, exotics, collateral agreements, wrong-way risk and XVA | M30, M43–M44 |\n\nConcrete additions or expanded emphasis from this audit include options on VIX futures as a distinct product, reference-data histories, minimum feasible contract sizing, financing of convergence trades, model validation, OTC legal terms and rare but operationally important corporate-action outcomes. The [CME SPAN 2 methodology](https://www.cmegroup.com/clearing/risk-management/span-overview/span-2-methodology.html), [Cboe VIX-futures-options specification](https://www.cboe.com/tradable-products/vix/options-on-vix-futures) and [current model-risk guidance](https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm) supplied useful checks beyond retail strategy lists.\n\n### Audit 2 — Attack the map's reasoning and implementation\n\n| Challenge | Correction or explicit safeguard |\n|---|---|\n| Does a large topic count masquerade as a learning sequence? | Separate taxonomy, prerequisite graph, ordered stages, high-impact path and specialist branches |\n| Is all advanced mathematics forced before practical competence? | Core entry competencies precede practical work; full stochastic calculus and numerical-specialist work occur later |\n| Is risk delayed until after strategy excitement? | Begin operational/sizing controls at Stage 0; require the full risk gate before strategy implementation |\n| Are Greeks mislabeled or treated as universal numbers? | Gamma is explicitly second-order; Greek units, time conventions, model inputs and higher-order naming differences are included |\n| Are IV, delta or a straddle called literal real-world probabilities? | Distinguish pricing measure, model sensitivity, breakeven and physical forecast throughout |\n| Are calendars assigned fictional fixed profit bounds? | Require front-expiry valuation, remaining-volatility assumptions and multi-date cash flows |\n| Does defined terminal risk hide interim failure? | Include assignment mismatch, post-expiry positions, legging, margin and funding paths |\n| Does gamma scalping become a cost-free volatility slogan? | Require the full hedge cash ledger, jumps, financing and execution attribution |\n| Is a pretty surface accepted despite arbitrage or bad data? | Include bounds, synchronized inputs, constrained fitting, calibration uncertainty and validation |\n| Does paper profitability imply a live edge? | Include fill optimism, lifecycle omissions, behavior, capacity and sample uncertainty |\n| Are retail chart theories treated like pricing identities? | Explicit H/F evidence labels; individual studies and failed tests are required |\n| Are dealer flows asserted from OI alone? | Require sign assumptions, alternative inventories, hedges, missing positions and causal limits |\n| Are regulations and textbooks silently treated as current? | Effective-date worksheets, primary rule sources, acknowledged access limits and current-rule rechecks |\n| Does “professional” mean collecting models without operational skill? | Add reconciliation, model inventory, independent challenge, incident drills and mandate compliance |\n| Is profitability promised by passing a syllabus? | Competency gates assess reasoning and controlled practice; commercial edge remains a separate empirical question |\n\nThe final gap search primarily added detail inside established domains rather than revealing another major missing domain. That is a practical stopping point for this version, not proof that all future products or research have been exhausted.\n\n### Deliberate scope boundaries\n\nThe map covers general professional trading knowledge with an options/volatility center. It includes recognition-level branches for rates, FX, commodities, credit, digital assets, exotics and OTC products. A specialist mandate may later justify deeper work in weather/energy operations, insurance derivatives, electricity dispatch, exotic credit, hardware engineering or jurisdiction-specific law. Those would expand the relevant branch; they are not prerequisites for every listed-options trader.\n\nThis first response does not claim that every technical pattern has received an individual systematic literature review or that every local rule has been checked globally. The source map establishes coverage and flags evidence quality. Topic-specific empirical adjudication and dated product checks occur in the corresponding lessons and projects. That distinction prevents “included in the curriculum” from becoming “proven to work.”"
+    },
+    {
+      "id": "SUP-mastery_levels",
+      "kind": "mastery_levels",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 430,
+      "markdown": "## Part H — Estimated Mastery Structure\n\nCompetence is demonstrated through unfamiliar cases, reproducible work and appropriate decisions under uncertainty. Hours are planning estimates, not validated predictors of skill, employment or returns.\n\n| Level | Observable competence | Evidence required | Illustrative effort |\n|---|---|---|---|\n| **Foundation** | Reads contracts, understands basic market mechanics and payoffs, computes costs and simple probabilities, identifies loss/cash obligations | Contract quiz, ledger, order replay, basic payoff and assignment cases | Roughly 100–200 focused hours if starting from zero |\n| **Competent** | Analyzes ordinary option structures, primary Greeks, IV/events, sizing and execution; keeps a complete journal and applies a written plan | Strategy dossiers, scenario report, risk gate and a sustained block of correctly recorded simulated decisions | Roughly 300–600 cumulative hours; repeat unfamiliar cases |\n| **Advanced** | Explains hedged P&L, surfaces and portfolio interactions; builds defensible research and recognizes statistical/operational weaknesses | Pricing/volatility notebook, realistic backtest, stress/funding report and falsification project | Roughly 800–1,500 cumulative hours, highly dependent on math and coding background |\n| **Expert** | Integrates forecasting, pricing, execution, portfolio risk and model uncertainty; adapts without abandoning evidence standards | Multiple independently challenged projects and observed decisions across materially different conditions | Usually a multi-year development process; no credible universal hour threshold |\n| **Specialist/professional** | Performs a defined mandate reliably with relevant deep mathematics or market expertise, controls, reporting and accountability | Desk-specific validation, supervised/independently reviewed practice, incident competence and continuing requalification | Additional depth depends on role; employment and commercial success are separate outcomes |\n\nThese ranges refer to selected core study and practice, not reading all 1,000-plus entries to equal depth. At ten focused hours per week, 300–600 hours is about 7–14 months of study; 800–1,500 hours is about 18–35 months. Calendar time also limits exposure to varied regimes, and historical replay only partly addresses that limitation. An existing quantitative background can shorten mathematical preparation without replacing execution and operational practice.\n\n**Passing the curriculum cannot establish profitability.** Knowledge, decision skill, operational reliability, a measurable net edge and sufficient capital are related but distinct. A professional-quality conclusion can be “the evidence does not justify this trade,” “this strategy should be retired,” or “the minimum contract is too large for the available risk budget.”"
+    },
+    {
+      "id": "SUP-evidence_policy",
+      "kind": "evidence_policy",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 217,
+      "markdown": "### Evidence policy\n\n- **T — Definitions and conditional theory:** identities, payoff algebra and mathematical results under stated assumptions. A correct model theorem is not proof that its assumptions hold in a particular market.\n- **R — Rules and specifications:** authoritative only for their product, venue, participant, effective date and jurisdiction. Broker policies may be stricter.\n- **E — Empirical research:** evaluate population, sample period, measurement, uncertainty, costs, replication and external validity.\n- **H — Practitioner method:** potentially useful organization, implementation or decision practice; predictive or commercial value must be tested.\n- **F — Folklore or overstated inference:** included so it can be recognized and evaluated, not endorsed.\n\nIndicator calculations and candle names can be defined exactly while the prediction attached to them remains weak. The H/F labels concern the trading interpretation. Exchange research is primary evidence about its data, but exchange commercial interests and methodological limits still deserve scrutiny. Academic publication does not remove selection bias or guarantee implementability."
+    },
+    {
+      "id": "SUP-resource_domain_map",
+      "kind": "resource_domain_map",
+      "source": "sources/roadmaps/options-master-knowledge-map.md",
+      "line": 4117,
+      "markdown": "## Part E — Resource Map\n\nUse one primary teaching spine per domain, plus the relevant official documentation and exercises. Do not buy or read every book before practicing. The resource labels explicitly separate introductory, intermediate, advanced, quantitative, academic and practitioner material.\n\n| Domain | Entry / foundation | Intermediate / practitioner | Advanced / quantitative / academic |\n|---|---|---|---|\n| D01 · Financial and market foundations | [R16: MIT OCW — Finance Theory I](https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/); [R01: OCC — Characteristics and Risks of Standardized Options](https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document); [R04: FINRA — Options](https://www.finra.org/investors/investing/investment-products/options) | [R05: John C. Hull — Options, Futures, and Other Derivatives](https://www.pearson.com/en-us/subject-catalog/p/options-futures-and-other-derivatives/P200000005938/9780136939979); [R07: Larry Harris — Trading and Exchanges](https://academic.oup.com/book/52292) | [R08: Foucault, Pagano and Röell — Market Liquidity, 2nd edition](https://academic.oup.com/book/55158); [R09: CME — SPAN 2 Methodology and Functionality](https://www.cmegroup.com/clearing/risk-management/span-overview/span-2-methodology.html) |\n| D02 · Fundamentals, macro and events | [R17: SEC — Beginners’ Guide to Financial Statements](https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide); [R19: U.S. Bureau of Labor Statistics — CPI](https://www.bls.gov/cpi/) | [R16: MIT OCW — Finance Theory I](https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/); [R18: St. Louis Fed — ALFRED and real-time periods](https://fred.stlouisfed.org/docs/api/fred/alfred.html) | [R20: Bekaert and Hoerova — The VIX, the Variance Premium and Stock Market Volatility](https://www.nber.org/papers/w18995); [R54: Moskowitz, Ooi and Pedersen — Time Series Momentum, original paper data](https://www.aqr.com/Insights/Datasets/Time-Series-Momentum-Original-Paper-Data) |\n| D03 · Mathematics and inference | [R21: MIT OCW — Introduction to Probability and Statistics, 18.05](https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/) | [R22: James, Witten, Hastie, Tibshirani and Taylor — An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/); [R25: MIT OCW — Analytics of Finance](https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/) | [R24: Steven Shreve — Stochastic Calculus for Finance II](https://link.springer.com/book/9780387401010); [R23: Bailey, Borwein, López de Prado and Zhu — The Probability of Backtest Overfitting](https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf) |\n| D04 · Price behavior and technical methods | [R27: John J. Murphy — Technical Analysis of the Financial Markets](https://www.penguinrandomhouse.com/books/350647/technical-analysis-of-the-financial-markets-by-john-j-murphy/); [R28: Steve Nison — Japanese Candlestick Charting Techniques](https://www.penguinrandomhouse.com/books/350650/japanese-candlestick-charting-techniques-by-steve-nison/) | [R29: Lo, Mamaysky and Wang — Foundations of Technical Analysis](https://www.nber.org/papers/w7613) | [R22: James, Witten, Hastie, Tibshirani and Taylor — An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/); [R23: Bailey, Borwein, López de Prado and Zhu — The Probability of Backtest Overfitting](https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf); [R54: Moskowitz, Ooi and Pedersen — Time Series Momentum, original paper data](https://www.aqr.com/Insights/Datasets/Time-Series-Momentum-Original-Paper-Data) |\n| D05 · Option contracts and structures | [R01: OCC — Characteristics and Risks of Standardized Options](https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document); [R02: Cboe — Options Institute](https://www.cboe.com/optionsinstitute); [R03: CME Institute — All About Options and course catalog](https://www.cmegroup.com/education/courses/curriculum-all-about-options) | [R06: Sheldon Natenberg — Option Volatility & Pricing, 2nd edition](https://www.mheducation.com/highered/mhp/product/option-volatility-pricing-advanced-trading-strategies-techniques-2nd-edition.html); [R05: John C. Hull — Options, Futures, and Other Derivatives](https://www.pearson.com/en-us/subject-catalog/p/options-futures-and-other-derivatives/P200000005938/9780136939979) | [R10: Euan Sinclair — Volatility Trading, 2nd edition](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118662724); [R12: Demeterfi, Derman, Kamal and Zou — More Than You Ever Wanted to Know About Volatility Swaps](https://emanuelderman.com/more-than-you-ever-wanted-to-know-about-volatility-swaps-the-journal-of-der/) |\n| D06 · Pricing, Greeks and hedging | [R02: Cboe — Options Institute](https://www.cboe.com/optionsinstitute); [R71: Cox, Ross and Rubinstein — Option Pricing: A Simplified Approach](https://www.sciencedirect.com/science/article/pii/0304405X79900151) | [R05: John C. Hull — Options, Futures, and Other Derivatives](https://www.pearson.com/en-us/subject-catalog/p/options-futures-and-other-derivatives/P200000005938/9780136939979); [R06: Sheldon Natenberg — Option Volatility & Pricing, 2nd edition](https://www.mheducation.com/highered/mhp/product/option-volatility-pricing-advanced-trading-strategies-techniques-2nd-edition.html) | [R24: Steven Shreve — Stochastic Calculus for Finance II](https://link.springer.com/book/9780387401010); [R25: MIT OCW — Analytics of Finance](https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/); [R70: Black and Scholes — The Pricing of Options and Corporate Liabilities](https://www.journals.uchicago.edu/doi/10.1086/260062) |\n| D07 · Volatility and volatility trading | [R02: Cboe — Options Institute](https://www.cboe.com/optionsinstitute); [R36: Cboe — VIX FAQ](https://www.cboe.com/tradable_products/vix/faqs) | [R10: Euan Sinclair — Volatility Trading, 2nd edition](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118662724); [R20: Bekaert and Hoerova — The VIX, the Variance Premium and Stock Market Volatility](https://www.nber.org/papers/w18995) | [R11: Jim Gatheral — The Volatility Surface: A Practitioner’s Guide](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119202073); [R12: Demeterfi, Derman, Kamal and Zou — More Than You Ever Wanted to Know About Volatility Swaps](https://emanuelderman.com/more-than-you-ever-wanted-to-know-about-volatility-swaps-the-journal-of-der/); [R35: Gatheral and Jacquier — Arbitrage-free SVI Volatility Surfaces](https://arxiv.org/abs/1204.0646); [R39: Steven Heston — A Closed-Form Solution for Options with Stochastic Volatility](https://academic.oup.com/rfs/article-abstract/6/2/327/1574747); [R40: Hagan, Kumar, Lesniewski and Woodward — Managing Smile Risk](https://www.stat.ncu.edu.tw/teacher/wenteng/2010%20fall%20seminars/20100929%20%E6%AD%A3%E9%89%89/sabrAll.pdf); [R41: Gatheral, Jaisson and Rosenbaum — Volatility Is Rough](https://arxiv.org/abs/1410.3394) |\n| D08 · Futures and cross-asset derivatives | [R03: CME Institute — All About Options and course catalog](https://www.cmegroup.com/education/courses/curriculum-all-about-options); [R62: CFTC — Basics of Futures Trading](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/FuturesMarketBasics/index.htm) | [R05: John C. Hull — Options, Futures, and Other Derivatives](https://www.pearson.com/en-us/subject-catalog/p/options-futures-and-other-derivatives/P200000005938/9780136939979); [R42: CFTC — Interim Report on WTI Trading Around April 20, 2020](https://www.cftc.gov/PressRoom/PressReleases/8315-20) | [R24: Steven Shreve — Stochastic Calculus for Finance II](https://link.springer.com/book/9780387401010); [R43: ESMA — EMIR Article 41: Margin Requirements](https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/emir/article-41-margin-requirements-0) |\n| D09 · Risk and portfolio construction | [R01: OCC — Characteristics and Risks of Standardized Options](https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document); [R04: FINRA — Options](https://www.finra.org/investors/investing/investment-products/options) | [R10: Euan Sinclair — Volatility Trading, 2nd edition](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118662724); [R09: CME — SPAN 2 Methodology and Functionality](https://www.cmegroup.com/clearing/risk-management/span-overview/span-2-methodology.html); [R46: Eurex — Clearing Prisma](https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma) | [R44: McNeil, Frey and Embrechts — Quantitative Risk Management](https://assets.press.princeton.edu/catalogs/S15Featured.pdf); [R45: Federal Reserve — SR 26-2: Revised Guidance on Model Risk Management](https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm); [R72: Harry Markowitz — Portfolio Selection](https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1952.tb01525.x); [R73: J. L. Kelly — A New Interpretation of Information Rate](https://www.nokia.com/bell-labs/publications-and-media/publications/a-new-interpretation-of-information-rate/) |\n| D10 · Microstructure, execution and management | [R04: FINRA — Options](https://www.finra.org/investors/investing/investment-products/options); [R30: Cboe — Complex Order Handling](https://www.cboe.com/us/options/trading/complex_orders/) | [R07: Larry Harris — Trading and Exchanges](https://academic.oup.com/book/52292); [R32: Cboe — 0DTEs Decoded: Positioning, Trends, and Market Impact](https://www.cboe.com/insights/posts/0-dt-es-decoded-positioning-trends-and-market-impact) | [R08: Foucault, Pagano and Röell — Market Liquidity, 2nd edition](https://academic.oup.com/book/55158); [R49: Avellaneda and Stoikov — High-frequency Trading in a Limit Order Book](https://math.nyu.edu/inmemoriam/avellaneda/Papers.html); [R50: Almgren and Chriss — Optimal Execution of Portfolio Transactions](https://www.risk.net/journal-risk/2161150/optimal-execution-portfolio-transactions) |\n| D11 · Research, data and software | [R52: Python — Official Tutorial](https://docs.python.org/3/tutorial/); [R55: pandas — User Guide](https://pandas.pydata.org/docs/user_guide/index.html) | [R22: James, Witten, Hastie, Tibshirani and Taylor — An Introduction to Statistical Learning with Applications in Python](https://www.statlearning.com/); [R51: Wharton WRDS — OptionMetrics](https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/optionmetrics/); [R18: St. Louis Fed — ALFRED and real-time periods](https://fred.stlouisfed.org/docs/api/fred/alfred.html) | [R23: Bailey, Borwein, López de Prado and Zhu — The Probability of Backtest Overfitting](https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf); [R33: QuantLib — Official Documentation](https://www.quantlib.org/docs.shtml); [R53: Bailey and López de Prado — The Deflated Sharpe Ratio](https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf) |\n| D12 · Decision practice and professional development | [R65: Daniel Kahneman — Maps of Bounded Rationality](https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/lecture/); [R64: Barber and Odean — Trading Is Hazardous to Your Wealth](https://faculty.haas.berkeley.edu/odean/papers/returns/returns.html) | [R66: Brett Steenbarger — Enhancing Trader Performance](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119196716); [R10: Euan Sinclair — Volatility Trading, 2nd edition](https://onlinelibrary.wiley.com/doi/book/10.1002/9781118662724) | [R23: Bailey, Borwein, López de Prado and Zhu — The Probability of Backtest Overfitting](https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf); [R53: Bailey and López de Prado — The Deflated Sharpe Ratio](https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf) |\n| D13 · Rules, operations and market-specific practice | [R01: OCC — Characteristics and Risks of Standardized Options](https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document); [R57: NSE — Equity Derivatives Contract Information](https://www.nseindia.com/static/products-services/equity-derivatives-contract-information); [R62: CFTC — Basics of Futures Trading](https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/FuturesMarketBasics/index.htm) | [R26: IRS — Publication 550](https://www.irs.gov/publications/p550); [R58: NSE — Securities Transaction Tax](https://www.nseindia.com/static/products-services/equity-derivatives-securities-transaction-tax); [R59: Income Tax Department — Income-tax Act, 2025](https://incometaxindia.gov.in/Documents/Act/Income-tax-Act-2025.pdf); [R61: FINRA — Rule 4210: Margin Requirements](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4210) | [R43: ESMA — EMIR Article 41: Margin Requirements](https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/emir/article-41-margin-requirements-0); [R46: Eurex — Clearing Prisma](https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma); [R63: HKEX — Hang Seng Index Options](https://www.hkex.com.hk/Products/Listed-Derivatives/Equity-Index/Hang-Seng-Index-%28HSI%29/Hang-Seng-Index-Options?sc_lang=en); [R69: FCA — UK EMIR](https://www.fca.org.uk/markets/uk-emir) |\n| D14 · Evidence, failure analysis and professional practice | [R47: SEC — Knight Capital Market Access Rule Enforcement](https://www.sec.gov/newsroom/press-releases/2013-222); [R56: SEBI — Individual Equity-Derivatives Trading Behaviour, FY25–FY26](https://www.sebi.gov.in/reports-and-statistics/research/aug-2026/study-trading-behaviour-of-individual-traders-in-the-equity-derivatives-segment-fy25-fy26-_103836.html); [R64: Barber and Odean — Trading Is Hazardous to Your Wealth](https://faculty.haas.berkeley.edu/odean/papers/returns/returns.html) | [R42: CFTC — Interim Report on WTI Trading Around April 20, 2020](https://www.cftc.gov/PressRoom/PressReleases/8315-20); [R67: Federal Reserve — Hedge Funds, Leverage and the Lessons of LTCM](https://www.federalreserve.gov/boarddocs/testimony/1999/19990506.htm); [R68: SEC — Equity and Options Market Structure Conditions in Early 2021](https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf) | [R45: Federal Reserve — SR 26-2: Revised Guidance on Model Risk Management](https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm); [R08: Foucault, Pagano and Röell — Market Liquidity, 2nd edition](https://academic.oup.com/book/55158) |"
+    },
+    {
+      "id": "SUP-currency_protocol",
+      "kind": "currency_protocol",
+      "source": "sources/roadmaps/options-master-knowledge-map.md",
+      "line": 4703,
+      "markdown": "### Currency and verification protocol\n\nThe research checkpoint is **17 September 2026**. This is an education map, not a frozen contract database or tax opinion. Current lots, expiry availability, tax rates, account thresholds, margin amounts and broker exercise cutoffs are intentionally lookup tasks with effective dates. No India focus is inferred from the workspace or time zone.\n\nFor each traded product, create a dated worksheet containing: exchange and clearing house; exact symbol; underlying and deliverable; multiplier and lot; minimum tick; currency; exercise style; listed expiries; last trade; exercise deadline; settlement method and valuation time; holiday adjustment; position limits; margin model and house add-ons; fees and tax bases; source URL; publication date; effective date; and date checked. Reconcile conflicts with the newest applicable official notice and broker procedures.\n\nFor India, the live [NSE contract information](https://www.nseindia.com/static/products-services/equity-derivatives-contract-information), [NSE STT guidance](https://www.nseindia.com/static/products-services/equity-derivatives-securities-transaction-tax), SEBI circulars, BSE notices and applicable-year tax law control implementation. The current BSE specification page was not successfully verified in this session; its file-format source is a data reference, not evidence of current contract terms.\n\nFor U.S. taxes, the live [IRS Publication 550](https://www.irs.gov/publications/p550) page checked here is the 2025 edition. Future tax-year application requires a new check. For institutional model governance, [SR 26-2](https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm) explicitly replaces the frequently cited SR 11-7; the curriculum uses the newer guidance as a professional reference."
+    },
+    {
+      "id": "OLD-STAGE-0",
+      "kind": "stage",
+      "original": {
+        "stage": 0,
+        "title": "Financial orientation",
+        "modules": [
+          "M01"
+        ],
+        "gate": "Reconcile money, returns, leverage and objectives. Introduce the safety briefing and journal immediately.",
+        "hours": "15–25"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-1",
+      "kind": "stage",
+      "original": {
+        "stage": 1,
+        "title": "How markets and accounts work",
+        "modules": [
+          "M02",
+          "M03",
+          "M04",
+          "M05"
+        ],
+        "gate": "Trace a trade, choose orders and calculate realistic costs/cash needs.",
+        "hours": "25–50"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-2",
+      "kind": "stage",
+      "original": {
+        "stage": 2,
+        "title": "Probability, statistics and core mathematics",
+        "modules": [
+          "M10",
+          "M11",
+          "M13"
+        ],
+        "gate": "Solve uncertain-payoff problems; learn algebra/calculus entry skills. Defer specialist numerical/PDE extensions.",
+        "hours": "60–120"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-3",
+      "kind": "stage",
+      "original": {
+        "stage": 3,
+        "title": "Underlying, macro, events and time series",
+        "modules": [
+          "M06",
+          "M07",
+          "M08",
+          "M09",
+          "M12"
+        ],
+        "gate": "Separate information, expectation and hindsight; build elementary forecasts.",
+        "hours": "40–80"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-4",
+      "kind": "stage",
+      "original": {
+        "stage": 4,
+        "title": "Price behavior and technical-analysis literacy",
+        "modules": [
+          "M15",
+          "M16",
+          "M17",
+          "M18",
+          "M19",
+          "M20"
+        ],
+        "gate": "Label unseen data and test one chosen method; keep most named patterns/indicators as reference material.",
+        "hours": "25–60"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-5",
+      "kind": "stage",
+      "original": {
+        "stage": 5,
+        "title": "Options and local-market operations",
+        "modules": [
+          "M21",
+          "M22",
+          "M23",
+          "M62",
+          "M63",
+          "M64"
+        ],
+        "gate": "Decode contracts and pass exercise/settlement cases. Complete the selected jurisdiction branch; survey others.",
+        "hours": "40–80"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-6",
+      "kind": "stage",
+      "original": {
+        "stage": 6,
+        "title": "Pricing and primary Greeks",
+        "modules": [
+          "M29",
+          "M30",
+          "M32"
+        ],
+        "gate": "Derive replication/parity/binomial logic and calculate risk in correct units. Defer full stochastic derivations.",
+        "hours": "60–120"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-7",
+      "kind": "stage",
+      "original": {
+        "stage": 7,
+        "title": "Realized and implied volatility",
+        "modules": [
+          "M35",
+          "M36"
+        ],
+        "gate": "Match forecasts to priced risks; distinguish IV ranking, expectation and risk premium.",
+        "hours": "40–80"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-8",
+      "kind": "stage",
+      "original": {
+        "stage": 8,
+        "title": "Risk, funding, operational control and behavior",
+        "modules": [
+          "M45",
+          "M46",
+          "M47",
+          "M49",
+          "M60"
+        ],
+        "gate": "Pass sizing, stress, cash-obligation and error-containment gates before implementing strategies.",
+        "hours": "60–120"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-9",
+      "kind": "stage",
+      "original": {
+        "stage": 9,
+        "title": "Strategy construction and surface literacy",
+        "modules": [
+          "M24",
+          "M25",
+          "M26",
+          "M28",
+          "M37",
+          "M27"
+        ],
+        "gate": "Complete signed-leg dossiers; learn surface/term structure before multi-expiry valuation.",
+        "hours": "70–140"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-10",
+      "kind": "stage",
+      "original": {
+        "stage": 10,
+        "title": "Execution and position management",
+        "modules": [
+          "M50",
+          "M52",
+          "M53"
+        ],
+        "gate": "Reconcile fills and evaluate hold/close/adjust/roll policies with all cash flows.",
+        "hours": "50–100"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-11",
+      "kind": "stage",
+      "original": {
+        "stage": 11,
+        "title": "Research, software, systems and performance",
+        "modules": [
+          "M54",
+          "M55",
+          "M56",
+          "M58",
+          "M59",
+          "M61",
+          "M65"
+        ],
+        "gate": "Build a reproducible study, honest backtest, written system and complete journal analysis. Python basics can be introduced earlier.",
+        "hours": "100–220"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-12",
+      "kind": "stage",
+      "original": {
+        "stage": 12,
+        "title": "Dynamic hedging, futures and portfolio risk",
+        "modules": [
+          "M33",
+          "M34",
+          "M38",
+          "M42",
+          "M39",
+          "M48"
+        ],
+        "gate": "Explain hedged P&L, distinguish futures/VIX products and stress a portfolio.",
+        "hours": "80–160"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-13",
+      "kind": "stage",
+      "original": {
+        "stage": 13,
+        "title": "Advanced trading and empirical specialization",
+        "modules": [
+          "M41",
+          "M51",
+          "M57"
+        ],
+        "gate": "Defend relative-value, dealer-flow and systematic-model hypotheses under realistic costs and alternative explanations.",
+        "hours": "100–220"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-14",
+      "kind": "stage",
+      "original": {
+        "stage": 14,
+        "title": "Professional quantitative models",
+        "modules": [
+          "M14",
+          "M31",
+          "M40"
+        ],
+        "gate": "Complete stochastic-calculus derivations, numerical validation and surface/model calibration for a quant track.",
+        "hours": "150–350"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-15",
+      "kind": "stage",
+      "original": {
+        "stage": 15,
+        "title": "Cross-asset, exotic and OTC specialist branches",
+        "modules": [
+          "M43",
+          "M44"
+        ],
+        "gate": "Master the conventions and model/legal risks relevant to the selected product mandate.",
+        "hours": "100–250"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    },
+    {
+      "id": "OLD-STAGE-16",
+      "kind": "stage",
+      "original": {
+        "stage": 16,
+        "title": "Failure analysis and professional integration",
+        "modules": [
+          "M66",
+          "M67"
+        ],
+        "gate": "Pass integrated capstones, incident drills and a skeptical review of a desk-style mandate.",
+        "hours": "60–150"
+      },
+      "disposition": "Retained as original navigation; replaced by competency paths for entry order."
+    }
+  ]
+}

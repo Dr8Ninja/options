@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "BR01",
+      "title": "Discretionary directional options",
+      "original_module_scope": "M06–M09, M15–M25, M38, M45–M46, M52–M53, M55–M56, M60–M61",
+      "depth": "Objective setups, probability, instrument selection, costs, events, risk and honest review",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 183,
+      "status": "preserved_specialization; resolve prerequisites through competency graph"
+    },
+    {
+      "id": "BR02",
+      "title": "Systematic option strategies",
+      "original_module_scope": "M10–M13, M21–M38, M45–M49, M54–M59, M61",
+      "depth": "Data engineering, lifecycle simulation, validation, portfolio allocation and monitoring",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 184,
+      "status": "preserved_specialization; resolve prerequisites through competency graph"
+    },
+    {
+      "id": "BR03",
+      "title": "Volatility relative value",
+      "original_module_scope": "M28–M41, M45–M48, M50–M56",
+      "depth": "Forecasts, surface dynamics, discrete hedging, P&L explanation, correlation and funding",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 185,
+      "status": "preserved_specialization; resolve prerequisites through competency graph"
+    },
+    {
+      "id": "BR04",
+      "title": "Options market making",
+      "original_module_scope": "M29–M40, M45–M52, M54–M58, M67",
+      "depth": "Quote formation, inventory, adverse selection, queues, low-latency reliability and risk controls",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 186,
+      "status": "preserved_specialization; resolve prerequisites through competency graph"
+    },
+    {
+      "id": "BR05",
+      "title": "Portfolio hedging and overlays",
+      "original_module_scope": "M06–M10, M21–M38, M45–M48, M52–M53, M61",
+      "depth": "Mandate, downside protection, basis, carry cost, benchmark and portfolio contribution",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 187,
+      "status": "preserved_specialization; resolve prerequisites through competency graph"
+    },
+    {
+      "id": "BR06",
+      "title": "Quantitative derivatives/modeling",
+      "original_module_scope": "M13–M14, M29–M44, M46–M49, M54–M58, M67",
+      "depth": "Derivations, numerical stability, calibration, independent validation and model limitations",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 188,
+      "status": "preserved_specialization; resolve prerequisites through competency graph"
+    },
+    {
+      "id": "BR07",
+      "title": "Rates/FX/commodity/OTC specialist",
+      "original_module_scope": "M07–M08, M14, M29–M31, M40–M44, M47, M62–M64, M67",
+      "depth": "Product-specific conventions, curves, correlation, collateral, counterparty and documentation",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 189,
+      "status": "preserved_specialization; resolve prerequisites through competency graph"
+    }
+  ]
+}

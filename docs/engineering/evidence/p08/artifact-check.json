@@ -1,0 +1,22 @@
+{
+  "jar_sha256": "b0819338690c7f9847a2a7c93729caf423059733ea8523986b7a0644a0e25f2c",
+  "running_container_jar_sha256": "b0819338690c7f9847a2a7c93729caf423059733ea8523986b7a0644a0e25f2c",
+  "test_fixture_classes_present": false,
+  "migrations": [
+    "V0001__spring_jdbc_sessions.sql",
+    "V0002__domain_tables.sql",
+    "V0003__references_and_checks.sql",
+    "V0004__aggregate_invariants.sql",
+    "V0005__owned_state_invariants.sql",
+    "V0006__immutability_and_indexes.sql",
+    "V0007__operational_integrity.sql",
+    "V0008__database_privileges.sql",
+    "V0009__persistence_guard_refinements.sql",
+    "V0010__erasure_and_counter_guards.sql",
+    "V0011__optimistic_versions.sql",
+    "V0012__sealed_hashes_and_retention.sql",
+    "V0013__final_persistence_consistency.sql",
+    "V0014__typed_audit_and_privacy_context.sql",
+    "V0015__isolate_typed_trigger_branches.sql"
+  ]
+}

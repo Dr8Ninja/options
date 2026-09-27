@@ -1,0 +1,38 @@
+name: options-learning-local
+services:
+  postgres:
+    image: library/postgres:18.6@sha256:86c951e05bf56c93d95d397747fb8820ac76cc3bedb78f43abd83eedbe3666ae
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:?Run scripts/dev-env.py}
+      POSTGRES_USER: ${POSTGRES_USER:?Run scripts/dev-env.py}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/dev-env.py}
+    ports: ["127.0.0.1:55432:5432"]
+    volumes: ["postgres-data:/var/lib/postgresql"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    security_opt: ["no-new-privileges:true"]
+  mailpit:
+    image: axllent/mailpit:latest@sha256:74d609a42ec279aa63c6b4622a6fa9b5408d1ad5b1d76a1c4be40a265ce0863d
+    ports: ["127.0.0.1:1025:1025", "127.0.0.1:8025:8025"]
+    environment:
+      MP_MAX_MESSAGES: "100"
+      MP_BLOCK_REMOTE_CSS_AND_FONTS: "true"
+    security_opt: ["no-new-privileges:true"]
+  proxy:
+    build: .
+    ports: ["127.0.0.1:8443:8443"]
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    environment:
+      BACKEND_UPSTREAM: host.docker.internal:8080
+      FRONTEND_UPSTREAM: host.docker.internal:3000
+    volumes:
+      - caddy-data:/data
+      - caddy-config:/config
+    security_opt: ["no-new-privileges:true"]
+volumes:
+  postgres-data:
+  caddy-data:
+  caddy-config:

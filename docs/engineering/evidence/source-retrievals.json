@@ -1,0 +1,469 @@
+{
+  "as_of": "2026-09-23",
+  "scope": "Primary-source retrieval metadata only; no full source text redistribution. Semantic review is recorded separately.",
+  "sources": [
+    {
+      "url": "https://adoptium.net/support/",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://adoptium.net/support/",
+      "bytes": 162726,
+      "sha256": "66c223aa057205fb47668211d126412805f857eb98b09b9b35ab8107c56514ee",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://api.github.com/repos/caddyserver/caddy/releases/latest",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/caddyserver/caddy/releases/latest",
+      "bytes": 222351,
+      "sha256": "deba963843c2d2f48f49edf96853a6bbd6fcbc15ec9d54d981b8aeda05825468",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing.",
+      "selected_release": {
+        "tag_name": "v2.11.4",
+        "published_at": "2026-06-03T06:52:22Z",
+        "html_url": "https://github.com/caddyserver/caddy/releases/tag/v2.11.4",
+        "prerelease": false,
+        "draft": false
+      }
+    },
+    {
+      "url": "https://caddyserver.com/docs/caddyfile/directives/reverse_proxy",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://caddyserver.com/docs/caddyfile/directives/reverse_proxy",
+      "bytes": 119283,
+      "sha256": "1d0e42a270f51266fb2f1c8820e52066394aeb909e5f6759be400a786d19d311",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://docs.astro.build/en/guides/on-demand-rendering/",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://docs.astro.build/en/guides/on-demand-rendering/",
+      "bytes": 216788,
+      "sha256": "659e28d8dc330e9b627a1adb20bb87710a6abb7a881942c8822b5fdaf24c0a55",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://docs.spring.io/spring-boot/appendix/dependency-versions/coordinates.html",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://docs.spring.io/spring-boot/appendix/dependency-versions/coordinates.html",
+      "bytes": 704737,
+      "sha256": "32e71bb01585c998e2286d2c0160328b97bec4b09ed90e969eddc4fab2974684",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://docs.spring.io/spring-boot/system-requirements.html",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://docs.spring.io/spring-boot/system-requirements.html",
+      "bytes": 87140,
+      "sha256": "3d126d968cfe1f0a7bc9693e237011a9433cd55511b47d36bf4e4d5aa3184d07",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://docs.spring.io/spring-security/reference/features/authentication/password-storage.html",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://docs.spring.io/spring-security/reference/features/authentication/password-storage.html",
+      "bytes": 125811,
+      "sha256": "ecc796531f1e44d35cb0f5fccaf3a74d6184e09bd7b3d37e941a1f918913f239",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://docs.spring.io/spring-security/reference/servlet/authentication/mfa.html",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://docs.spring.io/spring-security/reference/servlet/authentication/mfa.html",
+      "bytes": 124639,
+      "sha256": "2d7e91e87b8ed07c02468ee2fb76dcce171ac182f2ae68c2e041f81da8c7ae80",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://docs.spring.io/spring-security/reference/servlet/authentication/passkeys.html",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://docs.spring.io/spring-security/reference/servlet/authentication/passkeys.html",
+      "bytes": 80839,
+      "sha256": "257ca979b8215b452d8361f0b6354c3175d7d7a1a3cf40b2f68df1670625bbab",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html",
+      "bytes": 148692,
+      "sha256": "9e438c14d20ec9c1fe41b973dd026f904548f1e6ee6c8e29748f16dcfd4142e6",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://docs.spring.io/spring-session/reference/configuration/jdbc.html",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://docs.spring.io/spring-session/reference/configuration/jdbc.html",
+      "bytes": 67000,
+      "sha256": "873be3475d6ca5e9c2440765b824ecd903725685c3b66e7ac3e354c303d4e19d",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://documentation.red-gate.com/flyway/reference/database-driver-reference/postgresql-database",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://documentation.red-gate.com/flyway/reference/database-driver-reference/postgresql-database",
+      "bytes": 33242,
+      "sha256": "17bcc755c09ef679c9d376ccca94ae0947c1921cadf7cc95f4ea39c9f52f4c9d",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://github.com/nodejs/Release#release-schedule",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://github.com/nodejs/Release",
+      "bytes": 339316,
+      "sha256": "5d95ecde5b21d9f835e7b0404a9c99cb999a5b8eb38751b65dfbed1e431da33e",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://github.com/remarkjs/react-markdown",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://github.com/remarkjs/react-markdown",
+      "bytes": 549934,
+      "sha256": "dc3d5ba6721d793bab962fe3ef1af9d2e1ba67748b7ad26c266a0a62fcdb1d3c",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://github.com/spring-projects/spring-boot/wiki/Supported-Versions",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://github.com/spring-projects/spring-boot/wiki/Supported-Versions",
+      "bytes": 969669,
+      "sha256": "6f4954de6c541ebe7c832baa5c7d3abf596e5560d62d4fc1d18c6e37160e03ec",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://katex.org/docs/options.html",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://katex.org/docs/options.html",
+      "bytes": 21814,
+      "sha256": "4aa8f3f0e4ee281bff21d436b076eca33432fda822d3289bc41b6ccb9ae920ac",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://maven.apache.org/download.cgi",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://maven.apache.org/download.cgi",
+      "bytes": 31512,
+      "sha256": "9d25bbb267bcd1820a92013986eb7ecc2fdf8b7a8c9e67ffbfded5f6f46a21ee",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://nextjs.org/docs/app/getting-started/installation",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://nextjs.org/docs/app/getting-started/installation",
+      "bytes": 717736,
+      "sha256": "4f0f0165e478eb1ff913477b4213196b75776d7087ca5121c32003395e019184",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://nextjs.org/docs/app/guides/content-security-policy",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://nextjs.org/docs/app/guides/content-security-policy",
+      "bytes": 782984,
+      "sha256": "73a00608fc0c173b8408dbd11285702d78d745145077604f8bafb27a0028ff0a",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://nextjs.org/docs/app/guides/self-hosting",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://nextjs.org/docs/app/guides/self-hosting",
+      "bytes": 632557,
+      "sha256": "cf006bbad271f5f7e23fcbf33a480305988ef7a2ebcd265b6ab64e8568b5432f",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://nextjs.org/docs/app/guides/static-exports",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://nextjs.org/docs/app/guides/static-exports",
+      "bytes": 663598,
+      "sha256": "c449e2f861922d80ce40b537762a73401d7458e9bcd4b5d4c9d05df7fca4ff63",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://nextjs.org/support-policy",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://nextjs.org/support-policy",
+      "bytes": 174112,
+      "sha256": "d8f907d1ec26aeb4a4dc1e215e5f1b8c28f4ef06402dd7aa3d8495b03156a620",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://nodejs.org/dist/index.json",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://nodejs.org/dist/index.json",
+      "bytes": 331442,
+      "sha256": "6d6a1a863759f7f8020770a32b0b95c2bcc5f06045ced00054027d7b4e3f8c00",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing.",
+      "selected_release": {
+        "version": "v24.21.0",
+        "date": "2026-09-07",
+        "lts": "Krypton",
+        "npm": "11.19.0"
+      }
+    },
+    {
+      "url": "https://openapi-ts.dev/introduction",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://openapi-ts.dev/introduction",
+      "bytes": 46997,
+      "sha256": "99db241ed188033c02286a8a5c7e57105045b2ad30f93f46111d98579da00277",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://reactrouter.com/start/framework/rendering",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://reactrouter.com/start/framework/rendering",
+      "bytes": 192584,
+      "sha256": "0ef2b428531f8ca715caaabc29279553304ea74cb4dd55c751250fc346e31c88",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://registry.npmjs.org/next/latest",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/next/latest",
+      "bytes": 3069,
+      "sha256": "80fde3eccb93e4730ba9e8f80dc7076ee637101c1978737d9a7c337cf88ec569",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing.",
+      "publisher_metadata": {
+        "name": "next",
+        "version": "16.3.6",
+        "engines": {
+          "node": ">=20.9.0"
+        },
+        "peerDependencies": {
+          "sass": "^1.3.0",
+          "react": "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0",
+          "react-dom": "^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0",
+          "@playwright/test": "^1.51.1",
+          "@opentelemetry/api": "^1.1.0",
+          "babel-plugin-react-compiler": "*"
+        }
+      }
+    },
+    {
+      "url": "https://registry.npmjs.org/openapi-fetch/latest",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/openapi-fetch/latest",
+      "bytes": 3265,
+      "sha256": "aa05dfcf6a6cc225e789029a3cca174ce13cd6b9e074c37b5b84174b2a80ef2d",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing.",
+      "publisher_metadata": {
+        "name": "openapi-fetch",
+        "version": "0.17.0",
+        "engines": null,
+        "peerDependencies": null
+      }
+    },
+    {
+      "url": "https://registry.npmjs.org/openapi-typescript/latest",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/openapi-typescript/latest",
+      "bytes": 3220,
+      "sha256": "9bfffd334ca6fa077037de8ed0da27955bdba3c6c11760ac0817d7f268582c5e",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing.",
+      "publisher_metadata": {
+        "name": "openapi-typescript",
+        "version": "7.13.0",
+        "engines": null,
+        "peerDependencies": {
+          "typescript": "^5.x"
+        }
+      }
+    },
+    {
+      "url": "https://registry.npmjs.org/react/latest",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/react/latest",
+      "bytes": 2155,
+      "sha256": "c9b7f5adeab67cd3146ffc69712aee7ddc37c23e656e41feaaa5624dff4e02aa",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing.",
+      "publisher_metadata": {
+        "name": "react",
+        "version": "19.3.0",
+        "engines": {
+          "node": ">=0.10.0"
+        },
+        "peerDependencies": null
+      }
+    },
+    {
+      "url": "https://registry.npmjs.org/typescript/latest",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://registry.npmjs.org/typescript/latest",
+      "bytes": 4833,
+      "sha256": "28a8ef314c6bbc3fddb831088f80eb2fcac6351cb618c8ac029f7229f587b8aa",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing.",
+      "publisher_metadata": {
+        "name": "typescript",
+        "version": "7.0.2",
+        "engines": {
+          "node": ">=16.20.0"
+        },
+        "peerDependencies": null
+      }
+    },
+    {
+      "url": "https://render.com/changelog/postgresql-18-is-now-available-for-render-postgres-databases",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://render.com/changelog/postgresql-18-is-now-available-for-render-postgres-databases",
+      "bytes": 201758,
+      "sha256": "fddeec6531fb4df4fe5a51dccbd227b8353f3e1e4cc11ddc6b5aa6a1e16d574f",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://render.com/docs/cronjobs#billing",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://render.com/docs/cronjobs",
+      "bytes": 318327,
+      "sha256": "b36411447dbe4a73f4bc181b9cfc6852668f676e9954bb2a28f3d1ddf78de220",
+      "scope": "Retrieval fingerprint; sections reviewed and limitations in official-sources.md. No runtime verification."
+    },
+    {
+      "url": "https://render.com/docs/postgresql-backups",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://render.com/docs/postgresql-backups",
+      "bytes": 421333,
+      "sha256": "05b6ee1c917d569c92747125511bf8bec9f85597f781444d4bb35b7efc3ad002",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://render.com/docs/private-network",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://render.com/docs/private-network",
+      "bytes": 361466,
+      "sha256": "28f7f440a84741b1209fcc98c2e3e2cbf2960a3e5d077e279fa8e142dcd2c680",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://render.com/pricing",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://render.com/pricing",
+      "bytes": 696074,
+      "sha256": "b05f40500c258dd958681023e82aea7d93cf2421357702e5f5ce4d4a54a890a5",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://resend.com/pricing",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://resend.com/pricing",
+      "bytes": 472631,
+      "sha256": "854596d369ac20e67b3b189e82f749b324f2018ad542a45f16efc0a5dee5b6e5",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://spring.io/blog/2025/02/13/support-policy-updates/",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://spring.io/blog/2025/02/13/support-policy-updates/",
+      "bytes": 405318,
+      "sha256": "38553e80b0b2a7256072427587781b28db14fd0a69fd32e40022dda29a7947fa",
+      "scope": "Retrieval fingerprint; sections reviewed and limitations in official-sources.md. No runtime verification."
+    },
+    {
+      "url": "https://spring.io/blog/2026/06/10/spring-boot-4/",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://spring.io/blog/2026/06/10/spring-boot-4/",
+      "bytes": 404324,
+      "sha256": "706ab43ab275f13a31de0e26d8897a761a702f4cb72b707c2f2c9f32be94527f",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://spring.io/projects/spring-boot/",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://spring.io/projects/spring-boot/",
+      "bytes": 408847,
+      "sha256": "742005c9e35b94f5d82fa9e54b6c819db7530a882f96ef053ae01780f973cdc7",
+      "scope": "Retrieval fingerprint; sections reviewed and limitations in official-sources.md. No runtime verification."
+    },
+    {
+      "url": "https://springdoc.org/",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://springdoc.org/",
+      "bytes": 255656,
+      "sha256": "b259a14839441c0a9908883e7f8b22032eaebb95c6237979db5ec6a70789f1f3",
+      "scope": "Retrieval fingerprint; sections reviewed and limitations in official-sources.md. No runtime verification."
+    },
+    {
+      "url": "https://springdoc.org/#what-is-the-compatibility-matrix-of-springdoc-openapi-with-spring-boot",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://springdoc.org/",
+      "bytes": 255656,
+      "sha256": "b259a14839441c0a9908883e7f8b22032eaebb95c6237979db5ec6a70789f1f3",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://www.digitalocean.com/pricing/droplets",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://www.digitalocean.com/pricing/droplets",
+      "bytes": 492028,
+      "sha256": "f46e5865637089b6dde34dddda0df1609d4b5c7a40948d6ec66db6bdb52c3be6",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://www.digitalocean.com/pricing/managed-databases",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://www.digitalocean.com/pricing/managed-databases",
+      "bytes": 413525,
+      "sha256": "6feb8373f03f7b746c4a337aea1374b59fbe3605d231df8924f3f74157cb5487",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://www.digitalocean.com/pricing/spaces-object-storage",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://www.digitalocean.com/pricing/spaces-object-storage",
+      "bytes": 182979,
+      "sha256": "30fccaafb65d15ea8dd4bed923bf08c0301cb15c65444a84b5796d05f58bb526",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    },
+    {
+      "url": "https://www.postgresql.org/support/versioning/",
+      "retrieved_on": "2026-09-23",
+      "status": 200,
+      "final_url": "https://www.postgresql.org/support/versioning/",
+      "bytes": 12737,
+      "sha256": "54c542f45154bc0479a5b7dee2dc0516c8ce3d8f1ae764b8f7dc23cea6e7a0c1",
+      "scope": "Retrieval fingerprint; substantive sections and limitations recorded in official-sources.md. Reachability is not compatibility testing."
+    }
+  ]
+}

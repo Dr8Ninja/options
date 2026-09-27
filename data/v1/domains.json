@@ -1,0 +1,66 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "D01",
+      "title": "Financial and market foundations"
+    },
+    {
+      "id": "D02",
+      "title": "Fundamentals, macro and events"
+    },
+    {
+      "id": "D03",
+      "title": "Mathematics and inference"
+    },
+    {
+      "id": "D04",
+      "title": "Price behavior and technical methods"
+    },
+    {
+      "id": "D05",
+      "title": "Option contracts and structures"
+    },
+    {
+      "id": "D06",
+      "title": "Pricing, Greeks and hedging"
+    },
+    {
+      "id": "D07",
+      "title": "Volatility and volatility trading"
+    },
+    {
+      "id": "D08",
+      "title": "Futures and cross-asset derivatives"
+    },
+    {
+      "id": "D09",
+      "title": "Risk and portfolio construction"
+    },
+    {
+      "id": "D10",
+      "title": "Microstructure, execution and management"
+    },
+    {
+      "id": "D11",
+      "title": "Research, data and software"
+    },
+    {
+      "id": "D12",
+      "title": "Decision practice and professional development"
+    },
+    {
+      "id": "D13",
+      "title": "Rules, operations and market-specific practice"
+    },
+    {
+      "id": "D14",
+      "title": "Evidence, failure analysis and professional practice"
+    },
+    {
+      "id": "DB",
+      "title": "Entry bridges"
+    }
+  ]
+}

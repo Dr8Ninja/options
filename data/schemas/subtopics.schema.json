@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "topic_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "competency_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "readiness": {
+            "type": "string"
+          },
+          "granularity_note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "topic_id",
+          "title",
+          "scope",
+          "competency_ids",
+          "readiness",
+          "granularity_note"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 subtopics interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

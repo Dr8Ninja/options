@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "as_of": "2026-09-22",
+  "scope": "Selected original arithmetic and European benchmark examples, not all project implementations or empirical replication",
+  "bsm_values": {
+    "call": 10.450583572185565,
+    "put": 5.573526022256971,
+    "parity": 4.877057549928594,
+    "delta": 0.6368306511756191,
+    "gamma": 0.018762017345846895,
+    "vega_per_decimal": 37.52403469169379,
+    "theta_per_elapsed_year": -6.414027546438197
+  },
+  "binomial_prices_n100_n400": [
+    10.430611662249113,
+    10.445585841283892
+  ],
+  "asserted_examples": [
+    "expectancy",
+    "drawdown",
+    "dispersion covariance",
+    "vertical",
+    "ratio backspread",
+    "variance units"
+  ]
+}

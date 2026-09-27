@@ -1,0 +1,45 @@
+{
+  "stage": "P10",
+  "as_of": "2026-09-27T11:51:38.684292+00:00",
+  "result": "PASS",
+  "backend": {
+    "tests": 47,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "public_api_tests": 12,
+    "database": "PostgreSQL 18.6/Testcontainers"
+  },
+  "actual_http_schema_captures": 140,
+  "implemented_public_and_csrf_operations": 24,
+  "frontend": {
+    "format_lint_types_generated_contracts": "PASS",
+    "tests": 12,
+    "browser_cases": 4
+  },
+  "python_utilities": "ruff format and E4/E7/E9/F PASS",
+  "upstream_recursive_design_contracts": "PASS",
+  "preserved_inputs": 85,
+  "accepted_migrations": 21,
+  "migration_drift": false,
+  "dependency_policy": "PASS",
+  "java_high_critical_vulnerabilities": 0,
+  "npm_vulnerabilities": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "secret_findings": 0,
+  "local_backend_migration": 21,
+  "local_drafts": 2851,
+  "local_publications": 0,
+  "synthetic_test_approvals": "Disposable PostgreSQL only; no release review or publication claim",
+  "mocked_catalog_responses": false,
+  "hosted_ci_run": false,
+  "production_load_test": false,
+  "production_deployment": false,
+  "next_eligible_prompt": "P11, only when requested"
+}

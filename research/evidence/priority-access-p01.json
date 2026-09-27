@@ -1,0 +1,90 @@
+[
+  {
+    "id": "E-OCC",
+    "requested_url": "https://www.theocc.com/getmedia/a151a9ae-d784-4a15-bdeb-23a029f50b70/riskstoc.pdf",
+    "checked_at": "2026-09-21T15:01:48.136686+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "status": "unavailable",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "E-SETTLE",
+    "requested_url": "https://nsearchives.nseindia.com/content/circulars/CMPT67750.pdf",
+    "checked_at": "2026-09-21T15:01:48.136928+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "status": "unavailable",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "E-LOT",
+    "requested_url": "https://nsearchives.nseindia.com/content/circulars/FAOP70616.pdf",
+    "checked_at": "2026-09-21T15:01:48.137014+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "http_status": 200,
+    "final_url": "https://nsearchives.nseindia.com/content/circulars/FAOP70616.pdf",
+    "content_type": "application/pdf",
+    "bytes": 207805,
+    "sha256": "0718cf0cc7e6c74105dc946497369270fca807f59912586560c9552cad8050ef",
+    "status": "retrieved"
+  },
+  {
+    "id": "E-BSE",
+    "requested_url": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars.aspx?page=20250623-59",
+    "checked_at": "2026-09-21T15:01:48.137072+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "http_status": 200,
+    "final_url": "https://www.bseindia.com/markets/MarketInfo/DispNewNoticesCirculars.aspx?page=20250623-59",
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 155840,
+    "sha256": "39adb147a5be93eafb769baf82e97ead2481527e0992e1f11178291a9da13de9",
+    "status": "retrieved"
+  },
+  {
+    "id": "E-SVI",
+    "requested_url": "https://arxiv.org/pdf/1204.0646",
+    "checked_at": "2026-09-21T15:01:48.137122+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "http_status": 200,
+    "final_url": "https://arxiv.org/pdf/1204.0646",
+    "content_type": "application/pdf",
+    "bytes": 4794190,
+    "sha256": "d4f938b8b988dbd594160a791df5ef5dd9a1740287f26f6f8034258e3c21c7cc",
+    "status": "retrieved"
+  },
+  {
+    "id": "E-AMERICAN",
+    "requested_url": "https://arxiv.org/pdf/1611.06181",
+    "checked_at": "2026-09-21T15:01:48.137160+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "http_status": 200,
+    "final_url": "https://arxiv.org/pdf/1611.06181",
+    "content_type": "application/pdf",
+    "bytes": 386811,
+    "sha256": "61b9a9697ac05ac3e66c50d77b7fa133a2176cc76d7769e68c0ad4ff6df74c07",
+    "status": "retrieved"
+  },
+  {
+    "id": "E-VARSWAP",
+    "requested_url": "https://emanuelderman.com/wp-content/uploads/1999/02/gs-volatility_swaps.pdf",
+    "checked_at": "2026-09-21T15:01:48.279770+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "http_status": 200,
+    "final_url": "https://emanuelderman.com/wp-content/uploads/1999/02/gs-volatility_swaps.pdf",
+    "content_type": "application/pdf",
+    "bytes": 485632,
+    "sha256": "ad289770b42f89cd0046f1e20ae42e4ecc2f15c419e1cd2705576739f762223e",
+    "status": "retrieved"
+  },
+  {
+    "id": "E-VIX",
+    "requested_url": "https://cdn.cboe.com/api/global/us_indices/governance/Volatility_Index_Methodology_Selected_Broad_Based_Index_Equity_and_ETF_Volatility_Indices.pdf",
+    "checked_at": "2026-09-21T15:01:48.373485+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "http_status": 200,
+    "final_url": "https://cdn.cboe.com/api/global/us_indices/governance/Volatility_Index_Methodology_Selected_Broad_Based_Index_Equity_and_ETF_Volatility_Indices.pdf",
+    "content_type": "application/pdf",
+    "bytes": 1302871,
+    "sha256": "cc42cc2076d4f66c9fa26ae7cc9136e5cb8e87e09de46562c02df68c0c0f8bc6",
+    "status": "retrieved"
+  }
+]

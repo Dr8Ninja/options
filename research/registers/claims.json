@@ -1,0 +1,317 @@
+{
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "CL01",
+      "class": "established_definition",
+      "claim": "Exercise style and cash/physical settlement are different contract dimensions; broker instruction deadlines are product/account specific.",
+      "resource_ids": [
+        "R01",
+        "RX01"
+      ],
+      "review_scope": "ODD II/VIII/X excerpts and OIC full exercising article",
+      "status": "adopted_bounded",
+      "limitations": "Do not infer a universal multiplier, cutoff or automatic-exercise outcome.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL02",
+      "class": "conditional_result",
+      "claim": "European call-put parity follows dated replication with equal strike/expiry, consistent carry and executable financing/borrow assumptions.",
+      "resource_ids": [
+        "RX02",
+        "R05"
+      ],
+      "review_scope": "OIC parity body; Hull TOC only supports selection, not proof review",
+      "status": "adopted_bounded",
+      "limitations": "C-P=S exp(-qT)-K exp(-rT) for continuous deterministic carry assumptions; American equality and frictionless profit claims excluded.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL03",
+      "class": "conditional_result",
+      "claim": "BSM values and local Greeks are model-conditional; delta is not actual probability of profit.",
+      "resource_ids": [
+        "RX03",
+        "RX24",
+        "RX26"
+      ],
+      "review_scope": "OIC input/model limitations; MIT replication/PDE and closed-form notes; original benchmark arithmetic",
+      "status": "adopted_bounded",
+      "limitations": "Continuous diffusion, European payoff, model carry and volatility; N(d1) differs from N(d2), physical probability differs again.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL04",
+      "class": "conditional_result",
+      "claim": "Continuous log-contract replication gives variance exposure under stated no-jump idealizations; limited strikes and discrete hedging introduce residuals.",
+      "resource_ids": [
+        "R12"
+      ],
+      "review_scope": "Author PDF summary and printed pp9–18; practical sections27–35 assigned but not all reviewed",
+      "status": "adopted_bounded",
+      "limitations": "No exact jump replication or guaranteed net volatility-arbitrage profit claimed.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL05",
+      "class": "conditional_result",
+      "claim": "Positive total variance alone does not ensure static-arbitrage freedom; strike-density and calendar constraints must also hold.",
+      "resource_ids": [
+        "R35"
+      ],
+      "review_scope": "PDF sections2–3, proportional-dividend calendar lemma and butterfly-density condition",
+      "status": "adopted_bounded",
+      "limitations": "European forward-moneyness convention and tail conditions; discrete grid tests alone are not a global proof.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL06",
+      "class": "empirical_numerical",
+      "claim": "De-Americanization can introduce material model-calibration error in the studied CEV/Heston/Merton numerical settings.",
+      "resource_ids": [
+        "RX04"
+      ],
+      "review_scope": "Introduction and pp24–25 conclusion; selected benchmark scope",
+      "status": "adopted_bounded",
+      "limitations": "2016 preprint; no universal bound; low-rate example is not all markets; discrete dividends left for future study.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL07",
+      "class": "empirical",
+      "claim": "Portfolio-insurance feedback is one plausible contributor to 1987, with competing contemporaneous explanations and evidence.",
+      "resource_ids": [
+        "RX16"
+      ],
+      "review_scope": "Chronology and contrasting SEC/CME/CFTC assessments",
+      "status": "adopted_bounded",
+      "limitations": "Historical synthesis cannot isolate a single causal contribution.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL08",
+      "class": "empirical",
+      "claim": "Leveraged and inverse volatility-product rebalancing could amplify the February2018 futures disturbance.",
+      "resource_ids": [
+        "RX17"
+      ],
+      "review_scope": "BIS March2018 analysis pp4–6 and correction note",
+      "status": "adopted_bounded",
+      "limitations": "Mechanism evidence is not proof that these products caused every equity move.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL09",
+      "class": "empirical",
+      "claim": "SEC staff did not find evidence of a gamma squeeze in GME during January2021 in its analyzed records.",
+      "resource_ids": [
+        "R68"
+      ],
+      "review_scope": "Report pp29–30 and source/sample discussion",
+      "status": "adopted_bounded",
+      "limitations": "Staff report, not Commission rule; no claim that gamma squeezes never occur.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL10",
+      "class": "conflicted_empirical",
+      "claim": "R56 buyer/seller numerical headlines are internally inconsistent in units and denominators.",
+      "resource_ids": [
+        "R56"
+      ],
+      "review_scope": "Table5 p18 and prose pp17–19 visually checked",
+      "status": "quarantined",
+      "limitations": "Table -5430 lakh across105 major sellers versus prose543crore; average per person versus narrative per loss-maker. No corrected statistic adopted.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Resolve source conflict or exclude claim from publication"
+    },
+    {
+      "id": "CL11",
+      "class": "practitioner_model",
+      "claim": "Public open interest does not identify dealer inventory signs or actual hedge demand without additional assumptions.",
+      "resource_ids": [
+        "R32",
+        "R49",
+        "R68"
+      ],
+      "review_scope": "OI contract identity; exchange positioning caveats; Avellaneda-Stoikov introduction/model2.1–2.4",
+      "status": "adopted_bounded",
+      "limitations": "Dealer gamma is a scenario range, not an observed book or proven price forecast; model focuses inventory, not complete adverse-selection dynamics.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL12",
+      "class": "established_method",
+      "claim": "Fit preprocessing on training data only; holdout reuse and temporal leakage invalidate ordinary evaluation interpretations.",
+      "resource_ids": [
+        "RX15",
+        "R23"
+      ],
+      "review_scope": "scikit-learn12.1–12.2; PBO introduction and motivation",
+      "status": "adopted_bounded",
+      "limitations": "A software pipeline alone does not solve finance-specific dependence, purging, corporate-action timing or repeated research selection.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL13",
+      "class": "rights_observation",
+      "claim": "yfinance's Apache2.0 code license does not grant rights to use or redistribute Yahoo market data.",
+      "resource_ids": [
+        "RX19",
+        "RX20"
+      ],
+      "review_scope": "GitHub README/license label and DataShop use constraints",
+      "status": "adopted_bounded",
+      "limitations": "Yahoo data terms require use-specific review; no commercial or redistribution permission assumed.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL14",
+      "class": "rule",
+      "claim": "Indian stock-derivative physical settlement contradicts the generic NCL overview's blanket cash wording.",
+      "resource_ids": [
+        "R57"
+      ],
+      "review_scope": "SEBI2018/161 full2pages and NCL2026/73864 specific physical-delivery notice",
+      "status": "adopted_bounded",
+      "limitations": "Physical-settlement principle resolved; live delivery deadlines and margin schedules remain quarantined.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL15",
+      "class": "curriculum_recommendation",
+      "claim": "Beginners should learn contract loss/cash/assignment intuition before stochastic calculus; coding must precede coding-dependent projects.",
+      "resource_ids": [
+        "R01",
+        "R52"
+      ],
+      "review_scope": "Curriculum dependency analysis and assessed task requirements",
+      "status": "adopted_design",
+      "limitations": "Pedagogical judgment; study hours and85% threshold are not measured certification standards.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL16",
+      "class": "contested_explanation",
+      "claim": "Named chart formations and indicator thresholds do not by themselves establish an options trading edge.",
+      "resource_ids": [
+        "R29",
+        "R23"
+      ],
+      "review_scope": "Lo-Mamaysky-Wang abstract/method description; overfitting motivation",
+      "status": "adopted_bounded",
+      "limitations": "Do not claim all technical analysis is useless or that one historical sample validates all patterns. Optional tested specialization retained.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL17",
+      "class": "rule",
+      "claim": "NSE2025 and BSE2025 notices define dated expiry/lot transitions, not permanent product facts.",
+      "resource_ids": [
+        "R57",
+        "R60"
+      ],
+      "review_scope": "FAOP68747,FAOP70616 and BSE20250623-59 full operative content",
+      "status": "adopted_bounded",
+      "limitations": "Current contract masters and later changes must be checked; R60 original file-format PDF does not prove specifications.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL18",
+      "class": "conflicted_rule",
+      "claim": "NSE STT page has a clear effective-dated table but inconsistent later exercise-base wording.",
+      "resource_ids": [
+        "R58"
+      ],
+      "review_scope": "Tax table, basis paragraph and subsequent computation prose",
+      "status": "quarantined",
+      "limitations": "Need FinanceAct2026 and operative guidance reconciliation before publishing a current tax computation.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Resolve source conflict or exclude claim from publication"
+    },
+    {
+      "id": "CL19",
+      "class": "bibliographic",
+      "claim": "Bennett's2014 Trading Volatility and McMillan's2013 Trading Volatility for Profit video are different works.",
+      "resource_ids": [
+        "RX09",
+        "RX10"
+      ],
+      "review_scope": "Author book PDF cover/TOC and publisher video metadata",
+      "status": "adopted_bounded",
+      "limitations": "No video watched or timestamps invented; neither title is Sinclair's Volatility Trading.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Preserve caveat in lesson and independent review"
+    },
+    {
+      "id": "CL20",
+      "class": "rule",
+      "claim": "The official NSE CAS page announces changes relevant to closing-price and hedging assumptions.",
+      "resource_ids": [
+        "R57"
+      ],
+      "review_scope": "CAS page applicability/timing/circular list",
+      "status": "quarantined",
+      "limitations": "Operative74466/74467 and implementation/amendment dates not fully retrieved; current times not certified.",
+      "verified_on": "2026-09-22",
+      "publication_ready": false,
+      "publication_reason": "Bounded research conclusion may inform authoring; no reviewed lesson publication is claimed.",
+      "next_action": "Resolve source conflict or exclude claim from publication"
+    }
+  ]
+}

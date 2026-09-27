@@ -1,0 +1,405 @@
+{
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "G01",
+      "original_finding": "1,019 topic descriptions are scope statements, not teaching units",
+      "severity": "Blocking",
+      "required_resolution": "Define lesson depth and publication status; write and review the lessons being released",
+      "status": "design_resolved_authoring_or_delivery_deferred_P17",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G02",
+      "original_finding": "Module objectives, “why it matters,” checkpoint questions and durations are not explicit module fields",
+      "severity": "Blocking",
+      "required_resolution": "Author measurable objectives and estimates tied to actual assignments; retain stage estimates separately",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G03",
+      "original_finding": "The graph is valid, but dependencies refer to whole modules while prose permits partial competencies",
+      "severity": "Blocking for recommendations",
+      "required_resolution": "Specify entry/core/specialist competencies and soft versus mandatory dependencies; prove path reachability",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G04",
+      "original_finding": "Python is formally in stage 11 after backtesting, while earlier exercises involve implementation",
+      "severity": "High",
+      "required_resolution": "Separate elementary coding preparation from production automation; preserve manual alternatives where appropriate",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G05",
+      "original_finding": "Six chart/indicator modules precede options in the general roadmap; most are already marked reference/practitioner material",
+      "severity": "High",
+      "required_resolution": "Research and define an options-first core path with chart material available by interest; do not silently delete the reference taxonomy",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G06",
+      "original_finding": "Beginner, retail and India learning paths are not explicit data",
+      "severity": "Blocking for those paths",
+      "required_resolution": "Define ordered, prerequisite-complete paths that reuse canonical content, with entry and exit competencies",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G07",
+      "original_finding": "The JSON drops capstones, branch guidance and shared assessment standards",
+      "severity": "Blocking for import",
+      "required_resolution": "Promote all learning structures into canonical content with stable IDs and provenance; test a lossless import",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G08",
+      "original_finding": "Subtopics are prose strings, and chapters do not exist",
+      "severity": "High",
+      "required_resolution": "Split into authored learning units only where useful; do not mechanically split every comma into a database record",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G09",
+      "original_finding": "Topic source associations are uniformly inherited, without precise reading assignments",
+      "severity": "Blocking",
+      "required_resolution": "Map source sections/pages/lectures to competencies and claims; record what a source does not support",
+      "status": "bounded_with_publication_exclusions",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G10",
+      "original_finding": "All resources lack explicit cost, time, priority, prerequisite, geography and per-source verification fields",
+      "severity": "Blocking for library quality",
+      "required_resolution": "Research and populate verified metadata; preserve unknown values without invention",
+      "status": "bounded_with_publication_exclusions",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G11",
+      "original_finding": "Abstract/contents checks and full-text checks are mixed in access prose",
+      "severity": "Blocking for evidence claims",
+      "required_resolution": "Separate discovery, access, bibliographic review, content review, claim verification and numerical replication",
+      "status": "bounded_with_publication_exclusions",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G12",
+      "original_finding": "No worked exercises, datasets, answer keys, fresh variants or scoring rubrics",
+      "severity": "Blocking",
+      "required_resolution": "Author original exercise packs, numerical reference answers, tolerances and feedback linked to competencies",
+      "status": "design_resolved_authoring_or_delivery_deferred_P17",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G13",
+      "original_finding": "The 85% threshold and no-critical-error rule are descriptive only",
+      "severity": "Blocking for mastery claims",
+      "required_resolution": "Define critical-error tags, scoring, retries, remediation, rubric versions and evidence of transfer",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G14",
+      "original_finding": "No licensing records for course materials, market data or redistribution",
+      "severity": "Blocking for hosted third-party assets",
+      "required_resolution": "Prefer links; review rights before copying content/data; distinguish software license from data entitlement",
+      "status": "bounded_with_publication_exclusions",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G15",
+      "original_finding": "Rule currency is described, but there is no governed versioned register",
+      "severity": "Blocking for current-rule lessons",
+      "required_resolution": "Record jurisdiction, instrument, issuing body, publication/effective/check dates, supersession, scope, review owner and conflicts",
+      "status": "bounded_with_publication_exclusions",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G16",
+      "original_finding": "BSE specification verification was explicitly incomplete in supplied research",
+      "severity": "High",
+      "required_resolution": "Locate operative BSE product notices and contract master; retain unresolved status until reconciled",
+      "status": "bounded_with_publication_exclusions",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G17",
+      "original_finding": "Historical crash episodes lack individual case files",
+      "severity": "High for case-study release",
+      "required_resolution": "Separate timelines, primary evidence, competing explanations, exposure/cash accounting and control limits",
+      "status": "bounded_with_publication_exclusions",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G18",
+      "original_finding": "Greek formulas and conventions are named but not a unified numerical contract",
+      "severity": "Blocking for calculators",
+      "required_resolution": "Specify units, time signs, dividends, carry, exercise model, edge cases and independent benchmarks",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G19",
+      "original_finding": "Model calibration from American quotes is only implicit in broad exercise-model/surface topics",
+      "severity": "Advanced research candidate",
+      "required_resolution": "Investigate early-exercise premium removal, discrete dividends and de-Americanization error; decide whether to add an explicit subtopic",
+      "status": "bounded_with_publication_exclusions",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G20",
+      "original_finding": "Study-time estimates exist only for stages/mastery levels",
+      "severity": "Medium",
+      "required_resolution": "Estimate assigned readings and work per lesson; mark editorial estimates and revise with observed learner data",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G21",
+      "original_finding": "No product, database, API, UX or engineering artifacts exist",
+      "severity": "Blocking for application",
+      "required_resolution": "Complete phases 5–9 before implementation; keep research records distinct from production content",
+      "status": "excluded_P02_onward",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G22",
+      "original_finding": "No author/reviewer workflow, content revisions or correction history",
+      "severity": "Blocking for public maintenance",
+      "required_resolution": "Define draft/review/publish/retire states, verification ownership, editorial checks and migration of learner progress",
+      "status": "design_resolved_authoring_or_delivery_deferred_P17",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G23",
+      "original_finding": "No accessible mathematical presentation or low-bandwidth/noncoding alternative",
+      "severity": "High",
+      "required_resolution": "Design semantic formulas, keyboard support, textual graph equivalents, accessible examples and manual exercise variants",
+      "status": "design_resolved_authoring_or_delivery_deferred_P17",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G24",
+      "original_finding": "Resource titles/types/evidence labels have different semantics and granularity",
+      "severity": "High",
+      "required_resolution": "Use explicit controlled vocabularies; do not treat the three-letter classification code as searchable topical tags",
+      "status": "resolved_design",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    },
+    {
+      "id": "G25",
+      "original_finding": "Bookmarking/completion are not evidence of skill; no learner model exists",
+      "severity": "Blocking for progress claims",
+      "required_resolution": "Separate viewed, self-completed, attempted and demonstrated mastery with versioned assessment evidence",
+      "status": "design_resolved_authoring_or_delivery_deferred_P17",
+      "evidence": [
+        "data/v1/modules.json",
+        "data/v1/associations.json",
+        "research/registers/claims.json",
+        "data/v1/market_rules.json",
+        "docs/curriculum/CONTENT_GUIDE.md"
+      ],
+      "disposition": "No archival loss. Design fields/policies supplied; scope-only lessons, unavailable full-text evidence and uncertified current rules are not publication ready.",
+      "recheck": "scripts/validate_canonical.py plus three canonical review records"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "org.options.platform.ConfigTest",
+    "tests": "1",
+    "errors": "0",
+    "skipped": "0",
+    "failures": "0",
+    "time": "0.099"
+  },
+  {
+    "name": "org.options.platform.ArchitectureTest",
+    "tests": "1",
+    "errors": "0",
+    "skipped": "0",
+    "failures": "0",
+    "time": "0.511"
+  },
+  {
+    "name": "org.options.platform.PersistenceIT",
+    "tests": "25",
+    "errors": "0",
+    "skipped": "0",
+    "failures": "0",
+    "time": "9.611"
+  },
+  {
+    "name": "org.options.platform.FoundationIT",
+    "tests": "7",
+    "errors": "0",
+    "skipped": "0",
+    "failures": "0",
+    "time": "7.501"
+  }
+]

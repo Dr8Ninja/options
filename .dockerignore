@@ -1,0 +1,12 @@
+**/node_modules
+**/.next
+**/.env*
+.local
+.venv
+.git
+sources
+research
+data
+design/evidence
+**/test-results*
+**/playwright-report

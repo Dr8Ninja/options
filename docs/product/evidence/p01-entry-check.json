@@ -1,0 +1,151 @@
+{
+  "as_of": "2026-09-22",
+  "gate": "PASS for P02 planning; publication exclusions inherited",
+  "version": "1.0.0-design",
+  "checks_run": [
+    "python3 scripts/inventory_sources.py --check",
+    "python3 scripts/validate_canonical.py --as-of 2026-09-22 --negative-tests",
+    "python3 scripts/audit_p01_package.py"
+  ],
+  "artifacts": [
+    {
+      "path": "research/validation-p01.json",
+      "sha256": "4b2435414cfbabe5059be23531a1aefa8a20870422b65eed20bcfb0e257f2012"
+    },
+    {
+      "path": "research/final-audit-p01.json",
+      "sha256": "620fb149ca8396065cd9765b67200ccbf6960b39d0e27afabb509c9bd8883e09"
+    },
+    {
+      "path": "research/rebuild-check-p01.json",
+      "sha256": "1a2ba6cfbbe7ac5458206d0017fdb20e9e016ccd7aaee044fe501c43eadbb589"
+    },
+    {
+      "path": "research/numerical-checks-p01.json",
+      "sha256": "03682f7ea11d3413238eda50afdd5a4b2bab0e99ea6ba53f4d45393683979d8e"
+    },
+    {
+      "path": "data/v1/manifest.json",
+      "sha256": "85f2696eca3a7a22495587a9fc66fd2ef2ee6ae7f3efb16efe15ce52909468d9"
+    },
+    {
+      "path": "docs/research/RECONCILIATION.md",
+      "sha256": "119329049134ffed38dc4f3b67a15825949abf4104065cc6a7ecf9f8349577d8"
+    }
+  ],
+  "validation": {
+    "entity_count": 11452,
+    "hard_graph_nodes": 70,
+    "hard_graph_edges": 120,
+    "roundtrip_leaf_values": 150717,
+    "stale_rules": [],
+    "quarantined_or_rejected_rules": [
+      "RULE-IN-10",
+      "RULE-IN-11",
+      "RULE-IN-12",
+      "RULE-IN-13",
+      "RULE-US-02",
+      "RULE-GLOBAL-01",
+      "RULE-IN-14",
+      "RULE-IN-15",
+      "RULE-IN-16",
+      "RULE-IN-17",
+      "RULE-IN-FEE-1",
+      "RULE-IN-FEE-2",
+      "RULE-IN-FEE-3",
+      "RULE-IN-FEE-4",
+      "RULE-IN-FEE-5",
+      "RULE-IN-18"
+    ],
+    "publication_ready_lessons": 0,
+    "as_of": "2026-09-22",
+    "result": "PASS",
+    "negative_tests_rejected": [
+      "cycle",
+      "lost_scope",
+      "broken_resource",
+      "unsafe_quarantine"
+    ],
+    "files": 23,
+    "version": "1.0.0-design"
+  },
+  "source_and_link_audit": {
+    "result": "PASS",
+    "scope": "All five source-manifest hashes and byte counts; local Markdown link targets. External links and heading anchors are outside this offline check.",
+    "sources": [
+      {
+        "path": "sources/roadmaps/options-learning-roadmap.md",
+        "bytes": 64252,
+        "sha256": "c57fc3b040689e926bd33f0632184a5f4ce53a99cd3e17ea23d0735b1d3162e1",
+        "matches_manifest": true
+      },
+      {
+        "path": "sources/roadmaps/options-master-knowledge-map.md",
+        "bytes": 280774,
+        "sha256": "a7093115bc78ab3d6e8ef8b94a62d524230d2d4480fb4bb097e577a76a30e560",
+        "matches_manifest": true
+      },
+      {
+        "path": "sources/roadmaps/options-curriculum-catalog.json",
+        "bytes": 712027,
+        "sha256": "242dc024740fc2ad5d18a987528b6a60c28f0b3912835e3749594f398d07d976",
+        "matches_manifest": true
+      },
+      {
+        "path": "sources/prompts/01-deep-research-original.md",
+        "bytes": 11518,
+        "sha256": "ea05f0db08fa9736b1eadf86f5bb641a70e8fdbe4dfb7df33aac2efdf9059a60",
+        "matches_manifest": true
+      },
+      {
+        "path": "sources/prompts/02-production-build-original.md",
+        "bytes": 14881,
+        "sha256": "2852d3cd7b7d3f23557b021311ce9a81b669e56926c1032da86d21fa4eaa48eb",
+        "matches_manifest": true
+      }
+    ],
+    "markdown_documents": 113,
+    "local_links_checked": 417,
+    "failures": []
+  },
+  "prior_rebuild_evidence": {
+    "as_of": "2026-09-22",
+    "result": "PASS",
+    "compared_files": 136,
+    "changed_files": [],
+    "scope": "Two complete rebuilds from identical inventory/editorial inputs; byte-level equality of data/schemas, curriculum docs and research registers."
+  },
+  "prior_numerical_evidence": {
+    "status": "PASS",
+    "as_of": "2026-09-22",
+    "scope": "Selected original arithmetic and European benchmark examples, not all project implementations or empirical replication",
+    "bsm_values": {
+      "call": 10.450583572185565,
+      "put": 5.573526022256971,
+      "parity": 4.877057549928594,
+      "delta": 0.6368306511756191,
+      "gamma": 0.018762017345846895,
+      "vega_per_decimal": 37.52403469169379,
+      "theta_per_elapsed_year": -6.414027546438197
+    },
+    "binomial_prices_n100_n400": [
+      10.430611662249113,
+      10.445585841283892
+    ],
+    "asserted_examples": [
+      "expectancy",
+      "drawdown",
+      "dispersion covariance",
+      "vertical",
+      "ratio backspread",
+      "variance units"
+    ]
+  },
+  "application_directories_present": [],
+  "limitations": [
+    "No authored reviewed lessons",
+    "Current operational rules excluded",
+    "141 reading candidates need section verification",
+    "P01 evidence is design validation, not app or public-course readiness"
+  ]
+}

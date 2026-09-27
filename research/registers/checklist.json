@@ -1,0 +1,368 @@
+{
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "CK01",
+      "area": "Foundations and contracts",
+      "module_ids": [
+        "M01",
+        "M02",
+        "M03",
+        "M21",
+        "M22",
+        "M23"
+      ],
+      "required_scope": "Contract dimensions and loss accounting",
+      "claim_ids": [
+        "CL01",
+        "CL14"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Resolved conceptual scope; jurisdiction-specific details gated",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK02",
+      "area": "Market infrastructure and execution",
+      "module_ids": [
+        "M03",
+        "M04",
+        "M05",
+        "M47",
+        "M49",
+        "M50",
+        "M51",
+        "M52"
+      ],
+      "required_scope": "Queue, hidden liquidity, adverse selection, inventory, margin, outages and reconciliation",
+      "claim_ids": [
+        "CL01",
+        "CL11",
+        "CL17",
+        "CL20"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Venue algorithms and current margin parameters remain product-specific readings",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK03",
+      "area": "Payoffs and structures",
+      "module_ids": [
+        "M24",
+        "M25",
+        "M26",
+        "M27",
+        "M28"
+      ],
+      "required_scope": "Signed legs, multi-date cash paths, assignment and funding",
+      "claim_ids": [
+        "CL02",
+        "CL04"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Every inherited named structure retained; detailed variant lessons P17",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK04",
+      "area": "Greeks and P&L",
+      "module_ids": [
+        "M32",
+        "M33",
+        "M34",
+        "M48"
+      ],
+      "required_scope": "Primary/higher derivatives, units, finite differences and nonlinear repricing",
+      "claim_ids": [
+        "CL03",
+        "CL11"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Greek convention table authored; higher-order numerical lesson packs P17",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK05",
+      "area": "Pricing and numerics",
+      "module_ids": [
+        "M13",
+        "M14",
+        "M29",
+        "M30",
+        "M31"
+      ],
+      "required_scope": "No-arbitrage, martingale/PDE, trees, MC/variance reduction, FD, exercise and dividends",
+      "claim_ids": [
+        "CL02",
+        "CL03",
+        "CL06"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Conditional theory distinguished from calibration evidence; advanced full lessons P17",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK06",
+      "area": "Advanced models and surfaces",
+      "module_ids": [
+        "M37",
+        "M40",
+        "M44"
+      ],
+      "required_scope": "Local/stochastic/Heston/SABR/jumps/SVI, identification and American treatment",
+      "claim_ids": [
+        "CL05",
+        "CL06"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "SVI conditions reviewed; Heston/SABR original full texts not yet reviewed, implementation claims excluded",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK07",
+      "area": "Volatility",
+      "module_ids": [
+        "M12",
+        "M35",
+        "M36",
+        "M37",
+        "M38",
+        "M39",
+        "M41"
+      ],
+      "required_scope": "RV/IV/forward, skew/convexity, VRP/events/cones/regimes/GARCH/swaps/VIX/dispersion",
+      "claim_ids": [
+        "CL04",
+        "CL05",
+        "CL08"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Exact current VIX methodology retrieval bounded; FAQ-level distinction and synthetic variance work usable",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK08",
+      "area": "Hedging and hypotheses",
+      "module_ids": [
+        "M28",
+        "M34",
+        "M41",
+        "M48",
+        "M53",
+        "M55"
+      ],
+      "required_scope": "Direction/horizon/skew/term/event/liquidity/tail/convexity/carry/edge/falsification",
+      "claim_ids": [
+        "CL04",
+        "CL12"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "No strategy profitability adopted; costed hypothesis dossier required",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK09",
+      "area": "Quantitative foundations",
+      "module_ids": [
+        "M01",
+        "M10",
+        "M11",
+        "M12",
+        "M13",
+        "M14",
+        "M57",
+        "B02"
+      ],
+      "required_scope": "Algebra through Itô, regression, bootstrap/Bayes, time series, MC and ML limits",
+      "claim_ids": [
+        "CL03",
+        "CL12",
+        "CL15"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Competency-linked math levels and entry bridge; advanced prerequisites only at use",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK10",
+      "area": "Research validity",
+      "module_ids": [
+        "M54",
+        "M55",
+        "M56",
+        "M57",
+        "M58",
+        "M65"
+      ],
+      "required_scope": "Lineage/rights/timestamps/adjustments/filtering, bias, holdouts and uncertainty",
+      "claim_ids": [
+        "CL12",
+        "CL13"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Synthetic route fully rights-safe; real-data rights require use-specific approval",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK11",
+      "area": "Risk and capital",
+      "module_ids": [
+        "M45",
+        "M46",
+        "M47",
+        "M48",
+        "M49"
+      ],
+      "required_scope": "Ruin/drawdown/Kelly/VaR/ES, joint stresses, funding and operations",
+      "claim_ids": [
+        "CL01",
+        "CL11",
+        "CL14"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "No universal retail risk percentage; training budgets explicitly hypothetical",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK12",
+      "area": "Psychology",
+      "module_ids": [
+        "M60",
+        "M61",
+        "M65"
+      ],
+      "required_scope": "Overconfidence/revenge/FOMO/loss aversion/gambler/recency/anchoring/confirmation/sunk cost",
+      "claim_ids": [
+        "CL12",
+        "CL15"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Process journal and calibrated forecast review; no diagnosis or guaranteed behavioral cure",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK13",
+      "area": "Professional specializations",
+      "module_ids": [
+        "M33",
+        "M38",
+        "M40",
+        "M41",
+        "M43",
+        "M44",
+        "M50",
+        "M51",
+        "M52",
+        "M67"
+      ],
+      "required_scope": "Market making/RV/dispersion/dealer flows/pinning/0DTE/exotics/autocallables",
+      "claim_ids": [
+        "CL05",
+        "CL06",
+        "CL11"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Observed/inferred separation; advanced implementation claims not publication ready",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK14",
+      "area": "Historical cases",
+      "module_ids": [
+        "M39",
+        "M42",
+        "M66"
+      ],
+      "required_scope": "1987/LTCM/2008/2018/2020/meme stocks/0DTE/short-vol failures",
+      "claim_ids": [
+        "CL07",
+        "CL08",
+        "CL09",
+        "CL10"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Case packs distinguish full source reading from discovery;2008/2020 detail bounded",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    },
+    {
+      "id": "CK15",
+      "area": "India and global",
+      "module_ids": [
+        "M62",
+        "M63",
+        "M64"
+      ],
+      "required_scope": "Exchange/product-specific contracts, STT/fees/margins/restrictions/expiry and rule chains",
+      "claim_ids": [
+        "CL14",
+        "CL17",
+        "CL18",
+        "CL20"
+      ],
+      "scope_rating": "Good",
+      "teaching_rating": "Partial",
+      "practice_rating": "Good",
+      "evidence_rating": "Partial",
+      "maintenance_rating": "Good",
+      "disposition": "Settlement principle resolved; R56 statistics and unverified current BSE/NSE constants quarantined",
+      "coverage_evidence": "All module topic/scope strings retained in data/v1/topics.json; module dossiers contain distinct numerical examples and checkpoint/practical work; no full-topic lesson claim."
+    }
+  ]
+}

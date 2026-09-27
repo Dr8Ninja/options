@@ -1,0 +1,33 @@
+services:
+  backend:
+    build: ../backend
+    environment:
+      APP_ENVIRONMENT: LOCAL
+      SPRING_PROFILES_ACTIVE: local
+      PUBLIC_ORIGIN: https://localhost:8443
+      DB_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB:?Run scripts/dev-env.py}
+      DB_USER: options_runtime
+      DB_PASSWORD: ${DB_RUNTIME_PASSWORD:?Run scripts/provision-local-db.py}
+      MIGRATION_DB_USER: ${POSTGRES_USER:?Run scripts/dev-env.py}
+      MIGRATION_DB_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/dev-env.py}
+      SERVER_ADDRESS: 0.0.0.0
+      MANAGEMENT_SERVER_ADDRESS: 0.0.0.0
+    ports: ["127.0.0.1:8081:8081"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    security_opt: ["no-new-privileges:true"]
+  frontend:
+    build:
+      context: ..
+      dockerfile: frontend/Dockerfile
+    environment:
+      APP_ENVIRONMENT: LOCAL
+      PUBLIC_ORIGIN: https://localhost:8443
+      API_INTERNAL_ORIGIN: http://backend:8080
+    security_opt: ["no-new-privileges:true"]
+  proxy:
+    environment:
+      BACKEND_UPSTREAM: backend:8080
+      FRONTEND_UPSTREAM: frontend:3000
+    depends_on: [backend, frontend]

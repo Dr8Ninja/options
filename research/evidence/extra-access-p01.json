@@ -1,0 +1,62 @@
+[
+  {
+    "id": "X-VIX",
+    "requested_url": "https://cdn.cboe.com/resources/futures/vixwhite.pdf",
+    "checked_at": "2026-09-22T04:33:07.552994+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "status": "unavailable",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "X-BENNETT",
+    "requested_url": "https://trading-volatility.com/Trading%20Volatility%20-%20Colin%20Bennett.pdf",
+    "checked_at": "2026-09-22T04:33:07.553210+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "http_status": 200,
+    "final_url": "https://trading-volatility.com/Trading%20Volatility%20-%20Colin%20Bennett.pdf",
+    "content_type": "application/pdf",
+    "bytes": 5054481,
+    "sha256": "0973976867d6b506b55e9f4f2c0c7671f91383677cceac6d529cc0e12a2156c4",
+    "status": "retrieved"
+  },
+  {
+    "id": "X-FSB",
+    "requested_url": "https://www.fsb.org/uploads/P171120-2.pdf",
+    "checked_at": "2026-09-22T04:33:07.553286+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "status": "unavailable",
+    "error": "The read operation timed out"
+  },
+  {
+    "id": "X-CAS",
+    "requested_url": "https://nsearchives.nseindia.com/content/circulars/FAOP74467.pdf",
+    "checked_at": "2026-09-22T04:33:07.553327+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "status": "unavailable",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "X-LIQ",
+    "requested_url": "https://math.nyu.edu/~avellane/HighFrequencyTrading.pdf",
+    "checked_at": "2026-09-22T04:33:07.553364+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "http_status": 200,
+    "final_url": "https://math.nyu.edu/inmemoriam/avellaneda//HighFrequencyTrading.pdf",
+    "content_type": "application/pdf",
+    "bytes": 433581,
+    "sha256": "71fa9268339ae82365171caa7416833b3a5d584f05e4f4c087c4ae72d7121a8d",
+    "status": "retrieved"
+  },
+  {
+    "id": "X-EXEC",
+    "requested_url": "https://www.smallake.kr/wp-content/uploads/2016/03/optliq.pdf",
+    "checked_at": "2026-09-22T04:33:07.553396+00:00",
+    "verification_scope": "transport_only_not_content_review",
+    "http_status": 200,
+    "final_url": "https://www.smallake.kr/wp-content/uploads/2016/03/optliq.pdf",
+    "content_type": "application/pdf",
+    "bytes": 332249,
+    "sha256": "7330f244a8ba7e6ec6817edf62f43ab105ba8a29ef646661333a9b3daab7dd1a",
+    "status": "retrieved"
+  }
+]

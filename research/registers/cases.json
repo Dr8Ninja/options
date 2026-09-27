@@ -1,0 +1,112 @@
+{
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "CASE01",
+      "title": "1987 crash",
+      "resource_ids": [
+        "RX16"
+      ],
+      "reading_scope": "Carlson 2007 chronology and competing SEC/CME/CFTC assessments",
+      "chronology": "Pre-crash selling and stress;19October collapse; market dislocations and liquidity response.",
+      "mechanism": "Dynamic portfolio hedging, cash/futures linkages and liquidity constraints can reinforce pressure.",
+      "competing_explanations_and_limits": "Do not attribute the entire event to portfolio insurance; contemporary inquiries differed and event data do not isolate one cause.",
+      "exercise": "Reconstruct a hedge selling into falling prices with finite liquidity; compare a precommitted static protection alternative and its cost.",
+      "status": "bounded_evidence_pack",
+      "publication_ready": false,
+      "next_action": "Author full sourced chronology, test the exercise and review interpretation in P17; CASE05 first requires full primary-section reading."
+    },
+    {
+      "id": "CASE02",
+      "title": "LTCM1998",
+      "resource_ids": [
+        "R67"
+      ],
+      "reading_scope": "Full Parkinson 6May 1999 testimony",
+      "chronology": "1998 market stress; leveraged positions and counterparty concern;1999 review of leverage/information/collateral practices.",
+      "mechanism": "Leverage and illiquid exposures interact with creditor terms and incomplete knowledge of aggregate risk.",
+      "competing_explanations_and_limits": "The testimony is an official retrospective policy account, not the complete position book or proof all hedge funds shared LTCM's leverage.",
+      "exercise": "With equity 100 and assets 2000, stress a 5% loss plus financing withdrawal; explain why collateral does not replace counterparty analysis.",
+      "status": "bounded_evidence_pack",
+      "publication_ready": false,
+      "next_action": "Author full sourced chronology, test the exercise and review interpretation in P17; CASE05 first requires full primary-section reading."
+    },
+    {
+      "id": "CASE03",
+      "title": "2008 AIG and systemic crisis",
+      "resource_ids": [
+        "RX25"
+      ],
+      "reading_scope": "FCIC chapter 19 selected pp 344–350 and chapter conclusion",
+      "chronology": "Summer liquidity concerns;12September emergency discussions;15September downgrades/collateral demands;16September financing response.",
+      "mechanism": "CDS collateral, short-term funding, securities-lending reinvestment and rating triggers create joint cash stress.",
+      "competing_explanations_and_limits": "AIG is one mechanism within 2008, not the whole crisis. Majority report causal conclusions and broader dissents need separate comparison before a full historical lesson.",
+      "exercise": "Build a dated hypothetical collateral/funding ladder; distinguish economic loss, disputed marks, liquidity and solvency without inventing AIG trade-level data.",
+      "status": "bounded_evidence_pack",
+      "publication_ready": false,
+      "next_action": "Author full sourced chronology, test the exercise and review interpretation in P17; CASE05 first requires full primary-section reading."
+    },
+    {
+      "id": "CASE04",
+      "title": "February 2018 volatility-product disruption",
+      "resource_ids": [
+        "RX17"
+      ],
+      "reading_scope": "BIS March 2018 pp 4–6 and graph correction",
+      "chronology": "5February equity/volatility shock; leveraged/inverse product rebalancing; subsequent examination of market feedback.",
+      "mechanism": "Daily reset exposure changes force rebalance demand as futures move, potentially magnifying the disturbance.",
+      "competing_explanations_and_limits": "A mechanism is not identification of the original shock or every participant's flows; exact product acceleration thresholds require the historical prospectus.",
+      "exercise": "Simulate a daily inverse exposure after a large futures increase; track target leverage and rebalance demand, then add non-fill and market-impact scenarios.",
+      "status": "bounded_evidence_pack",
+      "publication_ready": false,
+      "next_action": "Author full sourced chronology, test the exercise and review interpretation in P17; CASE05 first requires full primary-section reading."
+    },
+    {
+      "id": "CASE05",
+      "title": "COVID/March 2020 and WTI",
+      "resource_ids": [
+        "RX18",
+        "R42"
+      ],
+      "reading_scope": "FSB report landing/overview discovered; detailed attachment timed out. CFTC interim-report landing examined.",
+      "chronology": "March dash for liquidity and margin stress;20April WTI contract disturbance; official retrospective/interim reports.",
+      "mechanism": "Funding demand, liquidity withdrawal and product-specific delivery constraints are questions to reconstruct, not interchangeable explanations.",
+      "competing_explanations_and_limits": "Detailed FSB sections and WTI report full text remain unreviewed; causal or numerical claims excluded. Pandemic equity stress and WTI expiry must be separate subcases.",
+      "exercise": "Create a synthetic shock with simultaneous margin increase and liquidity loss; identify which historical primary section would confirm each proposed mechanism.",
+      "status": "bounded_research_only",
+      "publication_ready": false,
+      "next_action": "Author full sourced chronology, test the exercise and review interpretation in P17; CASE05 first requires full primary-section reading."
+    },
+    {
+      "id": "CASE06",
+      "title": "Meme-stock volatility 2021",
+      "resource_ids": [
+        "R68"
+      ],
+      "reading_scope": "SEC staff report pp 24–34 and GME options discussion",
+      "chronology": "January price/volume surge; clearing collateral pressure and broker restrictions;October staff report.",
+      "mechanism": "Short covering, customer demand, settlement/capital constraints and options activity need separate evidence.",
+      "competing_explanations_and_limits": "SEC staff found no gamma-squeeze evidence in its January GME analysis; this is not proof such mechanisms never occur or a universal explanation of every meme stock.",
+      "exercise": "Compare three hypotheses using a claims/evidence table; show why OI alone cannot identify dealer hedges. No invented exact dealer positions.",
+      "status": "bounded_evidence_pack",
+      "publication_ready": false,
+      "next_action": "Author full sourced chronology, test the exercise and review interpretation in P17; CASE05 first requires full primary-section reading."
+    },
+    {
+      "id": "CASE07",
+      "title": "0DTE growth and short-volatility failure",
+      "resource_ids": [
+        "R32",
+        "RX17"
+      ],
+      "reading_scope": "Cboe 2May 2025 executive summary; linked full report not reviewed; BIS2018 mechanism",
+      "chronology": "Expansion of short-dated use; dated exchange summary; comparison with a documented daily-reset failure mechanism.",
+      "mechanism": "Near-expiry convexity and liquidity interact with exposure sizing; product reset risk differs from a listed-option position.",
+      "competing_explanations_and_limits": "Exchange volume/positioning estimates have sample and classification limitations. No universal claim that 0DTE stabilizes or destabilizes markets; growth does not establish safety or edge.",
+      "exercise": "PR12 sign scenarios plus a near-expiry gap; distinguish terminal limited loss from funding, package execution and market-wide impact.",
+      "status": "bounded_evidence_pack",
+      "publication_ready": false,
+      "next_action": "Author full sourced chronology, test the exercise and review interpretation in P17; CASE05 first requires full primary-section reading."
+    }
+  ]
+}

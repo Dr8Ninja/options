@@ -1,0 +1,103 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "C01",
+      "title": "Contract and operations examination",
+      "original_brief": "compare an equity option, cash-settled index option, futures option and selected local-market contract. Process a split, special dividend, early assignment and holiday-adjusted expiry. Produce positions and dated cash flows.",
+      "project_ids": [
+        "PR01"
+      ],
+      "assessment_policy": "POL-01",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 339,
+      "status": "preserved_and_integrated"
+    },
+    {
+      "id": "C02",
+      "title": "Pricing and risk notebook",
+      "original_brief": "derive parity and binomial valuation; implement BSM and an American model; extract IV; calculate primary/higher Greeks; compare analytic and numerical results; flag invalid inputs.",
+      "project_ids": [
+        "PR02",
+        "PR03",
+        "PR05",
+        "PR07"
+      ],
+      "assessment_policy": "POL-01",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 340,
+      "status": "preserved_and_integrated"
+    },
+    {
+      "id": "C03",
+      "title": "Volatility research report",
+      "original_brief": "estimate realized variance, forecast it, construct a clean surface, isolate an event where feasible and distinguish pricing probabilities from physical forecasts. Report uncertainty.",
+      "project_ids": [
+        "PR04",
+        "PR06",
+        "PR09",
+        "PR10"
+      ],
+      "assessment_policy": "POL-01",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 341,
+      "status": "preserved_and_integrated"
+    },
+    {
+      "id": "C04",
+      "title": "Strategy laboratory",
+      "original_brief": "analyze one directional, one short-volatility, one long-volatility, one time-spread and one synthetic structure using the full dossier. Compare with simpler alternatives.",
+      "project_ids": [
+        "PR01",
+        "PR08"
+      ],
+      "assessment_policy": "POL-01",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 342,
+      "status": "preserved_and_integrated"
+    },
+    {
+      "id": "C05",
+      "title": "Portfolio stress and funding report",
+      "original_brief": "aggregate Greeks and factors, perform full revaluation, shock liquidity and margin, construct a cash ladder and identify a path to failure.",
+      "project_ids": [
+        "PR07",
+        "PR11"
+      ],
+      "assessment_policy": "POL-01",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 343,
+      "status": "preserved_and_integrated"
+    },
+    {
+      "id": "C06",
+      "title": "Research falsification project",
+      "original_brief": "predefine a testable edge, build point-in-time data, model fills and lifecycle cash flows, preserve a holdout, disclose every tried variant, and explain why the idea should be adopted or rejected.",
+      "project_ids": [
+        "PR08",
+        "PR09",
+        "PR10",
+        "PR11",
+        "PR12"
+      ],
+      "assessment_policy": "POL-01",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 344,
+      "status": "preserved_and_integrated"
+    },
+    {
+      "id": "C07",
+      "title": "Simulated trading desk",
+      "original_brief": "run a written mandate with daily reconciliation, risk reporting, journal review, operational incident drills and a final independent-style challenge. A losing but correctly evaluated strategy may be a successful research project if the appropriate decision is to reject it.",
+      "project_ids": [
+        "PR08",
+        "PR12"
+      ],
+      "assessment_policy": "POL-01",
+      "source": "sources/roadmaps/options-learning-roadmap.md",
+      "line": 345,
+      "status": "preserved_and_integrated"
+    }
+  ]
+}

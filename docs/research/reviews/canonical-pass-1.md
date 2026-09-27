@@ -1,0 +1,17 @@
+# Canonical pass 1 — disciplinary completeness and evidence
+
+Performed 22 September 2026 on the resulting canonical design and exports, after build_canonical/build_supplement. Lenses: derivatives/mathematics professor, quantitative trader, volatility trader and researcher. This is one agent's structured review, not four independent expert reviews. The review inspected the module designs, 15-area checklist, mathematical examples, resource scopes, original mappings and source conflicts.
+
+| Finding | Severity | Applied disposition and recheck |
+|---|---|---|
+| American-calibration resource draft had an inaccurate short title and omitted Barbara Wohlmuth | Material bibliographic | Reopened arXiv/PDF cover, corrected RX04 title and all six authors; retained primary-preprint status and numerical-study limitations. |
+| OIC's short BSM page does not supply the full formula or derivation implied by a broad assignment | Material evidence | Restricted RX03 scope; added precise MIT replication/PDE slides and a separately logged MIT closed-form source. Benchmarks are original calculations checked against a discrete replication sequence. |
+| Cboe summary and downloaded methodology lookalikes could be mistaken for a full report/exact VIX review | Material evidence | R32 now says executive summary only; no headline percentages adopted. VIXMO/single-stock methodology excluded as a substitute; RX11 current method chain remains blocked. |
+| De-Americanization findings might be generalized to discrete dividends | Material technical | CL06 and M37.P01 explicitly state studied models/settings, no universal bound, and dividends left for future work. |
+| Higher-Greek names/signs and covariance/variance units needed a unified contract | Material teaching | ADVANCED_TOPICS defines derivatives, time/vol/rate units, mixed terms and finite-difference/full-revaluation checks. PR03/PR11 references separately checked. |
+| Canonical redesign did not expose every original metadata field in the export itself | Material reconciliation | Added source_items lossless snapshots, retaining advanced extensions and original annotations alongside canonical fields; validator checks snapshot equality and exact topic scopes. |
+| Proposed module readings sometimes inherited a selected-reading label and other resources' section text | Material evidence | Final recheck split every assignment into its resource-specific scope. All module proposals are candidates until section review; only separately reviewed bounded assignments retain selected-reading status and claim references. Validator rejects a selected reading without evidence references. |
+
+Recheck evidence: `check_research_examples.py` passed BSM call/put/parity/primary-Greek values and a 100/400-step binomial convergence comparison, plus payoff, expectancy, variance and covariance fixtures. This is not verification of every project implementation. `validate_canonical.py` verifies all original topic scopes, original relationship counts and source-item snapshots.
+
+Remaining bounded exclusions: full advanced textbook chapters, Heston/SABR implementation verification, exact current VIX methodology, detailed 2020 case evidence and all fully authored reviewed lessons. Their scope is retained, but none is publication ready. Adding topic names would not resolve those exclusions; P17 must supply the actual derivation/example/exercise/source review.

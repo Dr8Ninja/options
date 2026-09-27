@@ -1,0 +1,1575 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "A-M01-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M01",
+      "topic_ids": [],
+      "reading_scope": "II",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M01-R16",
+      "resource_id": "R16",
+      "competency_id": "C-M01",
+      "topic_ids": [],
+      "reading_scope": "present value lectures",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M02-R16",
+      "resource_id": "R16",
+      "competency_id": "C-M02",
+      "topic_ids": [],
+      "reading_scope": "fixed-income and equity valuation lectures",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M03-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M03",
+      "topic_ids": [],
+      "reading_scope": "III and VIII",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M03-R04",
+      "resource_id": "R04",
+      "competency_id": "C-M03",
+      "topic_ids": [],
+      "reading_scope": "exercise and assignment",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M04-R30",
+      "resource_id": "R30",
+      "competency_id": "C-M04",
+      "topic_ids": [],
+      "reading_scope": "complex order handling, reading pending access",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M05-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M05",
+      "topic_ids": [],
+      "reading_scope": "IX",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M05-R58",
+      "resource_id": "R58",
+      "competency_id": "C-M05",
+      "topic_ids": [],
+      "reading_scope": "dated STT table only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M06-R17",
+      "resource_id": "R17",
+      "competency_id": "C-M06",
+      "topic_ids": [],
+      "reading_scope": "balance sheet, income and cash-flow sections",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M07-R18",
+      "resource_id": "R18",
+      "competency_id": "C-M07",
+      "topic_ids": [],
+      "reading_scope": "real-time periods",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M07-R19",
+      "resource_id": "R19",
+      "competency_id": "C-M07",
+      "topic_ids": [],
+      "reading_scope": "release definitions",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M08-R72",
+      "resource_id": "R72",
+      "competency_id": "C-M08",
+      "topic_ids": [],
+      "reading_scope": "metadata only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M08-R21",
+      "resource_id": "R21",
+      "competency_id": "C-M08",
+      "topic_ids": [],
+      "reading_scope": "covariance sections",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M09-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M09",
+      "topic_ids": [],
+      "reading_scope": "X",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M09-R10",
+      "resource_id": "R10",
+      "competency_id": "C-M09",
+      "topic_ids": [],
+      "reading_scope": "event chapters require licensed copy",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M10-R21",
+      "resource_id": "R21",
+      "competency_id": "C-M10",
+      "topic_ids": [],
+      "reading_scope": "conditional probability and expectation",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M11-R21",
+      "resource_id": "R21",
+      "competency_id": "C-M11",
+      "topic_ids": [],
+      "reading_scope": "confidence intervals and tests",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M11-R23",
+      "resource_id": "R23",
+      "competency_id": "C-M11",
+      "topic_ids": [],
+      "reading_scope": "sections 1–3",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M12-R34",
+      "resource_id": "R34",
+      "competency_id": "C-M12",
+      "topic_ids": [],
+      "reading_scope": "ARCH motivation",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M12-R25",
+      "resource_id": "R25",
+      "competency_id": "C-M12",
+      "topic_ids": [],
+      "reading_scope": "time-series course sections",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M13-R05",
+      "resource_id": "R05",
+      "competency_id": "C-M13",
+      "topic_ids": [],
+      "reading_scope": "19 and 21 TOC-based",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M13-R16",
+      "resource_id": "R16",
+      "competency_id": "C-M13",
+      "topic_ids": [],
+      "reading_scope": "mathematical appendix",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M14-R24",
+      "resource_id": "R24",
+      "competency_id": "C-M14",
+      "topic_ids": [],
+      "reading_scope": "Itô and risk-neutral valuation, exact pages pending licensed access",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M15-R29",
+      "resource_id": "R29",
+      "competency_id": "C-M15",
+      "topic_ids": [],
+      "reading_scope": "methods and sample",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M15-R27",
+      "resource_id": "R27",
+      "competency_id": "C-M15",
+      "topic_ids": [],
+      "reading_scope": "metadata only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M16-R28",
+      "resource_id": "R28",
+      "competency_id": "C-M16",
+      "topic_ids": [],
+      "reading_scope": "reference only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M16-R29",
+      "resource_id": "R29",
+      "competency_id": "C-M16",
+      "topic_ids": [],
+      "reading_scope": "conditional distribution methods",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M17-R29",
+      "resource_id": "R29",
+      "competency_id": "C-M17",
+      "topic_ids": [],
+      "reading_scope": "pattern-recognition method",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M18-R54",
+      "resource_id": "R54",
+      "competency_id": "C-M18",
+      "topic_ids": [],
+      "reading_scope": "original-paper data and scope",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M18-R29",
+      "resource_id": "R29",
+      "competency_id": "C-M18",
+      "topic_ids": [],
+      "reading_scope": "critical reading",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M19-R27",
+      "resource_id": "R27",
+      "competency_id": "C-M19",
+      "topic_ids": [],
+      "reading_scope": "indicator reference, full text not reviewed",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M20-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M20",
+      "topic_ids": [],
+      "reading_scope": "II",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M20-R32",
+      "resource_id": "R32",
+      "competency_id": "C-M20",
+      "topic_ids": [],
+      "reading_scope": "exchange empirical discussion with sample limits",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M21-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M21",
+      "topic_ids": [],
+      "reading_scope": "II",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M21-R04",
+      "resource_id": "R04",
+      "competency_id": "C-M21",
+      "topic_ids": [],
+      "reading_scope": "option basics",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M22-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M22",
+      "topic_ids": [],
+      "reading_scope": "VIII and X",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M22-RX01",
+      "resource_id": "RX01",
+      "competency_id": "C-M22",
+      "topic_ids": [],
+      "reading_scope": "full article",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M23-R57",
+      "resource_id": "R57",
+      "competency_id": "C-M23",
+      "topic_ids": [],
+      "reading_scope": "contract directory",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M23-R51",
+      "resource_id": "R51",
+      "competency_id": "C-M23",
+      "topic_ids": [],
+      "reading_scope": "data overview only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M24-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M24",
+      "topic_ids": [],
+      "reading_scope": "X",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M24-RX02",
+      "resource_id": "RX02",
+      "competency_id": "C-M24",
+      "topic_ids": [],
+      "reading_scope": "put-call parity",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M25-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M25",
+      "topic_ids": [],
+      "reading_scope": "X spread risks",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M25-RX02",
+      "resource_id": "RX02",
+      "competency_id": "C-M25",
+      "topic_ids": [],
+      "reading_scope": "synthetics",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M26-R06",
+      "resource_id": "R06",
+      "competency_id": "C-M26",
+      "topic_ids": [],
+      "reading_scope": "strategy reference TOC only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M26-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M26",
+      "topic_ids": [],
+      "reading_scope": "X",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M27-R05",
+      "resource_id": "R05",
+      "competency_id": "C-M27",
+      "topic_ids": [],
+      "reading_scope": "12 TOC-based",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M27-RX01",
+      "resource_id": "RX01",
+      "competency_id": "C-M27",
+      "topic_ids": [],
+      "reading_scope": "assignment",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M28-RX02",
+      "resource_id": "RX02",
+      "competency_id": "C-M28",
+      "topic_ids": [],
+      "reading_scope": "parity",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M28-R05",
+      "resource_id": "R05",
+      "competency_id": "C-M28",
+      "topic_ids": [],
+      "reading_scope": "11",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M29-RX02",
+      "resource_id": "RX02",
+      "competency_id": "C-M29",
+      "topic_ids": [],
+      "reading_scope": "assumptions",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M29-R05",
+      "resource_id": "R05",
+      "competency_id": "C-M29",
+      "topic_ids": [],
+      "reading_scope": "11",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M30-RX03",
+      "resource_id": "RX03",
+      "competency_id": "C-M30",
+      "topic_ids": [],
+      "reading_scope": "BSM assumptions",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M30-R05",
+      "resource_id": "R05",
+      "competency_id": "C-M30",
+      "topic_ids": [],
+      "reading_scope": "13 and 15",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M31-R33",
+      "resource_id": "R33",
+      "competency_id": "C-M31",
+      "topic_ids": [],
+      "reading_scope": "documentation directory",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M31-R05",
+      "resource_id": "R05",
+      "competency_id": "C-M31",
+      "topic_ids": [],
+      "reading_scope": "21",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M31-RX14",
+      "resource_id": "RX14",
+      "competency_id": "C-M31",
+      "topic_ids": [],
+      "reading_scope": "brentq documentation",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M32-R05",
+      "resource_id": "R05",
+      "competency_id": "C-M32",
+      "topic_ids": [],
+      "reading_scope": "19",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M32-RX03",
+      "resource_id": "RX03",
+      "competency_id": "C-M32",
+      "topic_ids": [],
+      "reading_scope": "BSM",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M33-RX05",
+      "resource_id": "RX05",
+      "competency_id": "C-M33",
+      "topic_ids": [],
+      "reading_scope": "Gamma and Shadow Gamma TOC",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M33-R11",
+      "resource_id": "R11",
+      "competency_id": "C-M33",
+      "topic_ids": [],
+      "reading_scope": "metadata only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M34-R12",
+      "resource_id": "R12",
+      "competency_id": "C-M34",
+      "topic_ids": [],
+      "reading_scope": "pp 9–18 continuous-replication assumptions",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M35-R34",
+      "resource_id": "R34",
+      "competency_id": "C-M35",
+      "topic_ids": [],
+      "reading_scope": "ARCH motivation",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M35-RX10",
+      "resource_id": "RX10",
+      "competency_id": "C-M35",
+      "topic_ids": [],
+      "reading_scope": "Bennett volatility chapters",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M36-R20",
+      "resource_id": "R20",
+      "competency_id": "C-M36",
+      "topic_ids": [],
+      "reading_scope": "abstract only, empirical statistics excluded",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M36-R12",
+      "resource_id": "R12",
+      "competency_id": "C-M36",
+      "topic_ids": [],
+      "reading_scope": "replication sections",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M37-R35",
+      "resource_id": "R35",
+      "competency_id": "C-M37",
+      "topic_ids": [],
+      "reading_scope": "sections 2–5",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M37-RX04",
+      "resource_id": "RX04",
+      "competency_id": "C-M37",
+      "topic_ids": [],
+      "reading_scope": "sections 3–4 and conclusion",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M38-R32",
+      "resource_id": "R32",
+      "competency_id": "C-M38",
+      "topic_ids": [],
+      "reading_scope": "sample-limited exchange study",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M38-R68",
+      "resource_id": "R68",
+      "competency_id": "C-M38",
+      "topic_ids": [],
+      "reading_scope": "pp 29–30",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M39-R36",
+      "resource_id": "R36",
+      "competency_id": "C-M39",
+      "topic_ids": [],
+      "reading_scope": "FAQ",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M39-RX11",
+      "resource_id": "RX11",
+      "competency_id": "C-M39",
+      "topic_ids": [],
+      "reading_scope": "VIX white paper pending retrieval",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M40-R39",
+      "resource_id": "R39",
+      "competency_id": "C-M40",
+      "topic_ids": [],
+      "reading_scope": "full text access pending",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M40-R40",
+      "resource_id": "R40",
+      "competency_id": "C-M40",
+      "topic_ids": [],
+      "reading_scope": "full text access pending",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M40-R35",
+      "resource_id": "R35",
+      "competency_id": "C-M40",
+      "topic_ids": [],
+      "reading_scope": "surface baseline",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M41-R12",
+      "resource_id": "R12",
+      "competency_id": "C-M41",
+      "topic_ids": [],
+      "reading_scope": "variance replication",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M41-RX10",
+      "resource_id": "RX10",
+      "competency_id": "C-M41",
+      "topic_ids": [],
+      "reading_scope": "correlation chapter",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M42-R62",
+      "resource_id": "R62",
+      "competency_id": "C-M42",
+      "topic_ids": [],
+      "reading_scope": "basics",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M42-R42",
+      "resource_id": "R42",
+      "competency_id": "C-M42",
+      "topic_ids": [],
+      "reading_scope": "WTI interim scope",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M43-R05",
+      "resource_id": "R05",
+      "competency_id": "C-M43",
+      "topic_ids": [],
+      "reading_scope": "17/18 TOC",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M43-R03",
+      "resource_id": "R03",
+      "competency_id": "C-M43",
+      "topic_ids": [],
+      "reading_scope": "course catalog",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M44-RX08",
+      "resource_id": "RX08",
+      "competency_id": "C-M44",
+      "topic_ids": [],
+      "reading_scope": "Haug chapters 4–5/8 TOC",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M44-RX05",
+      "resource_id": "RX05",
+      "competency_id": "C-M44",
+      "topic_ids": [],
+      "reading_scope": "binary risks TOC",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M45-R73",
+      "resource_id": "R73",
+      "competency_id": "C-M45",
+      "topic_ids": [],
+      "reading_scope": "original information-rate paper metadata",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M45-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M45",
+      "topic_ids": [],
+      "reading_scope": "X",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M46-R44",
+      "resource_id": "R44",
+      "competency_id": "C-M46",
+      "topic_ids": [],
+      "reading_scope": "publisher catalog metadata only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M46-R45",
+      "resource_id": "R45",
+      "competency_id": "C-M46",
+      "topic_ids": [],
+      "reading_scope": "scope and supersession",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M47-R09",
+      "resource_id": "R09",
+      "competency_id": "C-M47",
+      "topic_ids": [],
+      "reading_scope": "framework formula",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M47-R61",
+      "resource_id": "R61",
+      "competency_id": "C-M47",
+      "topic_ids": [],
+      "reading_scope": "(g)",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M48-R72",
+      "resource_id": "R72",
+      "competency_id": "C-M48",
+      "topic_ids": [],
+      "reading_scope": "metadata only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M48-R05",
+      "resource_id": "R05",
+      "competency_id": "C-M48",
+      "topic_ids": [],
+      "reading_scope": "19/22",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M49-R48",
+      "resource_id": "R48",
+      "competency_id": "C-M49",
+      "topic_ids": [],
+      "reading_scope": "BCP overview",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M49-R45",
+      "resource_id": "R45",
+      "competency_id": "C-M49",
+      "topic_ids": [],
+      "reading_scope": "bank guidance boundary",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M49-R47",
+      "resource_id": "R47",
+      "competency_id": "C-M49",
+      "topic_ids": [],
+      "reading_scope": "Knight case",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M50-R07",
+      "resource_id": "R07",
+      "competency_id": "C-M50",
+      "topic_ids": [],
+      "reading_scope": "metadata only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M50-R08",
+      "resource_id": "R08",
+      "competency_id": "C-M50",
+      "topic_ids": [],
+      "reading_scope": "metadata only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M50-R30",
+      "resource_id": "R30",
+      "competency_id": "C-M50",
+      "topic_ids": [],
+      "reading_scope": "venue-specific documentation",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M51-R49",
+      "resource_id": "R49",
+      "competency_id": "C-M51",
+      "topic_ids": [],
+      "reading_scope": "author paper listing",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M51-R32",
+      "resource_id": "R32",
+      "competency_id": "C-M51",
+      "topic_ids": [],
+      "reading_scope": "positioning study caveats",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M52-R30",
+      "resource_id": "R30",
+      "competency_id": "C-M52",
+      "topic_ids": [],
+      "reading_scope": "complex order mechanics",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M52-R50",
+      "resource_id": "R50",
+      "competency_id": "C-M52",
+      "topic_ids": [],
+      "reading_scope": "abstract only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M53-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M53",
+      "topic_ids": [],
+      "reading_scope": "X",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M53-RX01",
+      "resource_id": "RX01",
+      "competency_id": "C-M53",
+      "topic_ids": [],
+      "reading_scope": "exercise risk",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M54-R18",
+      "resource_id": "R18",
+      "competency_id": "C-M54",
+      "topic_ids": [],
+      "reading_scope": "real-time periods",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M54-R51",
+      "resource_id": "R51",
+      "competency_id": "C-M54",
+      "topic_ids": [],
+      "reading_scope": "vendor scope",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M54-R55",
+      "resource_id": "R55",
+      "competency_id": "C-M54",
+      "topic_ids": [],
+      "reading_scope": "time-series guide",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M55-R23",
+      "resource_id": "R23",
+      "competency_id": "C-M55",
+      "topic_ids": [],
+      "reading_scope": "sections 1–3",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M55-R53",
+      "resource_id": "R53",
+      "competency_id": "C-M55",
+      "topic_ids": [],
+      "reading_scope": "abstract/definition scope",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M56-R23",
+      "resource_id": "R23",
+      "competency_id": "C-M56",
+      "topic_ids": [],
+      "reading_scope": "selection risk",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M56-R51",
+      "resource_id": "R51",
+      "competency_id": "C-M56",
+      "topic_ids": [],
+      "reading_scope": "data overview",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M56-R58",
+      "resource_id": "R58",
+      "competency_id": "C-M56",
+      "topic_ids": [],
+      "reading_scope": "effective-dated costs",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M57-RX15",
+      "resource_id": "RX15",
+      "competency_id": "C-M57",
+      "topic_ids": [],
+      "reading_scope": "common pitfalls 12.1–12.2",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M58-R52",
+      "resource_id": "R52",
+      "competency_id": "C-M58",
+      "topic_ids": [],
+      "reading_scope": "sections 3–8",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M58-R55",
+      "resource_id": "R55",
+      "competency_id": "C-M58",
+      "topic_ids": [],
+      "reading_scope": "IO and time series",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M58-R33",
+      "resource_id": "R33",
+      "competency_id": "C-M58",
+      "topic_ids": [],
+      "reading_scope": "reference directory",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M59-R48",
+      "resource_id": "R48",
+      "competency_id": "C-M59",
+      "topic_ids": [],
+      "reading_scope": "contingency planning",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M59-R23",
+      "resource_id": "R23",
+      "competency_id": "C-M59",
+      "topic_ids": [],
+      "reading_scope": "research validity",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M60-R65",
+      "resource_id": "R65",
+      "competency_id": "C-M60",
+      "topic_ids": [],
+      "reading_scope": "lecture transcript",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M60-R64",
+      "resource_id": "R64",
+      "competency_id": "C-M60",
+      "topic_ids": [],
+      "reading_scope": "sample-limited empirical study",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M61-R53",
+      "resource_id": "R53",
+      "competency_id": "C-M61",
+      "topic_ids": [],
+      "reading_scope": "selection-adjusted performance",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M61-R66",
+      "resource_id": "R66",
+      "competency_id": "C-M61",
+      "topic_ids": [],
+      "reading_scope": "metadata only",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M62-R01",
+      "resource_id": "R01",
+      "competency_id": "C-M62",
+      "topic_ids": [],
+      "reading_scope": "IV/VIII/IX",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M62-R61",
+      "resource_id": "R61",
+      "competency_id": "C-M62",
+      "topic_ids": [],
+      "reading_scope": "(g)",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M63-R57",
+      "resource_id": "R57",
+      "competency_id": "C-M63",
+      "topic_ids": [],
+      "reading_scope": "FAOP68747/70616 historical transitions, current master verification pending",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M63-R58",
+      "resource_id": "R58",
+      "competency_id": "C-M63",
+      "topic_ids": [],
+      "reading_scope": "dated STT table and internal wording conflict; consult RULE-IN records",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M64-R43",
+      "resource_id": "R43",
+      "competency_id": "C-M64",
+      "topic_ids": [],
+      "reading_scope": "Article 41",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M64-R46",
+      "resource_id": "R46",
+      "competency_id": "C-M64",
+      "topic_ids": [],
+      "reading_scope": "Prisma",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M64-R63",
+      "resource_id": "R63",
+      "competency_id": "C-M64",
+      "topic_ids": [],
+      "reading_scope": "spec page",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M64-R69",
+      "resource_id": "R69",
+      "competency_id": "C-M64",
+      "topic_ids": [],
+      "reading_scope": "scope",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M65-R23",
+      "resource_id": "R23",
+      "competency_id": "C-M65",
+      "topic_ids": [],
+      "reading_scope": "selection validity",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M65-R68",
+      "resource_id": "R68",
+      "competency_id": "C-M65",
+      "topic_ids": [],
+      "reading_scope": "gamma-squeeze finding",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M66-R67",
+      "resource_id": "R67",
+      "competency_id": "C-M66",
+      "topic_ids": [],
+      "reading_scope": "LTCM testimony",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M66-R68",
+      "resource_id": "R68",
+      "competency_id": "C-M66",
+      "topic_ids": [],
+      "reading_scope": "pp 24–34",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M66-RX16",
+      "resource_id": "RX16",
+      "competency_id": "C-M66",
+      "topic_ids": [],
+      "reading_scope": "1987",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M66-RX17",
+      "resource_id": "RX17",
+      "competency_id": "C-M66",
+      "topic_ids": [],
+      "reading_scope": "2018",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M67-R45",
+      "resource_id": "R45",
+      "competency_id": "C-M67",
+      "topic_ids": [],
+      "reading_scope": "governance and continuity; canonical capstone C07",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-M67-R48",
+      "resource_id": "R48",
+      "competency_id": "C-M67",
+      "topic_ids": [],
+      "reading_scope": "governance and continuity; canonical capstone C07",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-B01-R01",
+      "resource_id": "R01",
+      "competency_id": "C-B01",
+      "topic_ids": [],
+      "reading_scope": "II/VIII/X",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-B02-R16",
+      "resource_id": "R16",
+      "competency_id": "C-B02",
+      "topic_ids": [],
+      "reading_scope": "mathematical preparation",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-B02-RX12",
+      "resource_id": "RX12",
+      "competency_id": "C-B02",
+      "topic_ids": [],
+      "reading_scope": "derivatives",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-B03-R52",
+      "resource_id": "R52",
+      "competency_id": "C-B03",
+      "topic_ids": [],
+      "reading_scope": "sections3–8",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-B03-RX13",
+      "resource_id": "RX13",
+      "competency_id": "C-B03",
+      "topic_ids": [],
+      "reading_scope": "NumPy arrays",
+      "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+      "status": "assignment_candidate",
+      "evidence_claim_ids": []
+    },
+    {
+      "id": "A-EXACT-01",
+      "resource_id": "RX01",
+      "competency_id": "C-M22",
+      "topic_ids": [
+        "M22.01"
+      ],
+      "reading_scope": "Full exercising article; holder/member/broker layers",
+      "purpose": "Bounded evidence/teaching assignment; not inheritance.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL01"
+      ]
+    },
+    {
+      "id": "A-EXACT-02",
+      "resource_id": "RX02",
+      "competency_id": "C-M28",
+      "topic_ids": [
+        "M28.01"
+      ],
+      "reading_scope": "Parity assumptions and synthetic replication",
+      "purpose": "Bounded evidence/teaching assignment; not inheritance.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL02"
+      ]
+    },
+    {
+      "id": "A-EXACT-03",
+      "resource_id": "R35",
+      "competency_id": "C-M37",
+      "topic_ids": [
+        "M37.P01"
+      ],
+      "reading_scope": "Sections2–3: European totalvariance anddensity conditions, not Americanquoteprocessing",
+      "purpose": "Bounded evidence/teaching assignment; not inheritance.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL05"
+      ]
+    },
+    {
+      "id": "A-EXACT-04",
+      "resource_id": "RX04",
+      "competency_id": "C-M37",
+      "topic_ids": [
+        "M37.P01"
+      ],
+      "reading_scope": "Benchmarkscope andconclusion; dividendsnotstudied",
+      "purpose": "Bounded evidence/teaching assignment; not inheritance.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL06"
+      ]
+    },
+    {
+      "id": "A-EXACT-05",
+      "resource_id": "R56",
+      "competency_id": "C-M66",
+      "topic_ids": [
+        "M66.P01"
+      ],
+      "reading_scope": "Table5 pp17–19 versus prose; quarantine numericalheadlines",
+      "purpose": "Bounded evidence/teaching assignment; not inheritance.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL10"
+      ]
+    },
+    {
+      "id": "A-EXACT-06",
+      "resource_id": "RX15",
+      "competency_id": "C-M57",
+      "topic_ids": [
+        "M57.01"
+      ],
+      "reading_scope": "Commonpitfalls12.2 leakage",
+      "purpose": "Bounded evidence/teaching assignment; not inheritance.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL12"
+      ]
+    },
+    {
+      "id": "A-FREE-BSM",
+      "resource_id": "RX26",
+      "competency_id": "C-M30",
+      "topic_ids": [
+        "M30.01"
+      ],
+      "reading_scope": "Class20 pp5–12: parity and closed-form formula; model assumptions explicit",
+      "purpose": "Free numerical-formula reference",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL02",
+        "CL03"
+      ]
+    },
+    {
+      "id": "A-FREE-M21",
+      "resource_id": "RX24",
+      "competency_id": "C-M21",
+      "topic_ids": [
+        "M21.01"
+      ],
+      "reading_scope": "Slides3–9: rights and payoff tables",
+      "purpose": "Free exact-section alternative for this competency, not the entire advanced textbook.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL02",
+        "CL03"
+      ]
+    },
+    {
+      "id": "A-FREE-M24",
+      "resource_id": "RX24",
+      "competency_id": "C-M24",
+      "topic_ids": [
+        "M24.01"
+      ],
+      "reading_scope": "Slides8–13: signed legs and strategy examples",
+      "purpose": "Free exact-section alternative for this competency, not the entire advanced textbook.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL02",
+        "CL03"
+      ]
+    },
+    {
+      "id": "A-FREE-M29",
+      "resource_id": "RX24",
+      "competency_id": "C-M29",
+      "topic_ids": [
+        "M29.01"
+      ],
+      "reading_scope": "Slides16–20: one-period replication and no-arbitrage",
+      "purpose": "Free exact-section alternative for this competency, not the entire advanced textbook.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL02",
+        "CL03"
+      ]
+    },
+    {
+      "id": "A-FREE-M30",
+      "resource_id": "RX24",
+      "competency_id": "C-M30",
+      "topic_ids": [
+        "M30.01"
+      ],
+      "reading_scope": "Slides16–21: binomial replication and BSM PDE",
+      "purpose": "Free exact-section alternative for this competency, not the entire advanced textbook.",
+      "status": "selected_reading",
+      "evidence_claim_ids": [
+        "CL02",
+        "CL03"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "module_id": {
+            "type": "string"
+          },
+          "competency_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "type": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "reference_behavior": {
+            "type": "string"
+          },
+          "data": {
+            "type": "string"
+          },
+          "deliverable": {
+            "type": "string"
+          },
+          "rubric": {
+            "type": "object",
+            "properties": {
+              "correctness": {
+                "type": "integer"
+              },
+              "units_and_assumptions": {
+                "type": "integer"
+              },
+              "failure_analysis": {
+                "type": "integer"
+              },
+              "communication": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "correctness",
+              "units_and_assumptions",
+              "failure_analysis",
+              "communication"
+            ],
+            "additionalProperties": false
+          },
+          "pass_score": {
+            "type": "integer"
+          },
+          "critical_errors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tolerance": {
+            "type": "string"
+          },
+          "fresh_variant": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "noncoding_route": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "module_id",
+          "competency_ids",
+          "type",
+          "prompt",
+          "reference_behavior",
+          "data",
+          "deliverable",
+          "rubric",
+          "pass_score",
+          "critical_errors",
+          "tolerance",
+          "fresh_variant",
+          "status",
+          "noncoding_route"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 exercises interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

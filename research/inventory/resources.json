@@ -1,0 +1,1361 @@
+[
+  {
+    "id": "R01",
+    "title": "OCC — Characteristics and Risks of Standardized Options",
+    "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+    "level": "Beginner–Advanced",
+    "kind": "Exchange/clearing documentation",
+    "why": "The contract-risk baseline for listed U.S. options: exercise, assignment, settlement and product risks. Read alongside actual product specifications.",
+    "access": "Official current-document landing page checked; it identifies the June 2024 ODD. Recheck for supplements before use.",
+    "used_in_modules": [
+      "M01",
+      "M03",
+      "M05",
+      "M09",
+      "M21",
+      "M22",
+      "M23",
+      "M24",
+      "M25",
+      "M26",
+      "M28",
+      "M45",
+      "M53",
+      "M62",
+      "M65"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/0",
+      "master_line": 4142
+    }
+  },
+  {
+    "id": "R02",
+    "title": "Cboe — Options Institute",
+    "url": "https://www.cboe.com/optionsinstitute",
+    "level": "Beginner–Advanced",
+    "kind": "Practitioner courses",
+    "why": "A structured bridge from contract vocabulary to index options, multi-leg positions and risk. Exchange instruction is useful for mechanics; trade examples do not establish an edge.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M21",
+      "M23",
+      "M24",
+      "M25",
+      "M26",
+      "M27",
+      "M38",
+      "M51"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/1",
+      "master_line": 4150
+    }
+  },
+  {
+    "id": "R03",
+    "title": "CME Institute — All About Options and course catalog",
+    "url": "https://www.cmegroup.com/education/courses/curriculum-all-about-options",
+    "level": "Beginner–Advanced",
+    "kind": "Exchange courses",
+    "why": "Adds futures-option conventions and multiple asset classes, preventing stock-option assumptions from being applied universally.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M02",
+      "M21",
+      "M39",
+      "M42",
+      "M43"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/2",
+      "master_line": 4158
+    }
+  },
+  {
+    "id": "R04",
+    "title": "FINRA — Options",
+    "url": "https://www.finra.org/investors/investing/investment-products/options",
+    "level": "Beginner–Intermediate",
+    "kind": "Regulatory education",
+    "why": "Clear operational coverage of approval, assignment, dividends, expiration and margin. Use contract and broker documents for exact procedures.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M03",
+      "M04",
+      "M05",
+      "M21",
+      "M22",
+      "M23",
+      "M62",
+      "M65"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/3",
+      "master_line": 4166
+    }
+  },
+  {
+    "id": "R05",
+    "title": "John C. Hull — Options, Futures, and Other Derivatives",
+    "url": "https://www.pearson.com/en-us/subject-catalog/p/options-futures-and-other-derivatives/P200000005938/9780136939979",
+    "level": "Intermediate–Quantitative",
+    "kind": "Academic textbook",
+    "why": "The broad derivatives spine: carry, replication, pricing, risk and cross-asset products. Work problems and derive results; supplement institutional details with current rules.",
+    "access": "Publisher page and contents checked; 11th-edition page, not a claim that this is the newest edition.",
+    "used_in_modules": [
+      "M01",
+      "M02",
+      "M10",
+      "M13",
+      "M14",
+      "M28",
+      "M29",
+      "M30",
+      "M32",
+      "M33",
+      "M34",
+      "M37",
+      "M42",
+      "M43",
+      "M44"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/4",
+      "master_line": 4174
+    }
+  },
+  {
+    "id": "R06",
+    "title": "Sheldon Natenberg — Option Volatility & Pricing, 2nd edition",
+    "url": "https://www.mheducation.com/highered/mhp/product/option-volatility-pricing-advanced-trading-strategies-techniques-2nd-edition.html",
+    "level": "Intermediate–Advanced",
+    "kind": "Practitioner textbook",
+    "why": "Connects theoretical values, Greeks, volatility and spreads to trader decisions. Especially useful for risk intuition; not a substitute for modern data or contract rules.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M24",
+      "M25",
+      "M26",
+      "M27",
+      "M28",
+      "M30",
+      "M32",
+      "M33",
+      "M34",
+      "M53"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/5",
+      "master_line": 4182
+    }
+  },
+  {
+    "id": "R07",
+    "title": "Larry Harris — Trading and Exchanges",
+    "url": "https://academic.oup.com/book/52292",
+    "level": "Intermediate–Advanced",
+    "kind": "Practitioner/academic textbook",
+    "why": "Explains participants, order choice, liquidity and execution economics. Its framework remains useful; venue-specific examples require updating.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M03",
+      "M04",
+      "M20",
+      "M50",
+      "M52",
+      "M59",
+      "M61",
+      "M67"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/6",
+      "master_line": 4190
+    }
+  },
+  {
+    "id": "R08",
+    "title": "Foucault, Pagano and Röell — Market Liquidity, 2nd edition",
+    "url": "https://academic.oup.com/book/55158",
+    "level": "Advanced–Quantitative",
+    "kind": "Academic textbook",
+    "why": "Deepens adverse selection, market design, fragmentation, transparency and liquidity measurement; a theoretical counterpart to Harris.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M03",
+      "M04",
+      "M20",
+      "M50",
+      "M52",
+      "M67"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/7",
+      "master_line": 4198
+    }
+  },
+  {
+    "id": "R09",
+    "title": "CME — SPAN 2 Methodology and Functionality",
+    "url": "https://www.cmegroup.com/clearing/risk-management/span-overview/span-2-methodology.html",
+    "level": "Advanced",
+    "kind": "Clearing methodology",
+    "why": "Shows why margin includes historical/stress risk, liquidity and concentration. Useful for funding-risk reasoning; product rollout and broker requirements are separate checks.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M05",
+      "M46",
+      "M47"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/8",
+      "master_line": 4206
+    }
+  },
+  {
+    "id": "R10",
+    "title": "Euan Sinclair — Volatility Trading, 2nd edition",
+    "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781118662724",
+    "level": "Intermediate–Advanced",
+    "kind": "Quantitative practitioner book",
+    "why": "Integrates volatility measurement, hedging, position sizing and evaluation. Treat trade ideas as hypotheses to replicate with current costs and data.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M26",
+      "M27",
+      "M34",
+      "M35",
+      "M36",
+      "M38",
+      "M41",
+      "M45",
+      "M48",
+      "M53",
+      "M59",
+      "M61"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/9",
+      "master_line": 4214
+    }
+  },
+  {
+    "id": "R11",
+    "title": "Jim Gatheral — The Volatility Surface: A Practitioner’s Guide",
+    "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119202073",
+    "level": "Advanced–Quantitative",
+    "kind": "Quantitative practitioner book",
+    "why": "A focused bridge between smiles, local/stochastic volatility and model behavior. Requires calculus and pricing foundations.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M33",
+      "M37",
+      "M40",
+      "M41"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/10",
+      "master_line": 4222
+    }
+  },
+  {
+    "id": "R12",
+    "title": "Demeterfi, Derman, Kamal and Zou — More Than You Ever Wanted to Know About Volatility Swaps",
+    "url": "https://emanuelderman.com/more-than-you-ever-wanted-to-know-about-volatility-swaps-the-journal-of-der/",
+    "level": "Advanced–Quantitative",
+    "kind": "Original practitioner research",
+    "why": "Foundational replication logic for variance/volatility swaps. Explicitly examine continuous-path assumptions, strike truncation and jump limitations.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M34",
+      "M36",
+      "M41"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/11",
+      "master_line": 4230
+    }
+  },
+  {
+    "id": "R16",
+    "title": "MIT OCW — Finance Theory I",
+    "url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
+    "level": "Beginner–Intermediate",
+    "kind": "University course",
+    "why": "Provides present value, fixed income, equities, derivatives and portfolio theory with problem sets. The course is historical; institutional details need current sources.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M01",
+      "M02",
+      "M06",
+      "M07",
+      "M08",
+      "M48"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/12",
+      "master_line": 4238
+    }
+  },
+  {
+    "id": "R17",
+    "title": "SEC — Beginners’ Guide to Financial Statements",
+    "url": "https://www.sec.gov/about/reports-publications/investorpubsbegfinstmtguide",
+    "level": "Beginner",
+    "kind": "Regulatory education",
+    "why": "A free accounting entry point for understanding the underlying business before studying equity-event risk.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M06",
+      "M09"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/13",
+      "master_line": 4246
+    }
+  },
+  {
+    "id": "R18",
+    "title": "St. Louis Fed — ALFRED and real-time periods",
+    "url": "https://fred.stlouisfed.org/docs/api/fred/alfred.html",
+    "level": "Intermediate–Advanced",
+    "kind": "Official data documentation",
+    "why": "Explains historical data vintages, which are essential for macro backtests that use only information available at the time.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M07",
+      "M08",
+      "M09",
+      "M54"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/14",
+      "master_line": 4254
+    }
+  },
+  {
+    "id": "R19",
+    "title": "U.S. Bureau of Labor Statistics — CPI",
+    "url": "https://www.bls.gov/cpi/",
+    "level": "Beginner–Intermediate",
+    "kind": "Official economic release",
+    "why": "Study release definitions, seasonality and revisions at the original source. Extend this habit to employment, GDP, central banks and local statistical agencies.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M07",
+      "M09"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/15",
+      "master_line": 4262
+    }
+  },
+  {
+    "id": "R20",
+    "title": "Bekaert and Hoerova — The VIX, the Variance Premium and Stock Market Volatility",
+    "url": "https://www.nber.org/papers/w18995",
+    "level": "Advanced",
+    "kind": "Academic research",
+    "why": "Separates variance expectations from the variance premium. Useful for challenging the idea that VIX is simply a physical-probability volatility forecast.",
+    "access": "NBER abstract and bibliographic record checked; empirical results are sample/model dependent.",
+    "used_in_modules": [
+      "M08",
+      "M12",
+      "M35",
+      "M36",
+      "M41",
+      "M48",
+      "M65"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/16",
+      "master_line": 4270
+    }
+  },
+  {
+    "id": "R21",
+    "title": "MIT OCW — Introduction to Probability and Statistics, 18.05",
+    "url": "https://ocw.mit.edu/courses/18-05-introduction-to-probability-and-statistics-spring-2022/",
+    "level": "Beginner–Intermediate",
+    "kind": "University course",
+    "why": "Includes distributions, Bayesian inference, testing, regression, exercises and exams. Mathematical prerequisites should be filled before the more demanding sections.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M10",
+      "M11",
+      "M12"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/17",
+      "master_line": 4278
+    }
+  },
+  {
+    "id": "R22",
+    "title": "James, Witten, Hastie, Tibshirani and Taylor — An Introduction to Statistical Learning with Applications in Python",
+    "url": "https://www.statlearning.com/",
+    "level": "Intermediate–Advanced",
+    "kind": "Academic book and course",
+    "why": "Strong supervised/unsupervised learning foundations with practical labs. Financial time dependence requires additional validation controls beyond generic examples.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M11",
+      "M12",
+      "M55",
+      "M57"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/18",
+      "master_line": 4286
+    }
+  },
+  {
+    "id": "R23",
+    "title": "Bailey, Borwein, López de Prado and Zhu — The Probability of Backtest Overfitting",
+    "url": "https://www.davidhbailey.com/dhbpapers/backtest-prob.pdf",
+    "level": "Advanced–Quantitative",
+    "kind": "Original academic research",
+    "why": "Makes strategy-selection risk explicit. Study assumptions and limitations rather than treating a diagnostic as certification that an edge exists.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M11",
+      "M55",
+      "M56",
+      "M61"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/19",
+      "master_line": 4294
+    }
+  },
+  {
+    "id": "R24",
+    "title": "Steven Shreve — Stochastic Calculus for Finance II",
+    "url": "https://link.springer.com/book/9780387401010",
+    "level": "Professional/Quantitative",
+    "kind": "Academic textbook",
+    "why": "The continuous-time mathematical track: Brownian motion, Ito calculus, pricing measures and derivative valuation. Use Volume I first for discrete-time foundations if needed.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M13",
+      "M14",
+      "M29",
+      "M30",
+      "M31",
+      "M43",
+      "M44"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/20",
+      "master_line": 4302
+    }
+  },
+  {
+    "id": "R25",
+    "title": "MIT OCW — Analytics of Finance",
+    "url": "https://ocw.mit.edu/courses/15-450-analytics-of-finance-fall-2010/",
+    "level": "Advanced–Quantitative",
+    "kind": "University course",
+    "why": "Graduate material and exercises connecting stochastic calculus, pricing and financial analytics. A structured complement to textbook derivations.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M13",
+      "M14",
+      "M29",
+      "M30",
+      "M31",
+      "M44"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/21",
+      "master_line": 4310
+    }
+  },
+  {
+    "id": "R26",
+    "title": "IRS — Publication 550",
+    "url": "https://www.irs.gov/publications/p550",
+    "level": "Intermediate–Advanced",
+    "kind": "Official tax documentation",
+    "why": "U.S. options, straddles and Section 1256 treatment. Classification depends on instrument and circumstances; use the tax-year version and applicable professional advice.",
+    "access": "Live page checked; displayed as Publication 550 (2025). No universal tax rate is asserted in this curriculum.",
+    "used_in_modules": [
+      "M05",
+      "M22",
+      "M47",
+      "M62"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/22",
+      "master_line": 4318
+    }
+  },
+  {
+    "id": "R27",
+    "title": "John J. Murphy — Technical Analysis of the Financial Markets",
+    "url": "https://www.penguinrandomhouse.com/books/350647/technical-analysis-of-the-financial-markets-by-john-j-murphy/",
+    "level": "Beginner–Intermediate",
+    "kind": "Practitioner reference",
+    "why": "Broad vocabulary for charts, trends, indicators and intermarket analysis. Use as a taxonomy, paired with empirical testing; popularity and visual examples do not prove profitability.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/23",
+      "master_line": 4326
+    }
+  },
+  {
+    "id": "R28",
+    "title": "Steve Nison — Japanese Candlestick Charting Techniques",
+    "url": "https://www.penguinrandomhouse.com/books/350650/japanese-candlestick-charting-techniques-by-steve-nison/",
+    "level": "Beginner–Intermediate",
+    "kind": "Practitioner reference",
+    "why": "Useful for precise candlestick names and contextual interpretation. Cap memorization effort and test objective definitions against base rates and costs.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M15",
+      "M16"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/24",
+      "master_line": 4334
+    }
+  },
+  {
+    "id": "R29",
+    "title": "Lo, Mamaysky and Wang — Foundations of Technical Analysis",
+    "url": "https://www.nber.org/papers/w7613",
+    "level": "Advanced",
+    "kind": "Academic research",
+    "why": "Shows how subjective pattern claims can become statistical tests. Incremental information in a historical sample is not proof that every pattern yields net tradable profits.",
+    "access": "Abstract and publication metadata checked; paper studies U.S. stock data from 1962–1996, not all instruments or current markets.",
+    "used_in_modules": [
+      "M15",
+      "M16",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "M55",
+      "M65"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/25",
+      "master_line": 4342
+    }
+  },
+  {
+    "id": "R30",
+    "title": "Cboe — Complex Order Handling",
+    "url": "https://www.cboe.com/us/options/trading/complex_orders/",
+    "level": "Intermediate–Advanced",
+    "kind": "Exchange execution documentation",
+    "why": "Grounds package execution in actual order-book and auction mechanisms. Venue details and admissible ratios must be checked for the chosen exchange.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M04",
+      "M52",
+      "M62"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/26",
+      "master_line": 4350
+    }
+  },
+  {
+    "id": "R31",
+    "title": "OCC — Information Memos",
+    "url": "https://infomemo.theocc.com/infomemo/search",
+    "level": "Intermediate–Advanced",
+    "kind": "Clearing operational notices",
+    "why": "The primary lookup for adjusted contracts, expiration handling and corporate actions. Search the exact contract and effective date rather than relying on a generic multiplier.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M22"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/27",
+      "master_line": 4358
+    }
+  },
+  {
+    "id": "R32",
+    "title": "Cboe — 0DTEs Decoded: Positioning, Trends, and Market Impact",
+    "url": "https://www.cboe.com/insights/posts/0-dt-es-decoded-positioning-trends-and-market-impact",
+    "level": "Advanced",
+    "kind": "Exchange empirical analysis",
+    "why": "A data-based counterweight to gross-volume dealer-gamma narratives. The exchange is commercially interested, and its sample and methodology do not settle every market-impact question.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M23",
+      "M38",
+      "M51",
+      "M65"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/28",
+      "master_line": 4366
+    }
+  },
+  {
+    "id": "R33",
+    "title": "QuantLib — Official Documentation",
+    "url": "https://www.quantlib.org/docs.shtml",
+    "level": "Advanced–Quantitative",
+    "kind": "Software documentation",
+    "why": "A reference implementation ecosystem for calendars, curves, instruments and numerical pricing. Validate conventions and outputs rather than treating library results as unquestionable.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M31",
+      "M54",
+      "M56",
+      "M58"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/29",
+      "master_line": 4374
+    }
+  },
+  {
+    "id": "R34",
+    "title": "Robert Engle — Risk and Volatility: Econometric Models and Financial Practice",
+    "url": "https://www.nobelprize.org/uploads/2018/06/engle-lecture.pdf",
+    "level": "Intermediate–Advanced",
+    "kind": "Academic lecture",
+    "why": "An authoritative introduction to conditional volatility modeling and its economic purpose; a starting point for GARCH and volatility forecasting.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M35",
+      "M36"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/30",
+      "master_line": 4382
+    }
+  },
+  {
+    "id": "R35",
+    "title": "Gatheral and Jacquier — Arbitrage-free SVI Volatility Surfaces",
+    "url": "https://arxiv.org/abs/1204.0646",
+    "level": "Professional/Quantitative",
+    "kind": "Original academic research",
+    "why": "Connects surface fitting to static-arbitrage constraints. A good implementation project after no-arbitrage, calibration and numerical methods.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M37",
+      "M40"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/31",
+      "master_line": 4390
+    }
+  },
+  {
+    "id": "R36",
+    "title": "Cboe — VIX FAQ",
+    "url": "https://www.cboe.com/tradable_products/vix/faqs",
+    "level": "Intermediate–Advanced",
+    "kind": "Exchange product documentation",
+    "why": "Important distinctions among index values, tradable derivatives and special settlement. Read the exact product contract specifications too.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M39"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/32",
+      "master_line": 4398
+    }
+  },
+  {
+    "id": "R37",
+    "title": "Cboe — Index Governance and Volatility Methodologies",
+    "url": "https://www.cboe.com/indices/governance/",
+    "level": "Advanced–Quantitative",
+    "kind": "Index methodology",
+    "why": "Primary methodology directory for volatility indices. Use the exact index version, calculation rules, eligibility and change notices.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M39"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/33",
+      "master_line": 4406
+    }
+  },
+  {
+    "id": "R38",
+    "title": "Cboe — Options on VIX Futures",
+    "url": "https://www.cboe.com/tradable-products/vix/options-on-vix-futures",
+    "level": "Advanced",
+    "kind": "Exchange product documentation",
+    "why": "Prevents conflation with cash-settled VIX index options: the product page describes options delivering into VIX futures.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M39"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/34",
+      "master_line": 4414
+    }
+  },
+  {
+    "id": "R39",
+    "title": "Steven Heston — A Closed-Form Solution for Options with Stochastic Volatility",
+    "url": "https://academic.oup.com/rfs/article-abstract/6/2/327/1574747",
+    "level": "Professional/Quantitative",
+    "kind": "Original academic paper",
+    "why": "The 1993 stochastic-volatility model connects spot/variance correlation, smile and characteristic-function pricing. Validate calibration and hedges, not just price fit.",
+    "access": "Publisher abstract and bibliographic record checked; webpage upload date differs from the original 1993 publication.",
+    "used_in_modules": [
+      "M40"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/35",
+      "master_line": 4422
+    }
+  },
+  {
+    "id": "R40",
+    "title": "Hagan, Kumar, Lesniewski and Woodward — Managing Smile Risk",
+    "url": "https://www.stat.ncu.edu.tw/teacher/wenteng/2010%20fall%20seminars/20100929%20%E6%AD%A3%E9%89%89/sabrAll.pdf",
+    "level": "Professional/Quantitative",
+    "kind": "Original paper, university-hosted copy",
+    "why": "Introduces SABR and motivates attention to smile dynamics and hedge stability. Asymptotic formulas have domain and arbitrage limitations.",
+    "access": "Original paper PDF opened; hosted by a university rather than the original publisher.",
+    "used_in_modules": [
+      "M40"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/36",
+      "master_line": 4430
+    }
+  },
+  {
+    "id": "R41",
+    "title": "Gatheral, Jaisson and Rosenbaum — Volatility Is Rough",
+    "url": "https://arxiv.org/abs/1410.3394",
+    "level": "Professional/Quantitative",
+    "kind": "Original academic research",
+    "why": "A research-frontier extension linking volatility regularity, estimation and forecasting. Include competing evidence and microstructure/estimation limitations before adoption.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M40"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/37",
+      "master_line": 4438
+    }
+  },
+  {
+    "id": "R42",
+    "title": "CFTC — Interim Report on WTI Trading Around April 20, 2020",
+    "url": "https://www.cftc.gov/PressRoom/PressReleases/8315-20",
+    "level": "Intermediate–Advanced",
+    "kind": "Regulatory case study",
+    "why": "A concrete case for delivery constraints, negative prices and model assumptions. The report itself does not claim a complete causal account of every price movement.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M42",
+      "M66"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/38",
+      "master_line": 4446
+    }
+  },
+  {
+    "id": "R43",
+    "title": "ESMA — EMIR Article 41: Margin Requirements",
+    "url": "https://www.esma.europa.eu/publications-and-data/interactive-single-rulebook/emir/article-41-margin-requirements-0",
+    "level": "Advanced",
+    "kind": "Regulatory source",
+    "why": "Introduces CCP margin obligations and risk characteristics. Follow linked EMIR provisions and current implementation material for actual compliance scope.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M44",
+      "M47",
+      "M64",
+      "M67"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/39",
+      "master_line": 4454
+    }
+  },
+  {
+    "id": "R44",
+    "title": "McNeil, Frey and Embrechts — Quantitative Risk Management",
+    "url": "https://assets.press.princeton.edu/catalogs/S15Featured.pdf",
+    "level": "Advanced–Quantitative",
+    "kind": "Academic textbook",
+    "why": "Systematic treatment of loss distributions, risk measures, dependence and aggregation. Valuable for understanding why normal-distribution shortcuts fail in option books.",
+    "access": "Publisher catalog entry checked; book landing page blocked to this research tool. Full book was not read in this session.",
+    "used_in_modules": [
+      "M45",
+      "M46",
+      "M48"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/40",
+      "master_line": 4462
+    }
+  },
+  {
+    "id": "R45",
+    "title": "Federal Reserve — SR 26-2: Revised Guidance on Model Risk Management",
+    "url": "https://www.federalreserve.gov/supervisionreg/srletters/SR2602.htm",
+    "level": "Advanced–Professional",
+    "kind": "Supervisory guidance",
+    "why": "A current institutional model-governance reference for development, validation and controls. Adapt the principles to scale; banking guidance is not a retail-trader legal obligation.",
+    "access": "April 17, 2026 official letter checked; it supersedes SR 11-7 and SR 21-8.",
+    "used_in_modules": [
+      "M46",
+      "M49",
+      "M67"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/41",
+      "master_line": 4470
+    }
+  },
+  {
+    "id": "R46",
+    "title": "Eurex — Clearing Prisma",
+    "url": "https://www.eurex.com/ec-en/services/margining/eurex-clearing-prisma",
+    "level": "Advanced",
+    "kind": "Clearing methodology",
+    "why": "A second clearing framework for comparing liquidation groups, portfolio margin and stress concepts with CME methods.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M47",
+      "M64"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/42",
+      "master_line": 4478
+    }
+  },
+  {
+    "id": "R47",
+    "title": "SEC — Knight Capital Market Access Rule Enforcement",
+    "url": "https://www.sec.gov/newsroom/press-releases/2013-222",
+    "level": "Intermediate–Advanced",
+    "kind": "Regulatory case study",
+    "why": "Demonstrates how deployment failures, missing controls and ignored warnings can overwhelm a trading business. Use for incident reconstruction and control design.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M49",
+      "M66"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/43",
+      "master_line": 4486
+    }
+  },
+  {
+    "id": "R48",
+    "title": "FINRA — Business Continuity Planning",
+    "url": "https://www.finra.org/rules-guidance/key-topics/business-continuity-planning",
+    "level": "Intermediate–Advanced",
+    "kind": "Regulatory operational guidance",
+    "why": "Useful for identifying critical systems, counterparties and recovery processes. Distinguish institutional obligations from sensible controls for an individual.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M49"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/44",
+      "master_line": 4494
+    }
+  },
+  {
+    "id": "R49",
+    "title": "Avellaneda and Stoikov — High-frequency Trading in a Limit Order Book",
+    "url": "https://math.nyu.edu/inmemoriam/avellaneda/Papers.html",
+    "level": "Professional/Quantitative",
+    "kind": "Original academic research",
+    "why": "A tractable inventory/quote framework. It supplies intuition, not a ready-made options market-making system; arrival and price assumptions need validation.",
+    "access": "Author’s university publication listing checked; follow its original-paper link.",
+    "used_in_modules": [
+      "M50",
+      "M51"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/45",
+      "master_line": 4502
+    }
+  },
+  {
+    "id": "R50",
+    "title": "Almgren and Chriss — Optimal Execution of Portfolio Transactions",
+    "url": "https://www.risk.net/journal-risk/2161150/optimal-execution-portfolio-transactions",
+    "level": "Advanced–Quantitative",
+    "kind": "Original academic paper",
+    "why": "Formalizes the tradeoff between market impact and price risk. Use as a baseline, then account for discrete option liquidity and package execution.",
+    "access": "Original Journal of Risk publisher record checked; full publisher text may be paywalled.",
+    "used_in_modules": [
+      "M50",
+      "M51",
+      "M52"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/46",
+      "master_line": 4510
+    }
+  },
+  {
+    "id": "R51",
+    "title": "Wharton WRDS — OptionMetrics",
+    "url": "https://wrds-www.wharton.upenn.edu/pages/about/data-vendors/optionmetrics/",
+    "level": "Intermediate–Advanced",
+    "kind": "Research data documentation",
+    "why": "Illustrates the data fields and corporate-action histories professional option research needs. Dataset availability, licensing and vendor modeling assumptions must be evaluated.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M54"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/47",
+      "master_line": 4518
+    }
+  },
+  {
+    "id": "R52",
+    "title": "Python — Official Tutorial",
+    "url": "https://docs.python.org/3/tutorial/",
+    "level": "Beginner–Intermediate",
+    "kind": "Software documentation",
+    "why": "A reliable language foundation before financial scripting. Learn functions, errors, modules and data structures before broker automation.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M54",
+      "M58"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/48",
+      "master_line": 4526
+    }
+  },
+  {
+    "id": "R53",
+    "title": "Bailey and López de Prado — The Deflated Sharpe Ratio",
+    "url": "https://www.davidhbailey.com/dhbpapers/deflated-sharpe.pdf",
+    "level": "Advanced–Quantitative",
+    "kind": "Original research",
+    "why": "Addresses selection bias and non-normal returns in reported performance. Useful alongside transparent trial counts and true holdouts; not an edge guarantee.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M55",
+      "M56",
+      "M57",
+      "M59"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/49",
+      "master_line": 4534
+    }
+  },
+  {
+    "id": "R54",
+    "title": "Moskowitz, Ooi and Pedersen — Time Series Momentum, original paper data",
+    "url": "https://www.aqr.com/Insights/Datasets/Time-Series-Momentum-Original-Paper-Data",
+    "level": "Intermediate–Advanced",
+    "kind": "Author-associated empirical research and data",
+    "why": "A reproducible starting point for trend evidence across futures markets. Does not validate arbitrary technical indicators, option implementations or every future regime.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M57"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/50",
+      "master_line": 4542
+    }
+  },
+  {
+    "id": "R55",
+    "title": "pandas — User Guide",
+    "url": "https://pandas.pydata.org/docs/user_guide/index.html",
+    "level": "Intermediate",
+    "kind": "Software documentation",
+    "why": "Supports correct joins, time series, missing-data handling and reproducible analytics; financial semantics and point-in-time alignment remain the researcher’s responsibility.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M58"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/51",
+      "master_line": 4550
+    }
+  },
+  {
+    "id": "R56",
+    "title": "SEBI — Individual Equity-Derivatives Trading Behaviour, FY25–FY26",
+    "url": "https://www.sebi.gov.in/reports-and-statistics/research/aug-2026/study-trading-behaviour-of-individual-traders-in-the-equity-derivatives-segment-fy25-fy26-_103836.html",
+    "level": "Beginner–Advanced",
+    "kind": "Regulatory empirical research",
+    "why": "Use alongside the FY22–FY24 study to investigate trader outcomes, costs and behavior. Compare study definitions and populations; do not turn an aggregate loss rate into an individual forecast.",
+    "access": "August 20, 2026 publication landing page verified; no numerical findings from this newer report are asserted here.",
+    "used_in_modules": [
+      "M63",
+      "M66"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/52",
+      "master_line": 4558
+    }
+  },
+  {
+    "id": "R57",
+    "title": "NSE — Equity Derivatives Contract Information",
+    "url": "https://www.nseindia.com/static/products-services/equity-derivatives-contract-information",
+    "level": "Beginner–Advanced",
+    "kind": "Exchange contract source",
+    "why": "Primary entry point for specifications, permitted lots, underlying lists and quantity freezes. Capture effective dates and the actual daily contract master.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M63"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/53",
+      "master_line": 4566
+    }
+  },
+  {
+    "id": "R58",
+    "title": "NSE — Securities Transaction Tax",
+    "url": "https://www.nseindia.com/static/products-services/equity-derivatives-securities-transaction-tax",
+    "level": "Intermediate",
+    "kind": "Exchange tax computation guidance",
+    "why": "Shows the need to distinguish transaction type and taxable base. Recheck current rates and law for the trade date rather than retaining a remembered percentage.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M63"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/54",
+      "master_line": 4574
+    }
+  },
+  {
+    "id": "R59",
+    "title": "Income Tax Department — Income-tax Act, 2025",
+    "url": "https://incometaxindia.gov.in/Documents/Act/Income-tax-Act-2025.pdf",
+    "level": "Intermediate–Advanced",
+    "kind": "Primary tax legislation",
+    "why": "Use the applicable law, year, definitions and transition provisions for Indian derivatives. Older section numbers and summaries cannot be assumed to apply unchanged.",
+    "access": "Official legislation located and relevant definitions surfaced; this curriculum does not make a personalized tax determination.",
+    "used_in_modules": [
+      "M63"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/55",
+      "master_line": 4582
+    }
+  },
+  {
+    "id": "R60",
+    "title": "BSE — Equity Derivatives File Formats",
+    "url": "https://www.bseindia.com/downloads1/File_Format_Equity_Derivatives.pdf",
+    "level": "Intermediate",
+    "kind": "Exchange technical documentation",
+    "why": "Useful for interpreting BSE contract/reference data and expiry fields. This technical document is not verification of today’s lot sizes, listed expiries or settlement rules.",
+    "access": "Official file-format documentation located. A current BSE product-specification page could not be verified in this session; retrieve current notices before specializing.",
+    "used_in_modules": [
+      "M63"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/56",
+      "master_line": 4590
+    }
+  },
+  {
+    "id": "R61",
+    "title": "FINRA — Rule 4210: Margin Requirements",
+    "url": "https://www.finra.org/rules-guidance/rulebooks/finra-rules/4210",
+    "level": "Intermediate–Advanced",
+    "kind": "Current rulebook",
+    "why": "Primary rule source for U.S. securities margin. Check amendments, implementation dates, exchange rules and broker overlays instead of repeating historic thresholds.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M62"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/57",
+      "master_line": 4598
+    }
+  },
+  {
+    "id": "R62",
+    "title": "CFTC — Basics of Futures Trading",
+    "url": "https://www.cftc.gov/LearnAndProtect/AdvisoriesAndArticles/FuturesMarketBasics/index.htm",
+    "level": "Beginner–Intermediate",
+    "kind": "Regulatory education",
+    "why": "Establishes futures mechanics and the distinct regulatory setting; follow current contract and intermediary rules for operational decisions.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M62"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/58",
+      "master_line": 4606
+    }
+  },
+  {
+    "id": "R63",
+    "title": "HKEX — Hang Seng Index Options",
+    "url": "https://www.hkex.com.hk/Products/Listed-Derivatives/Equity-Index/Hang-Seng-Index-%28HSI%29/Hang-Seng-Index-Options?sc_lang=en",
+    "level": "Intermediate",
+    "kind": "Exchange product documentation",
+    "why": "A concrete non-U.S. specification exercise: compare multiplier, sessions, exercise and settlement instead of generalizing from another market.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M64"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/59",
+      "master_line": 4614
+    }
+  },
+  {
+    "id": "R64",
+    "title": "Barber and Odean — Trading Is Hazardous to Your Wealth",
+    "url": "https://faculty.haas.berkeley.edu/odean/papers/returns/returns.html",
+    "level": "Beginner–Advanced",
+    "kind": "Original empirical research",
+    "why": "Links trading frequency and net household performance in its studied sample. Use to study costs and behavior; distinguish stock investors from all options traders.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M60",
+      "M61",
+      "M65",
+      "M66"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/60",
+      "master_line": 4622
+    }
+  },
+  {
+    "id": "R65",
+    "title": "Daniel Kahneman — Maps of Bounded Rationality",
+    "url": "https://www.nobelprize.org/prizes/economic-sciences/2002/kahneman/lecture/",
+    "level": "Beginner–Advanced",
+    "kind": "Academic lecture",
+    "why": "Foundational judgment, framing and risky-choice concepts. Behavioral findings motivate decision controls, not a claim that identifying biases creates trading alpha.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M60"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/61",
+      "master_line": 4630
+    }
+  },
+  {
+    "id": "R66",
+    "title": "Brett Steenbarger — Enhancing Trader Performance",
+    "url": "https://onlinelibrary.wiley.com/doi/book/10.1002/9781119196716",
+    "level": "Intermediate–Advanced",
+    "kind": "Practitioner psychology book",
+    "why": "Useful for deliberate practice, review and niche-specific skill development. Separate coaching methods and anecdotes from controlled evidence of improved trading returns.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M60"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/62",
+      "master_line": 4638
+    }
+  },
+  {
+    "id": "R67",
+    "title": "Federal Reserve — Hedge Funds, Leverage and the Lessons of LTCM",
+    "url": "https://www.federalreserve.gov/boarddocs/testimony/1999/19990506.htm",
+    "level": "Intermediate–Advanced",
+    "kind": "Official historical case material",
+    "why": "A primary historical account for excessive leverage, counterparty discipline and funding constraints in relative-value strategies.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M66"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/63",
+      "master_line": 4646
+    }
+  },
+  {
+    "id": "R68",
+    "title": "SEC — Equity and Options Market Structure Conditions in Early 2021",
+    "url": "https://www.sec.gov/files/staff-report-equity-options-market-struction-conditions-early-2021.pdf",
+    "level": "Advanced",
+    "kind": "Regulatory market study",
+    "why": "Use to compare evidence on equity and options flows against single-cause squeeze narratives; separate observations from causal inference.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M66"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/64",
+      "master_line": 4654
+    }
+  },
+  {
+    "id": "R69",
+    "title": "FCA — UK EMIR",
+    "url": "https://www.fca.org.uk/markets/uk-emir",
+    "level": "Advanced",
+    "kind": "Regulatory source",
+    "why": "A current entry point for UK derivatives reporting, clearing and risk-mitigation scope. Contrast with EU rules and actual participant classification.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M64"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/65",
+      "master_line": 4662
+    }
+  },
+  {
+    "id": "R70",
+    "title": "Black and Scholes — The Pricing of Options and Corporate Liabilities",
+    "url": "https://www.journals.uchicago.edu/doi/10.1086/260062",
+    "level": "Advanced–Quantitative",
+    "kind": "Foundational academic paper",
+    "why": "Read after replication and BSM intuition to understand the original no-arbitrage argument and its assumptions, rather than memorizing a formula.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M29",
+      "M30"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/66",
+      "master_line": 4670
+    }
+  },
+  {
+    "id": "R71",
+    "title": "Cox, Ross and Rubinstein — Option Pricing: A Simplified Approach",
+    "url": "https://www.sciencedirect.com/science/article/pii/0304405X79900151",
+    "level": "Intermediate–Advanced",
+    "kind": "Foundational academic paper",
+    "why": "The discrete-time derivation makes replication and American exercise accessible before continuous-time mathematics.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M29",
+      "M30"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/67",
+      "master_line": 4678
+    }
+  },
+  {
+    "id": "R72",
+    "title": "Harry Markowitz — Portfolio Selection",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1540-6261.1952.tb01525.x",
+    "level": "Intermediate–Advanced",
+    "kind": "Foundational academic paper",
+    "why": "The starting point for covariance and portfolio construction. Options require extensions for nonlinear, skewed and tail-sensitive exposures.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M48"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/68",
+      "master_line": 4686
+    }
+  },
+  {
+    "id": "R73",
+    "title": "J. L. Kelly — A New Interpretation of Information Rate",
+    "url": "https://www.nokia.com/bell-labs/publications-and-media/publications/a-new-interpretation-of-information-rate/",
+    "level": "Advanced–Quantitative",
+    "kind": "Foundational research",
+    "why": "Study the growth-optimal objective and assumptions, then examine fractional sizing, uncertainty and drawdown constraints before any application.",
+    "access": "Official page, abstract or publisher contents checked; full text may require separate study.",
+    "used_in_modules": [
+      "M45"
+    ],
+    "verification_status": "inherited_claim_not_reverified",
+    "provenance": {
+      "json_pointer": "/resources/69",
+      "master_line": 4694
+    }
+  }
+]

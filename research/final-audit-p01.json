@@ -1,0 +1,39 @@
+{
+  "result": "PASS",
+  "scope": "All five source-manifest hashes and byte counts; local Markdown link targets. External links and heading anchors are outside this offline check.",
+  "sources": [
+    {
+      "path": "sources/roadmaps/options-learning-roadmap.md",
+      "bytes": 64252,
+      "sha256": "c57fc3b040689e926bd33f0632184a5f4ce53a99cd3e17ea23d0735b1d3162e1",
+      "matches_manifest": true
+    },
+    {
+      "path": "sources/roadmaps/options-master-knowledge-map.md",
+      "bytes": 280774,
+      "sha256": "a7093115bc78ab3d6e8ef8b94a62d524230d2d4480fb4bb097e577a76a30e560",
+      "matches_manifest": true
+    },
+    {
+      "path": "sources/roadmaps/options-curriculum-catalog.json",
+      "bytes": 712027,
+      "sha256": "242dc024740fc2ad5d18a987528b6a60c28f0b3912835e3749594f398d07d976",
+      "matches_manifest": true
+    },
+    {
+      "path": "sources/prompts/01-deep-research-original.md",
+      "bytes": 11518,
+      "sha256": "ea05f0db08fa9736b1eadf86f5bb641a70e8fdbe4dfb7df33aac2efdf9059a60",
+      "matches_manifest": true
+    },
+    {
+      "path": "sources/prompts/02-production-build-original.md",
+      "bytes": 14881,
+      "sha256": "2852d3cd7b7d3f23557b021311ce9a81b669e56926c1032da86d21fa4eaa48eb",
+      "matches_manifest": true
+    }
+  ],
+  "markdown_documents": 113,
+  "local_links_checked": 417,
+  "failures": []
+}

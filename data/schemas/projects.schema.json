@@ -1,0 +1,140 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "prerequisites": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "learning_objective": {
+            "type": "string"
+          },
+          "data_plan": {
+            "type": "string"
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "deliverables": {
+            "type": "string"
+          },
+          "reference_behavior": {
+            "type": "string"
+          },
+          "rubric": {
+            "type": "object",
+            "properties": {
+              "cash_and_numerical_correctness": {
+                "type": "integer"
+              },
+              "assumptions_and_data_lineage": {
+                "type": "integer"
+              },
+              "validation_and_failure_cases": {
+                "type": "integer"
+              },
+              "decision_and_limitations": {
+                "type": "integer"
+              },
+              "reproducibility_accessibility": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "cash_and_numerical_correctness",
+              "assumptions_and_data_lineage",
+              "validation_and_failure_cases",
+              "decision_and_limitations",
+              "reproducibility_accessibility"
+            ],
+            "additionalProperties": false
+          },
+          "pass_score": {
+            "type": "integer"
+          },
+          "critical_failure": {
+            "type": "string"
+          },
+          "failure_cases": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "limitations": {
+            "type": "string"
+          },
+          "study_hours": {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          "estimate_basis": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "real_money_required": {
+            "type": "boolean"
+          },
+          "noncoding_route": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "prerequisites",
+          "learning_objective",
+          "data_plan",
+          "steps",
+          "deliverables",
+          "reference_behavior",
+          "rubric",
+          "pass_score",
+          "critical_failure",
+          "failure_cases",
+          "limitations",
+          "study_hours",
+          "estimate_basis",
+          "status",
+          "real_money_required",
+          "noncoding_route"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 projects interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

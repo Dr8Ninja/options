@@ -1,0 +1,179 @@
+{
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "string"
+    },
+    "as_of": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "circular_identifier": {
+            "type": "string"
+          },
+          "current_operational_publication_eligible": {
+            "type": "boolean"
+          },
+          "effective_from": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "effective_to": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "id": {
+            "type": "string"
+          },
+          "instrument": {
+            "type": "string"
+          },
+          "jurisdiction": {
+            "type": "string"
+          },
+          "publication_date": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "publication_eligible": {
+            "type": "boolean"
+          },
+          "publication_eligible_scope": {
+            "type": "string"
+          },
+          "review_interval_days": {
+            "type": "integer"
+          },
+          "review_owner": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string"
+          },
+          "rule_type": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string"
+          },
+          "superseded_by": {
+            "type": "array",
+            "items": {}
+          },
+          "supersedes": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {}
+              ]
+            }
+          },
+          "uncertainty": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "unknown_date_reason": {
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "sale_rate": {
+                    "type": "number"
+                  },
+                  "exercise_rate": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "sale_rate",
+                  "exercise_rate"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "verification_date": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "circular_identifier",
+          "current_operational_publication_eligible",
+          "effective_from",
+          "effective_to",
+          "id",
+          "instrument",
+          "jurisdiction",
+          "publication_date",
+          "publication_eligible",
+          "publication_eligible_scope",
+          "review_interval_days",
+          "review_owner",
+          "review_status",
+          "rule_type",
+          "scope",
+          "source_url",
+          "superseded_by",
+          "supersedes",
+          "uncertainty",
+          "unit",
+          "unknown_date_reason",
+          "value",
+          "verification_date"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "version",
+    "as_of",
+    "records"
+  ],
+  "additionalProperties": false,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "P01 market_rules interchange",
+  "description": "Structural contract. Cross-entity, source parity and pedagogical invariants are checked by validate_canonical.py."
+}

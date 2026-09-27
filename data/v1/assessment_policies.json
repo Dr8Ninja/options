@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "POL-01",
+      "version": 1,
+      "threshold": 85,
+      "critical_errors": [
+        "contract_units",
+        "cash_obligation",
+        "assignment",
+        "leverage",
+        "loss_bound",
+        "data_leakage",
+        "unlawful_data_use"
+      ],
+      "states": [
+        "viewed",
+        "self_completed",
+        "attempted",
+        "demonstrated_mastery"
+      ],
+      "evidence": "Versioned response, rubric, assessor identity/role, source snapshot, score, critical errors and fresh transfer task. P01 defines fields, not an application learner model.",
+      "retry": "Preserve earlier attempt; targeted remediation; unseen variant. No completion by attendance or investment returns.",
+      "calibration": "85% is an inherited pedagogical default, not psychometrically validated certification. P17 pilots must evaluate item reliability and accessibility."
+    }
+  ]
+}

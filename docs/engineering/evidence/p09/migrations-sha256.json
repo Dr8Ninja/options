@@ -1,0 +1,7 @@
+{
+  "backend/src/main/resources/db/migration/V0016__canonical_import_provenance.sql": "911e1d912d6c41799c8fc1b8e3f7360c3c609b7238f1133d5cf66b161ce87202",
+  "backend/src/main/resources/db/migration/V0017__typed_canonical_rule_values.sql": "bb19edbee9876e8a5a3f8ddc65b4e7ecce70b113747cd9492f263a59500c0f1e",
+  "backend/src/main/resources/db/migration/V0018__notice_date_precision.sql": "e03c870f8691aab5bd902a1ba407336c97eddd4f3f6410e49183522cfdb5f076",
+  "backend/src/main/resources/db/migration/V0019__bounded_deferred_graph_validation.sql": "2e236680ce74083b378a8d65da425863ff3334a9aa39585502ed75e27a925046",
+  "backend/src/main/resources/db/migration/V0020__import_recovery_owner_keys.sql": "5b0fd201c294dcda5d7fed07df03115072eafef16782d966d7a08f311780c0d6"
+}

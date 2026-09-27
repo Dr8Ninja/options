@@ -1,0 +1,566 @@
+{
+  "version": "1.0.0-design",
+  "as_of": "2026-09-22",
+  "records": [
+    {
+      "id": "PR01",
+      "title": "Cash-flow and payoff engine",
+      "prerequisites": [
+        "M01",
+        "M21",
+        "M22",
+        "M24",
+        "M25",
+        "B03"
+      ],
+      "learning_objective": "Reconstruct arbitrary signed vanilla legs including fees and settlement obligations.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Define typed contracts and signed legs",
+        " compute per-unit then multiplier cash",
+        " sum stock and option cash flows",
+        " add assignment branch and manual comparison."
+      ],
+      "deliverables": "Executable functions, accessible payoff table, five independently worked cases and unit tests.",
+      "reference_behavior": "100/105 call spread purchased for 2 pays 0/0/5 at spot 90/100/110; net -2/-2/3 per unit before fees. Long/short legs must cancel exactly absent costs.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Wrong put sign",
+        " double premium",
+        " adjusted multiplier",
+        " expired contract",
+        " one-leg assignment."
+      ],
+      "limitations": "Terminal payoff is not margin, interim risk or guaranteed fill; calendars require dated valuation.",
+      "study_hours": [
+        10,
+        20
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR02",
+      "title": "BSM pricing library",
+      "prerequisites": [
+        "M29",
+        "M30",
+        "M13",
+        "B03"
+      ],
+      "learning_objective": "Implement a conditional European pricing reference with explicit units and edge handling.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Write scalar normal CDF with documented implementation",
+        " handle T=0 and sigma=0",
+        " add carry q",
+        " compare put-call parity and tree convergence",
+        " record model assumptions."
+      ],
+      "deliverables": "Versioned library, derivation note, input contract and tolerance report.",
+      "reference_behavior": "S=K=100, r=.05,q=0,sigma=.2,T=1: C =10.45058357,P =5.57352602; C-P =4.87705755. Absolute tolerance 1e-7 for benchmark.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Negative T/sigma",
+        " percent-as-decimal",
+        " cancellation deep ITM",
+        " dividend mismatch."
+      ],
+      "limitations": "Not American pricing or an actual expected return; discrete dividends need a separate model.",
+      "study_hours": [
+        15,
+        30
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR03",
+      "title": "Greeks visualizer and convention audit",
+      "prerequisites": [
+        "PR02",
+        "M32",
+        "M33"
+      ],
+      "learning_objective": "Connect derivative definitions with finite shocks and portfolio cash exposures.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Define analytic delta/gamma/vega/rho/theta",
+        " select central-difference steps over a convergence grid",
+        " add vanna/vomma/charm and full revaluation",
+        " label axes and textual equivalents."
+      ],
+      "deliverables": "Plots plus tabular alternatives, Greek dictionary, analytic/numerical comparisons and residual surface.",
+      "reference_behavior": "At PR02 benchmark delta .63683065,gamma .01876202,vega 37.52403469 per unit vol,theta -6.41402755 per year at fixed expiry; vega per point .37524035.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Time-sign inversion",
+        " raw-vega mixing",
+        " unstable finite difference",
+        " lambda near zero value."
+      ],
+      "limitations": "Local sensitivities degrade near expiry, jumps and large shocks; surface convention is a scenario assumption.",
+      "study_hours": [
+        12,
+        25
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR04",
+      "title": "Historical realized-volatility analysis",
+      "prerequisites": [
+        "M11",
+        "M12",
+        "M35",
+        "B03",
+        "M54"
+      ],
+      "learning_objective": "Compare estimators against a declared forecast target and sampling scheme.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Generate seeded return paths and optional entitled closes",
+        " document adjustments/calendar",
+        " compute close-to-close, range and intraday estimators where inputs exist",
+        " separate overnight",
+        " bootstrap in blocks",
+        " compare forecasts."
+      ],
+      "deliverables": "Data dictionary, estimator notebook, uncertainty bands and leakage audit.",
+      "reference_behavior": "Daily sample SD .01 annualized sqrt 252 gives .15874508; constant log returns have zero demeaned sample variance when n >1. Zero-mean RV need not be zero.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Insufficient samples",
+        " microstructure noise",
+        " using high-low without valid OHLC",
+        " revised series."
+      ],
+      "limitations": "Synthetic behavior validates code, not empirical forecast edge; annualization is convention.",
+      "study_hours": [
+        12,
+        25
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR05",
+      "title": "Implied-volatility solver",
+      "prerequisites": [
+        "PR02",
+        "M31"
+      ],
+      "learning_objective": "Invert only prices inside model-consistent bounds and expose ill conditioning.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Calculate bounds",
+        " bracket a monotone European price",
+        " use safeguarded root",
+        " report price residual and vega",
+        " reject out-of-bounds and expired ambiguous quotes",
+        " test bid/ask IV interval."
+      ],
+      "deliverables": "Solver, diagnostic statuses and edge-case test report.",
+      "reference_behavior": "PR02 call price recovers .2 within 1e-7; price above discounted spot rejected; zero-vega regions flagged despite small price residual.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Unbracketed Newton",
+        " negative vol",
+        " false precision near expiry",
+        " American quote fed to European engine."
+      ],
+      "limitations": "IV is model/convention dependent, not a forecast; some valid boundary prices imply zero or infinite limiting IV.",
+      "study_hours": [
+        10,
+        20
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR06",
+      "title": "Arbitrage-aware volatility surface",
+      "prerequisites": [
+        "PR05",
+        "M37",
+        "M54"
+      ],
+      "learning_objective": "Construct a price/surface representation with explicit scope of arbitrage checks.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Generate European synthetic strikes/expiries",
+        " synchronized forwards and discounts",
+        " filter bad quotes",
+        " fit constraints",
+        " check strike bounds, monotonicity, convexity and calendar at fixed forward moneyness",
+        " stress tails and missing quotes",
+        " compare American quote treatment."
+      ],
+      "deliverables": "Clean chain, exclusion log, fit residuals within bid/ask where possible, arbitrage audit and extrapolation policy.",
+      "reference_behavior": "Flat 20% surface yields w=.04T; calls decrease and are convex in strike. Positive variance alone must not pass. Finite-grid pass is not a global proof.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Crossed/stale quotes",
+        " negative forward",
+        " nonconvex interpolation",
+        " mismatched dividends",
+        " unexamined American quotes."
+      ],
+      "limitations": "No guarantee outside the grid without analytic conditions; calibration nonuniqueness and quote uncertainty remain.",
+      "study_hours": [
+        25,
+        50
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR07",
+      "title": "Discrete delta-hedging simulator",
+      "prerequisites": [
+        "PR02",
+        "PR03",
+        "M34",
+        "M47"
+      ],
+      "learning_objective": "Reconcile hedge cash and residual error under costs, jumps and funding.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Simulate seeded GBM and jump stress",
+        " initialize option and hedge cash",
+        " accrue funding",
+        " rebalance at fixed times or bands",
+        " settle",
+        " compare frequencies and turnover",
+        " attribute P&L."
+      ],
+      "deliverables": "Path ledger, replication error distribution, cost sensitivity and independent hand path.",
+      "reference_behavior": "With option and hedge positions zero total P&L zero; self-financing cash changes offset share-trade cash before fees. Error generally narrows with finer hedging in ideal continuous model, not guaranteed pathwise or net of costs.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Hindsight delta",
+        " omitted initial premium",
+        " wrong hedge sign",
+        " missing interest",
+        " perfect jump hedge."
+      ],
+      "limitations": "Model-world replication is not empirical volatility arbitrage; parameter and dividend uncertainty matter.",
+      "study_hours": [
+        20,
+        40
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR08",
+      "title": "Lifecycle strategy backtest",
+      "prerequisites": [
+        "PR01",
+        "M54",
+        "M55",
+        "M56"
+      ],
+      "learning_objective": "Test a prespecified strategy under executable costs, corporate actions and capital constraints.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Freeze hypothesis and search log",
+        " chronological train/validation/holdout",
+        " create timestamped universe",
+        " delay orders",
+        " model package/non-fill/partial-fill",
+        " settle assignment",
+        " enforce cash/margin",
+        " compare baseline and cost stress."
+      ],
+      "deliverables": "Immutable configuration, event ledger, trial log, hand-reconciled sample, holdout report and reject/adopt memo.",
+      "reference_behavior": "A round trip across 2.00/2.20 costs .20 per unit before fees; net must fall as independent fees rise with fixed trades. Same input yields same ledger.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Look-ahead",
+        " survivorship",
+        " stale IV",
+        " unlimited funding",
+        " optimistic midpoint fills",
+        " repeated holdout access."
+      ],
+      "limitations": "Simulation cannot prove future profit; absent licensed chains use synthetic and make no claim of historical edge.",
+      "study_hours": [
+        30,
+        60
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR09",
+      "title": "Variance risk premium study",
+      "prerequisites": [
+        "PR04",
+        "PR06",
+        "M36",
+        "M55"
+      ],
+      "learning_objective": "Distinguish priced variance from subsequent realized variance with uncertainty and costs.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Declare horizon and sampling",
+        " construct synthetic Q/P benchmark",
+        " optionally use entitled index options",
+        " align IV variance and future RV",
+        " handle overlap",
+        " block bootstrap",
+        " separate jump regimes",
+        " add replication costs."
+      ],
+      "deliverables": "Variance-unit report, uncertainty, sample coverage, model and selection caveats.",
+      "reference_behavior": "IV.20 versus RV.18 annualized variance difference .0076; do not subtract vol units or call gross spread arbitrage.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Look-aheadRVusedasforecast",
+        " overlap independence",
+        " truncation bias",
+        " omitted tail months."
+      ],
+      "limitations": "Q-minusP difference can compensate risk; index result not universal individual-option edge.",
+      "study_hours": [
+        20,
+        45
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR10",
+      "title": "Earnings and event variance study",
+      "prerequisites": [
+        "PR04",
+        "PR06",
+        "M09",
+        "M38",
+        "M55"
+      ],
+      "learning_objective": "Estimate event contribution without claiming exact identification from two expiries.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Createknown syntheticevent jump",
+        " timestamp announcements",
+        " select pre/post expiries and control baseline",
+        " estimate total variance difference",
+        " stress baseline and skew",
+        " compare actual move with priced distribution."
+      ],
+      "deliverables": "Event calendar, sensitivity range, signed hypothesis and post-event attribution.",
+      "reference_behavior": "Known total variance .003288 minusbackground .002288 gives .001 event variance under the constructed example; negative estimate is diagnostic, not clipped silently.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "After-hours date error",
+        " revised calendar",
+        " overlapping macro event",
+        " option close before announcement."
+      ],
+      "limitations": "Eventvariance separation depends on baseline, changing risk premium andsurface; sparse events limit inference.",
+      "study_hours": [
+        18,
+        35
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR11",
+      "title": "Dispersion and correlation study",
+      "prerequisites": [
+        "PR06",
+        "PR07",
+        "M41",
+        "M48",
+        "M55"
+      ],
+      "learning_objective": "Separate index and constituent variance exposure, weighting and residual risks.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Build synthetic covariance matrix PSD",
+        " price index/constituent variance proxies",
+        " state weights/dividend/settlement conventions",
+        " shock correlation and individual jumps",
+        " model hedging, turnover and funding."
+      ],
+      "deliverables": "Exposure decomposition, hedge ledger, covariance checks and costed thesis.",
+      "reference_behavior": "Two equal 20% assets with rho.5 give index variance .03; rho 1 gives .04. Correlationmatrix must be symmetric with nonnegative eigenvalues within tolerance.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "Using average vol instead of variance",
+        " weights not normalized",
+        " realized/implied correlation mismatch",
+        " corporate-action drift."
+      ],
+      "limitations": "Not a pure correlation trade with vanilla options; skew, jumps, vega and index construction create basis.",
+      "study_hours": [
+        25,
+        50
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    },
+    {
+      "id": "PR12",
+      "title": "Dealer-gamma approximation under uncertainty",
+      "prerequisites": [
+        "PR03",
+        "M23",
+        "M51",
+        "M54"
+      ],
+      "learning_objective": "Show what public OI can and cannot identify about dealer hedges.",
+      "data_plan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "steps": [
+        "Use generated chain/OI",
+        " select pricing and surface assumptions",
+        " compute gamma units",
+        " run opposing sign/customer ownership scenarios",
+        " shift spot/time/vol",
+        " compare gross/net bounds",
+        " document missing OTC and trade flow."
+      ],
+      "deliverables": "Sensitivitydashboard with tables, assumption ledger, range—notpoint claim—and falsification memo.",
+      "reference_behavior": "100 contracts*100multiplier*.02gamma =200 share-delta per 1 spot for uniform sign; cashgamma per 1% move convention adds S²*.01, stated explicitly.",
+      "rubric": {
+        "cash_and_numerical_correctness": 30,
+        "assumptions_and_data_lineage": 20,
+        "validation_and_failure_cases": 25,
+        "decision_and_limitations": 15,
+        "reproducibility_accessibility": 10
+      },
+      "pass_score": 85,
+      "critical_failure": "Units, cash, assignment, leaked evaluation or false entitlement claim blocks mastery regardless of score.",
+      "failure_cases": [
+        "All calls dealer-short",
+        " stale OI",
+        " double counting",
+        " wrong cash gamma",
+        " positioning claimed observable."
+      ],
+      "limitations": "Not an actual dealer book, prediction of price pinning or causal 0DTE impact; sign often unidentified.",
+      "study_hours": [
+        15,
+        30
+      ],
+      "estimate_basis": "Design estimate for implementation, audit and one revision; prior competencies assumed.",
+      "status": "project_specification",
+      "real_money_required": false,
+      "noncoding_route": "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+    }
+  ]
+}

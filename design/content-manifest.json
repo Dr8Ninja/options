@@ -1,0 +1,128 @@
+{
+  "sourceVersion": "1.0.0-design",
+  "collections": {
+    "programs": {
+      "file": "data/v1/programs.json",
+      "fields": [
+        "id",
+        "title",
+        "phase_ids"
+      ],
+      "records": 1
+    },
+    "phases": {
+      "file": "data/v1/phases.json",
+      "fields": [
+        "id",
+        "title",
+        "module_ids"
+      ],
+      "records": 5
+    },
+    "modules": {
+      "file": "data/v1/modules.json",
+      "fields": [
+        "id",
+        "slug",
+        "title",
+        "phase_id",
+        "level",
+        "tags",
+        "prerequisites",
+        "study_hours",
+        "estimate_basis",
+        "why_it_matters",
+        "objectives",
+        "topic_ids",
+        "common_mistakes",
+        "competency_ids"
+      ],
+      "records": 70
+    },
+    "topics": {
+      "file": "data/v1/topics.json",
+      "fields": [
+        "id",
+        "module_id",
+        "title",
+        "difficulty",
+        "priority",
+        "tags",
+        "scope_outline",
+        "readiness",
+        "subtopic_ids"
+      ],
+      "records": 1025
+    },
+    "resources": {
+      "file": "data/v1/resources.json",
+      "fields": [
+        "id",
+        "title",
+        "author_organization",
+        "canonical_url",
+        "resource_type",
+        "difficulty",
+        "cost",
+        "access_limitations",
+        "study_hours",
+        "rationale",
+        "priority",
+        "geography",
+        "publication_date",
+        "last_verification_date",
+        "verification_scope",
+        "rights",
+        "status"
+      ],
+      "records": 96
+    },
+    "learning_paths": {
+      "file": "data/v1/learning_paths.json",
+      "fields": [
+        "id",
+        "title",
+        "audience",
+        "entry_criteria",
+        "module_sequence",
+        "exit_competencies",
+        "study_hours",
+        "estimate_basis"
+      ],
+      "records": 7
+    },
+    "projects": {
+      "file": "data/v1/projects.json",
+      "fields": [
+        "id",
+        "title",
+        "prerequisites",
+        "learning_objective",
+        "data_plan",
+        "steps",
+        "deliverables",
+        "limitations",
+        "study_hours",
+        "noncoding_route"
+      ],
+      "records": 12
+    },
+    "capstones": {
+      "file": "data/v1/capstones.json",
+      "fields": [
+        "id",
+        "title",
+        "original_brief",
+        "project_ids"
+      ],
+      "records": 7
+    }
+  },
+  "synthetic": [
+    "M01.01 reading specimen: original unit/sign explanation and hypothetical 2 \u00d7 50 = 100 arithmetic",
+    "Learner dashboard 18/36, 3/6; all identities and saves imaginary",
+    "Quiz prompt/feedback is an isolated layout sample, not a gate pack",
+    "Admin draft/review/version labels are illustrative",
+    "P02 R1-CASE-01 hypothetical ledger figures reused as layout specimen"
+  ]
+}

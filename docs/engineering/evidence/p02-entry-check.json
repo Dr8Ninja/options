@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-09-23",
+  "command": "python3 scripts/validate_product_contract.py",
+  "result": "PASS",
+  "reported_as_of": "2026-09-22",
+  "requirements": 40,
+  "journeys": 17,
+  "topics": 36,
+  "lesson_dependency_edges": 99,
+  "application_tests_run": false,
+  "files": [
+    {
+      "path": "docs/product/PRODUCT_REQUIREMENTS.md",
+      "sha256": "1c65b89857b5dad173c9dc9f7e17d12517485bc7e0f5804d4ca459a00c7d6002"
+    },
+    {
+      "path": "docs/product/CONTENT_RELEASE_PLAN.md",
+      "sha256": "9c778ae73aeceb0883fea778144892d5e59039ac9b02661b50d30712bf7bda2d"
+    },
+    {
+      "path": "docs/product/REQUIREMENTS_TRACEABILITY.md",
+      "sha256": "855d0f8ace15f968b3095524016b2deb14d65cd517c6f0141e5339199ceb3555"
+    },
+    {
+      "path": "docs/product/evidence/p02-validation.json",
+      "sha256": "701f3c714aba854e83fe555757f7d886584ef955fccf4e60e1bf7ad43b5ce75e",
+      "verification_mode": "generated_report_semantics_except_link_count",
+      "snapshot_path": "docs/engineering/evidence/p02-entry-validation.json"
+    },
+    {
+      "path": "sources/manifest.json",
+      "sha256": "286513995c380d44605f29fce0341cc11def0cdd593744e7c6ce45db94c6e067"
+    }
+  ]
+}
