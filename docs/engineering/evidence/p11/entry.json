@@ -1,0 +1,10 @@
+{
+  "stage": "P11",
+  "base_commit": "37913498dc658a832c1698e0853abace5bc28b24",
+  "entry_gate": "P10 PASS; persistent local content remains draft-only",
+  "inputs": {
+    "docs/engineering/openapi/openapi.json": "6e104fbbc5e6befb23985a244ba605f03426cdb009294647062f05ffc483048b",
+    "docs/engineering/FRONTEND.md": "7ec661eb28d3efa4246cd243fa5f9cd3b1d94ec3cc7055ce29858f6fe563bd3e",
+    "frontend/package-lock.json": "b749587a513867a8f57d8b5381b76f934f089ebf1312488ccf816ea31bda711f"
+  }
+}

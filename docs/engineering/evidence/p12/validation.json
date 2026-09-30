@@ -1,0 +1,126 @@
+{
+  "recorded_at": "2026-09-30T19:03:51.203391+00:00",
+  "gate": "PASS",
+  "scope": "P12 only; production and course publication remain closed",
+  "frontend_tests": 29,
+  "production_frontend_build": "PASS",
+  "backend_tests": 47,
+  "backend_suites": [
+    {
+      "name": "org.options.platform.ArchitectureTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.678"
+    },
+    {
+      "name": "org.options.platform.ConfigTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.116"
+    },
+    {
+      "name": "org.options.platform.CanonicalImportIT",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "189.89"
+    },
+    {
+      "name": "org.options.platform.FoundationIT",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "7.291"
+    },
+    {
+      "name": "org.options.platform.PersistenceIT",
+      "tests": "25",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "10.504"
+    },
+    {
+      "name": "org.options.platform.PublicCatalogIT",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "45.296"
+    }
+  ],
+  "api_http_examples": 145,
+  "implemented_contract_operations": 24,
+  "browser": {
+    "discovery": {
+      "startTime": "2026-09-30T19:00:14.626Z",
+      "duration": 11136.384,
+      "expected": 6,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "reading_regression": {
+      "startTime": "2026-09-30T19:01:04.363Z",
+      "duration": 35449.284,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "local_smoke": {
+      "startTime": "2026-09-30T19:02:25.650Z",
+      "duration": 1424.728,
+      "expected": 4,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "preserved_inputs": 85,
+  "unchanged_migrations": 21,
+  "npm": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "gitleaks_findings": 0,
+  "gitleaks_reviewed_exception": "Exact P12 entry OpenAPI SHA-256 fingerprint only; file/rule/line exclusion",
+  "java_scan": {
+    "high_critical": [],
+    "database_updated_at": "2026-09-28T13:05:44Z",
+    "cached": true,
+    "fresh_download": "Failed from mirror.gcr.io and ghcr.io; no fresh scan claimed",
+    "p12_dependency_changes": false
+  },
+  "screenshots": {
+    "reading-screenshots/api-unavailable-mobile.png": "9cba78a8cb9fc16ce00d59b47aedfb3f5c7154bfa18d4c42a07b733d344d4f6f",
+    "reading-screenshots/curriculum-desktop.png": "e573752930ea529ddbe61da36226d5b726094e0ad53c718ee6c9757e4bbfaf3e",
+    "reading-screenshots/home-desktop.png": "4e509f7268d28fe2f15e118f7363e88ace3c232f0be31415266aef60f10cdf31",
+    "reading-screenshots/lesson-desktop.png": "15e1f3f1476caaa30527cf47fd6934be790aaa5e776512d9e039c5c561bd71e9",
+    "reading-screenshots/lesson-mobile-dark.png": "b1f61e8b31ba58f943bac9dff8cf84e69299686e2b18c20c84b14dc3425ee02b",
+    "reading-screenshots/topic-outline-desktop.png": "4db6cca16caa6194372578fa788f091fbc59d2e4d07074ddf981248985a4fcb6",
+    "screenshots/library-filters-desktop.png": "070d6050f9900b9e989a441943bf5e77c65aee1adabe479100bb774a4258cc02",
+    "screenshots/library-mobile-dark.png": "ecb35a71e6f171e5339c91ab7ef06046ca8b768beb2c511ae478db798e2715f5",
+    "screenshots/path-desktop.png": "ff190d577b678e9bf3a2cd92fc45a78f44ccbebf2635d531cda4e4cf16d8b3ea",
+    "screenshots/project-desktop.png": "fe62790a074fddf8b436b2b18aed9971e5b2bd86d6ed6663ecaebcfc607247c1",
+    "screenshots/resource-desktop.png": "eb4e28188be422af7045b2ffc85764ea8b45b6f555906836c9f5230ab7975f8f"
+  },
+  "historical_p11_screenshots_unchanged": true,
+  "jar": {
+    "sha256": "c1aa29f984f0bcf806a267d4153a6295856665e7e1650c0caf999c141b594210",
+    "test_fixtures_packaged": false
+  },
+  "runtime": "local-runtime.json",
+  "recursive_design_contracts": "PASS",
+  "git_diff_check": "PASS"
+}

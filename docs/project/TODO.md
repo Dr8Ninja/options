@@ -1,6 +1,6 @@
 # Prioritized project backlog
 
-Updated 27 September 2026 after P10. P01–P06 design contracts and P07–P10 local foundation/persistence/import/public API gates pass. **Public APIs serve approved snapshots; local canonical content remains unpublished drafts, with no reviewed public course or learner workflows.** Next eligible assignment: **P11**, only when requested. P17 must later author the release, and P22 is a separate authorized deployment.
+Updated 1 October 2026 after P12. P01–P06 design contracts and P07–P12 local foundation/persistence/import/public API/reading/discovery gates pass. **Public APIs serve approved snapshots; local canonical content remains unpublished drafts, with no reviewed public course or learner workflows.** Next eligible assignment: **P13**, only when requested. P17 must later author the release, and P22 is a separate authorized deployment.
 
 The normative scope is [PRODUCT_REQUIREMENTS](../product/PRODUCT_REQUIREMENTS.md), [CONTENT_RELEASE_PLAN](../product/CONTENT_RELEASE_PLAN.md) and [REQUIREMENTS_TRACEABILITY](../product/REQUIREMENTS_TRACEABILITY.md). Priority means sequencing/impact, not permission to skip the prompt gates. An unchecked item is future work, not an implementation claim.
 
@@ -20,6 +20,10 @@ The normative scope is [PRODUCT_REQUIREMENTS](../product/PRODUCT_REQUIREMENTS.md
 
 - [x] P08 / B06: Flyway V0001–V0015, typed constraints, immutable versions, owner-scoped repositories, retention and role separation; 34 backend tests on real PostgreSQL plus query-plan evidence. See [P08 review](../engineering/evidence/p08/REVIEW.md). No canonical import or feature journey claimed.
 
+- [x] P11: live server-rendered public reading and SEO; restricted authored rendering; real PostgreSQL browser gate, accessibility/screenshots, production build and protection checks pass. See [review](../engineering/evidence/p11/REVIEW.md).
+
+- [x] P12: live filtered library/search, resource details, shared-module paths and project preparation; real-stack discovery and reading regression gates pass. [Review](../engineering/evidence/p12/REVIEW.md). P13 not started.
+
 ## P0 — Completed design prerequisites
 
 | Backlog ID | Work and dependency | Owner prompt | Done when / requirements |
@@ -36,7 +40,7 @@ The normative scope is [PRODUCT_REQUIREMENTS](../product/PRODUCT_REQUIREMENTS.md
 | B05 — complete foundation | Reproducible repository/runtime/test/CI/security foundation; [P07 evidence](../engineering/evidence/p07/REVIEW.md) | P07 | Real PostgreSQL/HTTPS shell, 9 Java tests, 12 frontend tests, 4 stack browser cases and 1 WebAuthn compatibility case pass; version amendments recorded; hosted CI and feature journeys not claimed |
 | B06 — complete persistence | Incremental migrations, persistence, constraints and ownership queries | P08 | Empty-database and real PostgreSQL tests pass; REQ-19/20/28/30 |
 | B07 — complete import | Validated importer, dry-run/conflicts/retirement/export, stable references and all supplemental structures | P09 | 35 backend tests, 14 import scenarios and local replay/export pass; [P09 evidence](../engineering/evidence/p09/REVIEW.md); REQ-02/28 |
-| B08 — P10 complete; UI pending | Public content/search APIs complete; home/map/lesson UI and resource/path/project browser remain | P10 complete; P11–P12 in order | [P10 evidence](../engineering/evidence/p10/REVIEW.md): 47 backend tests, 140 actual HTTP captures and canonical-scale queries pass. J01–J05 browser journeys remain P11–P12; REQ-02/04–12/36 |
+| B08 — P10–P12 complete | Public APIs, reading/SEO, filtered resource library, search, paths and projects | P10–P12 complete | [P12 evidence](../engineering/evidence/p12/REVIEW.md): 47 backend tests, 29 frontend tests, 6 discovery journeys, 5 reading regressions and 4 local smoke cases pass. No canonical drafts published; REQ-02/04–12/36 |
 | B09 | Signup/verification/login/logout/recovery, privileged security, ownership and account lifecycle | P13 | J06–J08/J16 and isolation tests; local mail behavior verified; no unauthorized external messages |
 | B10 | Progress/bookmarks/private notes/dashboard/recommendations and version-change behavior | P14 | J09–J11 pass across devices and failures; REQ-19–23 |
 | B11 | Scored gates, practice/solution release, exhausted-bank request queue and self-reviewed dossier | P15 | J12/J13 pass; server scoring, pinned versions, clear evidence labels; REQ-24–26 |

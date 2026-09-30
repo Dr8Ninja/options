@@ -12,11 +12,15 @@ Start with the [curriculum](docs/curriculum/CURRICULUM.md), [research findings](
 
 [P05's API contract](docs/engineering/API.md), [OpenAPI](docs/engineering/openapi/openapi.json), [authorization matrix](docs/engineering/api/AUTHORIZATION_MATRIX.md), examples and contract-test plan now define all 17 journeys. The offline contract gate passes. P07 implements and tests the CSRF foundation and infrastructure health; P10 implements public content/search; identity, learner/editor workflows and scoring await later stages.
 
-[P06’s frontend design contract](docs/engineering/FRONTEND.md), [responsive prototype and review guide](design/README.md), tokens, component/state specifications and accessibility checklist now cover all 17 journeys. Light/dark layouts and offline/browser design checks pass; production features and assistive-technology acceptance remain unimplemented.
+[P06’s frontend design contract](docs/engineering/FRONTEND.md), [responsive prototype and review guide](design/README.md), tokens, component/state specifications and accessibility checklist now cover all 17 journeys. Light/dark design checks pass. P11 implements the public reading slice; broader product journeys and full assistive-technology acceptance remain later work.
 
-[P09’s operator workflow](data/README.md#p09-operator-import-workflow) provides validated packages, dry-run/diffs, version-aware imports, restricted editorial exports and content-version recovery. Real PostgreSQL tests verify all 11,452 records, replay, conflict rejection and preserved learner history; see the [P09 review](docs/engineering/evidence/p09/REVIEW.md). The browser remains a preparation shell.
+[P09’s operator workflow](data/README.md#p09-operator-import-workflow) provides validated packages, dry-run/diffs, version-aware imports, restricted editorial exports and content-version recovery. Real PostgreSQL tests verify all 11,452 records, replay, conflict rejection and preserved learner history; see the [P09 review](docs/engineering/evidence/p09/REVIEW.md). P11 now provides live server-rendered public reading pages. Without an approved publication the local browser shows an honest unavailable state.
 
-[PROMPTS.md](PROMPTS.md) remains the shared execution guide. **P07 provides application foundations**, including PostgreSQL-backed sessions, a secured API boundary and an honest preparation shell. P08 implements the domain schema, and P17 later authors/reviews lesson batches. Public catalog/search APIs are implemented. Learner, assessment execution and editorial HTTP features remain later work. All seven full canonical paths require later authoring; completing R1 will not imply completing those paths.
+[P11 implementation and validation](docs/engineering/evidence/p11/REVIEW.md) covers home → curriculum → phase → module → topic, safe authored rendering and public SEO. Its renderer lesson is synthetic test-only content; persistent local imports remain drafts.
+
+[P12 discovery and validation](docs/engineering/evidence/p12/REVIEW.md) adds the live resource library, intersecting URL filters, global search, shared-module paths and project preparation/detail pages. Resource review scope, access limits and planned assessment gates remain explicit. Public next links follow authored order; personalization and ratings remain deferred.
+
+[PROMPTS.md](PROMPTS.md) remains the shared execution guide. **P07 provides application foundations**, including PostgreSQL-backed sessions, a secured API boundary and an honest preparation shell. P08 implements the domain schema, and P17 later authors/reviews lesson batches. Public catalog/search APIs, reading and discovery interfaces are implemented. Learner, assessment execution and editorial HTTP features remain later work. All seven full canonical paths require later authoring; completing R1 will not imply completing those paths.
 
 | Location | Purpose |
 |---|---|
@@ -52,7 +56,7 @@ Validate P06 with `python scripts/validate_frontend_design.py` in the P05 valida
 
 ## P07 local application foundations
 
-The application currently renders only a responsive light/dark preparation shell. It exposes health, session-backed CSRF and P10 public read endpoints. With no approved publication, catalog reads return 503. All unimplemented API routes are denied, even for an authenticated staff principal. There are no default accounts or production credentials. Reviewed lessons, learning progress, authentication journeys and editorial tools remain later-stage work.
+The application renders responsive light/dark reading and discovery pages from approved public snapshots. It exposes health, session-backed CSRF and P10 public read endpoints. With no approved publication, catalog reads return 503. All unimplemented API routes are denied, even for an authenticated staff principal. There are no default accounts or production credentials. Reviewed lessons, learning progress, authentication journeys and editorial tools remain later-stage work.
 
 Use Temurin 25 (25.0.4.1+1 on macOS; 25.0.4+7 on Linux), Node 24.21.0/npm 11.19.0 and running Docker/Compose. From a fresh checkout:
 

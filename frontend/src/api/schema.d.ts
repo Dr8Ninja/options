@@ -1,4 +1,4 @@
-// Generated from OpenAPI 1.0.2; SHA-256 6e104fbbc5e6befb23985a244ba605f03426cdb009294647062f05ffc483048b
+// Generated from OpenAPI 1.0.4; SHA-256 40c9bb23426fee89bfa1797ed2085730055c2e1d378d307b9c614052eb6b2604
 export interface paths {
     "/content-version": {
         parameters: {
@@ -2344,6 +2344,12 @@ export interface components {
             /** @enum {string} */
             status: "CANDIDATE" | "REVIEWED";
             verificationScope: string | null;
+            /** @description Metadata of the approved assigned resource; never an inferred reading assignment. */
+            priority?: string | null;
+            /** @description Metadata of the approved assigned resource; never an inferred reading assignment. */
+            url?: string | null;
+            /** @description Metadata of the approved assigned resource; never an inferred reading assignment. */
+            cost?: string | null;
         };
         Freshness: {
             linkCheckedAt: string | null;
@@ -2386,6 +2392,8 @@ export interface components {
             qualification: string;
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
         };
         Phase: {
             id: string;
@@ -2408,6 +2416,8 @@ export interface components {
             modules: components["schemas"]["Reference"][];
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
         };
         Module: {
             id: string;
@@ -2433,6 +2443,12 @@ export interface components {
             assignments: components["schemas"]["Assignment"][];
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
+            /** @description Approved immediate parent, or null when unavailable; no inferred hierarchy. */
+            phase?: components["schemas"]["Reference"] | null;
+            whyItMatters?: string;
+            commonMistakes?: string[];
         };
         Topic: {
             id: string;
@@ -2460,6 +2476,10 @@ export interface components {
             prerequisites: components["schemas"]["Prerequisite"][];
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
+            /** @description Approved immediate parent, or null when unavailable; no inferred hierarchy. */
+            module?: components["schemas"]["Reference"] | null;
         } & unknown;
         Subtopic: {
             id: string;
@@ -2483,6 +2503,8 @@ export interface components {
             lessonMarkdown: string | null;
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
         } & unknown;
         Resource: {
             id: string;
@@ -2520,6 +2542,9 @@ export interface components {
             verificationStatus: "access_or_inherited_metadata_only" | "limited_review" | "selected_sections_reviewed";
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
+            prerequisitesText?: string;
         };
         Path: {
             id: string;
@@ -2549,6 +2574,11 @@ export interface components {
             unavailableReason: string | null;
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
+            branches?: components["schemas"]["Reference"][];
+            exitStatements?: string[];
+            milestones?: string[];
         };
         Project: {
             id: string;
@@ -2576,6 +2606,11 @@ export interface components {
             fields: components["schemas"]["ProjectField"][];
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
+            steps?: string[];
+            limitations?: string[];
+            noncodingRoute?: string[];
         };
         Exercise: {
             id: string;
@@ -2603,6 +2638,8 @@ export interface components {
             practiceAvailable: boolean;
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
         };
         Quiz: {
             id: string;
@@ -2630,6 +2667,8 @@ export interface components {
             attemptAvailable: boolean;
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
         };
         Card: {
             id: string;
@@ -2649,6 +2688,8 @@ export interface components {
             contentVersion: components["schemas"]["ContentVersion"];
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
         };
         SearchHit: {
             id: string;
@@ -2671,6 +2712,14 @@ export interface components {
             match: "EXACT_ID" | "EXACT_TITLE" | "TEXT";
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
+            authorOrganization?: string | null;
+            resourceType?: string | null;
+            cost?: string | null;
+            rationale?: string | null;
+            verifiedOn?: string | null;
+            verificationStatus?: string | null;
         };
         CatalogPage: {
             items: components["schemas"]["Card"][];
@@ -2712,6 +2761,10 @@ export interface components {
             readiness: components["schemas"]["Facet"][];
             visibility: components["schemas"]["Facet"][];
             module: components["schemas"]["Facet"][];
+            kind?: components["schemas"]["Facet"][];
+            phase?: components["schemas"]["Facet"][];
+            topic?: components["schemas"]["Facet"][];
+            path?: components["schemas"]["Facet"][];
         };
         RegisterInput: {
             /** Format: email */
@@ -3970,6 +4023,8 @@ export interface components {
             assessmentPolicyId: string;
             /** @description Approved rule dependencies; operational currency is never inferred from imported metadata. */
             ruleNotices?: components["schemas"]["RuleNotice"][];
+            /** @description Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless. */
+            indexable?: boolean;
         };
         RuleNotice: {
             ruleId: string;

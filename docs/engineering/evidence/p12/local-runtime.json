@@ -1,0 +1,110 @@
+{
+  "date": "2026-09-30T19:02:11.634202+00:00",
+  "database": {
+    "tables": 111,
+    "migrations": 21,
+    "catalog_objects": 2851,
+    "draft_heads": 2851,
+    "active_publications": 0,
+    "publications": 0,
+    "accounts": 0,
+    "review_decisions": 0,
+    "rule_certifications": 0
+  },
+  "https_ca_verified": true,
+  "production_deployment": false,
+  "requests": [
+    {
+      "path": "/",
+      "status": 200,
+      "cacheControl": "no-store",
+      "robots": null,
+      "unpublished_content_hidden": true
+    },
+    {
+      "path": "/curriculum",
+      "status": 200,
+      "cacheControl": "no-store",
+      "robots": null,
+      "unpublished_content_hidden": true
+    },
+    {
+      "path": "/resources",
+      "status": 200,
+      "cacheControl": "no-store",
+      "robots": null,
+      "unpublished_content_hidden": true
+    },
+    {
+      "path": "/paths",
+      "status": 200,
+      "cacheControl": "no-store",
+      "robots": null,
+      "unpublished_content_hidden": true
+    },
+    {
+      "path": "/projects",
+      "status": 200,
+      "cacheControl": "no-store",
+      "robots": null,
+      "unpublished_content_hidden": true
+    },
+    {
+      "path": "/search?q=options",
+      "status": 200,
+      "cacheControl": "no-store",
+      "robots": "noindex, nofollow",
+      "unpublished_content_hidden": true
+    },
+    {
+      "path": "/api/health",
+      "status": 200,
+      "cacheControl": "no-store",
+      "robots": "noindex, nofollow",
+      "unpublished_content_hidden": null
+    },
+    {
+      "path": "/api/v1/resources",
+      "status": 503,
+      "cacheControl": "no-store",
+      "robots": "noindex, nofollow",
+      "unpublished_content_hidden": null
+    },
+    {
+      "path": "/api/v1/search?q=options",
+      "status": 503,
+      "cacheControl": "no-store",
+      "robots": "noindex, nofollow",
+      "unpublished_content_hidden": null
+    },
+    {
+      "path": "/api/v1/me",
+      "status": 401,
+      "cacheControl": "no-store",
+      "robots": "noindex, nofollow",
+      "unpublished_content_hidden": null
+    },
+    {
+      "path": "/api/v1/admin/content",
+      "status": 401,
+      "cacheControl": "no-store",
+      "robots": "noindex, nofollow",
+      "unpublished_content_hidden": null
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 503,
+      "cacheControl": "no-store",
+      "robots": "noindex, nofollow",
+      "unpublished_content_hidden": null
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "cacheControl": "no-store",
+      "robots": null,
+      "unpublished_content_hidden": null
+    }
+  ],
+  "result": "PASS"
+}

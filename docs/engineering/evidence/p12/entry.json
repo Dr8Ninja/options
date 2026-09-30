@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-30",
+  "baseline": "P11 passed; existing uncommitted P11 changes preserved",
+  "sha256": {
+    "docs/engineering/openapi/openapi.json": "fcb3445acf017ed2137aea0cdb847cdbbe923a949c0d6228814b791aadfb2831",
+    "docs/project/EXECUTION_LOG.md": "e24f2f43ea27cf856ca83806999f05c53a6a6d854afc8bd9c60a48ba79a1ef44",
+    "docs/engineering/evidence/p11/validation.json": "fbfa140eae878492c6cf27c1016e4f8d586ed4c125b629862c1a197d1e4b6def",
+    "frontend/package-lock.json": "13aa00c79553c7f36c7d2d1abe850e4a02667ed94d5677ae7a08a8098a06dccb"
+  }
+}

@@ -104,6 +104,22 @@ public class PublicCatalog {
                   .map(
                       r -> {
                         var dto = base(r, s);
+                        for (var field :
+                            Map.of(
+                                    "authorOrganization",
+                                    "author_organization",
+                                    "resourceType",
+                                    "resource_type",
+                                    "cost",
+                                    "cost",
+                                    "rationale",
+                                    "rationale",
+                                    "verificationStatus",
+                                    "verification_status")
+                                .entrySet()) dto.put(field.getKey(), r.get(field.getValue()));
+                        dto.put(
+                            "verifiedOn",
+                            r.get("verified_on") == null ? null : r.get("verified_on").toString());
                         String snippet = text(r, "summary").replaceAll("<[^>]*>", "");
                         dto.put(
                             "snippet",
@@ -147,7 +163,11 @@ public class PublicCatalog {
                   "verificationStatus",
                   "readiness",
                   "visibility",
-                  "module")) dto.put(name, new ArrayList<Facet>());
+                  "module",
+                  "kind",
+                  "phase",
+                  "topic",
+                  "path")) dto.put(name, new ArrayList<Facet>());
           for (var row : repository.facets(s, q)) {
             @SuppressWarnings("unchecked")
             var values = (List<Facet>) dto.get(text(row, "filter_name"));
@@ -186,7 +206,11 @@ public class PublicCatalog {
               dto.put("modules", refs(edges, "phase_module", 100));
             }
             case "modules" -> {
+              dto.put(
+                  "phase", refs(edges, "parent_phase_module", 1).stream().findFirst().orElse(null));
               dto.put("objectives", sections.getOrDefault("objective", List.of()));
+              dto.put("whyItMatters", section(sections, "why_it_matters"));
+              dto.put("commonMistakes", sections.getOrDefault("common_mistake", List.of()));
               dto.put("prerequisites", prerequisites(edges));
               dto.put("competencies", refs(edges, "outcome", 100));
               dto.put("topics", refs(edges, "module_topic", 200));
@@ -201,6 +225,9 @@ public class PublicCatalog {
                   "lessonMarkdown",
                   text(row, "visibility").equals("LESSON") ? lesson.get("lesson_markdown") : null);
               if (route.equals("topics")) {
+                dto.put(
+                    "module",
+                    refs(edges, "parent_module_topic", 1).stream().findFirst().orElse(null));
                 dto.put("formatVersion", lesson.get("format_version"));
                 dto.put("subtopics", refs(edges, "topic_subtopic", 100));
                 dto.put("exercises", refs(edges, "lesson_practice", 100));
@@ -215,6 +242,7 @@ public class PublicCatalog {
               dto.put("resourceType", r.get("resource_type"));
               dto.put("cost", r.get("cost"));
               dto.put("accessLimitations", r.get("access_limitations"));
+              dto.put("prerequisitesText", r.get("prerequisites_text"));
               dto.put("rationale", r.get("rationale"));
               dto.put("geography", r.get("geography"));
               dto.put("rights", r.get("rights"));
@@ -246,6 +274,9 @@ public class PublicCatalog {
             }
             case "paths" -> {
               dto.put("audience", section(sections, "audience"));
+              dto.put("branches", refs(edges, "path_branch", 100));
+              dto.put("exitStatements", sections.getOrDefault("exit_statement", List.of()));
+              dto.put("milestones", sections.getOrDefault("milestone", List.of()));
               dto.put("entryCriteria", section(sections, "entry"));
               dto.put("modules", refs(edges, "path_module", 100));
               dto.put("topics", refs(edges, "path_topic", 200));
@@ -260,7 +291,10 @@ public class PublicCatalog {
               dto.put("prerequisites", prerequisites(edges));
               dto.put("dataPlan", section(sections, "data_plan"));
               dto.put("deliverables", section(sections, "deliverables"));
-              dto.put("assessmentCriteria", sections.getOrDefault("objective", List.of()));
+              dto.put("assessmentCriteria", repository.rubric(rid));
+              dto.put("steps", sections.getOrDefault("step", List.of()));
+              dto.put("limitations", sections.getOrDefault("limitations", List.of()));
+              dto.put("noncodingRoute", sections.getOrDefault("noncoding_route", List.of()));
               dto.put("selfReviewAvailable", false);
               dto.put("fields", List.of());
             }
@@ -326,6 +360,7 @@ public class PublicCatalog {
     out.put("id", row.get("external_id"));
     out.put("revision", "rev-" + row.get("content_hash"));
     out.put("canonicalPath", row.get("canonical_path"));
+    out.put("indexable", row.get("indexable"));
     out.put("tags", strings(row.get("tags")));
     out.put(
         "hours",
@@ -368,7 +403,10 @@ public class PublicCatalog {
                       : "CANDIDATE",
                   text(r, "verification_state").equals("selected_reading")
                       ? text(r, "reading_scope")
-                      : null);
+                      : null,
+                  text(r, "priority"),
+                  safeUrl(text(r, "original_url")),
+                  text(r, "cost"));
             })
         .toList();
   }
@@ -383,7 +421,7 @@ public class PublicCatalog {
         available ? "rev-" + r.get("content_hash") : null,
         availability,
         ((Number) r.get("ordinal")).intValue(),
-        available ? null : "This approved reference is currently unavailable.");
+        available ? text(r, "rationale") : "This approved reference is currently unavailable.");
   }
 
   private static List<Reference> refs(List<Map<String, Object>> edges, String relation, int bound) {

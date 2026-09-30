@@ -1,0 +1,2664 @@
+[
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 30 Sep 2026 13:50:27 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-3b965db7-63d7-41e3-a200-ffceef69423c:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "c631bd56-a689-41f6-a6d4-6a57e7148ecc"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/resources/R01",
+    "body": {
+      "id": "R01",
+      "kind": "RESOURCE",
+      "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+      "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+      "canonicalPath": "/resources/R01",
+      "visibility": "MAP",
+      "readiness": "learning_design",
+      "summary": "OCC \u2014 Characteristics and Risks of Standardized Options",
+      "difficulty": "Beginner\u2013Advanced",
+      "priority": "Essential",
+      "tags": [],
+      "hours": {
+        "min": 1.0,
+        "max": 4.0,
+        "basis": "Selected assignment estimate including notes/exercise; not whole-book duration. Refine after learner pilots."
+      },
+      "contentVersion": {
+        "publicationId": "pub-3b965db7-63d7-41e3-a200-ffceef69423c",
+        "generation": "1",
+        "asOf": "2026-09-30T13:50:19.948500Z",
+        "schemaVersion": "1.0.0"
+      },
+      "authorOrganization": "OCC",
+      "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+      "resourceType": "Exchange/clearing documentation",
+      "cost": "free",
+      "accessLimitations": "Official current-document landing page checked; it identifies the June 2024 ODD. Recheck for supplements before use. P01: June2024 ODD contents and selected II/VIII/X excerpts; not all96 PDF pages",
+      "rationale": "The contract-risk baseline for listed U.S. options: exercise, assignment, settlement and product risks. Read alongside actual product specifications.",
+      "geography": "Global concepts; source jurisdiction must be checked for rules",
+      "publicationDate": "2024-06",
+      "datePrecision": "MONTH",
+      "rights": "Link and original commentary only. No third-party full text or market data redistributed; permission not inferred from free access.",
+      "freshness": {
+        "linkCheckedAt": null,
+        "linkStatus": "UNKNOWN",
+        "substantiveVerifiedOn": "2026-09-22",
+        "verificationScope": "June2024 ODD contents and selected II/VIII/X excerpts; not all96 PDF pages",
+        "reviewDueAt": null,
+        "status": "UNKNOWN",
+        "currentOperationalEligible": false
+      },
+      "assignments": [
+        {
+          "id": "A-B01-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-B01"
+          ],
+          "scope": "II/VIII/X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M01-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M01"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M03-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M03"
+          ],
+          "scope": "III and VIII",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M05-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M05"
+          ],
+          "scope": "IX",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M09-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M09"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M20-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M20"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M21-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M21"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M22-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M22"
+          ],
+          "scope": "VIII and X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M24-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M24"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M25-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M25"
+          ],
+          "scope": "X spread risks",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M26-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M26"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M45-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M45"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M53-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M53"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M62-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M62"
+          ],
+          "scope": "IV/VIII/IX",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        }
+      ],
+      "alternativeIds": [],
+      "verificationStatus": "selected_sections_reviewed",
+      "ruleNotices": [],
+      "indexable": false,
+      "prerequisitesText": "Module competency prerequisites; advanced books are reference selections, not beginner entry requirements."
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 30 Sep 2026 13:50:27 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-3b965db7-63d7-41e3-a200-ffceef69423c:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "0251fe2f-1833-4727-a14c-cafc3dc2a6e4"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/projects/PR01",
+    "body": {
+      "id": "PR01",
+      "kind": "PROJECT",
+      "revision": "rev-fed5e5ba803369977f58c0fff415da10a8e6b64e2f3c8a851918c0a783997aa0",
+      "title": "Cash-flow and payoff engine",
+      "canonicalPath": "/projects/PR01",
+      "visibility": "MAP",
+      "readiness": "learning_design",
+      "summary": "Cash-flow and payoff engine",
+      "difficulty": null,
+      "priority": null,
+      "tags": [],
+      "hours": {
+        "min": 10.0,
+        "max": 20.0,
+        "basis": "Design estimate for implementation, audit and one revision; prior competencies assumed."
+      },
+      "contentVersion": {
+        "publicationId": "pub-3b965db7-63d7-41e3-a200-ffceef69423c",
+        "generation": "1",
+        "asOf": "2026-09-30T13:50:19.948500Z",
+        "schemaVersion": "1.0.0"
+      },
+      "objective": "Reconstruct arbitrary signed vanilla legs including fees and settlement obligations.",
+      "prerequisites": [
+        {
+          "target": {
+            "id": "M01",
+            "kind": "MODULE",
+            "title": "Financial arithmetic and economic purpose",
+            "revision": "rev-0bc78811008fb745c12d0ccbc9105e172bcc0bfb208bd02954ab4a1b28d1e51a",
+            "availability": "MAP",
+            "ordinal": 1,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "M21",
+            "kind": "MODULE",
+            "title": "Option fundamentals and contract literacy",
+            "revision": "rev-c30ea630c7ee1e746e3bcbb3c36b71318d601c4b7a20a0d91c9d9c234cfee31d",
+            "availability": "MAP",
+            "ordinal": 2,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "M22",
+            "kind": "MODULE",
+            "title": "Exercise, assignment and expiration operations",
+            "revision": "rev-78d97d296d8614459aae5e2fbb17ad014a1b7982b00f47f92df9e4985bf881d4",
+            "availability": "MAP",
+            "ordinal": 3,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "M24",
+            "kind": "MODULE",
+            "title": "Single-leg, stock-linked and directional structures",
+            "revision": "rev-107757768693dbef5d66ac2c23ea2d0d90551561a06ff475a3b18c2c9b7874f9",
+            "availability": "MAP",
+            "ordinal": 4,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "M25",
+            "kind": "MODULE",
+            "title": "Vertical spreads and payoff algebra",
+            "revision": "rev-3917b66f63ee4d365bd27e3fcca0491edbbd04f2bf40c387d4bde813ffccfbd0",
+            "availability": "MAP",
+            "ordinal": 5,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "B03",
+            "kind": "MODULE",
+            "title": "Python and reproducibility bridge",
+            "revision": "rev-81f8b0df4f2916d12bd0d03341b16b1927e68101e3def55d4f597aa2608914f9",
+            "availability": "MAP",
+            "ordinal": 6,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        }
+      ],
+      "dataPlan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "deliverables": "Executable functions, accessible payoff table, five independently worked cases and unit tests.",
+      "assessmentCriteria": [
+        "cash and numerical correctness \u2014 30.00%",
+        "assumptions and data lineage \u2014 20.00%",
+        "validation and failure cases \u2014 25.00%",
+        "decision and limitations \u2014 15.00%",
+        "reproducibility accessibility \u2014 10.00%"
+      ],
+      "selfReviewAvailable": false,
+      "fields": [],
+      "ruleNotices": [],
+      "indexable": false,
+      "steps": [
+        "Define typed contracts and signed legs",
+        " compute per-unit then multiplier cash",
+        " sum stock and option cash flows",
+        " add assignment branch and manual comparison."
+      ],
+      "limitations": [
+        "Terminal payoff is not margin, interim risk or guaranteed fill; calendars require dated valuation."
+      ],
+      "noncodingRoute": [
+        "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+      ]
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 30 Sep 2026 13:50:27 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-3b965db7-63d7-41e3-a200-ffceef69423c:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "ae09208d-fb5c-44b3-b680-7337cae57cb5"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/resources/R01",
+    "body": {
+      "id": "R01",
+      "kind": "RESOURCE",
+      "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+      "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+      "canonicalPath": "/resources/R01",
+      "visibility": "MAP",
+      "readiness": "learning_design",
+      "summary": "OCC \u2014 Characteristics and Risks of Standardized Options",
+      "difficulty": "Beginner\u2013Advanced",
+      "priority": "Essential",
+      "tags": [],
+      "hours": {
+        "min": 1.0,
+        "max": 4.0,
+        "basis": "Selected assignment estimate including notes/exercise; not whole-book duration. Refine after learner pilots."
+      },
+      "contentVersion": {
+        "publicationId": "pub-3b965db7-63d7-41e3-a200-ffceef69423c",
+        "generation": "1",
+        "asOf": "2026-09-30T13:50:19.948500Z",
+        "schemaVersion": "1.0.0"
+      },
+      "authorOrganization": "OCC",
+      "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+      "resourceType": "Exchange/clearing documentation",
+      "cost": "free",
+      "accessLimitations": "Official current-document landing page checked; it identifies the June 2024 ODD. Recheck for supplements before use. P01: June2024 ODD contents and selected II/VIII/X excerpts; not all96 PDF pages",
+      "rationale": "The contract-risk baseline for listed U.S. options: exercise, assignment, settlement and product risks. Read alongside actual product specifications.",
+      "geography": "Global concepts; source jurisdiction must be checked for rules",
+      "publicationDate": "2024-06",
+      "datePrecision": "MONTH",
+      "rights": "Link and original commentary only. No third-party full text or market data redistributed; permission not inferred from free access.",
+      "freshness": {
+        "linkCheckedAt": null,
+        "linkStatus": "UNKNOWN",
+        "substantiveVerifiedOn": "2026-09-22",
+        "verificationScope": "June2024 ODD contents and selected II/VIII/X excerpts; not all96 PDF pages",
+        "reviewDueAt": null,
+        "status": "UNKNOWN",
+        "currentOperationalEligible": false
+      },
+      "assignments": [
+        {
+          "id": "A-B01-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-B01"
+          ],
+          "scope": "II/VIII/X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M01-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M01"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M03-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M03"
+          ],
+          "scope": "III and VIII",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M05-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M05"
+          ],
+          "scope": "IX",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M09-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M09"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M20-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M20"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M21-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M21"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M22-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M22"
+          ],
+          "scope": "VIII and X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M24-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M24"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M25-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M25"
+          ],
+          "scope": "X spread risks",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M26-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M26"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M45-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M45"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M53-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M53"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M62-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M62"
+          ],
+          "scope": "IV/VIII/IX",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        }
+      ],
+      "alternativeIds": [],
+      "verificationStatus": "selected_sections_reviewed",
+      "ruleNotices": [],
+      "indexable": false,
+      "prerequisitesText": "Module competency prerequisites; advanced books are reference selections, not beginner entry requirements."
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 30 Sep 2026 13:50:29 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-3b965db7-63d7-41e3-a200-ffceef69423c:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "0e6f7cc3-4205-483a-802b-f58043ddead0"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/search?kind=RESOURCE&q=R01",
+    "body": {
+      "items": [
+        {
+          "id": "R01",
+          "kind": "RESOURCE",
+          "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+          "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+          "canonicalPath": "/resources/R01",
+          "visibility": "MAP",
+          "readiness": "learning_design",
+          "summary": "OCC \u2014 Characteristics and Risks of Standardized Options",
+          "difficulty": "Beginner\u2013Advanced",
+          "priority": "Essential",
+          "tags": [],
+          "hours": {
+            "min": 1.0,
+            "max": 4.0,
+            "basis": "Selected assignment estimate including notes/exercise; not whole-book duration. Refine after learner pilots."
+          },
+          "contentVersion": {
+            "publicationId": "pub-3b965db7-63d7-41e3-a200-ffceef69423c",
+            "generation": "1",
+            "asOf": "2026-09-30T13:50:19.948500Z",
+            "schemaVersion": "1.0.0"
+          },
+          "snippet": "OCC \u2014 Characteristics and Risks of Standardized Options",
+          "match": "EXACT_ID",
+          "ruleNotices": [],
+          "indexable": false,
+          "authorOrganization": "OCC",
+          "resourceType": "Exchange/clearing documentation",
+          "cost": "free",
+          "rationale": "The contract-risk baseline for listed U.S. options: exercise, assignment, settlement and product risks. Read alongside actual product specifications.",
+          "verifiedOn": "2026-09-22",
+          "verificationStatus": "selected_sections_reviewed"
+        }
+      ],
+      "limit": 20,
+      "contentVersion": {
+        "publicationId": "pub-3b965db7-63d7-41e3-a200-ffceef69423c",
+        "generation": "1",
+        "asOf": "2026-09-30T13:50:19.948500Z",
+        "schemaVersion": "1.0.0"
+      },
+      "page": 0,
+      "total": 1,
+      "hasMore": false
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 30 Sep 2026 13:50:29 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-3b965db7-63d7-41e3-a200-ffceef69423c:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "35f5f98b-8d98-40ba-bb83-b38bd841296e"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/resources/R01",
+    "body": {
+      "id": "R01",
+      "kind": "RESOURCE",
+      "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+      "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+      "canonicalPath": "/resources/R01",
+      "visibility": "MAP",
+      "readiness": "learning_design",
+      "summary": "OCC \u2014 Characteristics and Risks of Standardized Options",
+      "difficulty": "Beginner\u2013Advanced",
+      "priority": "Essential",
+      "tags": [],
+      "hours": {
+        "min": 1.0,
+        "max": 4.0,
+        "basis": "Selected assignment estimate including notes/exercise; not whole-book duration. Refine after learner pilots."
+      },
+      "contentVersion": {
+        "publicationId": "pub-3b965db7-63d7-41e3-a200-ffceef69423c",
+        "generation": "1",
+        "asOf": "2026-09-30T13:50:19.948500Z",
+        "schemaVersion": "1.0.0"
+      },
+      "authorOrganization": "OCC",
+      "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+      "resourceType": "Exchange/clearing documentation",
+      "cost": "free",
+      "accessLimitations": "Official current-document landing page checked; it identifies the June 2024 ODD. Recheck for supplements before use. P01: June2024 ODD contents and selected II/VIII/X excerpts; not all96 PDF pages",
+      "rationale": "The contract-risk baseline for listed U.S. options: exercise, assignment, settlement and product risks. Read alongside actual product specifications.",
+      "geography": "Global concepts; source jurisdiction must be checked for rules",
+      "publicationDate": "2024-06",
+      "datePrecision": "MONTH",
+      "rights": "Link and original commentary only. No third-party full text or market data redistributed; permission not inferred from free access.",
+      "freshness": {
+        "linkCheckedAt": null,
+        "linkStatus": "UNKNOWN",
+        "substantiveVerifiedOn": "2026-09-22",
+        "verificationScope": "June2024 ODD contents and selected II/VIII/X excerpts; not all96 PDF pages",
+        "reviewDueAt": null,
+        "status": "UNKNOWN",
+        "currentOperationalEligible": false
+      },
+      "assignments": [
+        {
+          "id": "A-B01-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-B01"
+          ],
+          "scope": "II/VIII/X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M01-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M01"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M03-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M03"
+          ],
+          "scope": "III and VIII",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M05-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M05"
+          ],
+          "scope": "IX",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M09-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M09"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M20-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M20"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M21-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M21"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M22-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M22"
+          ],
+          "scope": "VIII and X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M24-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M24"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M25-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M25"
+          ],
+          "scope": "X spread risks",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M26-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M26"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M45-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M45"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M53-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M53"
+          ],
+          "scope": "X",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M62-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M62"
+          ],
+          "scope": "IV/VIII/IX",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        }
+      ],
+      "alternativeIds": [],
+      "verificationStatus": "selected_sections_reviewed",
+      "ruleNotices": [],
+      "indexable": false,
+      "prerequisitesText": "Module competency prerequisites; advanced books are reference selections, not beginner entry requirements."
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 30 Sep 2026 13:50:29 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-3b965db7-63d7-41e3-a200-ffceef69423c:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "83a8a2a4-0462-4a13-9c40-a65c545fae74"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/projects/PR01",
+    "body": {
+      "id": "PR01",
+      "kind": "PROJECT",
+      "revision": "rev-fed5e5ba803369977f58c0fff415da10a8e6b64e2f3c8a851918c0a783997aa0",
+      "title": "Cash-flow and payoff engine",
+      "canonicalPath": "/projects/PR01",
+      "visibility": "MAP",
+      "readiness": "learning_design",
+      "summary": "Cash-flow and payoff engine",
+      "difficulty": null,
+      "priority": null,
+      "tags": [],
+      "hours": {
+        "min": 10.0,
+        "max": 20.0,
+        "basis": "Design estimate for implementation, audit and one revision; prior competencies assumed."
+      },
+      "contentVersion": {
+        "publicationId": "pub-3b965db7-63d7-41e3-a200-ffceef69423c",
+        "generation": "1",
+        "asOf": "2026-09-30T13:50:19.948500Z",
+        "schemaVersion": "1.0.0"
+      },
+      "objective": "Reconstruct arbitrary signed vanilla legs including fees and settlement obligations.",
+      "prerequisites": [
+        {
+          "target": {
+            "id": "M01",
+            "kind": "MODULE",
+            "title": "Financial arithmetic and economic purpose",
+            "revision": "rev-0bc78811008fb745c12d0ccbc9105e172bcc0bfb208bd02954ab4a1b28d1e51a",
+            "availability": "MAP",
+            "ordinal": 1,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "M21",
+            "kind": "MODULE",
+            "title": "Option fundamentals and contract literacy",
+            "revision": "rev-c30ea630c7ee1e746e3bcbb3c36b71318d601c4b7a20a0d91c9d9c234cfee31d",
+            "availability": "MAP",
+            "ordinal": 2,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "M22",
+            "kind": "MODULE",
+            "title": "Exercise, assignment and expiration operations",
+            "revision": "rev-78d97d296d8614459aae5e2fbb17ad014a1b7982b00f47f92df9e4985bf881d4",
+            "availability": "MAP",
+            "ordinal": 3,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "M24",
+            "kind": "MODULE",
+            "title": "Single-leg, stock-linked and directional structures",
+            "revision": "rev-107757768693dbef5d66ac2c23ea2d0d90551561a06ff475a3b18c2c9b7874f9",
+            "availability": "MAP",
+            "ordinal": 4,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "M25",
+            "kind": "MODULE",
+            "title": "Vertical spreads and payoff algebra",
+            "revision": "rev-3917b66f63ee4d365bd27e3fcca0491edbbd04f2bf40c387d4bde813ffccfbd0",
+            "availability": "MAP",
+            "ordinal": 5,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        },
+        {
+          "target": {
+            "id": "B03",
+            "kind": "MODULE",
+            "title": "Python and reproducibility bridge",
+            "revision": "rev-81f8b0df4f2916d12bd0d03341b16b1927e68101e3def55d4f597aa2608914f9",
+            "availability": "MAP",
+            "ordinal": 6,
+            "reason": "Explicit canonical prerequisite; preserve source intent."
+          },
+          "strength": "HARD",
+          "rationale": "Explicit canonical prerequisite; preserve source intent."
+        }
+      ],
+      "dataPlan": "Default: generated hypothetical/synthetic data with seed, parameter manifest and no third-party market observations. Optional real data requires written entitlement, retention/export terms and timestamped lineage.",
+      "deliverables": "Executable functions, accessible payoff table, five independently worked cases and unit tests.",
+      "assessmentCriteria": [
+        "cash and numerical correctness \u2014 30.00%",
+        "assumptions and data lineage \u2014 20.00%",
+        "validation and failure cases \u2014 25.00%",
+        "decision and limitations \u2014 15.00%",
+        "reproducibility accessibility \u2014 10.00%"
+      ],
+      "selfReviewAvailable": false,
+      "fields": [],
+      "ruleNotices": [],
+      "indexable": false,
+      "steps": [
+        "Define typed contracts and signed legs",
+        " compute per-unit then multiplier cash",
+        " sum stock and option cash flows",
+        " add assignment branch and manual comparison."
+      ],
+      "limitations": [
+        "Terminal payoff is not margin, interim risk or guaranteed fill; calendars require dated valuation."
+      ],
+      "noncodingRoute": [
+        "PR01 foundational cash tables available without code; audit supplied ledgers for other projects, but this does not award executable-code competency."
+      ]
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Wed, 30 Sep 2026 13:50:29 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-3b965db7-63d7-41e3-a200-ffceef69423c:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "38ef4971-d0fb-477b-b2f2-39633ec9fbf0"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/discovery-facets?entity=search&kind=RESOURCE",
+    "body": {
+      "difficulty": [
+        {
+          "value": "Intermediate\u2013Advanced",
+          "label": "Intermediate\u2013Advanced",
+          "count": 21
+        },
+        {
+          "value": "Advanced",
+          "label": "Advanced",
+          "count": 17
+        },
+        {
+          "value": "Intermediate",
+          "label": "Intermediate",
+          "count": 17
+        },
+        {
+          "value": "Advanced\u2013Quantitative",
+          "label": "Advanced\u2013Quantitative",
+          "count": 12
+        },
+        {
+          "value": "Beginner\u2013Intermediate",
+          "label": "Beginner\u2013Intermediate",
+          "count": 8
+        },
+        {
+          "value": "Beginner\u2013Advanced",
+          "label": "Beginner\u2013Advanced",
+          "count": 7
+        },
+        {
+          "value": "Beginner",
+          "label": "Beginner",
+          "count": 6
+        },
+        {
+          "value": "Professional/Quantitative",
+          "label": "Professional/Quantitative",
+          "count": 6
+        },
+        {
+          "value": "Advanced\u2013Professional",
+          "label": "Advanced\u2013Professional",
+          "count": 1
+        },
+        {
+          "value": "Intermediate\u2013Quantitative",
+          "label": "Intermediate\u2013Quantitative",
+          "count": 1
+        }
+      ],
+      "resourceType": [
+        {
+          "value": "software documentation",
+          "label": "software documentation",
+          "count": 5
+        },
+        {
+          "value": "Academic textbook",
+          "label": "Academic textbook",
+          "count": 4
+        },
+        {
+          "value": "Original academic research",
+          "label": "Original academic research",
+          "count": 4
+        },
+        {
+          "value": "book",
+          "label": "book",
+          "count": 4
+        },
+        {
+          "value": "Exchange product documentation",
+          "label": "Exchange product documentation",
+          "count": 3
+        },
+        {
+          "value": "Foundational academic paper",
+          "label": "Foundational academic paper",
+          "count": 3
+        },
+        {
+          "value": "Regulatory education",
+          "label": "Regulatory education",
+          "count": 3
+        },
+        {
+          "value": "Software documentation",
+          "label": "Software documentation",
+          "count": 3
+        },
+        {
+          "value": "University course",
+          "label": "University course",
+          "count": 3
+        },
+        {
+          "value": "official education",
+          "label": "official education",
+          "count": 3
+        },
+        {
+          "value": "Academic lecture",
+          "label": "Academic lecture",
+          "count": 2
+        },
+        {
+          "value": "Academic research",
+          "label": "Academic research",
+          "count": 2
+        },
+        {
+          "value": "Clearing methodology",
+          "label": "Clearing methodology",
+          "count": 2
+        },
+        {
+          "value": "Original academic paper",
+          "label": "Original academic paper",
+          "count": 2
+        },
+        {
+          "value": "Practitioner reference",
+          "label": "Practitioner reference",
+          "count": 2
+        },
+        {
+          "value": "Quantitative practitioner book",
+          "label": "Quantitative practitioner book",
+          "count": 2
+        },
+        {
+          "value": "Regulatory case study",
+          "label": "Regulatory case study",
+          "count": 2
+        },
+        {
+          "value": "Regulatory source",
+          "label": "Regulatory source",
+          "count": 2
+        },
+        {
+          "value": "university lecture notes",
+          "label": "university lecture notes",
+          "count": 2
+        },
+        {
+          "value": "Academic book and course",
+          "label": "Academic book and course",
+          "count": 1
+        },
+        {
+          "value": "Author-associated empirical research and data",
+          "label": "Author-associated empirical research and data",
+          "count": 1
+        },
+        {
+          "value": "Clearing operational notices",
+          "label": "Clearing operational notices",
+          "count": 1
+        },
+        {
+          "value": "Current rulebook",
+          "label": "Current rulebook",
+          "count": 1
+        },
+        {
+          "value": "Exchange contract source",
+          "label": "Exchange contract source",
+          "count": 1
+        },
+        {
+          "value": "Exchange courses",
+          "label": "Exchange courses",
+          "count": 1
+        },
+        {
+          "value": "Exchange empirical analysis",
+          "label": "Exchange empirical analysis",
+          "count": 1
+        },
+        {
+          "value": "Exchange execution documentation",
+          "label": "Exchange execution documentation",
+          "count": 1
+        },
+        {
+          "value": "Exchange tax computation guidance",
+          "label": "Exchange tax computation guidance",
+          "count": 1
+        },
+        {
+          "value": "Exchange technical documentation",
+          "label": "Exchange technical documentation",
+          "count": 1
+        },
+        {
+          "value": "Exchange/clearing documentation",
+          "label": "Exchange/clearing documentation",
+          "count": 1
+        },
+        {
+          "value": "Foundational research",
+          "label": "Foundational research",
+          "count": 1
+        },
+        {
+          "value": "Index methodology",
+          "label": "Index methodology",
+          "count": 1
+        },
+        {
+          "value": "Official data documentation",
+          "label": "Official data documentation",
+          "count": 1
+        },
+        {
+          "value": "Official economic release",
+          "label": "Official economic release",
+          "count": 1
+        },
+        {
+          "value": "Official historical case material",
+          "label": "Official historical case material",
+          "count": 1
+        },
+        {
+          "value": "Official tax documentation",
+          "label": "Official tax documentation",
+          "count": 1
+        },
+        {
+          "value": "Original empirical research",
+          "label": "Original empirical research",
+          "count": 1
+        },
+        {
+          "value": "Original paper, university-hosted copy",
+          "label": "Original paper, university-hosted copy",
+          "count": 1
+        },
+        {
+          "value": "Original practitioner research",
+          "label": "Original practitioner research",
+          "count": 1
+        },
+        {
+          "value": "Original research",
+          "label": "Original research",
+          "count": 1
+        },
+        {
+          "value": "Practitioner courses",
+          "label": "Practitioner courses",
+          "count": 1
+        },
+        {
+          "value": "Practitioner psychology book",
+          "label": "Practitioner psychology book",
+          "count": 1
+        },
+        {
+          "value": "Practitioner textbook",
+          "label": "Practitioner textbook",
+          "count": 1
+        },
+        {
+          "value": "Practitioner/academic textbook",
+          "label": "Practitioner/academic textbook",
+          "count": 1
+        },
+        {
+          "value": "Primary tax legislation",
+          "label": "Primary tax legislation",
+          "count": 1
+        },
+        {
+          "value": "Regulatory empirical research",
+          "label": "Regulatory empirical research",
+          "count": 1
+        },
+        {
+          "value": "Regulatory market study",
+          "label": "Regulatory market study",
+          "count": 1
+        },
+        {
+          "value": "Regulatory operational guidance",
+          "label": "Regulatory operational guidance",
+          "count": 1
+        },
+        {
+          "value": "Research data documentation",
+          "label": "Research data documentation",
+          "count": 1
+        },
+        {
+          "value": "Supervisory guidance",
+          "label": "Supervisory guidance",
+          "count": 1
+        },
+        {
+          "value": "broker education",
+          "label": "broker education",
+          "count": 1
+        },
+        {
+          "value": "central-bank working paper",
+          "label": "central-bank working paper",
+          "count": 1
+        },
+        {
+          "value": "index methodology",
+          "label": "index methodology",
+          "count": 1
+        },
+        {
+          "value": "institutional research",
+          "label": "institutional research",
+          "count": 1
+        },
+        {
+          "value": "market dataset",
+          "label": "market dataset",
+          "count": 1
+        },
+        {
+          "value": "official historical report",
+          "label": "official historical report",
+          "count": 1
+        },
+        {
+          "value": "official report",
+          "label": "official report",
+          "count": 1
+        },
+        {
+          "value": "practitioner book",
+          "label": "practitioner book",
+          "count": 1
+        },
+        {
+          "value": "primary preprint",
+          "label": "primary preprint",
+          "count": 1
+        },
+        {
+          "value": "software project",
+          "label": "software project",
+          "count": 1
+        },
+        {
+          "value": "university course",
+          "label": "university course",
+          "count": 1
+        },
+        {
+          "value": "video",
+          "label": "video",
+          "count": 1
+        }
+      ],
+      "cost": [
+        {
+          "value": "free",
+          "label": "free",
+          "count": 71
+        },
+        {
+          "value": "paid",
+          "label": "paid",
+          "count": 22
+        },
+        {
+          "value": "mixed",
+          "label": "mixed",
+          "count": 3
+        }
+      ],
+      "priority": [
+        {
+          "value": "Recommended",
+          "label": "Recommended",
+          "count": 68
+        },
+        {
+          "value": "Reference",
+          "label": "Reference",
+          "count": 16
+        },
+        {
+          "value": "Advanced",
+          "label": "Advanced",
+          "count": 8
+        },
+        {
+          "value": "Essential",
+          "label": "Essential",
+          "count": 3
+        },
+        {
+          "value": "Optional",
+          "label": "Optional",
+          "count": 1
+        }
+      ],
+      "tag": [],
+      "source": [
+        {
+          "value": "Cboe",
+          "label": "Cboe",
+          "count": 7
+        },
+        {
+          "value": "MIT OCW",
+          "label": "MIT OCW",
+          "count": 4
+        },
+        {
+          "value": "FINRA",
+          "label": "FINRA",
+          "count": 3
+        },
+        {
+          "value": "OIC",
+          "label": "OIC",
+          "count": 3
+        },
+        {
+          "value": "SEC",
+          "label": "SEC",
+          "count": 3
+        },
+        {
+          "value": "CFTC",
+          "label": "CFTC",
+          "count": 2
+        },
+        {
+          "value": "Federal Reserve",
+          "label": "Federal Reserve",
+          "count": 2
+        },
+        {
+          "value": "Lawrence G. McMillan",
+          "label": "Lawrence G. McMillan",
+          "count": 2
+        },
+        {
+          "value": "NSE",
+          "label": "NSE",
+          "count": 2
+        },
+        {
+          "value": "OCC",
+          "label": "OCC",
+          "count": 2
+        },
+        {
+          "value": "Almgren and Chriss",
+          "label": "Almgren and Chriss",
+          "count": 1
+        },
+        {
+          "value": "Andrew W. Lo / MIT OCW",
+          "label": "Andrew W. Lo / MIT OCW",
+          "count": 1
+        },
+        {
+          "value": "Avellaneda and Stoikov",
+          "label": "Avellaneda and Stoikov",
+          "count": 1
+        },
+        {
+          "value": "BIS",
+          "label": "BIS",
+          "count": 1
+        },
+        {
+          "value": "BSE",
+          "label": "BSE",
+          "count": 1
+        },
+        {
+          "value": "Bailey and L\u00f3pez de Prado",
+          "label": "Bailey and L\u00f3pez de Prado",
+          "count": 1
+        },
+        {
+          "value": "Bailey, Borwein, L\u00f3pez de Prado and Zhu",
+          "label": "Bailey, Borwein, L\u00f3pez de Prado and Zhu",
+          "count": 1
+        },
+        {
+          "value": "Barber and Odean",
+          "label": "Barber and Odean",
+          "count": 1
+        },
+        {
+          "value": "Bekaert and Hoerova",
+          "label": "Bekaert and Hoerova",
+          "count": 1
+        },
+        {
+          "value": "Black and Scholes",
+          "label": "Black and Scholes",
+          "count": 1
+        },
+        {
+          "value": "Brett Steenbarger",
+          "label": "Brett Steenbarger",
+          "count": 1
+        },
+        {
+          "value": "CME",
+          "label": "CME",
+          "count": 1
+        },
+        {
+          "value": "CME Institute",
+          "label": "CME Institute",
+          "count": 1
+        },
+        {
+          "value": "Cboe DataShop",
+          "label": "Cboe DataShop",
+          "count": 1
+        },
+        {
+          "value": "Colin Bennett",
+          "label": "Colin Bennett",
+          "count": 1
+        },
+        {
+          "value": "Cox, Ross and Rubinstein",
+          "label": "Cox, Ross and Rubinstein",
+          "count": 1
+        },
+        {
+          "value": "Daniel Kahneman",
+          "label": "Daniel Kahneman",
+          "count": 1
+        },
+        {
+          "value": "Demeterfi, Derman, Kamal and Zou",
+          "label": "Demeterfi, Derman, Kamal and Zou",
+          "count": 1
+        },
+        {
+          "value": "ESMA",
+          "label": "ESMA",
+          "count": 1
+        },
+        {
+          "value": "Espen Gaarder Haug",
+          "label": "Espen Gaarder Haug",
+          "count": 1
+        },
+        {
+          "value": "Euan Sinclair",
+          "label": "Euan Sinclair",
+          "count": 1
+        },
+        {
+          "value": "Eurex",
+          "label": "Eurex",
+          "count": 1
+        },
+        {
+          "value": "FCA",
+          "label": "FCA",
+          "count": 1
+        },
+        {
+          "value": "Financial Crisis Inquiry Commission",
+          "label": "Financial Crisis Inquiry Commission",
+          "count": 1
+        },
+        {
+          "value": "Financial Stability Board",
+          "label": "Financial Stability Board",
+          "count": 1
+        },
+        {
+          "value": "Foucault, Pagano and R\u00f6ell",
+          "label": "Foucault, Pagano and R\u00f6ell",
+          "count": 1
+        },
+        {
+          "value": "Gatheral and Jacquier",
+          "label": "Gatheral and Jacquier",
+          "count": 1
+        },
+        {
+          "value": "Gatheral, Jaisson and Rosenbaum",
+          "label": "Gatheral, Jaisson and Rosenbaum",
+          "count": 1
+        },
+        {
+          "value": "HKEX",
+          "label": "HKEX",
+          "count": 1
+        },
+        {
+          "value": "Hagan, Kumar, Lesniewski and Woodward",
+          "label": "Hagan, Kumar, Lesniewski and Woodward",
+          "count": 1
+        },
+        {
+          "value": "Harry Markowitz",
+          "label": "Harry Markowitz",
+          "count": 1
+        },
+        {
+          "value": "IRS",
+          "label": "IRS",
+          "count": 1
+        },
+        {
+          "value": "Income Tax Department",
+          "label": "Income Tax Department",
+          "count": 1
+        },
+        {
+          "value": "J. L. Kelly",
+          "label": "J. L. Kelly",
+          "count": 1
+        },
+        {
+          "value": "James, Witten, Hastie, Tibshirani and Taylor",
+          "label": "James, Witten, Hastie, Tibshirani and Taylor",
+          "count": 1
+        },
+        {
+          "value": "Jim Gatheral",
+          "label": "Jim Gatheral",
+          "count": 1
+        },
+        {
+          "value": "John C. Hull",
+          "label": "John C. Hull",
+          "count": 1
+        },
+        {
+          "value": "John J. Murphy",
+          "label": "John J. Murphy",
+          "count": 1
+        },
+        {
+          "value": "Larry Harris",
+          "label": "Larry Harris",
+          "count": 1
+        },
+        {
+          "value": "Lo, Mamaysky and Wang",
+          "label": "Lo, Mamaysky and Wang",
+          "count": 1
+        },
+        {
+          "value": "MIT Sloan / MIT OCW",
+          "label": "MIT Sloan / MIT OCW",
+          "count": 1
+        },
+        {
+          "value": "Mark Carlson / Federal Reserve",
+          "label": "Mark Carlson / Federal Reserve",
+          "count": 1
+        },
+        {
+          "value": "Matplotlib contributors",
+          "label": "Matplotlib contributors",
+          "count": 1
+        },
+        {
+          "value": "McNeil, Frey and Embrechts",
+          "label": "McNeil, Frey and Embrechts",
+          "count": 1
+        },
+        {
+          "value": "Moskowitz, Ooi and Pedersen",
+          "label": "Moskowitz, Ooi and Pedersen",
+          "count": 1
+        },
+        {
+          "value": "Nassim Nicholas Taleb",
+          "label": "Nassim Nicholas Taleb",
+          "count": 1
+        },
+        {
+          "value": "NumPy contributors",
+          "label": "NumPy contributors",
+          "count": 1
+        },
+        {
+          "value": "Olena Burkovska, Kathrin Glau, Maximilian Ga\u00df, Mirco Mahlstedt, Wim Schoutens and Barbara Wohlmuth",
+          "label": "Olena Burkovska, Kathrin Glau, Maximilian Ga\u00df, Mirco Mahlstedt, Wim Schoutens and Barbara Wohlmuth",
+          "count": 1
+        },
+        {
+          "value": "Paul Wilmott",
+          "label": "Paul Wilmott",
+          "count": 1
+        },
+        {
+          "value": "Python",
+          "label": "Python",
+          "count": 1
+        },
+        {
+          "value": "QuantLib",
+          "label": "QuantLib",
+          "count": 1
+        },
+        {
+          "value": "Ran Aroussi and contributors",
+          "label": "Ran Aroussi and contributors",
+          "count": 1
+        },
+        {
+          "value": "Robert Engle",
+          "label": "Robert Engle",
+          "count": 1
+        },
+        {
+          "value": "SEBI",
+          "label": "SEBI",
+          "count": 1
+        },
+        {
+          "value": "SciPy contributors",
+          "label": "SciPy contributors",
+          "count": 1
+        },
+        {
+          "value": "Sheldon Natenberg",
+          "label": "Sheldon Natenberg",
+          "count": 1
+        },
+        {
+          "value": "St. Louis Fed",
+          "label": "St. Louis Fed",
+          "count": 1
+        },
+        {
+          "value": "Steve Nison",
+          "label": "Steve Nison",
+          "count": 1
+        },
+        {
+          "value": "Steven Heston",
+          "label": "Steven Heston",
+          "count": 1
+        },
+        {
+          "value": "Steven Shreve",
+          "label": "Steven Shreve",
+          "count": 1
+        },
+        {
+          "value": "U.S. Bureau of Labor Statistics",
+          "label": "U.S. Bureau of Labor Statistics",
+          "count": 1
+        },
+        {
+          "value": "Wharton WRDS",
+          "label": "Wharton WRDS",
+          "count": 1
+        },
+        {
+          "value": "Zerodha Varsity",
+          "label": "Zerodha Varsity",
+          "count": 1
+        },
+        {
+          "value": "pandas",
+          "label": "pandas",
+          "count": 1
+        },
+        {
+          "value": "scikit-learn contributors",
+          "label": "scikit-learn contributors",
+          "count": 1
+        },
+        {
+          "value": "statsmodels contributors",
+          "label": "statsmodels contributors",
+          "count": 1
+        }
+      ],
+      "contentVersion": {
+        "publicationId": "pub-3b965db7-63d7-41e3-a200-ffceef69423c",
+        "generation": "1",
+        "asOf": "2026-09-30T13:50:19.948500Z",
+        "schemaVersion": "1.0.0"
+      },
+      "geography": [
+        {
+          "value": "Global concepts; source jurisdiction must be checked for rules",
+          "label": "Global concepts; source jurisdiction must be checked for rules",
+          "count": 65
+        },
+        {
+          "value": "Global conceptual; US product rules only where stated",
+          "label": "Global conceptual; US product rules only where stated",
+          "count": 26
+        },
+        {
+          "value": "India",
+          "label": "India",
+          "count": 5
+        }
+      ],
+      "verificationStatus": [
+        {
+          "value": "access_or_inherited_metadata_only",
+          "label": "access_or_inherited_metadata_only",
+          "count": 43
+        },
+        {
+          "value": "limited_review",
+          "label": "limited_review",
+          "count": 37
+        },
+        {
+          "value": "selected_sections_reviewed",
+          "label": "selected_sections_reviewed",
+          "count": 16
+        }
+      ],
+      "readiness": [
+        {
+          "value": "learning_design",
+          "label": "learning_design",
+          "count": 96
+        }
+      ],
+      "visibility": [
+        {
+          "value": "MAP",
+          "label": "MAP",
+          "count": 96
+        }
+      ],
+      "module": [
+        {
+          "value": "M30",
+          "label": "M30",
+          "count": 2
+        },
+        {
+          "value": "M37",
+          "label": "M37",
+          "count": 2
+        },
+        {
+          "value": "M21",
+          "label": "M21",
+          "count": 1
+        },
+        {
+          "value": "M22",
+          "label": "M22",
+          "count": 1
+        },
+        {
+          "value": "M24",
+          "label": "M24",
+          "count": 1
+        },
+        {
+          "value": "M28",
+          "label": "M28",
+          "count": 1
+        },
+        {
+          "value": "M29",
+          "label": "M29",
+          "count": 1
+        },
+        {
+          "value": "M57",
+          "label": "M57",
+          "count": 1
+        },
+        {
+          "value": "M66",
+          "label": "M66",
+          "count": 1
+        }
+      ],
+      "kind": [
+        {
+          "value": "RESOURCE",
+          "label": "RESOURCE",
+          "count": 96
+        }
+      ],
+      "phase": [
+        {
+          "value": "P4",
+          "label": "P4",
+          "count": 4
+        },
+        {
+          "value": "P1",
+          "label": "P1",
+          "count": 2
+        },
+        {
+          "value": "P2",
+          "label": "P2",
+          "count": 2
+        },
+        {
+          "value": "P3",
+          "label": "P3",
+          "count": 1
+        }
+      ],
+      "topic": [
+        {
+          "value": "M30.01",
+          "label": "M30.01",
+          "count": 2
+        },
+        {
+          "value": "M37.P01",
+          "label": "M37.P01",
+          "count": 2
+        },
+        {
+          "value": "M21.01",
+          "label": "M21.01",
+          "count": 1
+        },
+        {
+          "value": "M22.01",
+          "label": "M22.01",
+          "count": 1
+        },
+        {
+          "value": "M24.01",
+          "label": "M24.01",
+          "count": 1
+        },
+        {
+          "value": "M28.01",
+          "label": "M28.01",
+          "count": 1
+        },
+        {
+          "value": "M29.01",
+          "label": "M29.01",
+          "count": 1
+        },
+        {
+          "value": "M57.01",
+          "label": "M57.01",
+          "count": 1
+        },
+        {
+          "value": "M66.P01",
+          "label": "M66.P01",
+          "count": 1
+        }
+      ],
+      "path": [
+        {
+          "value": "PATH-MM",
+          "label": "PATH-MM",
+          "count": 5
+        },
+        {
+          "value": "PATH-QUANT",
+          "label": "PATH-QUANT",
+          "count": 5
+        },
+        {
+          "value": "PATH-VOL",
+          "label": "PATH-VOL",
+          "count": 5
+        },
+        {
+          "value": "PATH-INDIA",
+          "label": "PATH-INDIA",
+          "count": 3
+        },
+        {
+          "value": "PATH-RETAIL",
+          "label": "PATH-RETAIL",
+          "count": 3
+        },
+        {
+          "value": "PATH-SYSTEMATIC",
+          "label": "PATH-SYSTEMATIC",
+          "count": 3
+        },
+        {
+          "value": "PATH-BEGINNER",
+          "label": "PATH-BEGINNER",
+          "count": 2
+        }
+      ]
+    },
+    "status": 200
+  }
+]

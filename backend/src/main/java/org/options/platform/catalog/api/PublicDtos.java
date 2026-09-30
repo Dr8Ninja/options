@@ -120,7 +120,10 @@ public final class PublicDtos {
           String status,
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
-          String verificationScope) {}
+          String verificationScope,
+      String priority,
+      String url,
+      String cost) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -191,7 +194,8 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           ContentVersion contentVersion,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -259,7 +263,8 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           String qualification,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -310,7 +315,8 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           List<Reference> modules,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -370,7 +376,11 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           List<Assignment> assignments,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable,
+      Reference phase,
+      String whyItMatters,
+      List<String> commonMistakes) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -436,7 +446,9 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           List<Prerequisite> prerequisites,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable,
+      Reference module) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -490,7 +502,8 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           String lessonMarkdown,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -577,7 +590,9 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           String verificationStatus,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable,
+      String prerequisitesText) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -649,7 +664,11 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           String unavailableReason,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable,
+      List<Reference> branches,
+      List<String> exitStatements,
+      List<String> milestones) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -715,7 +734,11 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           List<ProjectField> fields,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable,
+      List<String> steps,
+      List<String> limitations,
+      List<String> noncodingRoute) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -795,7 +818,8 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           String assessmentPolicyId,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -858,7 +882,8 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           Boolean practiceAvailable,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -921,7 +946,8 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           Boolean attemptAvailable,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -972,7 +998,14 @@ public final class PublicDtos {
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
           String match,
-      List<RuleNotice> ruleNotices) {}
+      List<RuleNotice> ruleNotices,
+      Boolean indexable,
+      String authorOrganization,
+      String resourceType,
+      String cost,
+      String rationale,
+      String verifiedOn,
+      String verificationStatus) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =
@@ -1050,7 +1083,11 @@ public final class PublicDtos {
           List<Facet> visibility,
       @io.swagger.v3.oas.annotations.media.Schema(
               requiredMode = io.swagger.v3.oas.annotations.media.Schema.RequiredMode.REQUIRED)
-          List<Facet> module) {}
+          List<Facet> module,
+      List<Facet> kind,
+      List<Facet> phase,
+      List<Facet> topic,
+      List<Facet> path) {}
 
   @io.swagger.v3.oas.annotations.media.Schema(
       additionalProperties =

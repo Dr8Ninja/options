@@ -91,3 +91,19 @@ P09 dependency scanning also runs `pip freeze` from the installed isolated envir
 The suite covers every public endpoint, exact filter intersections, facets, all collection sort/keyset variants, cursor authentication/expiry/generation changes, bounded search paging, exact-ID/title ranking, malformed/unknown input, draft and protected relationship exclusion, stale rule metadata, no answer-key fields/text, method/HEAD behavior, draft versus approved renames, withdrawal and retirement. Actual responses undergo OpenAPI schema/format validation. `pg_stat_statements` compares query round trips at limit 1 versus 50; representative search/filter EXPLAIN ANALYZE plans and measured request/activation timings are saved under `backend/target/p10-evidence`.
 
 Run `python scripts/check-public-api.py` and `python scripts/check-implemented-api.py` after Maven verification. CI runs both. Public DTOs regenerate with `python scripts/generate-public-dtos.py` followed by Maven formatting; frontend types regenerate with `npm --prefix frontend run generate:api`. Input parsing uses Bean Validation bounds plus explicit scalar/array/filter/sort allowlists, independently tested through HTTP. Read [P10 evidence](evidence/p10/REVIEW.md) for actual results and limits; these are local correctness/scale checks, not P20 concurrent-load acceptance.
+
+## P11 public learning gate
+
+After backend verification and a production frontend build, run:
+
+```sh
+.venv/bin/python scripts/test-public-learning.py
+```
+
+The runner requires the configured Java/Node runtimes, Docker, Python import dependencies, OpenSSL and installed Playwright Chromium. It starts disposable PostgreSQL, runs the real canonical importer, starts Spring on 18082 and the production frontend on 3101 behind test HTTPS on 18444. Synthetic publication approval and one renderer specimen are test-classpath-only. No persistent local content is published. Temporary TLS keys are removed on exit.
+
+Five browser cases cover keyboard home-to-topic navigation, deep canonical redirects, server HTML/metadata/math/tables, sanitized adversarial content, mobile/dark/no-JavaScript reading, actual withdrawal and actual backend shutdown. Axe checks run on representative rendered pages. Current P11 rerun screenshots go to `.local/p11-runtime/reading-screenshots` (copy reviewed captures into the current stage’s evidence; preserve historical P11 captures); the JSON result is in `frontend/test-results/p11-results.json`. The test controls use an ignored local file, never production HTTP mutation hooks. Component/adapter tests additionally verify safe links, renderer limits and generation coherence; they supplement rather than replace the real stack.
+
+## P12 discovery gate
+
+After the production frontend build and isolated backend verification, run `.venv/bin/python scripts/test-public-learning.py --stage p12`. This reuses the real P09-imported disposable PostgreSQL/Spring/production-Next fixture; it is not mocked. Six journeys exercise filtered resource-to-topic reading, URL/back/reload state, pages and stale generations, empty/malformed input, never-published sentinel exclusion, path-to-module and project prerequisites, mobile/keyboard/axe/no-JavaScript rendering, and actual API shutdown. JSON evidence is `frontend/test-results/p12-results.json`; screenshots are in `docs/engineering/evidence/p12/screenshots`. Run P11 separately to retain its withdrawal checks. Do not run concurrent Maven compilations or Playwright jobs against the same output directories.

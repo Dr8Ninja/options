@@ -174,3 +174,19 @@ Accepted 27 September 2026 under P10. The 23 public catalog/search operations us
 ## D043 — PostgreSQL search, bounded reads and conservative caching
 
 Accepted 27 September 2026. P10 materializes a weighted PostgreSQL full-text index and exact filter memberships in the publication activation transaction; no separate search service is justified by the measured canonical scale. Sort/filter syntax is closed and parameterized, browsing uses signed generation-bound keysets, and ranked search uses bounded pages with deterministic ties. Reads check the publication generation and timed safety boundaries after assembly. P03/P05's `no-store` policy applies to every dynamic response; ETags are concurrency tokens, not shared-cache authorization. Optional rule notices expose freshness/eligibility without rule values. Test-only approvals in disposable PostgreSQL prove API behavior; they do not publish or certify the persistent canonical drafts. UI, identity, assessment and editorial workflows remain their assigned later stages.
+
+## D044 — Public reading uses server rendering and explicit editorial indexability
+
+Accepted 27 September 2026 under P11. Live P10 DTOs supply public navigation, ordered relationships, reading and honest readiness/counts. Publication-entry indexability governs metadata and the sitemap; reviewed lessons require LESSON visibility. Request-scoped deduplication and generation checks avoid mixing publications, while no-store responses and visible-page revalidation preserve withdrawal behavior. Global streaming loading boundaries are omitted so canonical redirects and missing routes retain HTTP semantics. Pending links provide accessible navigation feedback. Private and preview surfaces remain noindex/no-store.
+
+## D045 — Restricted authored content and disposable publication evidence
+
+Accepted 27 September 2026. Markdown/GFM and bounded, untrusted KaTeX render authored text without executing HTML, MDX, arbitrary code or remote images. Safe links, textual diagram alternatives and keyboard-scrollable tables/math/code preserve readable public content. The P11 gate uses the full real canonical import plus an explicitly synthetic renderer specimen in disposable PostgreSQL. Test-only approvals cannot enter the production JAR or silently publish the persistent drafts. Public course readiness and lesson authorship remain separate gates.
+
+## D046 — Discovery shares the public search pagination contract
+
+Accepted 30 September 2026 under P12. Queryable resource/path/project screens use the P10 search endpoint with fixed kinds, bounded page sizes and generation-bound URL state. Repeated values are OR; separate filters are AND. Public facets/results are generation checked together. Search/list variants remain noindex/no-store. Resource result metadata is projected in one query rather than fetched per row. No independent search service or parallel curriculum store is introduced.
+
+## D047 — Public criteria are not protected reference behavior
+
+Accepted 30 September 2026. P12 corrects project assessment criteria that previously repeated the objective. Only rubric codes and weights are public; detailed rubric descriptions, reference behavior and answer material stay excluded. Resource verification distinguishes recorded substantive review from unknown link availability, while path progression is editorial sequence rather than personalized readiness. Ratings remain deferred by REQ-39.

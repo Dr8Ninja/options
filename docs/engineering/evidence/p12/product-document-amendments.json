@@ -1,0 +1,12 @@
+{
+  "amendments": [
+    {
+      "path": "docs/product/REQUIREMENTS_TRACEABILITY.md",
+      "previous_sha256": "855d0f8ace15f968b3095524016b2deb14d65cd517c6f0141e5339199ceb3555",
+      "preserved_prefix_bytes": 32776,
+      "sha256": "4f0584ca40cc0a5350d4e2c1feeb6d1b0b07939e8e0cd5b0c87ce09f912499ae",
+      "reason": "Append P12 implementation traceability while retaining the exact P02 matrix bytes.",
+      "decision": "docs/project/DECISIONS.md#d046--discovery-shares-the-public-search-pagination-contract"
+    }
+  ]
+}

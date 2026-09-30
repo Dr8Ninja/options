@@ -1,7 +1,9 @@
 import { describe, expect, it, vi } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import Home from "@/app/page";
+import { Unavailable } from "@/components/learning/Content";
+vi.mock("server-only", () => ({}));
+vi.mock("next/headers", () => ({ headers: async () => new Headers() }));
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { ErrorNotice } from "@/components/ErrorNotice";
 import { ApiError, errorFromResponse } from "@/api/errors";
@@ -9,10 +11,8 @@ import { getCsrf, browserApi } from "@/api/client";
 import { readConfig } from "@/config/environment";
 describe("foundation boundaries", () => {
   it("states readiness without invented learner controls", () => {
-    render(<Home />);
-    expect(
-      screen.getByText(/Reviewed lessons and learner accounts/),
-    ).toBeVisible();
+    render(<Unavailable />);
+    expect(screen.getByText(/Unpublished drafts are not shown/)).toBeVisible();
     expect(screen.queryByRole("link", { name: /start|sign in/i })).toBeNull();
   });
   it("changes accessible theme state", async () => {

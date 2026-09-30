@@ -27,10 +27,22 @@ def main():
     p02 = json.loads(upstream.stdout)
     require(p02["result"] == "PASS", "P02 entry gate failed")
     entry = json.loads((ENG / "evidence/p02-entry-check.json").read_text())
+    amendments = {}
+    for record in sorted((ENG / "evidence").glob("p*/product-document-amendments.json")):
+        for amendment in json.loads(record.read_text())["amendments"]:
+            path = amendment["path"]
+            prior = amendments.get(path, next((x["sha256"] for x in entry["files"] if x["path"] == path), None))
+            require(prior == amendment["previous_sha256"], f"Broken product amendment chain: {path}")
+            body = (ROOT / path).read_bytes()
+            require(hashlib.sha256(body[:amendment["preserved_prefix_bytes"]]).hexdigest() == prior,
+                    f"Product amendment modified its historical prefix: {path}")
+            require(amendment["reason"].strip() and (ROOT / amendment["decision"].split("#")[0]).is_file(),
+                    f"Missing product amendment decision: {path}")
+            amendments[path] = amendment["sha256"]
     for item in entry["files"]:
         checked_path = item.get("snapshot_path", item["path"])
         actual = hashlib.sha256((ROOT / checked_path).read_bytes()).hexdigest()
-        require(actual == item["sha256"], f"Upstream artifact changed: {item['path']}")
+        require(actual == amendments.get(item["path"], item["sha256"]), f"Upstream artifact changed: {item['path']}")
         if item.get("verification_mode") == "generated_report_semantics_except_link_count":
             snapshot = json.loads((ROOT / checked_path).read_text())
             require({k: v for k, v in snapshot.items() if k != "local_links_checked"}

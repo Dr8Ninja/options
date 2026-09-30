@@ -1,0 +1,50 @@
+[
+  {
+    "name": "org.options.platform.ArchitectureTest",
+    "tests": "1",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.678"
+  },
+  {
+    "name": "org.options.platform.ConfigTest",
+    "tests": "1",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "0.116"
+  },
+  {
+    "name": "org.options.platform.CanonicalImportIT",
+    "tests": "1",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "189.89"
+  },
+  {
+    "name": "org.options.platform.FoundationIT",
+    "tests": "7",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "7.291"
+  },
+  {
+    "name": "org.options.platform.PersistenceIT",
+    "tests": "25",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "10.504"
+  },
+  {
+    "name": "org.options.platform.PublicCatalogIT",
+    "tests": "12",
+    "failures": "0",
+    "errors": "0",
+    "skipped": "0",
+    "time": "45.296"
+  }
+]

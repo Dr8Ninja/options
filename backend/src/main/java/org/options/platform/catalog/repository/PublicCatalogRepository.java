@@ -67,7 +67,7 @@ public class PublicCatalogRepository {
   private static final String PUBLIC_KINDS =
       "('PROGRAM','PHASE','MODULE','TOPIC','SUBTOPIC','RESOURCE','PATH','PROJECT','EXERCISE','QUIZ','CAPSTONE')";
   private static final String COLUMNS =
-      "c.object_id,c.revision_id,c.external_id,c.kind,c.content_hash,c.title,c.title_key,c.visibility,c.readiness,c.summary,c.difficulty,c.priority,c.hours_min,c.hours_max,c.estimate_basis,c.canonical_path,c.tags,c.verified_on,c.priority_order,c.verification_status,coalesce((select n.notices::text from public_rule_notice n where n.publication_id=c.publication_id and n.dependent_revision_id=c.revision_id),'[]') rule_notices";
+      "c.object_id,c.revision_id,c.external_id,c.kind,c.content_hash,c.title,c.title_key,c.visibility,(select e.indexable from publication_entry e where e.publication_id=c.publication_id and e.object_id=c.object_id) indexable,c.readiness,c.summary,c.difficulty,c.priority,c.hours_min,c.hours_max,c.estimate_basis,c.canonical_path,c.tags,c.verified_on,c.priority_order,c.verification_status,coalesce((select n.notices::text from public_rule_notice n where n.publication_id=c.publication_id and n.dependent_revision_id=c.revision_id),'[]') rule_notices";
   private static final String QUERY_KEY = "public_text_key(:q)";
   private static final String EXACT =
       "case when public_text_key(c.external_id)="
@@ -83,7 +83,7 @@ public class PublicCatalogRepository {
     args.put("pid", s.id());
     args.put("q", q.q());
     String from =
-        " from public_catalog_entry c join public_search_document s on s.publication_id=c.publication_id and s.object_id=c.object_id";
+        " from (with catalog as materialized (select * from public_catalog_entry where publication_id=:pid) select * from catalog) c join public_search_document s on s.publication_id=c.publication_id and s.object_id=c.object_id";
     StringBuilder where =
         new StringBuilder(
             " where c.publication_id=:pid and " + ELIGIBLE + " and c.kind in " + PUBLIC_KINDS);
@@ -103,6 +103,11 @@ public class PublicCatalogRepository {
       String name = "fn" + i, value = "fv" + i++;
       args.put(name, f.getKey());
       args.put(value, f.getValue());
+      if (Set.of("kind", "visibility", "readiness").contains(f.getKey())) {
+        // Fixed known columns avoid joining membership rows for scalar publication metadata.
+        where.append(" and c.").append(f.getKey()).append(" in (:").append(value).append(")");
+        continue;
+      }
       where
           .append(
               " and exists(select 1 from public_catalog_filter f where f.publication_id=c.publication_id and f.object_id=c.object_id and f.filter_name=:")
@@ -135,15 +140,18 @@ public class PublicCatalogRepository {
 
   public void validateFilters(Snapshot snapshot, PublicQuery query) {
     if (query.filters().isEmpty()) return;
-    // One taxonomy query for all names, independent of how many filters or results are requested.
-    var valid =
-        jdbc.queryForList(
-            "select distinct f.filter_name,f.value from public_catalog_filter f join public_catalog_entry c on c.publication_id=f.publication_id and c.object_id=f.object_id where f.publication_id=:pid and "
-                + ELIGIBLE
-                + " and c.kind in "
-                + PUBLIC_KINDS
-                + " and f.filter_name in (:names)",
-            Map.of("pid", snapshot.id(), "names", query.filters().keySet()));
+    // Enum filters are closed contract values and need no taxonomy scan.
+    var names = query.filters().keySet().stream().filter(name -> !ENUMS.containsKey(name)).toList();
+    List<Map<String, Object>> valid =
+        names.isEmpty()
+            ? List.of()
+            : jdbc.queryForList(
+                "with eligible as materialized (select publication_id,object_id from public_catalog_entry c where c.publication_id=:pid and "
+                    + ELIGIBLE
+                    + " and c.kind in "
+                    + PUBLIC_KINDS
+                    + ") select distinct f.filter_name,f.value from public_catalog_filter f join eligible c on c.publication_id=f.publication_id and c.object_id=f.object_id where f.filter_name in (:names)",
+                Map.of("pid", snapshot.id(), "names", names));
     Map<String, Set<String>> values = new HashMap<>();
     for (var r : valid)
       values
@@ -211,19 +219,24 @@ public class PublicCatalogRepository {
       seek = " and (" + String.join(" or ", disjunction) + ")";
     }
     if (q.entity().equals("search")) args.put("offset", q.page() * q.limit());
+    // Bound the ordered candidate set before evaluating resource/rule projections. In particular,
+    // OFFSET must not execute correlated notice lookups for every skipped row.
     return jdbc.queryForList(
         "select "
             + COLUMNS
-            + ",("
+            + ",rr.author_organization,rr.resource_type,rr.cost,rr.rationale,c.exact_match from (select c.*, ("
             + EXACT
-            + ") exact_match"
+            + ") exact_match,row_number() over(order by "
+            + order(q)
+            + ") result_position"
             + selection.from()
             + selection.where()
             + seek
             + " order by "
             + order(q)
             + " limit :take"
-            + (q.entity().equals("search") ? " offset :offset" : ""),
+            + (q.entity().equals("search") ? " offset :offset" : "")
+            + ") c left join resource_revision rr on rr.revision_id=c.revision_id order by c.result_position",
         args);
   }
 
@@ -278,7 +291,7 @@ public class PublicCatalogRepository {
 
   public List<Map<String, Object>> sections(long revision) {
     return jdbc.queryForList(
-        "select section,body from revision_section where revision_id=:rid and section in ('qualification','objective','data_plan','deliverables','audience','entry','original_brief') order by section,ordinal",
+        "select section,body from revision_section where revision_id=:rid and section in ('why_it_matters','common_mistake','qualification','objective','data_plan','deliverables','audience','entry','original_brief','step','limitations','noncoding_route','exit_statement','milestone') order by section,ordinal",
         Map.of("rid", revision));
   }
 
@@ -291,7 +304,7 @@ public class PublicCatalogRepository {
       union all select 'HARD',requires_object_id,ordinal,rationale from hard_prerequisite where owner_revision_id=:rid
       union all select 'RECOMMENDED',requires_object_id,ordinal,rationale from recommended_preparation where owner_revision_id=:rid
       union all select 'OPTIONAL',target_object_id,ordinal,rationale from optional_enrichment where owner_revision_id=:rid
-      union all select 'parent_'||l.relation,c.object_id,l.ordinal,null from catalog_link l join public_catalog_entry c on c.revision_id=l.owner_revision_id and c.publication_id=:pid where l.target_object_id=:oid and l.relation in ('program_phase','topic_subtopic')
+      union all select 'parent_'||l.relation,c.object_id,l.ordinal,null from catalog_link l join public_catalog_entry c on c.revision_id=l.owner_revision_id and c.publication_id=:pid where l.target_object_id=:oid and l.relation in ('program_phase','topic_subtopic','phase_module','module_topic')
       union all select 'path_gate',r.object_id,g.ordinal,null from course_gate g join catalog_revision r on r.id=g.quiz_revision_id where g.path_revision_id=:rid
       union all select 'path_project',r.object_id,p.ordinal,null from course_project p join catalog_revision r on r.id=p.project_revision_id where p.path_revision_id=:rid and p.required
       )
@@ -311,16 +324,18 @@ public class PublicCatalogRepository {
     return jdbc.queryForList(
         """
       with eligible as materialized (
-       select object_id,revision_id,external_id,kind,title,content_hash,visibility
+       select object_id,revision_id,external_id,kind,title,content_hash,visibility,priority
        from public_catalog_entry where publication_id=:pid and retired_at is null and not withdrawn
       )
       select a0.external_id,a.reading_scope,a.purpose,a.verification_state,
       resource.external_id resource_id,resource.kind resource_kind,resource.title resource_title,resource.content_hash resource_hash,resource.visibility resource_visibility,
-      competency.external_id competency_id,
+      competency.external_id competency_id,resource.priority,rr.cost,locator.original_url,
       coalesce((select array_agg(t.external_id order by l.ordinal) from catalog_link l join eligible t on t.object_id=l.target_object_id where l.owner_revision_id=a.revision_id and l.relation='assignment_topic'),'{}') topic_ids
       from eligible a0 join assignment_revision a on a.revision_id=a0.revision_id
       join eligible resource on resource.object_id=a.resource_object_id
       join eligible competency on competency.object_id=a.competency_object_id
+      join resource_revision rr on rr.revision_id=resource.revision_id
+      join external_locator locator on locator.id=rr.canonical_locator_id
       join competency_revision cr on cr.revision_id=competency.revision_id
       where
       ((:kind='RESOURCE' and a.resource_object_id=:oid) or (:kind='MODULE' and cr.module_object_id=:oid) or
@@ -333,12 +348,18 @@ public class PublicCatalogRepository {
   public Map<String, Object> resource(long revision) {
     return jdbc.queryForMap(
         """
-      select r.author_organization,l.original_url,r.resource_type,r.cost,r.access_limitations,r.rationale,r.geography,r.publication_date_raw,r.publication_precision,r.rights,
+      select r.author_organization,l.original_url,r.resource_type,r.cost,r.access_limitations,r.prerequisites_text,r.rationale,r.geography,r.publication_date_raw,r.publication_precision,r.rights,
       v.checked_on,v.scope,v.next_due_at,v.outcome
       from resource_revision r join external_locator l on l.id=r.canonical_locator_id
       left join lateral(select checked_on,scope,next_due_at,outcome from verification_event where subject_revision_id=r.revision_id and method in ('selected_sections','technical_review','rule_chain') order by checked_on desc,id desc limit 1) v on true where r.revision_id=:rid
       """,
         Map.of("rid", revision));
+  }
+
+  public List<String> rubric(long revision) {
+    return jdbc.queryForList(
+        "select replace(code,'_',' ') || ' — ' || weight::text || '%' from rubric_criterion where owner_revision_id=:rid order by ordinal",
+        Map.of("rid", revision), String.class);
   }
 
   public Map<String, Object> exercise(long revision) {

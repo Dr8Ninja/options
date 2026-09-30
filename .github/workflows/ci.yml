@@ -40,8 +40,8 @@ jobs:
         run: |
           pip install -r scripts/requirements-api-contract.txt
           pip install --require-hashes -r scripts/requirements-content-import.txt
-          ruff format --check scripts/content_import scripts/import-content.py scripts/test-content-import.py scripts/provision-local-import.py scripts/generate-public-dtos.py scripts/seed-public-api-test.py scripts/check-public-api.py scripts/check-implemented-api.py
-          ruff check --select E4,E7,E9,F scripts/content_import scripts/import-content.py scripts/test-content-import.py scripts/provision-local-import.py scripts/generate-public-dtos.py scripts/seed-public-api-test.py scripts/check-public-api.py scripts/check-implemented-api.py
+          ruff format --check scripts/content_import scripts/import-content.py scripts/test-content-import.py scripts/provision-local-import.py scripts/generate-public-dtos.py scripts/seed-public-api-test.py scripts/check-public-api.py scripts/check-implemented-api.py scripts/test-public-learning.py
+          ruff check --select E4,E7,E9,F scripts/content_import scripts/import-content.py scripts/test-content-import.py scripts/provision-local-import.py scripts/generate-public-dtos.py scripts/seed-public-api-test.py scripts/check-public-api.py scripts/check-implemented-api.py scripts/test-public-learning.py
           python -m compileall -q scripts/content_import scripts/import-content.py scripts/test-content-import.py
           python scripts/verify-preservation.py
           python scripts/check-migration-history.py
@@ -85,6 +85,10 @@ jobs:
           cd frontend
           npx playwright install --with-deps chromium
           npm run test:e2e
+      - name: Public learning journeys against disposable imported PostgreSQL
+        run: python scripts/test-public-learning.py
+      - name: Public discovery journeys against disposable imported PostgreSQL
+        run: python scripts/test-public-learning.py --stage p12
       - name: Real WebAuthn compatibility on test classpath
         run: python scripts/test-webauthn.py
       - name: Stop isolated stack
@@ -104,3 +108,5 @@ jobs:
             backend/target/p10-evidence/
             frontend/playwright-report/
             frontend/test-results/
+            .local/p11-runtime/reading-screenshots/
+            docs/engineering/evidence/p12/screenshots/

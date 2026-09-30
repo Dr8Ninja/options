@@ -1,0 +1,1234 @@
+[
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Mon, 28 Sep 2026 13:46:06 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-ff6b457c-32d8-4f1a-b971-0021b938d497:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "ae416c5d-6a17-4520-ab1f-fdd75b37be59"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/modules/M01",
+    "body": {
+      "id": "M01",
+      "kind": "MODULE",
+      "revision": "rev-0bc78811008fb745c12d0ccbc9105e172bcc0bfb208bd02954ab4a1b28d1e51a",
+      "title": "Financial arithmetic and economic purpose",
+      "canonicalPath": "/modules/financial-arithmetic-and-economic-purpose",
+      "visibility": "MAP",
+      "readiness": "learning_design",
+      "summary": "Financial arithmetic and economic purpose",
+      "difficulty": "Beginner",
+      "priority": null,
+      "tags": [
+        "financial-and-market-foundations",
+        "foundations"
+      ],
+      "hours": {
+        "min": 14.0,
+        "max": 36.0,
+        "basis": "Editorial estimate for selected readings, scope navigation, one worked calculation, one transfer variant, practical work and remediation; 45\u201390 minutes per ordinary scope topic plus 2\u20138 practical hours, longer for specialist derivation. Projects budgeted separately. Not measured learner time."
+      },
+      "contentVersion": {
+        "publicationId": "pub-ff6b457c-32d8-4f1a-b971-0021b938d497",
+        "generation": "1",
+        "asOf": "2026-09-28T13:45:59.248870Z",
+        "schemaVersion": "1.0.0"
+      },
+      "objectives": [
+        "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+        "Solve and explain: Lose 20% from 100 then gain 20%: equity 96; recovery from 80 needs 25%.",
+        "Audit the failure mode: Adding sequential returns; treating premium as notional."
+      ],
+      "prerequisites": [],
+      "competencies": [
+        {
+          "id": "C-M01",
+          "kind": "COMPETENCY",
+          "title": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+          "revision": "rev-00c8b2c0e75952444b8972a17621bd7169429067e7a8e3a5b5700c54e1443e00",
+          "availability": "MAP",
+          "ordinal": 1,
+          "reason": null
+        }
+      ],
+      "topics": [
+        {
+          "id": "M01.01",
+          "kind": "TOPIC",
+          "title": "Units and signs",
+          "revision": "rev-a1e3b5aa09ab23981a82eb24dc92d92cb93d78e2facd4b811b1312dbfa30f51e",
+          "availability": "MAP",
+          "ordinal": 1,
+          "reason": null
+        },
+        {
+          "id": "M01.02",
+          "kind": "TOPIC",
+          "title": "Percent change",
+          "revision": "rev-c7e3f81984619cca9bbc51793448d1abd4063e7fc46fcfaacf033662fa5a6322",
+          "availability": "MAP",
+          "ordinal": 2,
+          "reason": null
+        },
+        {
+          "id": "M01.03",
+          "kind": "TOPIC",
+          "title": "Compounding",
+          "revision": "rev-aecc0dc0e4a079d45292554197c00cb4a819ac0223a4fec604e83a099685708d",
+          "availability": "MAP",
+          "ordinal": 3,
+          "reason": null
+        },
+        {
+          "id": "M01.04",
+          "kind": "TOPIC",
+          "title": "Time value of money",
+          "revision": "rev-ebbd2553014d1bbb4c60e2707005a2a5dd81eb917e4b36c0610ce24ac343038c",
+          "availability": "MAP",
+          "ordinal": 4,
+          "reason": null
+        },
+        {
+          "id": "M01.05",
+          "kind": "TOPIC",
+          "title": "Real and nominal returns",
+          "revision": "rev-c38b80e34098e9a7b5edeb571e73fd3d28fe08996f2b0cab6a943beab196779c",
+          "availability": "MAP",
+          "ordinal": 5,
+          "reason": null
+        },
+        {
+          "id": "M01.06",
+          "kind": "TOPIC",
+          "title": "Profit and loss",
+          "revision": "rev-602342cb9d72f6ae5f745f2f424b81a1a8ebacbc3e5b0f1be7ae78d2b18e0fdf",
+          "availability": "MAP",
+          "ordinal": 6,
+          "reason": null
+        },
+        {
+          "id": "M01.07",
+          "kind": "TOPIC",
+          "title": "Capital and solvency",
+          "revision": "rev-2dd7e43e6143aa0879b1fa2d7276856ee024fcc7513ed33e0dd18f5bd4da311a",
+          "availability": "MAP",
+          "ordinal": 7,
+          "reason": null
+        },
+        {
+          "id": "M01.08",
+          "kind": "TOPIC",
+          "title": "Leverage",
+          "revision": "rev-79c4b646bacc0cc669da07de391432e54ff2d6fe21dcdc3ec42d7f90720b0dd3",
+          "availability": "MAP",
+          "ordinal": 8,
+          "reason": null
+        },
+        {
+          "id": "M01.09",
+          "kind": "TOPIC",
+          "title": "Trading purposes",
+          "revision": "rev-e2a9631b53a0697d9f08cf3af82611e5d0c8df2dda13f9e1f9a4f17d93b1f915",
+          "availability": "MAP",
+          "ordinal": 9,
+          "reason": null
+        },
+        {
+          "id": "M01.10",
+          "kind": "TOPIC",
+          "title": "Opportunity cost",
+          "revision": "rev-e15745477dd44911ad438f36061a0ee0c28f88bd48a5361083e45e98175191ff",
+          "availability": "MAP",
+          "ordinal": 10,
+          "reason": null
+        },
+        {
+          "id": "M01.11",
+          "kind": "TOPIC",
+          "title": "Risk capital",
+          "revision": "rev-bc2911c87704caab80d0871ca7468593902b38e7e287bc5b0d5f5ea9070f391d",
+          "availability": "MAP",
+          "ordinal": 11,
+          "reason": null
+        },
+        {
+          "id": "M01.12",
+          "kind": "TOPIC",
+          "title": "Market efficiency",
+          "revision": "rev-759fd4d8b679209e10f00787492119ed85537a125f9843f09305bb42f1021dc9",
+          "availability": "MAP",
+          "ordinal": 12,
+          "reason": null
+        },
+        {
+          "id": "M01.13",
+          "kind": "TOPIC",
+          "title": "Risk premium versus alpha",
+          "revision": "rev-e85431537a9c600cd3d2f95008a4c816e1b62611103e378d46552dbcb61f7788",
+          "availability": "MAP",
+          "ordinal": 13,
+          "reason": null
+        },
+        {
+          "id": "M01.14",
+          "kind": "TOPIC",
+          "title": "Decision objectives",
+          "revision": "rev-3f489fee17bf2ed661e43896d1cb675d073b2118adb2dd9044298e1bdaee713c",
+          "availability": "MAP",
+          "ordinal": 14,
+          "reason": null
+        }
+      ],
+      "assignments": [
+        {
+          "id": "A-M01-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M01"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M01-R16",
+          "resource": {
+            "id": "R16",
+            "kind": "RESOURCE",
+            "title": "MIT OCW \u2014 Finance Theory I",
+            "revision": "rev-9ec6b92f211b538262064dceb3901bf839d3d06885093880e931574205aaab41",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M01"
+          ],
+          "scope": "present value lectures",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Recommended",
+          "url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
+          "cost": "free"
+        }
+      ],
+      "ruleNotices": [],
+      "indexable": false,
+      "phase": {
+        "id": "P0",
+        "kind": "PHASE",
+        "title": "Entry and safety",
+        "revision": "rev-72b0eb66c5b18763b81895bf1d8442859ff51f44d9e3815c0c479c062acb10ee",
+        "availability": "MAP",
+        "ordinal": 1,
+        "reason": null
+      },
+      "whyItMatters": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+      "commonMistakes": [
+        "Adding sequential returns; treating premium as notional.",
+        "Accepting a result without its units, assumptions or source date."
+      ]
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-disposition": [
+        "inline;filename=f.txt"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Mon, 28 Sep 2026 13:46:06 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-ff6b457c-32d8-4f1a-b971-0021b938d497:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "246b0efd-d78b-4507-9dba-9ed192d71681"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/topics/M01.01",
+    "body": {
+      "id": "M01.01",
+      "kind": "TOPIC",
+      "revision": "rev-a1e3b5aa09ab23981a82eb24dc92d92cb93d78e2facd4b811b1312dbfa30f51e",
+      "title": "Units and signs",
+      "canonicalPath": "/topics/M01.01",
+      "visibility": "MAP",
+      "readiness": "scope_outline",
+      "summary": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+      "difficulty": "Beginner",
+      "priority": "Essential",
+      "tags": [
+        "foundations"
+      ],
+      "hours": {
+        "min": null,
+        "max": null,
+        "basis": "Study time has not been estimated."
+      },
+      "contentVersion": {
+        "publicationId": "pub-ff6b457c-32d8-4f1a-b971-0021b938d497",
+        "generation": "1",
+        "asOf": "2026-09-28T13:45:59.248870Z",
+        "schemaVersion": "1.0.0"
+      },
+      "scopeOutline": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+      "lessonMarkdown": null,
+      "formatVersion": "canonical-v1",
+      "subtopics": [
+        {
+          "id": "M01.01.S01",
+          "kind": "SUBTOPIC",
+          "title": "Units and signs \u2014 scope unit",
+          "revision": "rev-83086a3ea80a83b1eab0ae23502bb4ae9d4eadf57e23372a3330df9e446aa4b5",
+          "availability": "MAP",
+          "ordinal": 1,
+          "reason": null
+        }
+      ],
+      "exercises": [],
+      "assignments": [],
+      "prerequisites": [],
+      "ruleNotices": [],
+      "indexable": false,
+      "module": {
+        "id": "M01",
+        "kind": "MODULE",
+        "title": "Financial arithmetic and economic purpose",
+        "revision": "rev-0bc78811008fb745c12d0ccbc9105e172bcc0bfb208bd02954ab4a1b28d1e51a",
+        "availability": "MAP",
+        "ordinal": 1,
+        "reason": null
+      }
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Mon, 28 Sep 2026 13:46:06 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-ff6b457c-32d8-4f1a-b971-0021b938d497:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "4fdce301-4338-490b-b571-4a107c9f497f"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/modules/M01",
+    "body": {
+      "id": "M01",
+      "kind": "MODULE",
+      "revision": "rev-0bc78811008fb745c12d0ccbc9105e172bcc0bfb208bd02954ab4a1b28d1e51a",
+      "title": "Financial arithmetic and economic purpose",
+      "canonicalPath": "/modules/financial-arithmetic-and-economic-purpose",
+      "visibility": "MAP",
+      "readiness": "learning_design",
+      "summary": "Financial arithmetic and economic purpose",
+      "difficulty": "Beginner",
+      "priority": null,
+      "tags": [
+        "financial-and-market-foundations",
+        "foundations"
+      ],
+      "hours": {
+        "min": 14.0,
+        "max": 36.0,
+        "basis": "Editorial estimate for selected readings, scope navigation, one worked calculation, one transfer variant, practical work and remediation; 45\u201390 minutes per ordinary scope topic plus 2\u20138 practical hours, longer for specialist derivation. Projects budgeted separately. Not measured learner time."
+      },
+      "contentVersion": {
+        "publicationId": "pub-ff6b457c-32d8-4f1a-b971-0021b938d497",
+        "generation": "1",
+        "asOf": "2026-09-28T13:45:59.248870Z",
+        "schemaVersion": "1.0.0"
+      },
+      "objectives": [
+        "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+        "Solve and explain: Lose 20% from 100 then gain 20%: equity 96; recovery from 80 needs 25%.",
+        "Audit the failure mode: Adding sequential returns; treating premium as notional."
+      ],
+      "prerequisites": [],
+      "competencies": [
+        {
+          "id": "C-M01",
+          "kind": "COMPETENCY",
+          "title": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+          "revision": "rev-00c8b2c0e75952444b8972a17621bd7169429067e7a8e3a5b5700c54e1443e00",
+          "availability": "MAP",
+          "ordinal": 1,
+          "reason": null
+        }
+      ],
+      "topics": [
+        {
+          "id": "M01.01",
+          "kind": "TOPIC",
+          "title": "Units and signs",
+          "revision": "rev-a1e3b5aa09ab23981a82eb24dc92d92cb93d78e2facd4b811b1312dbfa30f51e",
+          "availability": "MAP",
+          "ordinal": 1,
+          "reason": null
+        },
+        {
+          "id": "M01.02",
+          "kind": "TOPIC",
+          "title": "Percent change",
+          "revision": "rev-c7e3f81984619cca9bbc51793448d1abd4063e7fc46fcfaacf033662fa5a6322",
+          "availability": "MAP",
+          "ordinal": 2,
+          "reason": null
+        },
+        {
+          "id": "M01.03",
+          "kind": "TOPIC",
+          "title": "Compounding",
+          "revision": "rev-aecc0dc0e4a079d45292554197c00cb4a819ac0223a4fec604e83a099685708d",
+          "availability": "MAP",
+          "ordinal": 3,
+          "reason": null
+        },
+        {
+          "id": "M01.04",
+          "kind": "TOPIC",
+          "title": "Time value of money",
+          "revision": "rev-ebbd2553014d1bbb4c60e2707005a2a5dd81eb917e4b36c0610ce24ac343038c",
+          "availability": "MAP",
+          "ordinal": 4,
+          "reason": null
+        },
+        {
+          "id": "M01.05",
+          "kind": "TOPIC",
+          "title": "Real and nominal returns",
+          "revision": "rev-c38b80e34098e9a7b5edeb571e73fd3d28fe08996f2b0cab6a943beab196779c",
+          "availability": "MAP",
+          "ordinal": 5,
+          "reason": null
+        },
+        {
+          "id": "M01.06",
+          "kind": "TOPIC",
+          "title": "Profit and loss",
+          "revision": "rev-602342cb9d72f6ae5f745f2f424b81a1a8ebacbc3e5b0f1be7ae78d2b18e0fdf",
+          "availability": "MAP",
+          "ordinal": 6,
+          "reason": null
+        },
+        {
+          "id": "M01.07",
+          "kind": "TOPIC",
+          "title": "Capital and solvency",
+          "revision": "rev-2dd7e43e6143aa0879b1fa2d7276856ee024fcc7513ed33e0dd18f5bd4da311a",
+          "availability": "MAP",
+          "ordinal": 7,
+          "reason": null
+        },
+        {
+          "id": "M01.08",
+          "kind": "TOPIC",
+          "title": "Leverage",
+          "revision": "rev-79c4b646bacc0cc669da07de391432e54ff2d6fe21dcdc3ec42d7f90720b0dd3",
+          "availability": "MAP",
+          "ordinal": 8,
+          "reason": null
+        },
+        {
+          "id": "M01.09",
+          "kind": "TOPIC",
+          "title": "Trading purposes",
+          "revision": "rev-e2a9631b53a0697d9f08cf3af82611e5d0c8df2dda13f9e1f9a4f17d93b1f915",
+          "availability": "MAP",
+          "ordinal": 9,
+          "reason": null
+        },
+        {
+          "id": "M01.10",
+          "kind": "TOPIC",
+          "title": "Opportunity cost",
+          "revision": "rev-e15745477dd44911ad438f36061a0ee0c28f88bd48a5361083e45e98175191ff",
+          "availability": "MAP",
+          "ordinal": 10,
+          "reason": null
+        },
+        {
+          "id": "M01.11",
+          "kind": "TOPIC",
+          "title": "Risk capital",
+          "revision": "rev-bc2911c87704caab80d0871ca7468593902b38e7e287bc5b0d5f5ea9070f391d",
+          "availability": "MAP",
+          "ordinal": 11,
+          "reason": null
+        },
+        {
+          "id": "M01.12",
+          "kind": "TOPIC",
+          "title": "Market efficiency",
+          "revision": "rev-759fd4d8b679209e10f00787492119ed85537a125f9843f09305bb42f1021dc9",
+          "availability": "MAP",
+          "ordinal": 12,
+          "reason": null
+        },
+        {
+          "id": "M01.13",
+          "kind": "TOPIC",
+          "title": "Risk premium versus alpha",
+          "revision": "rev-e85431537a9c600cd3d2f95008a4c816e1b62611103e378d46552dbcb61f7788",
+          "availability": "MAP",
+          "ordinal": 13,
+          "reason": null
+        },
+        {
+          "id": "M01.14",
+          "kind": "TOPIC",
+          "title": "Decision objectives",
+          "revision": "rev-3f489fee17bf2ed661e43896d1cb675d073b2118adb2dd9044298e1bdaee713c",
+          "availability": "MAP",
+          "ordinal": 14,
+          "reason": null
+        }
+      ],
+      "assignments": [
+        {
+          "id": "A-M01-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M01"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M01-R16",
+          "resource": {
+            "id": "R16",
+            "kind": "RESOURCE",
+            "title": "MIT OCW \u2014 Finance Theory I",
+            "revision": "rev-9ec6b92f211b538262064dceb3901bf839d3d06885093880e931574205aaab41",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M01"
+          ],
+          "scope": "present value lectures",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Recommended",
+          "url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
+          "cost": "free"
+        }
+      ],
+      "ruleNotices": [],
+      "indexable": false,
+      "phase": {
+        "id": "P0",
+        "kind": "PHASE",
+        "title": "Entry and safety",
+        "revision": "rev-72b0eb66c5b18763b81895bf1d8442859ff51f44d9e3815c0c479c062acb10ee",
+        "availability": "MAP",
+        "ordinal": 1,
+        "reason": null
+      },
+      "whyItMatters": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+      "commonMistakes": [
+        "Adding sequential returns; treating premium as notional.",
+        "Accepting a result without its units, assumptions or source date."
+      ]
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-disposition": [
+        "inline;filename=f.txt"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Mon, 28 Sep 2026 13:46:07 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-ff6b457c-32d8-4f1a-b971-0021b938d497:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "54fb9513-be32-45d6-9ecb-6a5b445bfb93"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/topics/M01.01",
+    "body": {
+      "id": "M01.01",
+      "kind": "TOPIC",
+      "revision": "rev-a1e3b5aa09ab23981a82eb24dc92d92cb93d78e2facd4b811b1312dbfa30f51e",
+      "title": "Units and signs",
+      "canonicalPath": "/topics/M01.01",
+      "visibility": "MAP",
+      "readiness": "scope_outline",
+      "summary": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+      "difficulty": "Beginner",
+      "priority": "Essential",
+      "tags": [
+        "foundations"
+      ],
+      "hours": {
+        "min": null,
+        "max": null,
+        "basis": "Study time has not been estimated."
+      },
+      "contentVersion": {
+        "publicationId": "pub-ff6b457c-32d8-4f1a-b971-0021b938d497",
+        "generation": "1",
+        "asOf": "2026-09-28T13:45:59.248870Z",
+        "schemaVersion": "1.0.0"
+      },
+      "scopeOutline": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+      "lessonMarkdown": null,
+      "formatVersion": "canonical-v1",
+      "subtopics": [
+        {
+          "id": "M01.01.S01",
+          "kind": "SUBTOPIC",
+          "title": "Units and signs \u2014 scope unit",
+          "revision": "rev-83086a3ea80a83b1eab0ae23502bb4ae9d4eadf57e23372a3330df9e446aa4b5",
+          "availability": "MAP",
+          "ordinal": 1,
+          "reason": null
+        }
+      ],
+      "exercises": [],
+      "assignments": [],
+      "prerequisites": [],
+      "ruleNotices": [],
+      "indexable": false,
+      "module": {
+        "id": "M01",
+        "kind": "MODULE",
+        "title": "Financial arithmetic and economic purpose",
+        "revision": "rev-0bc78811008fb745c12d0ccbc9105e172bcc0bfb208bd02954ab4a1b28d1e51a",
+        "availability": "MAP",
+        "ordinal": 1,
+        "reason": null
+      }
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Mon, 28 Sep 2026 13:46:07 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-ff6b457c-32d8-4f1a-b971-0021b938d497:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "3d997204-9b00-47d9-98d6-8975dd5a49c8"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/programs",
+    "body": {
+      "items": [
+        {
+          "id": "OPT",
+          "kind": "PROGRAM",
+          "revision": "rev-fe0728f897f90212e3f93c638820eba06cd9b707eb3a1d8d4d3f11324e18ce4e",
+          "title": "Options: contracts, volatility, research and professional practice",
+          "canonicalPath": "/programs/OPT",
+          "visibility": "MAP",
+          "readiness": "learning_design",
+          "summary": "Options: contracts, volatility, research and professional practice",
+          "difficulty": null,
+          "priority": null,
+          "tags": [],
+          "hours": {
+            "min": null,
+            "max": null,
+            "basis": "Study time has not been estimated."
+          },
+          "contentVersion": {
+            "publicationId": "pub-ff6b457c-32d8-4f1a-b971-0021b938d497",
+            "generation": "1",
+            "asOf": "2026-09-28T13:45:59.248870Z",
+            "schemaVersion": "1.0.0"
+          },
+          "ruleNotices": [],
+          "indexable": false
+        }
+      ],
+      "limit": 20,
+      "contentVersion": {
+        "publicationId": "pub-ff6b457c-32d8-4f1a-b971-0021b938d497",
+        "generation": "1",
+        "asOf": "2026-09-28T13:45:59.248870Z",
+        "schemaVersion": "1.0.0"
+      },
+      "nextCursor": null
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Mon, 28 Sep 2026 13:46:08 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-ff6b457c-32d8-4f1a-b971-0021b938d497:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "6785685d-f078-4872-a8db-381ca3c989a5"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/modules/M01",
+    "body": {
+      "id": "M01",
+      "kind": "MODULE",
+      "revision": "rev-0bc78811008fb745c12d0ccbc9105e172bcc0bfb208bd02954ab4a1b28d1e51a",
+      "title": "Financial arithmetic and economic purpose",
+      "canonicalPath": "/modules/financial-arithmetic-and-economic-purpose",
+      "visibility": "MAP",
+      "readiness": "learning_design",
+      "summary": "Financial arithmetic and economic purpose",
+      "difficulty": "Beginner",
+      "priority": null,
+      "tags": [
+        "financial-and-market-foundations",
+        "foundations"
+      ],
+      "hours": {
+        "min": 14.0,
+        "max": 36.0,
+        "basis": "Editorial estimate for selected readings, scope navigation, one worked calculation, one transfer variant, practical work and remediation; 45\u201390 minutes per ordinary scope topic plus 2\u20138 practical hours, longer for specialist derivation. Projects budgeted separately. Not measured learner time."
+      },
+      "contentVersion": {
+        "publicationId": "pub-ff6b457c-32d8-4f1a-b971-0021b938d497",
+        "generation": "1",
+        "asOf": "2026-09-28T13:45:59.248870Z",
+        "schemaVersion": "1.0.0"
+      },
+      "objectives": [
+        "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+        "Solve and explain: Lose 20% from 100 then gain 20%: equity 96; recovery from 80 needs 25%.",
+        "Audit the failure mode: Adding sequential returns; treating premium as notional."
+      ],
+      "prerequisites": [],
+      "competencies": [
+        {
+          "id": "C-M01",
+          "kind": "COMPETENCY",
+          "title": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+          "revision": "rev-00c8b2c0e75952444b8972a17621bd7169429067e7a8e3a5b5700c54e1443e00",
+          "availability": "MAP",
+          "ordinal": 1,
+          "reason": null
+        }
+      ],
+      "topics": [
+        {
+          "id": "M01.01",
+          "kind": "TOPIC",
+          "title": "Units and signs",
+          "revision": "rev-a1e3b5aa09ab23981a82eb24dc92d92cb93d78e2facd4b811b1312dbfa30f51e",
+          "availability": "MAP",
+          "ordinal": 1,
+          "reason": null
+        },
+        {
+          "id": "M01.02",
+          "kind": "TOPIC",
+          "title": "Percent change",
+          "revision": "rev-c7e3f81984619cca9bbc51793448d1abd4063e7fc46fcfaacf033662fa5a6322",
+          "availability": "MAP",
+          "ordinal": 2,
+          "reason": null
+        },
+        {
+          "id": "M01.03",
+          "kind": "TOPIC",
+          "title": "Compounding",
+          "revision": "rev-aecc0dc0e4a079d45292554197c00cb4a819ac0223a4fec604e83a099685708d",
+          "availability": "MAP",
+          "ordinal": 3,
+          "reason": null
+        },
+        {
+          "id": "M01.04",
+          "kind": "TOPIC",
+          "title": "Time value of money",
+          "revision": "rev-ebbd2553014d1bbb4c60e2707005a2a5dd81eb917e4b36c0610ce24ac343038c",
+          "availability": "MAP",
+          "ordinal": 4,
+          "reason": null
+        },
+        {
+          "id": "M01.05",
+          "kind": "TOPIC",
+          "title": "Real and nominal returns",
+          "revision": "rev-c38b80e34098e9a7b5edeb571e73fd3d28fe08996f2b0cab6a943beab196779c",
+          "availability": "MAP",
+          "ordinal": 5,
+          "reason": null
+        },
+        {
+          "id": "M01.06",
+          "kind": "TOPIC",
+          "title": "Profit and loss",
+          "revision": "rev-602342cb9d72f6ae5f745f2f424b81a1a8ebacbc3e5b0f1be7ae78d2b18e0fdf",
+          "availability": "MAP",
+          "ordinal": 6,
+          "reason": null
+        },
+        {
+          "id": "M01.07",
+          "kind": "TOPIC",
+          "title": "Capital and solvency",
+          "revision": "rev-2dd7e43e6143aa0879b1fa2d7276856ee024fcc7513ed33e0dd18f5bd4da311a",
+          "availability": "MAP",
+          "ordinal": 7,
+          "reason": null
+        },
+        {
+          "id": "M01.08",
+          "kind": "TOPIC",
+          "title": "Leverage",
+          "revision": "rev-79c4b646bacc0cc669da07de391432e54ff2d6fe21dcdc3ec42d7f90720b0dd3",
+          "availability": "MAP",
+          "ordinal": 8,
+          "reason": null
+        },
+        {
+          "id": "M01.09",
+          "kind": "TOPIC",
+          "title": "Trading purposes",
+          "revision": "rev-e2a9631b53a0697d9f08cf3af82611e5d0c8df2dda13f9e1f9a4f17d93b1f915",
+          "availability": "MAP",
+          "ordinal": 9,
+          "reason": null
+        },
+        {
+          "id": "M01.10",
+          "kind": "TOPIC",
+          "title": "Opportunity cost",
+          "revision": "rev-e15745477dd44911ad438f36061a0ee0c28f88bd48a5361083e45e98175191ff",
+          "availability": "MAP",
+          "ordinal": 10,
+          "reason": null
+        },
+        {
+          "id": "M01.11",
+          "kind": "TOPIC",
+          "title": "Risk capital",
+          "revision": "rev-bc2911c87704caab80d0871ca7468593902b38e7e287bc5b0d5f5ea9070f391d",
+          "availability": "MAP",
+          "ordinal": 11,
+          "reason": null
+        },
+        {
+          "id": "M01.12",
+          "kind": "TOPIC",
+          "title": "Market efficiency",
+          "revision": "rev-759fd4d8b679209e10f00787492119ed85537a125f9843f09305bb42f1021dc9",
+          "availability": "MAP",
+          "ordinal": 12,
+          "reason": null
+        },
+        {
+          "id": "M01.13",
+          "kind": "TOPIC",
+          "title": "Risk premium versus alpha",
+          "revision": "rev-e85431537a9c600cd3d2f95008a4c816e1b62611103e378d46552dbcb61f7788",
+          "availability": "MAP",
+          "ordinal": 13,
+          "reason": null
+        },
+        {
+          "id": "M01.14",
+          "kind": "TOPIC",
+          "title": "Decision objectives",
+          "revision": "rev-3f489fee17bf2ed661e43896d1cb675d073b2118adb2dd9044298e1bdaee713c",
+          "availability": "MAP",
+          "ordinal": 14,
+          "reason": null
+        }
+      ],
+      "assignments": [
+        {
+          "id": "A-M01-R01",
+          "resource": {
+            "id": "R01",
+            "kind": "RESOURCE",
+            "title": "OCC \u2014 Characteristics and Risks of Standardized Options",
+            "revision": "rev-a14a3e6d16f7bfbfa9a20d64a60cb5cb94ae133095f4b68291fdc4e82a2eb26a",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M01"
+          ],
+          "scope": "II",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Essential",
+          "url": "https://www.theocc.com/company-information/documents-and-archives/options-disclosure-document",
+          "cost": "free"
+        },
+        {
+          "id": "A-M01-R16",
+          "resource": {
+            "id": "R16",
+            "kind": "RESOURCE",
+            "title": "MIT OCW \u2014 Finance Theory I",
+            "revision": "rev-9ec6b92f211b538262064dceb3901bf839d3d06885093880e931574205aaab41",
+            "availability": "MAP",
+            "reason": null
+          },
+          "topicIds": [],
+          "competencyIds": [
+            "C-M01"
+          ],
+          "scope": "present value lectures",
+          "purpose": "Module reading proposal; verify the named section before required use. Not evidence for every topic in the module.",
+          "status": "CANDIDATE",
+          "verificationScope": null,
+          "priority": "Recommended",
+          "url": "https://ocw.mit.edu/courses/15-401-finance-theory-i-fall-2008/",
+          "cost": "free"
+        }
+      ],
+      "ruleNotices": [],
+      "indexable": false,
+      "phase": {
+        "id": "P0",
+        "kind": "PHASE",
+        "title": "Entry and safety",
+        "revision": "rev-72b0eb66c5b18763b81895bf1d8442859ff51f44d9e3815c0c479c062acb10ee",
+        "availability": "MAP",
+        "ordinal": 1,
+        "reason": null
+      },
+      "whyItMatters": "Reconcile units, cash, equity and compounded returns before accepting any payoff claim.",
+      "commonMistakes": [
+        "Adding sequential returns; treating premium as notional.",
+        "Accepting a result without its units, assumptions or source date."
+      ]
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Mon, 28 Sep 2026 13:46:09 GMT"
+      ],
+      "etag": [
+        "\"pub-ff6b457c-32d8-4f1a-b971-0021b938d497:1\""
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-ff6b457c-32d8-4f1a-b971-0021b938d497:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "8a6372a2-9713-4542-87a2-1d3ae39cce76"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/content-version",
+    "body": {
+      "publicationId": "pub-ff6b457c-32d8-4f1a-b971-0021b938d497",
+      "generation": "1",
+      "asOf": "2026-09-28T13:45:59.248870Z",
+      "schemaVersion": "1.0.0"
+    },
+    "status": 200
+  },
+  {
+    "headers": {
+      "cache-control": [
+        "no-store"
+      ],
+      "content-disposition": [
+        "inline;filename=f.txt"
+      ],
+      "content-type": [
+        "application/json"
+      ],
+      "date": [
+        "Mon, 28 Sep 2026 13:46:09 GMT"
+      ],
+      "transfer-encoding": [
+        "chunked"
+      ],
+      "vary": [
+        "Cookie"
+      ],
+      "x-content-type-options": [
+        "nosniff"
+      ],
+      "x-content-version": [
+        "pub-ff6b457c-32d8-4f1a-b971-0021b938d497:1"
+      ],
+      "x-frame-options": [
+        "DENY"
+      ],
+      "x-request-id": [
+        "93e8409a-019b-4857-97fe-8b1898c9f5a3"
+      ],
+      "x-robots-tag": [
+        "noindex, nofollow"
+      ],
+      "x-xss-protection": [
+        "0"
+      ]
+    },
+    "path": "/topics/M01.01",
+    "body": {
+      "id": "M01.01",
+      "kind": "TOPIC",
+      "revision": "rev-a1e3b5aa09ab23981a82eb24dc92d92cb93d78e2facd4b811b1312dbfa30f51e",
+      "title": "Units and signs",
+      "canonicalPath": "/topics/M01.01",
+      "visibility": "MAP",
+      "readiness": "scope_outline",
+      "summary": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+      "difficulty": "Beginner",
+      "priority": "Essential",
+      "tags": [
+        "foundations"
+      ],
+      "hours": {
+        "min": null,
+        "max": null,
+        "basis": "Study time has not been estimated."
+      },
+      "contentVersion": {
+        "publicationId": "pub-ff6b457c-32d8-4f1a-b971-0021b938d497",
+        "generation": "1",
+        "asOf": "2026-09-28T13:45:59.248870Z",
+        "schemaVersion": "1.0.0"
+      },
+      "scopeOutline": "currency, points, ticks, percentages, basis points, contracts, multipliers; dimensional checks",
+      "lessonMarkdown": null,
+      "formatVersion": "canonical-v1",
+      "subtopics": [
+        {
+          "id": "M01.01.S01",
+          "kind": "SUBTOPIC",
+          "title": "Units and signs \u2014 scope unit",
+          "revision": "rev-83086a3ea80a83b1eab0ae23502bb4ae9d4eadf57e23372a3330df9e446aa4b5",
+          "availability": "MAP",
+          "ordinal": 1,
+          "reason": null
+        }
+      ],
+      "exercises": [],
+      "assignments": [],
+      "prerequisites": [],
+      "ruleNotices": [],
+      "indexable": false,
+      "module": {
+        "id": "M01",
+        "kind": "MODULE",
+        "title": "Financial arithmetic and economic purpose",
+        "revision": "rev-0bc78811008fb745c12d0ccbc9105e172bcc0bfb208bd02954ab4a1b28d1e51a",
+        "availability": "MAP",
+        "ordinal": 1,
+        "reason": null
+      }
+    },
+    "status": 200
+  }
+]
