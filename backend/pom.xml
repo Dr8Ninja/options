@@ -26,7 +26,7 @@
   </dependencies>
   <build><plugins>
     <plugin><groupId>org.springframework.boot</groupId><artifactId>spring-boot-maven-plugin</artifactId></plugin>
-    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-enforcer-plugin</artifactId><version>3.6.2</version><executions><execution><goals><goal>enforce</goal></goals><configuration><rules>
+    <plugin><groupId>org.apache.maven.plugins</groupId><artifactId>maven-enforcer-plugin</artifactId><version>3.6.3</version><executions><execution><goals><goal>enforce</goal></goals><configuration><rules>
       <requireJavaVersion><version>[25,26)</version></requireJavaVersion><requireMavenVersion><version>[3.9.16,4)</version></requireMavenVersion>
       <bannedDependencies><excludes><exclude>com.h2database:h2</exclude><exclude>org.springframework.boot:spring-boot-starter-data-rest</exclude></excludes></bannedDependencies>
       <requireReleaseDeps><onlyWhenRelease>false</onlyWhenRelease></requireReleaseDeps>
