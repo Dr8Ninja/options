@@ -206,3 +206,7 @@ All Q001–Q029 are represented in the rows above; grouping preserves their P01 
 8. Paid providers, identity architecture, framework versions and database schema remain P03–P05 decisions. Budget, operator/territories, rights, editorial staff, support/email and deployment identity are recorded as U01–U06 rather than invented.
 
 P02 document gate: pass only after the recorded validation confirms all 40 requirements have owners/validation, all 17 research steps and 33 build sections plus master/gap findings are assigned, the 36-topic sequence references real IDs without future dependencies, and local links/entry integrity pass. This is not evidence that any application journey has run. P03 is the next eligible prompt; P17 and P18–P22 retain all content and release obligations.
+
+## P12 implementation evidence — 30 September 2026
+
+P12 implements the discovery portion of REQ-04–12/36 and journeys J03–J05: URL-addressable search/facets/pages, resource review/access/exact-assignment details, ordered shared-module paths and project prerequisites/data plans/deliverables/public rubric criteria. REQ-39 remains deferred (no ratings). Browser, API and accessibility evidence is recorded in `docs/engineering/evidence/p12` after running the real imported stack. This does not certify authored course readiness, personalized progress, enrollment, assessment execution, editorial workflows or the later full-release gates. Public next-topic suggestions use published order; P14 owns personalized recommendations.

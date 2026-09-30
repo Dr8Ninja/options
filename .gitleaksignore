@@ -16,3 +16,7 @@ docs/engineering/evidence/p09/migrations-sha256.json:generic-api-key:6
 docs/engineering/evidence/p10/entry.json:generic-api-key:5
 docs/engineering/evidence/p10/entry.json:generic-api-key:6
 docs/engineering/evidence/p10/entry.json:generic-api-key:8
+# Reviewed P11 false positive: entry fingerprint of the P10 OpenAPI file.
+docs/engineering/evidence/p11/entry.json:generic-api-key:6
+# Reviewed P12 false positive: entry SHA-256 of the P11 OpenAPI file.
+docs/engineering/evidence/p12/entry.json:generic-api-key:5

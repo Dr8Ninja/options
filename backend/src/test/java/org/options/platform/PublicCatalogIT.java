@@ -326,9 +326,23 @@ class PublicCatalogIT {
     assertThat(get("/search?q=" + enc(title)).get("items").get(0).get("match").asText())
         .isEqualTo("EXACT_TITLE");
     assertThat(get("/search?q=volatility").get("total").asInt()).isPositive();
+    var resourceHit = get("/search?kind=RESOURCE&q=R01").get("items").get(0);
+    assertThat(resourceHit.get("resourceType").asText()).isNotBlank();
+    assertThat(resourceHit.get("cost").asText()).isNotBlank();
+    assertThat(get("/resources/R01").get("prerequisitesText").asText()).isNotBlank();
+    var criteria = get("/projects/PR01").get("assessmentCriteria").toString();
+    assertThat(criteria).contains("%").doesNotContain("ANSWERKEYSENTINEL");
+    var facets = get("/discovery-facets?entity=search&kind=RESOURCE");
+    assertThat(facets.has("topic") && facets.has("path") && facets.has("kind")).isTrue();
     assertThat(get("/search?q=" + enc("!!!")).get("items").size()).isZero();
     String gen = get("/content-version").get("generation").asText();
     assertThat(get("/search?q=volatility&page=99&generation=" + gen).get("items").size()).isZero();
+    assertThat(
+            get("/search?kind=PROGRAM&kind=PHASE&kind=MODULE&kind=TOPIC&kind=SUBTOPIC&sort=title&limit=50&page=10&generation="
+                    + gen)
+                .get("items")
+                .size())
+        .isEqualTo(50);
     error("/search?page=1", 400, "INVALID_QUERY");
     error("/search?page=100&generation=" + gen, 400, "INVALID_QUERY");
     error("/search?page=1&generation=0", 409, "CONTENT_VERSION_CHANGED");

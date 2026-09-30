@@ -17,6 +17,7 @@ export function proxy(request: NextRequest) {
   ].join("; ");
   const headers = new Headers(request.headers);
   headers.set("x-nonce", nonce);
+  headers.set("x-render-token", requestId);
   headers.set("Content-Security-Policy", csp);
   const response = NextResponse.next({ request: { headers } });
   response.headers.set("X-Request-ID", requestId);
@@ -36,7 +37,14 @@ export function proxy(request: NextRequest) {
     "Permissions-Policy",
     "camera=(), microphone=(), geolocation=()",
   );
-  response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  if (
+    /^\/(api|me|account|admin|editor|preview|search)(\/|$)/.test(
+      request.nextUrl.pathname,
+    ) ||
+    request.nextUrl.search
+  ) {
+    response.headers.set("X-Robots-Tag", "noindex, nofollow");
+  }
   return response;
 }
 export const config = {

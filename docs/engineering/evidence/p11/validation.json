@@ -1,0 +1,87 @@
+{
+  "recorded_at": "2026-09-28T13:44:04.099703+00:00",
+  "npm": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "java_high_critical": [],
+  "gitleaks_findings": 0,
+  "gitleaks_reviewed_exception": "P11 entry OpenAPI SHA-256 fingerprint only; exact file/rule/line exclusion",
+  "screenshots": {
+    "api-unavailable-mobile.png": "9cba78a8cb9fc16ce00d59b47aedfb3f5c7154bfa18d4c42a07b733d344d4f6f",
+    "curriculum-desktop.png": "ff3e67f63fc811d147edebffefcdff2903b24223ceb888d87e1b1ebb59aad177",
+    "home-desktop.png": "075c0f2a2502eb60ae0ae2247f3d9ae2628027b54a605f4f26e7ef4eb9e5ba0e",
+    "lesson-desktop.png": "34ece35a358bc91197c107602b8971bd4c7b530a4649022fb2c0e67f03255488",
+    "lesson-mobile-dark.png": "f40afe831d97a6d3800409fc6780c5a6ecc50e45a1e1eb600813ac0ef2e7aaaf",
+    "topic-outline-desktop.png": "11b0ce73c6de5063edad2d998b9f98613d2bcefb34baa494310bb0ef5fcf06db"
+  },
+  "local_browser_cases": {
+    "passed": 4,
+    "failed": 0
+  },
+  "frontend_tests": 23,
+  "production_frontend_build": "PASS",
+  "preserved_inputs": 85,
+  "unchanged_migrations": 21,
+  "backend_suites": [
+    {
+      "name": "org.options.platform.ArchitectureTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.684"
+    },
+    {
+      "name": "org.options.platform.ConfigTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "0.128"
+    },
+    {
+      "name": "org.options.platform.CanonicalImportIT",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "192.398"
+    },
+    {
+      "name": "org.options.platform.FoundationIT",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "7.179"
+    },
+    {
+      "name": "org.options.platform.PersistenceIT",
+      "tests": "25",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "11.078"
+    },
+    {
+      "name": "org.options.platform.PublicCatalogIT",
+      "tests": "12",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "time": "43.884"
+    }
+  ],
+  "backend_tests": 47,
+  "api_http_examples": 141,
+  "jar": {
+    "sha256": "b25680fb3ea46b7a5c0937f3b1965993593f46173cb65aa8c24a90f3f9082fab",
+    "test_fixtures_packaged": false
+  },
+  "gate": "PASS"
+}

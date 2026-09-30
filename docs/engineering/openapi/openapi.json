@@ -2,7 +2,7 @@
   "openapi": "3.1.1",
   "info": {
     "title": "Options learning platform REST contract",
-    "version": "1.0.2",
+    "version": "1.0.4",
     "description": "P05 design contract; no running service or authored release implied. See ../API.md. All request objects reject unknown fields; authorization extensions are normative."
   },
   "servers": [
@@ -16771,6 +16771,45 @@
                 "type": "null"
               }
             ]
+          },
+          "priority": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 24
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Metadata of the approved assigned resource; never an inferred reading assignment."
+          },
+          "url": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 2000
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Metadata of the approved assigned resource; never an inferred reading assignment."
+          },
+          "cost": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 24
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Metadata of the approved assigned resource; never an inferred reading assignment."
           }
         },
         "required": [
@@ -17032,6 +17071,10 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
           }
         },
         "required": [
@@ -17160,6 +17203,10 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
           }
         },
         "required": [
@@ -17315,6 +17362,33 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
+          },
+          "phase": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Reference"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Approved immediate parent, or null when unavailable; no inferred hierarchy."
+          },
+          "whyItMatters": {
+            "type": "string",
+            "maxLength": 16000
+          },
+          "commonMistakes": {
+            "type": "array",
+            "maxItems": 100,
+            "items": {
+              "type": "string",
+              "maxLength": 16000
+            }
           }
         },
         "required": [
@@ -17486,6 +17560,21 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
+          },
+          "module": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/Reference"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Approved immediate parent, or null when unavailable; no inferred hierarchy."
           }
         },
         "required": [
@@ -17647,6 +17736,10 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
           }
         },
         "required": [
@@ -17886,6 +17979,14 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
+          },
+          "prerequisitesText": {
+            "type": "string",
+            "maxLength": 8000
           }
         },
         "required": [
@@ -18076,6 +18177,33 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
+          },
+          "branches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Reference"
+            },
+            "maxItems": 100
+          },
+          "exitStatements": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 8000
+            },
+            "maxItems": 100
+          },
+          "milestones": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 8000
+            },
+            "maxItems": 100
           }
         },
         "required": [
@@ -18242,6 +18370,34 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 8000
+            },
+            "maxItems": 100
+          },
+          "limitations": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 8000
+            },
+            "maxItems": 100
+          },
+          "noncodingRoute": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 8000
+            },
+            "maxItems": 100
           }
         },
         "required": [
@@ -18422,6 +18578,10 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
           }
         },
         "required": [
@@ -18571,6 +18731,10 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
           }
         },
         "required": [
@@ -18695,6 +18859,10 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
           }
         },
         "required": [
@@ -18826,6 +18994,76 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
+          },
+          "authorOrganization": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 8000
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "resourceType": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 8000
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "cost": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 8000
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "rationale": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 8000
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "verifiedOn": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 8000
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "verificationStatus": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 8000
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
         },
         "required": [
@@ -19073,6 +19311,34 @@
             "maxItems": 100
           },
           "module": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Facet"
+            },
+            "maxItems": 100
+          },
+          "kind": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Facet"
+            },
+            "maxItems": 100
+          },
+          "phase": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Facet"
+            },
+            "maxItems": 100
+          },
+          "topic": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Facet"
+            },
+            "maxItems": 100
+          },
+          "path": {
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/Facet"
@@ -25880,6 +26146,10 @@
             },
             "maxItems": 100,
             "description": "Approved rule dependencies; operational currency is never inferred from imported metadata."
+          },
+          "indexable": {
+            "type": "boolean",
+            "description": "Explicit approved publication indexing permission; individual MAP topic/subtopic stubs remain noindex regardless."
           }
         },
         "required": [

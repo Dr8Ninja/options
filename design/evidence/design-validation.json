@@ -3,8 +3,8 @@
   "result": "PASS",
   "scope": "P06 design gate only",
   "upstream_p05_gate": "PASS",
-  "contract_version": "1.0.2",
-  "contract_sha256": "6e104fbbc5e6befb23985a244ba605f03426cdb009294647062f05ffc483048b",
+  "contract_version": "1.0.4",
+  "contract_sha256": "40c9bb23426fee89bfa1797ed2085730055c2e1d378d307b9c614052eb6b2604",
   "routes": 35,
   "journeys": 17,
   "canonical_records_compared": 1223,
@@ -236,7 +236,7 @@
       "minimum": 3
     }
   ],
-  "local_links_checked": 48,
+  "local_links_checked": 49,
   "negative_cases_rejected": [
     "low_contrast",
     "invented_operation",

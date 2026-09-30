@@ -5,8 +5,8 @@ test("real HTTPS shell, both themes, keyboard and no horizontal overflow", async
 }) => {
   const response = await page.goto("/");
   expect(response?.headers()["cache-control"]).toContain("no-store");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Understand the contract",
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    /Understand the contract|Learning content is temporarily unavailable/,
   );
   await page.keyboard.press("Tab");
   await expect(

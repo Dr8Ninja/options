@@ -1,0 +1,64 @@
+{
+  "verified_on": "2026-09-27",
+  "packages": [
+    {
+      "name": "react-markdown",
+      "version": "10.1.0",
+      "license": "MIT",
+      "repository": "remarkjs/react-markdown",
+      "engines": null
+    },
+    {
+      "name": "remark-gfm",
+      "version": "4.0.1",
+      "license": "MIT",
+      "repository": "remarkjs/remark-gfm",
+      "engines": null
+    },
+    {
+      "name": "remark-math",
+      "version": "6.0.0",
+      "license": "MIT",
+      "repository": "https://github.com/remarkjs/remark-math/tree/main/packages/remark-math",
+      "engines": null
+    },
+    {
+      "name": "rehype-sanitize",
+      "version": "6.0.0",
+      "license": "MIT",
+      "repository": "rehypejs/rehype-sanitize",
+      "engines": null
+    },
+    {
+      "name": "rehype-katex",
+      "version": "7.0.1",
+      "license": "MIT",
+      "repository": "https://github.com/remarkjs/remark-math/tree/main/packages/rehype-katex",
+      "engines": null
+    },
+    {
+      "name": "katex",
+      "version": "0.18.9",
+      "license": "MIT",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/KaTeX/KaTeX.git"
+      },
+      "engines": null
+    }
+  ],
+  "registry_audit_findings": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "official_guidance": [
+    "https://github.com/remarkjs/react-markdown#security",
+    "https://github.com/rehypejs/rehype-sanitize#example-math",
+    "https://katex.org/docs/options.html",
+    "https://nextjs.org/docs/app/api-reference/functions/generate-metadata"
+  ]
+}
