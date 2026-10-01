@@ -53,7 +53,7 @@
     "unknown_table",
     "changed_id_coverage"
   ],
-  "upstream_local_links_checked": 266,
+  "upstream_local_links_checked": 279,
   "postgresql_tests_run": false,
   "application_import_run": false,
   "query_plans_measured": false,

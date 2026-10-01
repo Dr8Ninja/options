@@ -25,7 +25,8 @@ jobs:
       - uses: actions/setup-java@de7274f081f381c8f8158605e0321c36c376e2e6
         with:
           distribution: temurin
-          java-version: '25.0.4+7'
+          # Exact Adoptium semver for Temurin 25.0.4.1+1 (including its build suffix).
+          java-version: '25.0.4+101.0.LTS'
           cache: maven
           cache-dependency-path: backend/pom.xml
       - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
@@ -92,7 +93,7 @@ jobs:
       - name: Real WebAuthn compatibility on test classpath
         run: python scripts/test-webauthn.py
       - name: Stop isolated stack
-        if: always()
+        if: always() && hashFiles('.env') != ''
         run: docker compose -f infrastructure/compose.yml -f infrastructure/compose.full.yml down
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         if: always()
@@ -109,4 +110,4 @@ jobs:
             frontend/playwright-report/
             frontend/test-results/
             .local/p11-runtime/reading-screenshots/
-            docs/engineering/evidence/p12/screenshots/
+            .local/p11-runtime/discovery-screenshots/

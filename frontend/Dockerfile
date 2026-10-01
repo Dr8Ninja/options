@@ -7,6 +7,8 @@ COPY frontend/ ./
 RUN npm run build
 FROM library/node:26.10.0-bookworm-slim@sha256:662933cf47f013bc8e4beb31a6116448427a82057ba7c42c97e4c5ba766504c2
 WORKDIR /app
+# The standalone server needs Node only; omit package-manager dependencies at runtime.
+RUN rm -rf /usr/local/lib/node_modules/npm /opt/yarn-* /usr/local/bin/npm /usr/local/bin/npx /usr/local/bin/yarn /usr/local/bin/yarnpkg
 ENV NODE_ENV=production NEXT_TELEMETRY_DISABLED=1 HOSTNAME=0.0.0.0 PORT=3000
 COPY --from=build --chown=node:node /app/frontend/.next/standalone ./
 COPY --from=build --chown=node:node /app/frontend/.next/static ./.next/static

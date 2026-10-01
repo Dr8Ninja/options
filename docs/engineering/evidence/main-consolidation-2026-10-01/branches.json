@@ -1,0 +1,107 @@
+[
+  {
+    "name": "codex/p11-public-learning",
+    "sha": "37913498dc658a832c1698e0853abace5bc28b24",
+    "in_main": true
+  },
+  {
+    "name": "codex/p12-discovery",
+    "sha": "585cb436c9eb98ee7e335d2eb83f3e23d5be3833",
+    "in_main": true
+  },
+  {
+    "name": "main",
+    "sha": "81a792948689da9399488b7de057216841225286",
+    "in_main": true
+  },
+  {
+    "name": "origin",
+    "sha": "58c7234805acd37b02c84efb4c1213e3ddb47698",
+    "in_main": true
+  },
+  {
+    "name": "origin/codex/p12-discovery",
+    "sha": "585cb436c9eb98ee7e335d2eb83f3e23d5be3833",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/docker/backend/library/eclipse-temurin-26.0.2_10-jre",
+    "sha": "9c0e226041dfc65e9197dd4e3ca6813444c344a3",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/docker/frontend/library/node-26.10.0-bookworm-slim",
+    "sha": "2ae9833f06ddd4502eea9f1a456503d8286250f8",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/github_actions/actions/checkout-7.0.1",
+    "sha": "08d5040ff4c1da9598db24f363e3be638f1990dd",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/github_actions/actions/setup-java-6.0.1",
+    "sha": "258ba604205cd1ffcc9b9ebd13179cfd57c64e65",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/github_actions/actions/setup-node-7.0.0",
+    "sha": "5061ad3e678f0aa5c10adef57e550e5a6ec882fd",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/github_actions/actions/setup-python-7.0.0",
+    "sha": "56a0e19c8cbc0fb389a97743c41bf97b072d80cf",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/github_actions/actions/upload-artifact-7.0.1",
+    "sha": "311c65c48a5219eff70b6e00227d7701586e9106",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/maven/backend/com.diffplug.spotless-spotless-maven-plugin-3.10.2",
+    "sha": "45fa23da2cd4f6d6f18d62954fe6d013cfc7bde9",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/maven/backend/com.tngtech.archunit-archunit-junit5-1.5.0",
+    "sha": "bd6ceefe72505536cfcaca7e219faad96095b81b",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/maven/backend/org.apache.maven.plugins-maven-enforcer-plugin-3.6.3",
+    "sha": "13d4b6f2ab47d8ce2021997af70078472bd0b333",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/maven/backend/org.cyclonedx-cyclonedx-maven-plugin-2.9.3",
+    "sha": "565ad398bdbb50cc8970a3e70c8065871edd34cb",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/npm_and_yarn/frontend/globals-17.12.0",
+    "sha": "0b0566d08a1273cd0f18d474de66bf898b4b5142",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/npm_and_yarn/frontend/types/node-26.6.2",
+    "sha": "910907931d9e02b4d6b43ba3ceaeebc79a02975a",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/npm_and_yarn/frontend/typescript-7.0.2",
+    "sha": "a665770f2960e10efc01a4b4ffdf9789fa183582",
+    "in_main": true
+  },
+  {
+    "name": "origin/main",
+    "sha": "58c7234805acd37b02c84efb4c1213e3ddb47698",
+    "in_main": true
+  },
+  {
+    "name": "origin/dependabot/npm_and_yarn/frontend/typescript-7.0.2",
+    "sha": "676ff53b492a976cfbc2c380dc189e6008b27d42",
+    "disposition": "Refreshed bot proposal: same unsupported TypeScript 7 upgrade; reconcile without activating it"
+  }
+]

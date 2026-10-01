@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 import { mkdir, writeFile, readFile, rm } from "node:fs/promises";
 import path from "node:path";
-const evidence = path.resolve("../docs/engineering/evidence/p12/screenshots");
+const evidence = path.resolve("../.local/p11-runtime/discovery-screenshots");
 test.beforeAll(async () => {
   await mkdir(evidence, { recursive: true });
 });

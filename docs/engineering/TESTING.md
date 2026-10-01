@@ -107,3 +107,5 @@ Five browser cases cover keyboard home-to-topic navigation, deep canonical redir
 ## P12 discovery gate
 
 After the production frontend build and isolated backend verification, run `.venv/bin/python scripts/test-public-learning.py --stage p12`. This reuses the real P09-imported disposable PostgreSQL/Spring/production-Next fixture; it is not mocked. Six journeys exercise filtered resource-to-topic reading, URL/back/reload state, pages and stale generations, empty/malformed input, never-published sentinel exclusion, path-to-module and project prerequisites, mobile/keyboard/axe/no-JavaScript rendering, and actual API shutdown. JSON evidence is `frontend/test-results/p12-results.json`; screenshots are in `docs/engineering/evidence/p12/screenshots`. Run P11 separately to retain its withdrawal checks. Do not run concurrent Maven compilations or Playwright jobs against the same output directories.
+
+Dependency regressions save current discovery screenshots under `.local/p11-runtime/discovery-screenshots/`; preserve the historical P12 screenshot evidence. The same directory is uploaded by CI.

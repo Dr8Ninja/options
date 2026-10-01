@@ -98,3 +98,7 @@ No row below has a working R1 navigation item, API promise or collected personal
 ## User-dependent inputs, not assumed preferences
 
 U01 budget/operations/region; U02 operator/territories/eligibility/legal review; U03 supplied-material rights; U04 accountable editorial/assessment-maintenance roles; U05 support/email identity and authorized delivery recipients; U06 brand/domain/launch target. Their precise gates and safe planning positions are in REQ-40. They do not block local P03 exploration, but dependent launch decisions remain open. Do not create paid services, send external messages or deploy while merely filling this backlog.
+
+## Repository maintenance — 1 October 2026
+
+Main-only workflow and branch/dependency consolidation are recorded in [maintenance evidence](../engineering/evidence/main-consolidation-2026-10-01/REVIEW.md). P13 remains unstarted. Before production release, resolve or individually assess the 56 existing Debian HIGH/CRITICAL image findings; no blanket security waiver is granted. TypeScript 7 awaits compatible tooling; retain Java 25 LTS.

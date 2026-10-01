@@ -58,7 +58,7 @@ Validate P06 with `python scripts/validate_frontend_design.py` in the P05 valida
 
 The application renders responsive light/dark reading and discovery pages from approved public snapshots. It exposes health, session-backed CSRF and P10 public read endpoints. With no approved publication, catalog reads return 503. All unimplemented API routes are denied, even for an authenticated staff principal. There are no default accounts or production credentials. Reviewed lessons, learning progress, authentication journeys and editorial tools remain later-stage work.
 
-Use Temurin 25 (25.0.4.1+1 on macOS; 25.0.4+7 on Linux), Node 24.21.0/npm 11.19.0 and running Docker/Compose. From a fresh checkout:
+Use Temurin JDK 25.0.4.1+1 (the runtime image remains pinned to 25.0.4+7), Node 26.10.0/npm 11.19.1 and running Docker/Compose. From a fresh checkout:
 
 ```sh
 python3 -m venv .venv
