@@ -58,11 +58,13 @@ public class WebAuthnFixture {
     }
 
     @Bean
+    @Primary
     PublicKeyCredentialUserEntityRepository fixtureEntities() {
       return new MapPublicKeyCredentialUserEntityRepository();
     }
 
     @Bean
+    @Primary
     UserCredentialRepository fixtureCredentials() {
       return new MapUserCredentialRepository();
     }
@@ -99,7 +101,13 @@ public class WebAuthnFixture {
         throws Exception {
       http.securityMatcher(
           "/fixture", "/fixture/**", "/login", "/login/**", "/logout", "/webauthn/**");
-      http.userDetailsService(users);
+      var provider =
+          new org.springframework.security.authentication.dao.DaoAuthenticationProvider(users);
+      provider.setPasswordEncoder(
+          org.springframework.security.crypto.factory.PasswordEncoderFactories
+              .createDelegatingPasswordEncoder());
+      http.authenticationManager(
+          new org.springframework.security.authentication.ProviderManager(provider));
       http.authorizeHttpRequests(
           auth ->
               auth.requestMatchers("/fixture", "/login", "/login/**")

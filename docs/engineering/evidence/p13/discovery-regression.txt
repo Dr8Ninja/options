@@ -1,0 +1,13 @@
+
+Running 6 tests using 1 worker
+
+(node:81349) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 e2e/public.discovery.ts:9:1 › search → filtered resource → exact published topic, with honest source review (2.1s)
+  ✓  2 e2e/public.discovery.ts:48:1 › combined library filters preserve URL, reload and back navigation (1.8s)
+  ✓  3 e2e/public.discovery.ts:86:1 › pagination, empty results, invalid input and unpublished exclusion (1.6s)
+  ✓  4 e2e/public.discovery.ts:128:1 › path → shared module and project prerequisites are actionable (3.4s)
+  ✓  5 e2e/public.discovery.ts:179:1 › mobile filters, keyboard and server rendered discovery (879ms)
+  ✓  6 e2e/public.discovery.ts:222:1 › real API outage keeps discovery unavailable and noindex (465ms)
+
+  6 passed (10.8s)

@@ -190,3 +190,11 @@ Accepted 30 September 2026 under P12. Queryable resource/path/project screens us
 ## D047 — Public criteria are not protected reference behavior
 
 Accepted 30 September 2026. P12 corrects project assessment criteria that previously repeated the objective. Only rubric codes and weights are public; detailed rubric descriptions, reference behavior and answer material stay excluded. Resource verification distinguishes recorded substantive review from unknown link availability, while path progression is editorial sequence rather than personalized readiness. Ratings remain deferred by REQ-39.
+
+## D048 — P13 implements framework identity with an offline privilege boundary
+
+3 October 2026. Implement ADR-004 using Spring DAO/Argon2id, authoritative JDBC sessions and framework WebAuthn4J operations with persisted, one-use, account/session-bound challenges. LEARNER is the server-assigned user role. Two enrolled user-verifying authenticators plus an accountable offline invitation/activation ceremony are required for privileged roles; an email password reset removes those roles. No public role promotion or configured default administrator exists. PostgreSQL holds digest-only confirmation tokens and bounded mail intents; local Mailpit proves delivery behavior without authorizing external email. See [identity operations](../operations/IDENTITY.md).
+
+## D049 — Security patches and explicit local mail configuration
+
+3 October 2026. The prior hosted CI scan found new Jackson HIGH advisories. Override the Boot-managed Jackson 2/3 BOMs to 2.21.7/3.1.7, the compatible patched maintenance lines, while retaining Boot 4.1.1 and its other managed versions. Revalidate the actual runtime SBOM and tests; do not waive findings. Add Boot-managed mail support and preserve the MIT notice for the pinned local common-password list. Local compose sends only to Mailpit; production SMTP needs operator-supplied credentials, authenticated TLS and separate delivery validation. Existing OS-image release blockers are not closed by P13.

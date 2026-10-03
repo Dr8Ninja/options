@@ -27,6 +27,7 @@ export function Navigation() {
           ["/resources", "Resources"],
           ["/projects", "Projects"],
           ["/search", "Search"],
+          ["/account", "Account"],
         ] as const
       ).map(([href, label]) => (
         <Link

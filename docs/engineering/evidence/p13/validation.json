@@ -1,0 +1,125 @@
+{
+  "date": "2026-10-03",
+  "scope": "P13 local implementation; no external mail or publication",
+  "functional_result": "PASS",
+  "overall_gate": "BLOCKED_SECURITY",
+  "backend": {
+    "full_run_tests": 56,
+    "full_run_result": "PASS",
+    "final_targeted_tests": 45,
+    "final_targeted_result": "PASS",
+    "unique_tests": 58,
+    "suites": [
+      {
+        "name": "org.options.platform.CanonicalImportIT",
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "164.728",
+        "timestamp": null
+      },
+      {
+        "name": "org.options.platform.FoundationIT",
+        "tests": "7",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "8.825",
+        "timestamp": null
+      },
+      {
+        "name": "org.options.platform.IdentityIT",
+        "tests": "9",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "5.089",
+        "timestamp": null
+      },
+      {
+        "name": "org.options.platform.PersistenceIT",
+        "tests": "25",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "11.221",
+        "timestamp": null
+      },
+      {
+        "name": "org.options.platform.PublicCatalogIT",
+        "tests": "12",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "45.508",
+        "timestamp": null
+      },
+      {
+        "name": "org.options.platform.ArchitectureTest",
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "0.912",
+        "timestamp": null
+      },
+      {
+        "name": "org.options.platform.ConfigTest",
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "0.147",
+        "timestamp": null
+      },
+      {
+        "name": "org.options.platform.IdentityConfigTest",
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "0.03",
+        "timestamp": null
+      },
+      {
+        "name": "org.options.platform.IdentityPasswordTest",
+        "tests": "1",
+        "failures": "0",
+        "errors": "0",
+        "skipped": "0",
+        "time": "0.121",
+        "timestamp": null
+      }
+    ]
+  },
+  "frontend_tests": 32,
+  "browser": {
+    "identity": 3,
+    "reading_regression": 5,
+    "discovery_regression": 6,
+    "framework_webauthn": 1,
+    "local_https_smoke": 4
+  },
+  "actual_contract_captures": {
+    "identity_backend": 92,
+    "identity_browser": 25,
+    "public": 145
+  },
+  "security": {
+    "backend_runtime_high_critical": 0,
+    "npm_runtime_findings": 0,
+    "npm_all_high_affected_nodes": 4,
+    "underlying_advisory": "CVE-2026-93687",
+    "upstream_fix_available": false,
+    "secret_scan": "PASS",
+    "os_image_findings_prior_release_blocker": 56
+  },
+  "limitations": [
+    "No production SMTP deliverability test",
+    "No physical authenticator custody certification",
+    "No release-wide P19 audit",
+    "Full npm audit and CI security gate remain failed; no suppression or downgrade",
+    "P14 not started"
+  ]
+}

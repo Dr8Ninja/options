@@ -14,10 +14,12 @@ public class SafeErrors {
             .header("Content-Type", "application/problem+json")
             .header("Cache-Control", "no-store");
     if (failure.status == 503) result.header("Retry-After", "30");
+    if (failure.status == 429) result.header("Retry-After", "900");
     return result.body(Problems.body(request, failure.status, failure.code, failure.getMessage()));
   }
 
   @ExceptionHandler({
+    org.springframework.http.converter.HttpMessageNotReadableException.class,
     jakarta.validation.ConstraintViolationException.class,
     org.springframework.web.method.annotation.HandlerMethodValidationException.class,
     org.springframework.web.bind.MethodArgumentNotValidException.class,

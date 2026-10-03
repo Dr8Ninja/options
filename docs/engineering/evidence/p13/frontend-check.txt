@@ -1,0 +1,40 @@
+
+> options-learning-frontend@0.1.0 check
+> npm run format:check && npm run lint && npm run typecheck && npm run check:api && npm run check:tokens && npm test
+
+
+> options-learning-frontend@0.1.0 format:check
+> prettier --check .
+
+Checking formatting...
+All matched files use Prettier code style!
+
+> options-learning-frontend@0.1.0 lint
+> eslint . --max-warnings 0
+
+
+> options-learning-frontend@0.1.0 typecheck
+> next typegen && tsc --noEmit
+
+Generating route types...
+✓ Types generated successfully
+
+> options-learning-frontend@0.1.0 check:api
+> node scripts/generate-api.mjs --check
+
+
+> options-learning-frontend@0.1.0 check:tokens
+> node scripts/generate-tokens.mjs --check
+
+
+> options-learning-frontend@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.1 /Users/nitin/Desktop/drninja/options-trading-roadmap-project/frontend
+
+
+ Test Files  6 passed (6)
+      Tests  32 passed (32)
+   Start at  20:27:42
+   Duration  997ms (environment 61%, setup 13%, tests 9%, import 9%, transform 7%)

@@ -1,0 +1,17 @@
+
+> options-learning-frontend@0.1.0 test:e2e
+> playwright test
+
+
+Running 4 tests using 2 workers
+
+(node:87532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:87531) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › e2e/shell.spec.ts:3:1 › real HTTPS shell, both themes, keyboard and no horizontal overflow (1.0s)
+  ✓  2 [mobile] › e2e/shell.spec.ts:3:1 › real HTTPS shell, both themes, keyboard and no horizontal overflow (1.1s)
+  ✓  3 [desktop] › e2e/shell.spec.ts:32:1 › same-origin security and JDBC pre-session survive real HTTP requests (147ms)
+  ✓  4 [mobile] › e2e/shell.spec.ts:32:1 › same-origin security and JDBC pre-session survive real HTTP requests (117ms)
+
+  4 passed (1.6s)

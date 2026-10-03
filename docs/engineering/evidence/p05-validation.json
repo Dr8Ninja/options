@@ -22,7 +22,7 @@
     "matrix_drift",
     "public_key_leak"
   ],
-  "local_links_checked": 19,
+  "local_links_checked": 21,
   "runtime_tests_run": false,
   "endpoints_implemented": false,
   "postgresql_tests_run": false,

@@ -10,6 +10,9 @@ services:
       DB_PASSWORD: ${DB_RUNTIME_PASSWORD:?Run scripts/provision-local-db.py}
       MIGRATION_DB_USER: ${POSTGRES_USER:?Run scripts/dev-env.py}
       MIGRATION_DB_PASSWORD: ${POSTGRES_PASSWORD:?Run scripts/dev-env.py}
+      IDENTITY_MAIL_MODE: LOCAL
+      IDENTITY_MAIL_HOST: mailpit
+      IDENTITY_MAIL_PORT: 1025
       SERVER_ADDRESS: 0.0.0.0
       MANAGEMENT_SERVER_ADDRESS: 0.0.0.0
     ports: ["127.0.0.1:8081:8081"]

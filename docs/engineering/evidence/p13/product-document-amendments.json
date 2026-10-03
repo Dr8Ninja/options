@@ -1,0 +1,12 @@
+{
+  "amendments": [
+    {
+      "path": "docs/product/REQUIREMENTS_TRACEABILITY.md",
+      "previous_sha256": "4f0584ca40cc0a5350d4e2c1feeb6d1b0b07939e8e0cd5b0c87ce09f912499ae",
+      "preserved_prefix_bytes": 33511,
+      "sha256": "78fd35455a575ad850d081f8f868dbe7887e6a1e5b74c874073c8e962bd4b7ce",
+      "reason": "Append bounded P13 authentication evidence and explicit unclaimed broader workflow/release gates; preserve the historical P02/P12 traceability prefix.",
+      "decision": "docs/project/DECISIONS.md#d048--p13-implements-framework-identity-with-an-offline-privilege-boundary"
+    }
+  ]
+}

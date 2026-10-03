@@ -1,0 +1,4 @@
+{
+  "backend/src/main/resources/db/migration/V0022__identity_lifecycle.sql": "9ecfcd627c3855dd60f4f6c3d97721f7ef92d9a0854857069dffb53e0101531d",
+  "backend/src/main/resources/db/migration/V0023__expire_abandoned_registrations.sql": "a1d319abe9c35c627e492a74cb03b65ff4e092adc90df22e1d1de2843e5075ff"
+}

@@ -1,0 +1,460 @@
+[
+  {
+    "method": "post",
+    "path": "/auth/register",
+    "status": 202,
+    "body": {
+      "message": "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/verification-confirmations",
+    "status": 200,
+    "body": {
+      "message": "The request is complete. Sign in again when required."
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/login",
+    "status": 401,
+    "body": {
+      "type": "urn:otr:problem:INVALID_CREDENTIALS",
+      "title": "Unauthorized",
+      "status": 401,
+      "code": "INVALID_CREDENTIALS",
+      "message": "The email or password could not be verified.",
+      "fieldErrors": [],
+      "timestamp": "2026-10-03T14:58:40.037005Z",
+      "requestId": "7db15c88-3375-4e44-b8d4-1b69cc75f753"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/login",
+    "status": 200,
+    "body": {
+      "authenticated": true,
+      "accountId": "7daf79ff-ec73-443a-852b-de4984bdd605",
+      "state": "ACTIVE",
+      "roles": [
+        "LEARNER"
+      ],
+      "passwordAuthenticatedAt": "2026-10-03T14:58:40Z",
+      "webauthnAuthenticatedAt": null,
+      "idleExpiresAt": "2026-10-04T14:58:40Z",
+      "absoluteExpiresAt": "2026-10-10T14:58:40Z"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "get",
+    "path": "/auth/session",
+    "status": 200,
+    "body": {
+      "authenticated": true,
+      "accountId": "7daf79ff-ec73-443a-852b-de4984bdd605",
+      "state": "ACTIVE",
+      "roles": [
+        "LEARNER"
+      ],
+      "passwordAuthenticatedAt": "2026-10-03T14:58:40Z",
+      "webauthnAuthenticatedAt": null,
+      "idleExpiresAt": "2026-10-04T14:58:40Z",
+      "absoluteExpiresAt": "2026-10-10T14:58:40Z"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "get",
+    "path": "/auth/session",
+    "status": 200,
+    "body": {
+      "authenticated": true,
+      "accountId": "7daf79ff-ec73-443a-852b-de4984bdd605",
+      "state": "ACTIVE",
+      "roles": [
+        "LEARNER"
+      ],
+      "passwordAuthenticatedAt": "2026-10-03T14:58:40Z",
+      "webauthnAuthenticatedAt": null,
+      "idleExpiresAt": "2026-10-04T14:58:40Z",
+      "absoluteExpiresAt": "2026-10-10T14:58:40Z"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/register",
+    "status": 202,
+    "body": {
+      "message": "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/verification-confirmations",
+    "status": 200,
+    "body": {
+      "message": "The request is complete. Sign in again when required."
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/password-reset-confirmations",
+    "status": 400,
+    "body": {
+      "type": "urn:otr:problem:TOKEN_INVALID",
+      "title": "Bad Request",
+      "status": 400,
+      "code": "TOKEN_INVALID",
+      "message": "This link is invalid or expired. Request a new message.",
+      "fieldErrors": [],
+      "timestamp": "2026-10-03T14:58:43.264800Z",
+      "requestId": "e9969d19-aa4d-4c3c-86ae-086b7c2ee6cd"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "get",
+    "path": "/auth/session",
+    "status": 200,
+    "body": {
+      "authenticated": true,
+      "accountId": "ad6e4ce6-8881-43a4-a9d7-5ea6b6b0b62e",
+      "state": "ACTIVE",
+      "roles": [
+        "LEARNER"
+      ],
+      "passwordAuthenticatedAt": "2026-10-03T14:58:43Z",
+      "webauthnAuthenticatedAt": null,
+      "idleExpiresAt": "2026-10-04T14:58:43Z",
+      "absoluteExpiresAt": "2026-10-10T14:58:43Z"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/register",
+    "status": 202,
+    "body": {
+      "message": "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/verification-confirmations",
+    "status": 200,
+    "body": {
+      "message": "The request is complete. Sign in again when required."
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "get",
+    "path": "/auth/session",
+    "status": 200,
+    "body": {
+      "authenticated": true,
+      "accountId": "fb017e1d-da2d-44ae-a808-d217befbf509",
+      "state": "ACTIVE",
+      "roles": [
+        "LEARNER"
+      ],
+      "passwordAuthenticatedAt": "2026-10-03T14:58:44Z",
+      "webauthnAuthenticatedAt": null,
+      "idleExpiresAt": "2026-10-04T14:58:44Z",
+      "absoluteExpiresAt": "2026-10-10T14:58:44Z"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/me/webauthn/registration-options",
+    "status": 200,
+    "body": {
+      "challenge": "6g-gBb1HkxFpj9-KIYbpMwOR7-MQuhMfaG77zEBN7qE",
+      "rp": {
+        "id": "localhost",
+        "name": "Options learning"
+      },
+      "user": {
+        "id": "wmzJOYAKbbs7y-EXnaOObNoJ3JQvju2NzGYk0TenCTM",
+        "name": "fb017e1d-da2d-44ae-a808-d217befbf509",
+        "displayName": "fb017e1d-da2d-44ae-a808-d217befbf509"
+      },
+      "pubKeyCredParams": [
+        {
+          "type": "public-key",
+          "alg": -8
+        },
+        {
+          "type": "public-key",
+          "alg": -7
+        },
+        {
+          "type": "public-key",
+          "alg": -257
+        }
+      ],
+      "timeout": 300000,
+      "excludeCredentials": [],
+      "authenticatorSelection": {
+        "residentKey": "preferred",
+        "userVerification": "required"
+      },
+      "attestation": "none"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/me/webauthn/credentials",
+    "status": 201,
+    "body": {
+      "credentialId": "f53ecedd-356a-42c7-b6be-6d43479984b2",
+      "label": "Independent key 1",
+      "createdAt": "2026-10-03T14:58:44.639999Z",
+      "backupEligible": false
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/me/webauthn/registration-options",
+    "status": 200,
+    "body": {
+      "challenge": "3-4qYrRrsPd45R_OfLhtBcvD3Ku12EtaH8dbtsR57nc",
+      "rp": {
+        "id": "localhost",
+        "name": "Options learning"
+      },
+      "user": {
+        "id": "wmzJOYAKbbs7y-EXnaOObNoJ3JQvju2NzGYk0TenCTM",
+        "name": "fb017e1d-da2d-44ae-a808-d217befbf509",
+        "displayName": "Options learning account"
+      },
+      "pubKeyCredParams": [
+        {
+          "type": "public-key",
+          "alg": -8
+        },
+        {
+          "type": "public-key",
+          "alg": -7
+        },
+        {
+          "type": "public-key",
+          "alg": -257
+        }
+      ],
+      "timeout": 300000,
+      "excludeCredentials": [
+        {
+          "type": "public-key",
+          "id": "2YO98aG6uPaVyuAhg6wP7wibUteA3sPIqyfbs4iu-Xw",
+          "transports": [
+            "usb"
+          ]
+        }
+      ],
+      "authenticatorSelection": {
+        "residentKey": "preferred",
+        "userVerification": "required"
+      },
+      "attestation": "none"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/me/webauthn/credentials",
+    "status": 201,
+    "body": {
+      "credentialId": "ead26e69-b05c-4de2-b14c-c8f27aa20f78",
+      "label": "Independent key 2",
+      "createdAt": "2026-10-03T14:58:44.816909Z",
+      "backupEligible": false
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "get",
+    "path": "/auth/session",
+    "status": 200,
+    "body": {
+      "authenticated": true,
+      "accountId": "fb017e1d-da2d-44ae-a808-d217befbf509",
+      "state": "MFA_REQUIRED",
+      "roles": [
+        "LEARNER",
+        "ADMIN"
+      ],
+      "passwordAuthenticatedAt": "2026-10-03T14:58:45Z",
+      "webauthnAuthenticatedAt": null,
+      "idleExpiresAt": "2026-10-03T15:13:45Z",
+      "absoluteExpiresAt": "2026-10-03T22:58:45Z"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/webauthn/assertion-options",
+    "status": 200,
+    "body": {
+      "challenge": "n4drmb3NHiidUDE2EKDOR8CbuYqSL5I7ubQLfjGmjkE",
+      "timeout": 300000,
+      "rpId": "localhost",
+      "allowCredentials": [
+        {
+          "type": "public-key",
+          "id": "2YO98aG6uPaVyuAhg6wP7wibUteA3sPIqyfbs4iu-Xw",
+          "transports": [
+            "usb"
+          ]
+        },
+        {
+          "type": "public-key",
+          "id": "ZBG-hgTP8QJK7b37i3Kbbu57MvsWZZdF5iyGe0qfIsc",
+          "transports": [
+            "usb"
+          ]
+        }
+      ],
+      "userVerification": "required"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/webauthn/assertions",
+    "status": 200,
+    "body": {
+      "authenticated": true,
+      "accountId": "fb017e1d-da2d-44ae-a808-d217befbf509",
+      "state": "ACTIVE",
+      "roles": [
+        "LEARNER",
+        "ADMIN"
+      ],
+      "passwordAuthenticatedAt": "2026-10-03T14:58:45Z",
+      "webauthnAuthenticatedAt": "2026-10-03T14:58:45Z",
+      "idleExpiresAt": "2026-10-03T15:13:45Z",
+      "absoluteExpiresAt": "2026-10-03T22:58:45Z"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/webauthn/assertion-options",
+    "status": 200,
+    "body": {
+      "challenge": "MmE9JBGhazI_fqehPFcZCuUZB5Y3CrhbYyuTHChb6hM",
+      "timeout": 300000,
+      "rpId": "localhost",
+      "allowCredentials": [
+        {
+          "type": "public-key",
+          "id": "2YO98aG6uPaVyuAhg6wP7wibUteA3sPIqyfbs4iu-Xw",
+          "transports": [
+            "usb"
+          ]
+        },
+        {
+          "type": "public-key",
+          "id": "ZBG-hgTP8QJK7b37i3Kbbu57MvsWZZdF5iyGe0qfIsc",
+          "transports": [
+            "usb"
+          ]
+        }
+      ],
+      "userVerification": "required"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/webauthn/assertions",
+    "status": 400,
+    "body": {
+      "type": "urn:otr:problem:WEBAUTHN_INVALID",
+      "title": "Bad Request",
+      "status": 400,
+      "code": "WEBAUTHN_INVALID",
+      "message": "The security key could not be verified. Start again.",
+      "fieldErrors": [],
+      "timestamp": "2026-10-03T14:58:45.550351Z",
+      "requestId": "2259991c-941f-4a70-bec5-5af42ae59589"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/webauthn/assertion-options",
+    "status": 200,
+    "body": {
+      "challenge": "voNYXVVl-QluNEHRbBS1M0vqTGHrAb-3InfzCI7zPEA",
+      "timeout": 300000,
+      "rpId": "localhost",
+      "allowCredentials": [
+        {
+          "type": "public-key",
+          "id": "2YO98aG6uPaVyuAhg6wP7wibUteA3sPIqyfbs4iu-Xw",
+          "transports": [
+            "usb"
+          ]
+        },
+        {
+          "type": "public-key",
+          "id": "ZBG-hgTP8QJK7b37i3Kbbu57MvsWZZdF5iyGe0qfIsc",
+          "transports": [
+            "usb"
+          ]
+        }
+      ],
+      "userVerification": "required"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "post",
+    "path": "/auth/webauthn/assertions",
+    "status": 400,
+    "body": {
+      "type": "urn:otr:problem:TOKEN_INVALID",
+      "title": "Bad Request",
+      "status": 400,
+      "code": "TOKEN_INVALID",
+      "message": "This link is invalid or expired. Request a new message.",
+      "fieldErrors": [],
+      "timestamp": "2026-10-03T14:58:45.743805Z",
+      "requestId": "b3de6eb1-7fad-4d15-8a07-c52728673ebe"
+    },
+    "cacheControl": "no-store"
+  },
+  {
+    "method": "get",
+    "path": "/auth/session",
+    "status": 200,
+    "body": {
+      "authenticated": true,
+      "accountId": "fb017e1d-da2d-44ae-a808-d217befbf509",
+      "state": "ACTIVE",
+      "roles": [
+        "LEARNER"
+      ],
+      "passwordAuthenticatedAt": "2026-10-03T14:58:46Z",
+      "webauthnAuthenticatedAt": null,
+      "idleExpiresAt": "2026-10-04T14:58:46Z",
+      "absoluteExpiresAt": "2026-10-10T14:58:46Z"
+    },
+    "cacheControl": "no-store"
+  }
+]

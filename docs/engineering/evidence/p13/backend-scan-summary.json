@@ -1,0 +1,9 @@
+{
+  "createdAt": "2026-10-03T20:34:57.412233+05:30",
+  "sbom_sha256": "9d4832feb25d83efca2fc75076c5b137c75b2816ceef88b45a048e11141098b9",
+  "severity_filter": [
+    "HIGH",
+    "CRITICAL"
+  ],
+  "vulnerabilities": []
+}

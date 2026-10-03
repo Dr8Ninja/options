@@ -10,7 +10,7 @@ Start with the [curriculum](docs/curriculum/CURRICULUM.md), [research findings](
 
 [P04's relational design](docs/engineering/DATABASE.md) now specifies the schema/ERD, canonical mapping, content/import lifecycle, ownership, versioned assessments and query/migration investigation plan. The offline design gate passes. P08 implements the domain schema with Flyway, PostgreSQL constraints and tested ownership/retention repositories. See the [P08 review](docs/engineering/evidence/p08/REVIEW.md).
 
-[P05's API contract](docs/engineering/API.md), [OpenAPI](docs/engineering/openapi/openapi.json), [authorization matrix](docs/engineering/api/AUTHORIZATION_MATRIX.md), examples and contract-test plan now define all 17 journeys. The offline contract gate passes. P07 implements and tests the CSRF foundation and infrastructure health; P10 implements public content/search; identity, learner/editor workflows and scoring await later stages.
+[P05's API contract](docs/engineering/API.md), [OpenAPI](docs/engineering/openapi/openapi.json), [authorization matrix](docs/engineering/api/AUTHORIZATION_MATRIX.md), examples and contract-test plan now define all 17 journeys. The offline contract gate passes. P07 implements and tests the CSRF foundation and infrastructure health; P10 implements public content/search; P13 implements identity and protected account pages; learner/editor workflows and scoring await later stages.
 
 [P06’s frontend design contract](docs/engineering/FRONTEND.md), [responsive prototype and review guide](design/README.md), tokens, component/state specifications and accessibility checklist now cover all 17 journeys. Light/dark design checks pass. P11 implements the public reading slice; broader product journeys and full assistive-technology acceptance remain later work.
 
@@ -19,6 +19,8 @@ Start with the [curriculum](docs/curriculum/CURRICULUM.md), [research findings](
 [P11 implementation and validation](docs/engineering/evidence/p11/REVIEW.md) covers home → curriculum → phase → module → topic, safe authored rendering and public SEO. Its renderer lesson is synthetic test-only content; persistent local imports remain drafts.
 
 [P12 discovery and validation](docs/engineering/evidence/p12/REVIEW.md) adds the live resource library, intersecting URL filters, global search, shared-module paths and project preparation/detail pages. Resource review scope, access limits and planned assessment gates remain explicit. Public next links follow authored order; personalization and ratings remain deferred.
+
+[P13 account implementation and evidence](docs/engineering/evidence/p13/REVIEW.md) covers registration, verification, login/logout, recovery, secure sessions, security keys and offline privileged activation with real PostgreSQL/Mailpit/browser tests. Functional checks pass; the full security gate remains blocked on an unpatched development-tool advisory. External email delivery is unconfigured and no public deployment is claimed. P14 has not started.
 
 [PROMPTS.md](PROMPTS.md) remains the shared execution guide. **P07 provides application foundations**, including PostgreSQL-backed sessions, a secured API boundary and an honest preparation shell. P08 implements the domain schema, and P17 later authors/reviews lesson batches. Public catalog/search APIs, reading and discovery interfaces are implemented. Learner, assessment execution and editorial HTTP features remain later work. All seven full canonical paths require later authoring; completing R1 will not imply completing those paths.
 
@@ -56,7 +58,7 @@ Validate P06 with `python scripts/validate_frontend_design.py` in the P05 valida
 
 ## P07 local application foundations
 
-The application renders responsive light/dark reading and discovery pages from approved public snapshots. It exposes health, session-backed CSRF and P10 public read endpoints. With no approved publication, catalog reads return 503. All unimplemented API routes are denied, even for an authenticated staff principal. There are no default accounts or production credentials. Reviewed lessons, learning progress, authentication journeys and editorial tools remain later-stage work.
+The application renders responsive light/dark reading and discovery pages from approved public snapshots. It exposes health, session-backed CSRF, P10 public reads and P13 account endpoints. With no approved publication, catalog reads return 503. All unimplemented API routes are denied, even for an authenticated staff principal. There are no default accounts or production credentials. Reviewed lessons, learning progress and editorial tools remain later-stage work.
 
 Use Temurin JDK 25.0.4.1+1 (the runtime image remains pinned to 25.0.4+7), Node 26.10.0/npm 11.19.1 and running Docker/Compose. From a fresh checkout:
 

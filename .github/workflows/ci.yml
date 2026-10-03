@@ -62,6 +62,7 @@ jobs:
           ./backend/mvnw -f backend/pom.xml -B verify
           python scripts/check-implemented-api.py
           python scripts/check-public-api.py
+          python scripts/check-identity-api.py
       - name: Frontend production build
         run: npm --prefix frontend run build
       - name: Secret and dependency checks
@@ -90,6 +91,10 @@ jobs:
         run: python scripts/test-public-learning.py
       - name: Public discovery journeys against disposable imported PostgreSQL
         run: python scripts/test-public-learning.py --stage p12
+      - name: Account lifecycle with PostgreSQL and local Mailpit
+        run: |
+          python scripts/test-identity.py
+          python scripts/check-identity-api.py
       - name: Real WebAuthn compatibility on test classpath
         run: python scripts/test-webauthn.py
       - name: Stop isolated stack
@@ -107,6 +112,8 @@ jobs:
             backend/target/p08-evidence/
             backend/target/p09-evidence/
             backend/target/p10-evidence/
+            backend/target/p13-evidence/
+            .local/p13-runtime/screenshots/
             frontend/playwright-report/
             frontend/test-results/
             .local/p11-runtime/reading-screenshots/

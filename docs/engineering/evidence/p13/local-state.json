@@ -1,0 +1,9 @@
+{
+  "flyway_schema_history": 23,
+  "draft_head": 2851,
+  "publication": 0,
+  "review_decision": 0,
+  "account": 0,
+  "tables": 114,
+  "latestMigration": "0023"
+}

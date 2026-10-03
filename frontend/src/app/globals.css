@@ -658,3 +658,55 @@ code {
 .filter-grid > div > label {
   margin-bottom: 0.5rem;
 }
+
+.account-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 3rem;
+}
+.account-panel {
+  max-width: 44rem;
+}
+.account-panel form,
+.account-controls form {
+  display: grid;
+  gap: 1rem;
+  margin-block: 1.5rem 2.5rem;
+}
+.account-panel label {
+  display: grid;
+  gap: 0.4rem;
+}
+.account-panel input:not([type="checkbox"]) {
+  width: 100%;
+  min-height: 2.8rem;
+  padding: 0.5rem;
+  color: inherit;
+  background: var(--surface);
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+}
+.account-panel .account-check {
+  display: flex;
+  align-items: start;
+}
+.account-panel nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+.account-controls fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.account-panel button {
+  min-height: 2.75rem;
+}
+@media (max-width: 48rem) {
+  .account-layout {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "P13",
+  "date": "2026-10-03",
+  "amendments": [
+    {
+      "path": "docs/engineering/SECURITY.md",
+      "previous_sha256": "e1b3eb42bc4ea2bd1b58a5111909ad52bdb379fd813bd54d6218798869b78861",
+      "sha256": "077b9c73c7365b5e8af30b7edca96c6e79a299fc856c3679ba3a73170870642e",
+      "reason": "Append implemented account/session/mail/privilege controls and explicit validation limits without changing the historical P03/P10 text.",
+      "decision": "docs/project/DECISIONS.md#d048--p13-implements-framework-identity-with-an-offline-privilege-boundary"
+    }
+  ]
+}

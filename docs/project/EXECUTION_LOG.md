@@ -1,6 +1,18 @@
 # Execution log
 
-Current status: P01–P06 design gates and P07–P12 local foundation/persistence/import/public API/reading/discovery gates pass. Next eligible assignment is P13, only when requested. Public-course and production release gates remain closed. See [P12 review](../engineering/evidence/p12/REVIEW.md) and [project backlog](TODO.md).
+Current status: P01–P06 design gates and P07–P12 local foundation/persistence/import/public API/reading/discovery gates pass. P13 is in progress; do not advance to P14 while its documented checks remain open. Public-course and production release gates remain closed. See [P12 review](../engineering/evidence/p12/REVIEW.md) and [project backlog](TODO.md).
+
+## P13 — Authentication and account lifecycle — in progress, 2–3 October 2026
+
+Resumed the actual implementation on main under AGENTS.md, without restarting completed P11/P12. Inspected P03/P05/P06 identity decisions and existing code/logs. Implemented Spring DAO/Argon2id authentication, generation-bound JDBC sessions, digest-only verification/recovery/email-change tokens and bounded local SMTP intents, persisted framework WebAuthn, offline privilege invitation/activation/recovery, closed DTOs and protected SSR account pages. V0022 adds identity support and restricts runtime role-grant permissions; prior migrations remain unchanged. No persistent accounts/publications or external email created.
+
+Final local functional validation passes: 56 tests in the full backend run, then 45 affected tests after adding retention/passive-idle checks (58 unique backend cases across reports); 32 frontend tests/build; three account/five reading/six discovery/one framework WebAuthn/four local HTTPS browser cases. Account browser tests use the restricted runtime DB login and actual Mailpit. 117 identity responses and 145 public responses validate against OpenAPI. Mobile screenshot inspected; axe/keyboard/deep-link/isolation checks pass. Initial contract, challenge-deserialization, boundary, FK-index and fixture failures were repaired without weakening assertions. V0023 is a forward migration for seven-day abandoned-registration erasure; verified accounts survive, and passive polling cannot extend idle deadlines. [P13 review and actual evidence](../engineering/evidence/p13/REVIEW.md) record the final scope.
+
+Rebuilt local backend/frontend and verified HTTPS readiness, 23 migrations/114 tables, unchanged 2,851 drafts and zero accounts/publications/reviews. No external mail or public deployment. SECURITY/API/TESTING/account UX/operations documents and CI checks are aligned. Original inputs and all accepted migrations remain byte-stable.
+
+Security: patched Jackson 2/3 to 2.21.7/3.1.7 after the prior hosted CI's HIGH findings. Backend runtime HIGH/CRITICAL scan, production npm audit and secret scan pass. Full npm audit reports one **unpatched** braces advisory through four development dependency nodes; latest upstream lint tooling retains it. No downgrade, lint removal or suppression applied. Existing 56 OS-image HIGH/CRITICAL findings remain separate release blockers. Production SMTP/edge configuration and authenticator custody remain operator/deployment responsibilities.
+
+P13 functional exit checks pass; **overall gate blocked by the full npm/CI security check**. First incomplete item on resume: recheck the supported upstream braces/Next lint-tool fix and rerun the affected security/check gates. Do not restart completed implementation or advance to P14.
 
 ## Repository consolidation — 1 October 2026
 

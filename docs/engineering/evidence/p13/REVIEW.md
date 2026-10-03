@@ -1,0 +1,38 @@
+# P13 account lifecycle — validation and handoff
+
+3 October 2026. **Local functional exit checks pass; the overall P13 gate remains blocked on an unpatched development dependency advisory.** P14 has not started. Do not redo completed account work on resume: first recheck the braces/Next lint-tool dependency fix and the full npm security gate.
+
+## Implemented and reviewed
+
+Spring Security DAO/Argon2id password authentication, server-side roles, authoritative PostgreSQL sessions, rotation/revocation, idle/absolute expiry, recent-factor checks, registration/verification/recovery, email-change confirmation/cancel/old-address notice and own profile reads/name/theme writes. Passive session-status polls cannot extend idle expiry. Private SSR pages use only the current request's session cookie, no-store/noindex/no-referrer headers, allowlisted return navigation and no browser credential storage. Confirmation fragments are removed from history and require deliberate POST.
+
+Framework WebAuthn4J operations verify RP/origin/signatures/user verification against persisted account/session-bound one-use challenges and PostgreSQL credential state. Two enrolled authenticators and a controlled offline operator ceremony are required for privileged activation. Email recovery removes privileged roles. A privileged key cannot be removed unless two remain. No default admin password, public promotion or future admin HTTP functionality exists.
+
+Mailpit proves local verification/recovery delivery. SMTP configuration requires authenticated STARTTLS and hostname checks, but no external provider/recipient was configured or contacted. Mail intents contain no raw token; replacement, expiry, bounded retries and cleanup are implemented. V0022 adds identity support/role-grant restrictions. V0023 adds a fixed-predicate, bounded cleanup for abandoned unverified registrations older than seven days, with an opaque erasure journal record. The runtime retains no general account-delete privilege. Original migration/source bytes are preserved.
+
+## Actual exit evidence
+
+[Machine-readable results](validation.json) distinguish the full and final targeted runs. A full Maven verification passed 56 tests; final retention/idle changes added two tests, and the affected 45-test run passed. The combined suite reports contain **58 unique passing backend tests**, zero failures/errors/skips: nine actual PostgreSQL/Mailpit account cases, 25 persistence cases, seven foundation cases, twelve public API cases, one full canonical import case and four unit/configuration/boundary cases. This is not a claim that 58 tests ran together in the earlier full invocation.
+
+Commands: `mvnw -f backend/pom.xml -B verify`; then final `verify -Dit.test=IdentityIT,PersistenceIT,FoundationIT`. The final account cases prove expired/reused recovery, session expiration, fixation/CSRF/logout/all-session revocation, authoritative generation, two-user isolation, forbidden admin access, input validation/throttling, password/email changes, recent/absolute expiry, production cookie attributes, bounded bodies, abandoned-registration deletion and passive-poll idle expiry. Cleanup is exercised under the restricted runtime role, including rejection of arbitrary account deletion and role insertion.
+
+- [Frontend check](frontend-check.txt): formatting, lint, type checking, generated contracts/tokens and **32 tests** pass. [Production build](frontend-build.txt) passes.
+- [Account browser gate](browser.txt): **3** real-stack journeys pass with restricted runtime PostgreSQL credentials, actual local mail, production Next and TLS. Covers deep link/refresh, invalid login, isolation/private SSR, axe/mobile, safe redirects, recovery expiry/reuse, two virtual authenticators, offline admin activation, required factors, expired/replayed/altered-origin/other-owner assertions, key-removal protection and recovery demotion.
+- [Reading regression](reading-regression.txt): **5**; [discovery regression](discovery-regression.txt): **6**; [framework WebAuthn compatibility](webauthn-compatibility.txt): **1**; [local HTTPS smoke](smoke.txt): **4**, all pass.
+- `check-identity-api.py` validates **117 actual HTTP responses**: [92 backend examples](account-http-examples.json) and [25 browser examples](browser-http-examples.json), including security-key option DTOs. No passwords, cookies, CSRF or recovery tokens are exported. Disposable public key challenges in browser option responses expire with the destroyed fixture.
+- `check-public-api.py` validates **145** real imported-PostgreSQL responses; `check-implemented-api.py` checks the closed implemented public/identity DTO/operation boundary. Preservation, accepted migration hashes, P02–P06 document contracts, dependency policy and Python checks pass.
+- [Mobile account screenshot](account-mobile.png) was inspected: readable single-column controls, no horizontal overflow. Automated accessibility and component keyboard checks pass; no physical-device or comprehensive assistive-technology certification is claimed.
+
+[Local state](local-state.json): rebuilt backend/frontend and verified trusted local HTTPS readiness; **23 migrations, 114 tables, 2,851 unchanged draft heads, zero publications/reviews/accounts**. The persistent catalog remains unpublished. Test-only accounts/approvals are confined to disposable databases.
+
+## Findings repaired during validation
+
+Initial tests caught unknown-field acceptance, two fixture expiry mistakes, an ambiguous Next alert locator, unsupported framework option deserialization, controller access to repository-owned types, two missing FK indexes, an outdated migration-count assertion and the old compatibility fixture inheriting the new application password encoder. Fixes preserve the assertions: strict JSON, accurate expiry fixtures, scoped locator, closed persisted option shapes reconstructed with framework builders, a separate internal model, real indexes/count update and explicitly isolated compatibility authentication. Final lifecycle review added abandoned-registration deletion and prevented passive polling from extending idle expiry; both have passing regression tests. No accepted migration was rewritten after local application; cleanup is a forward V0023 migration.
+
+## Security gate and deployment limits
+
+Jackson 2/3 BOM overrides to 2.21.7/3.1.7 fix the previous hosted CI findings; [backend runtime scan](backend-scan-summary.json) reports zero HIGH/CRITICAL findings. [Production npm audit](npm-runtime-audit.json) reports zero vulnerabilities. The final repository secret scan reports no leaks.
+
+**The [full npm audit](npm-audit.json) fails** on four development dependency nodes representing one underlying [braces advisory, CVE-2026-93687](https://github.com/advisories/GHSA-vfj7-8cjw-p6xm). The registry's latest braces is 3.0.3; no patched release is listed. Latest Next lint plugin 16.3.8 retains the affected chain. Do not downgrade to incompatible Next 14 tooling, remove lint rules or suppress the advisory. The CI security gate remains red until a supported fix exists. Existing 56 Debian image HIGH/CRITICAL findings remain separate release blockers; P13 does not waive them.
+
+Production SMTP deliverability, sender/domain identity, trusted edge per-client rate limiting, independently recoverable physical authenticator custody, operator recovery ownership and P19–P21 release evidence remain deployment/release work. Passwords and authentication are locally functional; this is not a public-course, production security or external-delivery certification. Next action is the P13 security blocker, not P14.

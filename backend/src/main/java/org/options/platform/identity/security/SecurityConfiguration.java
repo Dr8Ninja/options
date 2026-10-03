@@ -21,10 +21,23 @@ import org.springframework.session.web.http.DefaultCookieSerializer;
     authorities = {})
 public class SecurityConfiguration {
   @Bean
-  UserDetailsService noDefaultAccounts() {
-    return username -> {
-      throw new UsernameNotFoundException("Unavailable");
+  UserDetailsService identityUsers(
+      org.options.platform.identity.service.IdentityService identities) {
+    return email -> {
+      var a = identities.user(email);
+      if (a == null || !java.util.Set.of("ACTIVE", "UNVERIFIED").contains(a.status()))
+        throw new UsernameNotFoundException("Unavailable");
+      return new IdentityUser(a);
     };
+  }
+
+  @Bean
+  org.springframework.security.authentication.AuthenticationManager identityAuthentication(
+      UserDetailsService users, PasswordHashes hashes) {
+    var provider =
+        new org.springframework.security.authentication.dao.DaoAuthenticationProvider(users);
+    provider.setPasswordEncoder(hashes);
+    return new org.springframework.security.authentication.ProviderManager(provider);
   }
 
   @Bean
@@ -56,10 +69,45 @@ public class SecurityConfiguration {
   }
 
   @Bean
-  SecurityFilterChain security(HttpSecurity http, AppProperties properties) throws Exception {
+  SecurityFilterChain security(
+      HttpSecurity http,
+      AppProperties properties,
+      org.options.platform.identity.service.IdentitySessions sessions)
+      throws Exception {
     http.authorizeHttpRequests(
         auth -> {
           auth.requestMatchers(HttpMethod.GET, "/api/v1/auth/csrf", "/api/health").permitAll();
+          auth.requestMatchers(HttpMethod.GET, "/api/v1/auth/session").permitAll();
+          auth.requestMatchers(
+                  HttpMethod.POST,
+                  "/api/v1/auth/register",
+                  "/api/v1/auth/login",
+                  "/api/v1/auth/verification-requests",
+                  "/api/v1/auth/verification-confirmations",
+                  "/api/v1/auth/password-reset-requests",
+                  "/api/v1/auth/password-reset-confirmations",
+                  "/api/v1/auth/email-change-confirmations",
+                  "/api/v1/auth/logout")
+              .permitAll();
+          auth.requestMatchers(HttpMethod.GET, "/api/v1/me", "/api/v1/me/webauthn/credentials")
+              .authenticated();
+          auth.requestMatchers(HttpMethod.PUT, "/api/v1/me").authenticated();
+          auth.requestMatchers(
+                  HttpMethod.POST,
+                  "/api/v1/auth/logout-all",
+                  "/api/v1/auth/reauthentication",
+                  "/api/v1/me/password",
+                  "/api/v1/me/email-change",
+                  "/api/v1/me/webauthn/registration-options",
+                  "/api/v1/me/webauthn/credentials",
+                  "/api/v1/auth/webauthn/assertion-options",
+                  "/api/v1/auth/webauthn/assertions")
+              .authenticated();
+          auth.requestMatchers(
+                  HttpMethod.DELETE,
+                  "/api/v1/me/email-change",
+                  "/api/v1/me/webauthn/credentials/{credentialId}")
+              .authenticated();
           for (var method : java.util.List.of(HttpMethod.GET, HttpMethod.HEAD))
             auth.requestMatchers(
                     method,
@@ -92,12 +140,16 @@ public class SecurityConfiguration {
             auth.requestMatchers(HttpMethod.GET, "/v3/api-docs").permitAll();
           auth.anyRequest().denyAll();
         });
+    http.addFilterAfter(
+        new IdentitySessionFilter(sessions),
+        org.springframework.security.web.context.SecurityContextHolderFilter.class);
     http.csrf(
         csrf ->
             csrf.csrfTokenRepository(new HttpSessionCsrfTokenRepository())
                 .csrfTokenRequestHandler(new XorCsrfTokenRequestAttributeHandler()));
     http.addFilterBefore(new OriginFilter(properties.publicOrigin()), CsrfFilter.class);
     http.addFilterBefore(new PreSessionLimiter(), CsrfFilter.class);
+    http.addFilterAfter(new IdentityBodyLimit(), CsrfFilter.class);
     http.formLogin(AbstractHttpConfigurer::disable)
         .httpBasic(AbstractHttpConfigurer::disable)
         .logout(AbstractHttpConfigurer::disable)

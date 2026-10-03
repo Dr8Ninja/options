@@ -1,0 +1,1152 @@
+[ {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "6fd2d805-9f4b-4445-939d-6837d040a503",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:05Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:05Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:05Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "6fd2d805-9f4b-4445-939d-6837d040a503",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:05Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:05Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:05Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/password-reset-requests",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:TOKEN_INVALID",
+    "title" : "Bad Request",
+    "status" : 400,
+    "code" : "TOKEN_INVALID",
+    "message" : "This link is invalid or expired. Request a new message.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:05.718733Z",
+    "requestId" : "1c18bee0-865b-4e79-b7e3-3f75743c23ec"
+  },
+  "status" : 400,
+  "path" : "/auth/password-reset-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/password-reset-requests",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/password-reset-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:TOKEN_INVALID",
+    "title" : "Bad Request",
+    "status" : 400,
+    "code" : "TOKEN_INVALID",
+    "message" : "This link is invalid or expired. Request a new message.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:05.790608Z",
+    "requestId" : "f8ab250f-e33f-4318-b40c-7cc1ea616eb6"
+  },
+  "status" : 400,
+  "path" : "/auth/password-reset-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:05.793724Z",
+    "requestId" : "0e62b582-c52e-4217-83bc-9d3463c27b1f"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:05.795078Z",
+    "requestId" : "d0a5795e-fc2e-48e0-9355-934ce6ea5681"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "5811badd-c664-4ed6-a3dc-6c6f4a14748f",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:05Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:05Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:05Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "5811badd-c664-4ed6-a3dc-6c6f4a14748f",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:05Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:05Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:05Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/password-reset-requests",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/password-reset-requests",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:REQUEST_TOO_LARGE",
+    "title" : "Content Too Large",
+    "status" : 413,
+    "code" : "REQUEST_TOO_LARGE",
+    "message" : "The submitted request is too large.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:05.922825Z",
+    "requestId" : "fc9021f0-f4ed-4b6d-9239-42ffdf4383e0"
+  },
+  "status" : 413,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:05.933671Z",
+    "requestId" : "709fd984-f06f-41e9-9844-d6a63ddf77c6"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:PASSWORD_POLICY",
+    "title" : "Unprocessable Content",
+    "status" : 422,
+    "code" : "PASSWORD_POLICY",
+    "message" : "Use 15–128 characters and a password that is not commonly used.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:05.940333Z",
+    "requestId" : "81ee2cb0-c311-4468-90fb-29e66e0b72cc"
+  },
+  "status" : 422,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_QUERY",
+    "title" : "Bad Request",
+    "status" : 400,
+    "code" : "INVALID_QUERY",
+    "message" : "Check the query parameters.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:05.948917Z",
+    "requestId" : "a84dee8f-64dd-40b3-a83e-f50884163372"
+  },
+  "status" : 400,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_QUERY",
+    "title" : "Bad Request",
+    "status" : 400,
+    "code" : "INVALID_QUERY",
+    "message" : "Check the query parameters.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:05.955524Z",
+    "requestId" : "5655be0b-e3b0-4844-8876-1d5bbb0b4403"
+  },
+  "status" : 400,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "13f75c4f-315e-4b56-9901-ac9ebf5845ed",
+    "state" : "UNVERIFIED",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:06Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-03T15:13:06Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:06Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.034570Z",
+    "requestId" : "35312a42-0d04-488e-9280-5b8678f5f913"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:TOKEN_INVALID",
+    "title" : "Bad Request",
+    "status" : 400,
+    "code" : "TOKEN_INVALID",
+    "message" : "This link is invalid or expired. Request a new message.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.180741Z",
+    "requestId" : "d1cd63d1-8a53-4d7b-9fa4-a7aa03c649cb"
+  },
+  "status" : 400,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "3162cda5-c710-4c0b-b921-427c9934a656",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:06Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:06Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:06Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.267606Z",
+    "requestId" : "2cd9aca9-6ac5-4538-9950-74cf4458d814"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "3162cda5-c710-4c0b-b921-427c9934a656",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:06Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:06Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:06Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.296453Z",
+    "requestId" : "9506fd93-6d09-433e-b052-beb027129caa"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.321657Z",
+    "requestId" : "8d95194f-f048-4b38-b7b9-9e8bfe0a45c8"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.350361Z",
+    "requestId" : "a713ef88-3766-404c-b5e8-f9f70b9ab56a"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.380216Z",
+    "requestId" : "08e6b71c-5640-460c-90f1-16d67c7fb40f"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.406698Z",
+    "requestId" : "5c00b3f5-6c0c-4ea3-aad9-e6ffde9f24ff"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.435759Z",
+    "requestId" : "870b7c3a-1456-4fa2-a09c-d6def3cf327b"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.462298Z",
+    "requestId" : "e160bebe-5cb7-439d-b035-b1e9906d3b36"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.487850Z",
+    "requestId" : "d61bbd24-2432-4751-b12c-e78807be874c"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.513808Z",
+    "requestId" : "7caa9f6a-8cfc-4989-b7d0-8078f73e4365"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.538611Z",
+    "requestId" : "47b9677b-5289-4ceb-a981-5d56ac88f0cb"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.564757Z",
+    "requestId" : "5beff8cd-3fbe-4d85-ba76-b2128d65f930"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:RATE_LIMITED",
+    "title" : "Too Many Requests",
+    "status" : 429,
+    "code" : "RATE_LIMITED",
+    "message" : "Too many attempts. Wait before trying again.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:06.575567Z",
+    "requestId" : "ea4a5c9f-adf0-4100-904c-f3e8c80fa4aa"
+  },
+  "status" : 429,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "aecc7377-7c36-4372-bed7-9488d7ff8e32",
+    "state" : "UNVERIFIED",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:06Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-03T15:13:06Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:06Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : false,
+    "accountId" : null,
+    "state" : "ANONYMOUS",
+    "roles" : [ ],
+    "passwordAuthenticatedAt" : null,
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : null,
+    "absoluteExpiresAt" : null
+  },
+  "status" : 200,
+  "path" : "/auth/session",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "962d4bf5-6303-4f11-9fd7-ee0878f3862c",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:07Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:07Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:07Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "962d4bf5-6303-4f11-9fd7-ee0878f3862c",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:07Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-03T14:58:27Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:07Z"
+  },
+  "status" : 200,
+  "path" : "/auth/session",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "962d4bf5-6303-4f11-9fd7-ee0878f3862c",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:07Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-03T14:58:27Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:07Z"
+  },
+  "status" : 200,
+  "path" : "/auth/session",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : false,
+    "accountId" : null,
+    "state" : "ANONYMOUS",
+    "roles" : [ ],
+    "passwordAuthenticatedAt" : null,
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : null,
+    "absoluteExpiresAt" : null
+  },
+  "status" : 200,
+  "path" : "/auth/session",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "4482d760-ca96-4eaa-b4d6-bf85c9ee9b61",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:08Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:08Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:08Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/me/email-change",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "accountId" : "4482d760-ca96-4eaa-b4d6-bf85c9ee9b61",
+    "email" : "53ecc415-c350-4e76-b6fb-3bccec1f07bf@example.invalid",
+    "displayName" : null,
+    "theme" : "system",
+    "interestPathId" : null,
+    "verified" : true,
+    "version" : "v2"
+  },
+  "status" : 200,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:TOKEN_INVALID",
+    "title" : "Bad Request",
+    "status" : 400,
+    "code" : "TOKEN_INVALID",
+    "message" : "This link is invalid or expired. Request a new message.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.332590Z",
+    "requestId" : "e96e0c42-c04a-4615-8259-9e5b6a836ee1"
+  },
+  "status" : 400,
+  "path" : "/auth/email-change-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/me/email-change",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/email-change-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.358794Z",
+    "requestId" : "edcbd418-7294-4048-aa8c-a6aaffb34881"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "4482d760-ca96-4eaa-b4d6-bf85c9ee9b61",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:08Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:08Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:08Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "accountId" : "4482d760-ca96-4eaa-b4d6-bf85c9ee9b61",
+    "email" : "e6ba544f-484f-4b2e-8477-9c6aec7febb9@example.invalid",
+    "displayName" : null,
+    "theme" : "system",
+    "interestPathId" : null,
+    "verified" : true,
+    "version" : "v4"
+  },
+  "status" : 200,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "c3438505-8955-4f37-857b-4a51f3a5e5fd",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:08Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:08Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:08Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "c3438505-8955-4f37-857b-4a51f3a5e5fd",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:08Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:08Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:08Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:REAUTHENTICATION_REQUIRED",
+    "title" : "Forbidden",
+    "status" : 403,
+    "code" : "REAUTHENTICATION_REQUIRED",
+    "message" : "Confirm your password and required security key before continuing.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.494936Z",
+    "requestId" : "dba8aab4-49c0-410f-8880-26ccc7cbb515"
+  },
+  "status" : 403,
+  "path" : "/me/password",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "c3438505-8955-4f37-857b-4a51f3a5e5fd",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:08Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:08Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:08Z"
+  },
+  "status" : 200,
+  "path" : "/auth/reauthentication",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 202,
+  "path" : "/me/password",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.549234Z",
+    "requestId" : "9afff781-fcfb-42d3-87b3-3ede2bcb17ae"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "c3438505-8955-4f37-857b-4a51f3a5e5fd",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:08Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:08Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:08Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.579386Z",
+    "requestId" : "36b03ea2-dc8c-4539-b995-c490e4e0a61a"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "If this address is eligible, a message will be queued. Use the latest message. Delivery depends on the configured mail service."
+  },
+  "status" : 202,
+  "path" : "/auth/register",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "message" : "The request is complete. Sign in again when required."
+  },
+  "status" : 200,
+  "path" : "/auth/verification-confirmations",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:INVALID_CREDENTIALS",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "INVALID_CREDENTIALS",
+    "message" : "The email or password could not be verified.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.683609Z",
+    "requestId" : "65fa7acb-583f-4740-b894-c8deb0f5410d"
+  },
+  "status" : 401,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "835c7c56-4ee7-4eea-bad0-01bb1230868f",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:08Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:08Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:08Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "authenticated" : true,
+    "accountId" : "4a14b887-f8b2-4fe9-a772-53b3e5d1fac6",
+    "state" : "ACTIVE",
+    "roles" : [ "LEARNER" ],
+    "passwordAuthenticatedAt" : "2026-10-03T14:58:08Z",
+    "webauthnAuthenticatedAt" : null,
+    "idleExpiresAt" : "2026-10-04T14:58:08Z",
+    "absoluteExpiresAt" : "2026-10-10T14:58:08Z"
+  },
+  "status" : 200,
+  "path" : "/auth/login",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "accountId" : "835c7c56-4ee7-4eea-bad0-01bb1230868f",
+    "email" : "2e7d86b9-e803-434a-907c-d2ca9af89214@example.invalid",
+    "displayName" : null,
+    "theme" : "system",
+    "interestPathId" : null,
+    "verified" : true,
+    "version" : "v2"
+  },
+  "status" : 200,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "accountId" : "4a14b887-f8b2-4fe9-a772-53b3e5d1fac6",
+    "email" : "25fb2e04-aeaa-46a5-91ab-cd35fd39aaf0@example.invalid",
+    "displayName" : null,
+    "theme" : "system",
+    "interestPathId" : null,
+    "verified" : true,
+    "version" : "v2"
+  },
+  "status" : 200,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:CSRF_INVALID",
+    "title" : "Forbidden",
+    "status" : 403,
+    "code" : "CSRF_INVALID",
+    "message" : "Refresh the security token and try again deliberately.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.754914Z",
+    "requestId" : "0484e95b-38bb-4ec1-8317-a8e1dc8e3fb6"
+  },
+  "status" : 403,
+  "path" : "/auth/logout",
+  "method" : "post",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:ACCESS_DENIED",
+    "title" : "Forbidden",
+    "status" : 403,
+    "code" : "ACCESS_DENIED",
+    "message" : "This action is not available.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.758701Z",
+    "requestId" : "3a576bdb-9473-40e0-9475-ed3301b967d7"
+  },
+  "status" : 403,
+  "path" : "/admin/content",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.761573Z",
+    "requestId" : "5c66f629-9775-4283-b19d-1dd7d63438e6"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "type" : "urn:otr:problem:AUTHENTICATION_REQUIRED",
+    "title" : "Unauthorized",
+    "status" : 401,
+    "code" : "AUTHENTICATION_REQUIRED",
+    "message" : "Sign in to continue.",
+    "fieldErrors" : [ ],
+    "timestamp" : "2026-10-03T14:58:08.770295Z",
+    "requestId" : "4972002b-672e-4c51-bda6-d45bee1eb3f1"
+  },
+  "status" : 401,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+}, {
+  "body" : {
+    "accountId" : "4a14b887-f8b2-4fe9-a772-53b3e5d1fac6",
+    "email" : "25fb2e04-aeaa-46a5-91ab-cd35fd39aaf0@example.invalid",
+    "displayName" : null,
+    "theme" : "system",
+    "interestPathId" : null,
+    "verified" : true,
+    "version" : "v2"
+  },
+  "status" : 200,
+  "path" : "/me",
+  "method" : "get",
+  "cacheControl" : "no-store"
+} ]

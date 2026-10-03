@@ -1,6 +1,6 @@
 # Prioritized project backlog
 
-Updated 1 October 2026 after P12. P01–P06 design contracts and P07–P12 local foundation/persistence/import/public API/reading/discovery gates pass. **Public APIs serve approved snapshots; local canonical content remains unpublished drafts, with no reviewed public course or learner workflows.** Next eligible assignment: **P13**, only when requested. P17 must later author the release, and P22 is a separate authorized deployment.
+Updated 3 October 2026 during P13. P01–P06 design contracts and P07–P12 local foundation/persistence/import/public API/reading/discovery gates pass. **Public APIs serve approved snapshots; local canonical content remains unpublished drafts, with no reviewed public course or learner workflows.** Current assignment: **P13**, functional checks passed; its full security gate remains open on an unpatched development-tool advisory. Do not advance to P14. P17 must later author the release, and P22 is a separate authorized deployment.
 
 The normative scope is [PRODUCT_REQUIREMENTS](../product/PRODUCT_REQUIREMENTS.md), [CONTENT_RELEASE_PLAN](../product/CONTENT_RELEASE_PLAN.md) and [REQUIREMENTS_TRACEABILITY](../product/REQUIREMENTS_TRACEABILITY.md). Priority means sequencing/impact, not permission to skip the prompt gates. An unchecked item is future work, not an implementation claim.
 
@@ -22,7 +22,7 @@ The normative scope is [PRODUCT_REQUIREMENTS](../product/PRODUCT_REQUIREMENTS.md
 
 - [x] P11: live server-rendered public reading and SEO; restricted authored rendering; real PostgreSQL browser gate, accessibility/screenshots, production build and protection checks pass. See [review](../engineering/evidence/p11/REVIEW.md).
 
-- [x] P12: live filtered library/search, resource details, shared-module paths and project preparation; real-stack discovery and reading regression gates pass. [Review](../engineering/evidence/p12/REVIEW.md). P13 not started.
+- [x] P12: live filtered library/search, resource details, shared-module paths and project preparation; real-stack discovery and reading regression gates pass. [Review](../engineering/evidence/p12/REVIEW.md). P13 account functional checks pass; the security blocker remains open.
 
 ## P0 — Completed design prerequisites
 
@@ -41,7 +41,7 @@ The normative scope is [PRODUCT_REQUIREMENTS](../product/PRODUCT_REQUIREMENTS.md
 | B06 — complete persistence | Incremental migrations, persistence, constraints and ownership queries | P08 | Empty-database and real PostgreSQL tests pass; REQ-19/20/28/30 |
 | B07 — complete import | Validated importer, dry-run/conflicts/retirement/export, stable references and all supplemental structures | P09 | 35 backend tests, 14 import scenarios and local replay/export pass; [P09 evidence](../engineering/evidence/p09/REVIEW.md); REQ-02/28 |
 | B08 — P10–P12 complete | Public APIs, reading/SEO, filtered resource library, search, paths and projects | P10–P12 complete | [P12 evidence](../engineering/evidence/p12/REVIEW.md): 47 backend tests, 29 frontend tests, 6 discovery journeys, 5 reading regressions and 4 local smoke cases pass. No canonical drafts published; REQ-02/04–12/36 |
-| B09 | Signup/verification/login/logout/recovery, privileged security, ownership and account lifecycle | P13 | J06–J08/J16 and isolation tests; local mail behavior verified; no unauthorized external messages |
+| B09 — functional checks pass, security blocked | Signup/verification/login/logout/recovery and protected account lifecycle implemented; full npm audit awaits a supported upstream fix | P13 | [Actual account/database/browser evidence](../engineering/evidence/p13/REVIEW.md); external mail unconfigured, no unauthorized messages; do not advance to P14 |
 | B10 | Progress/bookmarks/private notes/dashboard/recommendations and version-change behavior | P14 | J09–J11 pass across devices and failures; REQ-19–23 |
 | B11 | Scored gates, practice/solution release, exhausted-bank request queue and self-reviewed dossier | P15 | J12/J13 pass; server scoring, pinned versions, clear evidence labels; REQ-24–26 |
 | B12 | Editorial draft/review/preview/publish, role management, import conflicts, freshness/correction queues and version withdrawal | P16 | J14/J15 pass, author/reviewer attribution honest, review evidence mandatory; REQ-27–29 |
@@ -101,4 +101,4 @@ U01 budget/operations/region; U02 operator/territories/eligibility/legal review;
 
 ## Repository maintenance — 1 October 2026
 
-Main-only workflow and branch/dependency consolidation are recorded in [maintenance evidence](../engineering/evidence/main-consolidation-2026-10-01/REVIEW.md). P13 remains unstarted. Before production release, resolve or individually assess the 56 existing Debian HIGH/CRITICAL image findings; no blanket security waiver is granted. TypeScript 7 awaits compatible tooling; retain Java 25 LTS.
+Main-only workflow and branch/dependency consolidation are recorded in [maintenance evidence](../engineering/evidence/main-consolidation-2026-10-01/REVIEW.md). P13 functional checks pass. Full npm audit currently reports the unpatched braces advisory through the Next lint tooling; keep CI/security blocked and retain the lint checks. Before production release, resolve or individually assess the 56 existing Debian HIGH/CRITICAL image findings; no blanket security waiver is granted. TypeScript 7 awaits compatible tooling; retain Java 25 LTS.

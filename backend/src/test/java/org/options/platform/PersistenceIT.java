@@ -144,7 +144,7 @@ class PersistenceIT {
             jdbc.queryForObject(
                 "select count(*) from information_schema.tables where table_schema='public' and table_type='BASE TABLE'",
                 Integer.class))
-        .isEqualTo(111);
+        .isEqualTo(114);
     assertThat(
             jdbc.queryForObject(
                 "select count(*) from pg_constraint c join pg_class t on t.oid=c.conrelid join pg_namespace n on n.oid=t.relnamespace where c.contype='f' and n.nspname='public' and not exists(select 1 from pg_index i where i.indrelid=c.conrelid and i.indisvalid and i.indpred is null and (i.indkey::smallint[])[0:cardinality(c.conkey)-1] @> c.conkey)",
@@ -372,7 +372,7 @@ class PersistenceIT {
             .dataSource(POSTGRES.getJdbcUrl(), POSTGRES.getUsername(), POSTGRES.getPassword())
             .schemas(schema)
             .load();
-    assertThat(current.migrate().migrationsExecuted).isEqualTo(20);
+    assertThat(current.migrate().migrationsExecuted).isEqualTo(22);
     current.validate();
     assertThat(
             jdbc.queryForObject(

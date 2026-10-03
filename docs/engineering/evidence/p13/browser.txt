@@ -1,0 +1,10 @@
+
+Running 3 tests using 1 worker
+
+(node:87345) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 e2e/accounts.identity.ts:118:1 › real registration, verification, login, private deep link and two-user isolation (5.5s)
+  ✓  2 e2e/accounts.identity.ts:187:1 › expired and reused recovery tokens, expired sessions, and safe redirect (2.2s)
+  ✓  3 e2e/accounts.identity.ts:252:1 › PostgreSQL security keys and offline administrator activation require both factors (2.4s)
+
+  3 passed (10.7s)
